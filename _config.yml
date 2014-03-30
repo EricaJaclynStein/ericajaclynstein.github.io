@@ -1,34 +1,18 @@
-# This is the default format. 
-# For more see: http://jekyllrb.com/docs/permalinks/
 permalink: /:categories/:year/:month/:day/:title 
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 pygments: true
 
-# Themes are encouraged to use these universal variables 
-# so be sure to set them if your theme uses them.
-#
 title : Jekyll Bootstrap
 tagline: My Blog
 author :
   name : Erica Jaclyn Stein
-  email : ericajaclyn@icloud.com
   github : ericajaclynstein
   twitter : ericajaclyn
-  feedburner : feedname
 
-# The production_url is only used when full-domain names are needed
-# such as sitemap.txt 
-# Most places will/should use BASE_PATH to make the urls
-#
-# If you have set a CNAME (pages.github.com) set your custom domain here.
-# Else if you are pushing to username.github.io, replace with your username.
-# Finally if you are pushing to a GitHub project page, include the project name at the end.
-#
 production_url : http://ericajaclynstein.github.io
 
-# All Jekyll-Bootstrap specific configurations are namespaced into this hash
-#
+
 JB :
   version : 0.3.0
 
@@ -117,14 +101,6 @@ JB :
   sharing :
     provider : false
     
-  # Settings for all other include helpers can be defined by creating 
-  # a hash with key named for the given helper. ex:
-  #
-  #   pages_list :
-  #     provider : "custom"   
-  #
-  # Setting any helper's provider to 'custom' will bypass the helper code
-  # and include your custom code. Your custom file must be defined at:
-  #   ./_includes/custom/[HELPER]
-  # where [HELPER] is the name of the helper you are overriding.
+pygments: true
+
   
