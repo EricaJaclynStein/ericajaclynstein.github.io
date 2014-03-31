@@ -1,23 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Blog">
+    <meta name="author" content="Erica Jaclyn Stein">
+    <link rel="shortcut icon" href="favicon.ico">
 
----
-layout: master
-title: UX Speak
----
+    <title>An Experience</title>
+
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="cover.css" rel="stylesheet">
+
+     <!-- Built with Bootstrap, template by @mdo -->
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand"></h3>
+            </div>
+          </div>
+
+          <div class="inner cover">
+            <h1 class="cover-heading"><a href="http://www.citrrus.com/blog">Blog</a></h1>
+            <p class="lead"></p>
+          </div>
+
+          <div class="mastfoot">
+            <div class="inner">
+              <p><a href="https://www.twitter.com/ericajaclyn">Catch me tweeting.</a>
+              </br>
+            
+            </div>
+          </div>
+
+        </div>
+
+      </div>
 
 
 
-		
-		<ul>
-		{% for post in site.posts %}
-		<li><span>{{ post.date | date_to_string }}</span> <span class="seperator">~</span> <a href="{{ post.url }}">{{ post.title }}</a></li>
-		{% endfor %}
-		</ul>
-		
-		<div>
-			<p>
-			<a href"/contact/index.html">Find Me</a>
-			</p>	
-		</div>
-		
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0 jquery.min.js"></script>
-			
+    </div>
+ 
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/docs.min.js"></script>
+  </body>
+</html>
