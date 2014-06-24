@@ -1,0 +1,52 @@
+/*!
+ * Additional Styles
+ */
+
+@font-face {
+    font-family: 'kelson_sansbold';
+    src: url(font/'kelson_sans_bold.eot');
+    src: url(font/'kelson_sans_bold.eot?#iefix') format('embedded-opentype'),
+         url(font/'kelson_sans_bold.woff') format('woff'),
+         url(font/'kelson_sans_bold.ttf') format('truetype'),
+         url(font/'kelson_sans_bold.svg#kelson_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h1,
+.h1 {
+  font-family: 'kelson_sansbold', Helvetica, Arial, sans-serif;
+}
+
+body {
+  padding-bottom: 40px;
+  color: #000;
+}
+
+.billboard-postitem {
+  padding-top: 40px;
+  border-bottom: solid #ccc 1px;
+}
+
+.billboard {
+  height: 720px;
+  width: auto;
+  margin-bottom: 30px;
+  background-image: none;
+  background-repeat: no-repeat; 
+}
+
+/* BOTTOM CONTENT */
+
+.container-profile {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 100px;
+  margin-top: 100px;
+  text-align: center;
+}
+
+
+
