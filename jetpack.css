@@ -1,21 +1,6 @@
 /*!
  * MORE STYLES */
 
-@font-face {
-    font-family: 'kelson_sansbold';
-    src: url(font/'kelson_sans_bold.eot');
-    src: url(font/'kelson_sans_bold.eot?#iefix') format('embedded-opentype'),
-         url(font/'kelson_sans_bold.woff') format('woff'),
-         url(font/'kelson_sans_bold.ttf') format('truetype'),
-         url(font/'kelson_sans_bold.svg#kelson_sansbold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-/*!
- * Ain't got no time for cragly fonts */
-
 html, html a {
     -webkit-font-smoothing: antialiased;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
@@ -23,7 +8,7 @@ html, html a {
 
 h1,
 .h1 {
-  font-family: 'kelson_sansbold', Helvetica, Arial, sans-serif;
+  font-family: 'Helvetica-Neue', Helvetica, Arial, sans-serif;
 }
 
 body {
