@@ -1,0 +1,86 @@
+---
+# main (Sass)
+---
+@charset "utf-8";
+
+
+/********** SET BASE VARIABLES **********/
+
+
+$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serif-font-family:  "Merriweather", Georgia, serif;
+$mono-font-family:   "Inconsolata", Consolas, monospace;
+
+
+$base-font-size:    14px;
+$base-line-height:  1.428;
+$small-font-size:	$base-font-size * .85;
+$big-font-size:		$base-font-size * 2;
+
+$text-color:        #363946;
+$background-color:  #fff;
+
+$brand-color:           #FF0038;
+$maraschino:            #FF0038;
+$coconut-milk:          #FEFEFE;
+$mercury-gray:          #F5F5F5;
+$steel-gray:            #798496;
+$tungsten-gray:         #363946;
+$light-blue:            #BBDEF0;
+$sky-blue:              #4596ff;
+$aqua-ocean:            #12E3DB;
+$seafoam-green:         #21D19F;
+$teal:                  #00A6A6;
+$light-green:           #81F499;
+$minty-green:           #99E1D9;
+$candy-banana:          #FFFF31;
+$canary-yellow:         #EFCA08;
+$tangerine:             #F49F0A;
+$orange:                #F08700;
+
+
+$deep-space:	    #231f29;
+$milky-way:         #BBDEF0;
+$star-dust:		    #798496;
+$space-gas:		    #363946;
+
+$gray:       		#798496;
+$gray-light: 		lighten($gray, 40%);
+$gray-dark:  		darken($gray, 25%);
+
+$font-thin: 		100;
+$font-light:		300;
+$font-normal: 		400;
+$font-semibold: 	500;
+$font-bold: 		700;
+
+$h1-font-size: 	36px; 	
+$h2-font-size:	30px;
+$h3-font-size: 	24px;
+$h4-font-size:	18px;
+$h5-font-size:	14px;
+$h6-font-size:	12px;
+
+$spacing-unit:     30px;
+$content-width:    960px;
+$on-laptop:        700px;
+$on-palm:          600px;
+
+
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+
+
+/********** IMPORT SASS **********/
+
+@import
+        "base",
+        "chrome",
+        "pages",
+        "syntax-highlighting",
+        "tables"
+;

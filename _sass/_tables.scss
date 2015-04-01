@@ -1,0 +1,128 @@
+
+.column-heading {
+  font-size: $base-font-size;
+  font-weight: $font-light;
+}
+
+.row-heading {
+  font-size: $h5-font-size;
+  font-weight: $font-semibold;
+
+   @media screen and (max-width: $on-palm) {
+      font-size: $h6-font-size;
+      font-weight: $font-bold;
+   }
+}
+
+.muted-text {
+  font-size: $base-font-size;
+  font-weight: $font-light;
+  color: lighten($tungsten-gray, 25%);
+
+  @media screen and (max-width: $on-palm) {
+      font-size: $h6-font-size;
+      font-weight: $font-normal;
+   }
+}
+
+/****** BASIC TABLE STYLES ******/
+
+table {
+  background-color: #fff;
+}
+
+caption {
+  padding-top: $spacing-unit;
+  padding-bottom: $spacing-unit;
+  color: $text-color;
+  text-align: left;
+}
+
+th {
+  text-align: left;
+}
+
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: $spacing-unit;
+
+  thead,
+  tbody,
+  tfoot {
+    tr {
+      th,
+      td {
+        padding-top: $spacing-unit;
+        padding-bottom: $spacing-unit;
+        line-height: $base-line-height;
+        vertical-align: top;
+        border: 0;
+        width: 25%;
+      }
+    }
+  }
+
+  tbody tr td ul {
+    margin: 0;
+  }
+ 
+  thead tr th {
+    vertical-align: bottom;
+    border-bottom: 1px solid $gray;
+    padding-bottom: 0;
+  }
+
+  thead tfoot tbody tr td.active,
+  thead tfoot tbody tr th.active {
+    background-color: $gray-light;
+  }
+
+  thead tfoot tbody tr.active td,
+  thead tfoot tbody tr.active th {
+    background-color: $gray-light;
+  }
+
+  .table {
+    background-color: $background-color;
+  }
+}
+
+.table-striped {
+  tbody 
+  tr:nth-of-type(odd) {
+    background-color: $gray-light;
+  }
+}
+
+.table-hover {
+  tbody tr:hover {
+    background-color: $minty-green;
+  }
+
+  tbody tr td.active:hover,
+  tbody tr th.active:hover,
+  tbody tr.active:hover td,
+  tbody tr:hover .active,
+  tbody tr.active:hover th {
+    background-color: $minty-green;
+  }
+}
+
+table col[class*="col-"] {
+  position: static;
+  float: none;
+  display: table-column;
+}
+
+table {
+  td,
+  th {
+      &[class*="col-"] {
+      position: static; 
+      float: none;
+      display: table-cell;
+    }
+  }
+}
+

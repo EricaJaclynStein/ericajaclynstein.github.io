@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Material Design Guidelines",
+        "url": "http://www.google.com/design/spec/material-design/introduction.html#"
+        },
+    {
+        "name": "Android App Documentation",
+        "url": "http://www.google.com/design/spec/material-design/introduction.html#"
+        },
+    {
+        "name": "Google Glass Guidelines",
+        "url": "https://developers.google.com/glass/develop/overview"
+        },
+    {
+        "name": "Polymer Guidelines",
+        "url": "https://www.polymer-project.org/0.5/docs/elements/material.html"
+        },
+    {
+        "name": "Material Icons",
+        "url": "http://materialdesignicons.com/"
+        },
+    {
+        "name": "Material Palette",
+        "url": "http://www.materialpalette.com/blue/lime"
+        },
+    {
+        "name": "Angular.js Documentation",
+        "url": "https://material.angularjs.org/#/"
+        }
+]

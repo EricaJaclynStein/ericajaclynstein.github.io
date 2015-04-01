@@ -1,0 +1,26 @@
+[
+    {
+        "name": "iOS Human Interface Guidelines",
+        "url": "https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/index.html"
+        },
+    {
+        "name": "Apple Watch Human Interface Guidelines",
+        "url": "https://developer.apple.com/library/prerelease/ios/documentation/UserExperience/Conceptual/WatchHumanInterfaceGuidelines/index.html#//apple_ref/doc/uid/TP40014992-CH3-SW1"
+        },
+    {
+        "name": "UIKit User Interface Catalog",
+        "url": "https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/UIKitUICatalog/"
+        },
+    {
+        "name": "OS X Human Interface Guidelines",
+        "url": "https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/"
+        },
+    {
+        "name": "Safari Image Optimization",
+        "url": "https://developer.apple.com/library/safari/documentation/NetworkingInternet/Conceptual/SafariImageDeliveryBestPractices/Introduction/Introduction.html"
+        },
+    {
+        "name": "Accessibility Documentation",
+        "url": "https://developer.apple.com/accessibility/"
+        }
+]

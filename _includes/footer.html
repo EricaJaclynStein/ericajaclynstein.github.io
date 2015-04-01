@@ -1,0 +1,46 @@
+<footer class="site-footer">
+  <div class="footer-wrapper">
+    <div class="footer-col">
+      <p class="footer-credits">Designed and built by 
+        <a href="http://www.sketchappsources.com/blog/post/erica-jaclyn-stein" target="blank">
+        {{ site.author }} </a>using
+        <a href="http://jekyllrb.com/" target="blank">jekyll</a> + 
+        <a href="http://getbootstrap.com/" target="blank">Bootstrap</a>
+      </p>
+
+      <div class="social-list">
+        <ul>
+          {% if site.twitter %}
+            <li>
+              <a class="btn-xs btn-secondary" href="{{ site.twitter }}" target="blank"> 
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+          {% endif %}
+          {% if site.medium %}
+            <li>
+              <a class="btn-xs btn-secondary" href="{{ site.medium }}" target="blank"> 
+                <i class="fa fa-medium"></i>
+              </a>
+            </li>
+          {% endif %}
+          {% if site.github %}
+            <li>
+              <a class="btn-xs btn-secondary" href="{{ site.github }}" target="blank"> 
+                <i class="fa fa-github"></i>
+              </a>
+            </li>
+          {% endif %}
+          {% if site.dribbble %}
+            <li>
+              <a class="btn-xs btn-secondary" href="{{ site.dribbble }}" target="blank"> 
+                <i class="fa fa-dribbble"></i>
+              </a>
+            </li>
+          {% endif %}
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</footer>

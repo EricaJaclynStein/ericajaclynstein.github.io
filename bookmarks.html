@@ -1,0 +1,43 @@
+---
+layout: page
+title: Bookmarks
+permalink: /bookmarks/
+---
+
+<table class="table space">
+    <tbody>
+      <tr>
+        <td>
+          <ul>
+            <p>Favorite Reads</p> 
+             {% for bookmark in site.data.bookmarks %}
+            <li>
+              <a class="btn-link" href="{{ bookmark.url }}" target="blank"> 
+                {{ bookmark.name }}</a>
+            </li>
+            {% endfor %}
+          </ul>
+          <ul>
+            <p>Sketch Toolbox</p>
+            {% for toolbox in site.data.toolbox %}
+            <li>
+              <a class="btn-link" href="{{ toolbox.url }}" target="blank"> 
+                {{ toolbox.name }}</a>
+            </li>
+            {% endfor %}
+          </ul>
+          <ul>
+            <p>Design Nicities</p>
+            {% for nicities in site.data.nicities %}
+            <li>
+              <a class="btn-link" href="{{ nicities.url }}" target="blank"> 
+                {{ nicities.name }}</a>
+            </li>
+            {% endfor %}
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+</table>
+
+<p>I wish craziness and foolishness and madness upon you. – Ray Bradbury</p>

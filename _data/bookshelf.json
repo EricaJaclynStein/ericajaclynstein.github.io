@@ -1,0 +1,27 @@
+[
+    {
+        "name": "The Interaction of Color", 
+        "author": "Joseph Albers",
+        "url": "http://www.amazon.com/Interaction-Color-Revised-Josef-Albers/dp/0300018460" 
+        },
+    {
+        "name": "Envisioning Information",
+        "author": "Edward Tufte",
+        "url": "http://www.amazon.com/Envisioning-Information-Edward-R-Tufte/dp/0961392118"
+        },
+    {
+        "name": "Grid Systems in Graphic Design",
+        "author": "Josef Müller Brockman",
+        "url": "http://www.amazon.com/Systems-Graphic-Systeme-Visuele-Gestaltung/dp/3721201450"
+        },
+    {
+        "name": "The Hero with a Thousand Faces",
+        "author": "Joseph Campbell",
+        "url": "http://www.amazon.com/Thousand-Faces-Collected-Joseph-Campbell/dp/1577315936"
+        },
+    {
+        "name": "Universal Principles of Design",
+         "author": "W. Lidwell, et al.",
+        "url": "http://www.amazon.com/Universal-Principles-Design-William-Lidwell/dp/1592530079"
+        }
+]
