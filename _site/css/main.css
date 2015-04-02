@@ -640,8 +640,12 @@ table {
   background-color: #fff;
   width: 100%;
   max-width: 100%;
-  margin-bottom: 60px;
-  padding: 60px; }
+  margin-bottom: 30px;
+  padding-left: 60px;
+  padding-right: 60px; }
+  @media screen and (max-width: 600px) {
+    .table {
+      padding: 0px; } }
   .table thead tr {
     margin: 0; }
   .table thead th {
