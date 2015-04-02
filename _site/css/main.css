@@ -622,75 +622,68 @@ pre {
   .highlight .il {
     color: #099; }
 
+/********** CUSTOM STYLES **********/
 .column-heading {
   font-size: 14px;
-  font-weight: 300; }
-
-.row-heading {
-  font-size: 14px;
   font-weight: 500; }
-  @media screen and (max-width: 600px) {
-    .row-heading {
-      font-size: 12px;
-      font-weight: 700; } }
 
-.muted-text {
+.caption {
   font-size: 14px;
   font-weight: 300;
-  color: #6e748e; }
-  @media screen and (max-width: 600px) {
-    .muted-text {
-      font-size: 12px;
-      font-weight: 400; } }
+  color: #363946; }
 
-/****** BASIC TABLE STYLES ******/
+/********** BASIC TABLE **********/
 table {
   background-color: #fff; }
 
-caption {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  color: #363946;
-  text-align: left; }
-
-th {
-  text-align: left; }
-
 .table {
+  background-color: #fff;
   width: 100%;
   max-width: 100%;
-  margin-bottom: 30px; }
-  .table thead tr th,
-  .table thead tr td,
-  .table tbody tr th,
-  .table tbody tr td,
-  .table tfoot tr th,
-  .table tfoot tr td {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    line-height: 1.428;
-    vertical-align: top;
-    border: 0;
-    width: 25%; }
-  .table tbody tr td ul {
+  margin-bottom: 60px;
+  padding: 60px; }
+  .table thead tr {
     margin: 0; }
-  .table thead tr th {
-    vertical-align: bottom;
-    border-bottom: 1px solid #798496;
-    padding-bottom: 0; }
-  .table thead tfoot tbody tr td.active,
-  .table thead tfoot tbody tr th.active {
-    background-color: #ebedf0; }
-  .table thead tfoot tbody tr.active td,
-  .table thead tfoot tbody tr.active th {
-    background-color: #ebedf0; }
+  .table thead th {
+    padding-bottom: 30px;
+    text-align: left;
+    vertical-align: bottom; }
+  .table tfoot tr {
+    margin: 0; }
+  .table tfoot th {
+    padding-top: 30px;
+    text-align: left;
+    vertical-align: top; }
+  .table tbody tr {
+    text-align: left;
+    vertical-align: top; }
+  .table tbody td {
+    padding-bottom: 15px;
+    text-align: left;
+    vertical-align: top;
+    width: 25%; }
+    .table tbody td ul {
+      margin-left: 0; }
+    .table tbody td ul li {
+      font-size: 14px;
+      font-weight: 400;
+      color: #363946; }
+      .table tbody td ul li .row-heading {
+        font-size: 14px;
+        font-weight: 500; }
+      @media screen and (max-width: 600px) {
+        .table tbody td ul li {
+          font-size: 12px;
+          font-weight: 400; } }
   .table .table {
     background-color: #fff; }
 
+/********** STRIPED TABLE **********/
 .table-striped tbody
 tr:nth-of-type(odd) {
   background-color: #ebedf0; }
 
+/********** HOVER EFFECT **********/
 .table-hover tbody tr:hover {
   background-color: #99E1D9; }
 .table-hover tbody tr td.active:hover,
