@@ -105,7 +105,7 @@ table {
 .table-striped {
   tbody 
   tr:nth-of-type(odd) {
-    background-color: $gray-light;
+    background-color: $mercury-gray;
   }
 }
 
@@ -115,7 +115,7 @@ table {
 
 .table-hover {
   tbody tr:hover {
-    background-color: $minty-green;
+    background-color: $mercury-gray;
   }
 
   tbody tr td.active:hover,
@@ -123,7 +123,7 @@ table {
   tbody tr.active:hover td,
   tbody tr:hover .active,
   tbody tr.active:hover th {
-    background-color: $minty-green;
+    background-color: $mercury-gray;
   }
 }
 

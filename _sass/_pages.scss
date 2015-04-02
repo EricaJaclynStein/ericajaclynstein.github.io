@@ -6,19 +6,30 @@
 }
 
 .page-header {
-    background-color: transparent;
-    font-weight: bold;
+    font-size: $h1-font-size;
+    font-weight: $font-bold;
     text-align: center;
     margin-bottom: $spacing-unit;
 
     a {
         color: $maraschino;
     }
+
+    @include media-query($on-palm) {
+        text-align: center;
+        font-size: $h4-font-size;
+    }
 }
 
 .page-lead {
-    background-color: $background-color;
     text-align: center;
+    font-size: $h3-font-size;
+    font-weight: $font-light;
+
+    @include media-query($on-palm) {
+        text-align: center;
+        font-size: $base-font-size;
+    }
 }
 
 .page-subheader {
@@ -48,7 +59,7 @@
 }
 
 .home-heading {
-    color: $gray;
+    color: lighten($tungsten-gray, 25%);
     font-size: $h3-font-size;
     font-weight: $font-light;
     text-align: center;
@@ -216,7 +227,7 @@
     }
 
     blockquote {
-        color: $gray;
+        color: $tungsten-gray;
         font-size: $h2-font-size;
         font-style: italic;
         font-weight: $font-light;

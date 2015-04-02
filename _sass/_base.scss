@@ -13,7 +13,7 @@ body {
     font-size: $base-font-size;
     line-height: $base-line-height;
     font-weight: $font-normal;
-    color: $text-color;
+    color: $tungsten-gray;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
 }
@@ -55,15 +55,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-    color: $space-gas;
+    color: $tungsten-gray;
     text-decoration: none;
 
     &:visited {
-        color: darken($star-dust, 15%);
+        color: lighten($tungsten-gray, 10%);
     }
 
     &:hover {
-        color: $star-dust;
+        color: lighten($tungsten-gray, 25%);
         text-decoration: none;
     }
 }
@@ -71,7 +71,7 @@ a {
 pre,
 code {
     font-size: 15px;
-    border: 1px solid $gray-light;
+    border: 1px solid $mercury-gray;
     border-radius: 3px;
     background-color: #eef;
 }
@@ -141,7 +141,7 @@ pre {
         vertical-align: middle;
 
         path {
-            fill: $gray;
+            fill: lighten($tungsten-gray, 10%);
         }
     }
 }
