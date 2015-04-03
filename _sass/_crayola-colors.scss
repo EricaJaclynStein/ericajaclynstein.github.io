@@ -1,19 +1,22 @@
 
 /********** CRAYOLA COLORS PROJECT STYLES **********/
 
-/*
-.brand-tile {
-    min-height: 10px;
-    padding: 10px;
-    margin-bottom: 0px;
-    border-radius: 2px;
+.color-well {
+  min-height: 15px;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: $mercury-gray;
+  border: 1px solid $mercury-gray;
+  border-radius: 2px;
 
-    .label {
-        color: $tungsten-gray;
-        font-weight: $font-light;
-        text-transform: uppercase;
-    }
+  .label {
+    color: $tungsten-gray;
+    font-weight: $font-normal;
+    text-transform: uppercase;
+  }
 }
+
+/*
 
 .maraschino {
   background-color: $maraschino;
