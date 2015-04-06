@@ -1,0 +1,90 @@
+
+<!-- Crayola Colors as particles -->
+
+  <div class="color-chart">
+    <script type="text/javascript">
+
+      var w = 1200;
+      var h = 400;
+
+      var dataset = {
+        nodes: [
+          { name: "Acid Green", "group":1, hex: "#B0BF1A" },
+          { name: "Aero", "group":2, hex: "#7CB9E8" },
+          { name: "Aero Blue", "group":3, hex: "#C9FFE5" },
+          { name: "African Violet", "group":4, hex: "#B284BE" },
+          { name: "Air Force Blue (RAF)", "group":5, hex: "#5D8AA8" },
+          { name: "Air Force Blue (USAF)", "group": 6, hex: "#00308F" },
+          { name: "Air Superiority Blue", "group": 7, hex: "#72A0C1" },
+          { name: "Alabama Crimson", "group": 8, hex: "#AF002A" },
+          { name: "Alice Blue", "group": 9, hex: "#F0F8FF" },
+          { name: "Alizarin Crimson", "group": 10, hex: "#E32636" }
+        ],
+        links: [
+          { source: 0, target: 1, value: 1 },
+          { source: 0, target: 2, value: 2 },
+          { source: 0, target: 3, value: 3 },
+          { source: 0, target: 4, value: 4 },
+          { source: 1, target: 5, value: 5 },
+          { source: 2, target: 5, value: 6 },
+          { source: 2, target: 5, value: 7 },
+          { source: 3, target: 4, value: 8 },
+          { source: 5, target: 8, value: 9 },
+          { source: 5, target: 9, value: 10 },
+          { source: 6, target: 7, value: 11 },
+          { source: 7, target: 8, value: 12 },
+          { source: 8, target: 9, value: 13 }
+        ]
+      };
+
+      //Initialize THE FORCE!
+      var force = d3.layout.force()
+            .nodes(dataset.nodes)
+            .links(dataset.links)
+            .size([w, h])
+            .linkDistance([100])    // Distance from node to node
+            .charge([-100])         // negative = repulsion
+            .gravity(0.1)           // Reality 
+            .start();
+
+      var colors = d3.scale.category20();
+
+      //Create SVG element
+      var svg = d3.select("body")
+            .append("svg")
+            .attr("width", w)
+            .attr("height", h);
+      
+      //Make EDGES lines
+      var links = svg.selectAll("line")
+        .data(dataset.links)
+        .enter()
+        .append("line")
+        .style("stroke", "#798496")
+        .style("stroke-width", 1);
+      
+      //Make NODES circles
+      var nodes = svg.selectAll("circle")
+        .data(dataset.nodes)
+        .enter()
+        .append("circle")
+        .attr("r", 10)
+        .style("fill", function(d, i) {
+          return colors(i);
+        })
+        .call(force.drag);
+      
+      force.on("tick", function() {
+
+        links.attr("x1", function(d) { return d.source.x; })
+           .attr("y1", function(d) { return d.source.y; })
+           .attr("x2", function(d) { return d.target.x; })
+           .attr("y2", function(d) { return d.target.y; });
+      
+        nodes.attr("cx", function(d) { return d.x; })
+           .attr("cy", function(d) { return d.y; });
+      });
+  
+     </script>
+  </div>
+
