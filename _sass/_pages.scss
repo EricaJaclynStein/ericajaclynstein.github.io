@@ -250,6 +250,15 @@
         }
     }
 
+    .tip {
+        background-color: $mercury-gray;
+        border: 1px solid $mercury-gray;
+        border-radius: 3px;
+        text-align: left;
+        padding: 15px 15px;
+        
+    }
+
     .fa {
         line-height: $base-line-height;
         top: 1px;

@@ -1091,6 +1091,12 @@ pre {
       font-size: 80%;
       line-height: 1.428;
       color: #6e748e; }
+  .post-content .tip {
+    background-color: #F5F5F5;
+    border: 1px solid #F5F5F5;
+    border-radius: 3px;
+    text-align: left;
+    padding: 15px 15px; }
   .post-content .fa {
     line-height: 1.428;
     top: 1px;
