@@ -7,61 +7,91 @@ tags: [design]
 ---
 ###### NN/g Usability Week • [Hoa Loranger] 
 
-## We can begin to know how our users think by first understanding how people behave.
+We can begin to know how our users think by first understanding how people behave. How do we explain behaviors we don't expect? Can we use behavioral patterns seen in the past to explain new behaviors and expand them to a broader audience? The truth is out there. If you takeaway just one thing, one memorable piece of information from this reading, let it be this:
 
-How do we explain behaviors we don't expect? Can we use behavioral patterns seen in the past to explain new behaviors and expand them to a broader audience? The truth is out there. 
+> "A great designer understands human capabilities and limitations, and can anticipate 
+> both of them. People will by nature create their own paths." 
+> 
+> – Hoa Loranger
 
-Foundations of the different psychological schools of thought. How do we take in, store, and use information, and how do we use this information to affect our decision making? Usability is directly related to the behavioral and emotional and biological levels of the human mind. 
 
-There is a human tendency to believe that people around us will make the same decisions we would. This is referred to as the **"False Consensus Effect"**. Basic humanistic expressions. A tendency to assume that other people are just like you. Elaborate and play the folding paper trick. What makes us interpret information so differently? We tend to think that we make decisions on an individualistic level, but we don't, we are very heavily influenced by social norms. 
+## Started From The Bottom Now We Here
 
-> "A great designer understands human capabilities and limitations, and can 
-> anticipate both of them. People will by nature create their own paths."
+We have to start somewhere! That somewhere is at the foundations of the different psychological schools of thought. We this foundation we can answer questions like: How do we take in, store, and use information? How do we use this information to affect our decision making? Usability is directly related to the behavioral, emotional, and biological levels of the human mind. 
 
-On the web, when people often have many different choices to choose from, people will often choose the path of least resistance. This is referred to as the **"principle of least effort"**. Usability is based in the foundations of cognitive psychology (think, B.F. Skinner).
+There's an almost innate human tendency to believe that people around us will make the same decisions we might make. This is referred to as the False Consensus Effect, and it's one of the most fundamentally basic humanistic expressions that just can't help but rear it's self indulgent head 90% of the time. Yes, it's the tendency to assume that other people are just like you. 
 
-> "We are thinking, sensing, feeling beings. We are much more complex than
-> rats and dogs"
+<div class="experiment">
+<h5>Social Experiment</h5> 
+Fold a piece of paper like so...
+</div>
 
-Take for example, the basketball passing video. This phenomenon is reffered to as **"inattentional blindness"**, or more commonly known as, selective attention. Remember, a great designer understands human capabilities and limitations. People have limited cognitive resources. This is the tendency to buffer ourselves from information overload by selectively filtering out information. What ends up happening is that we tend to sort and choose the information that supports the task at hand.
+What makes us process and interpret information so differently? Humans tend to think that we make decisions on an individualistic level, but we often don't. The truth is that we are very heavily influenced by social norms. 
 
-### Bottleneck Theory
+<div class="definition">
+<h5>Cocktail Party Effect (Cherry, 1953)</h5>
+Twitter and Facebook are the biggest Cocktail Parties of the internet today. Get with it. This effect is the tendency to focus or direct one's listening attention to only one person in the room, ignoring a full stack of other noises and conversations. 
+</div> 
 
-### Attentuation Theory 
 
-> "If the visual task is contrast, comparison, and choice––as so often, it
-> is––then, the more relevant information within eyespan, the better" 
+## Skinnerian Cognitive Psychology
+
+On the web, when people often have many different choices to choose from, they will often choose the path of least resistance. This is referred to as the Principle of Least Effort. Usability is based in the foundations of Cognitive Psychology. Personas, Behavioral Economics, Mental Models, Psychographics; these flashy terms that appear in the field of Usability and User Experience Design wouldn't have much meaning at all if not for the foundational basics of Cognitive Psychology.
+
+<div class="tip">
+<h5>Helpful Tip</h5> 
+Remember that we are complex beings. We feel, we sense, we gauge, and most importantly, we believe. We are much more complex than rats and dogs. (B.F. Skinner)
+</div>
+
+#### Inattentional Blindness ####
+
+A human phenomenon that is more commonly known as, Selective Attention. This theory states that we have a tendency to buffer ourselves from information overload by selectively filtering out information. People have selective and limited cognitive resources. When bottle necking occurs, a person will tend to sort, choose, and use only the information that supports the task at hand. There are several theories of attention in cognitive psychology, all of them very relevant to understanding how our users think. Remember, a great designer understands human capabilities and limitations. 
+
+<div class="experiment">
+<h5>Social Experiment</h5> 
+Take for example, this basketball passing video.
+</div> 
+
+<div class="definition">
+<h5>Cognitive Bottleneck Theory (CBT)</h5> 
+Otherwise known as, cognitive distraction during multitasking, states that people have a limited amount of cognitive resources with which they tend to eliminate unattended information. These constraints allow us to effectively perform one task at a time. Studies have shown that during multitasking performance suffers as task completion is slowed due to a limiting "bottleneck", or constraint (Welford, A. T., 1967). Moral of the story: We're only human.
+</div>
+
+
+So, how can we design for all of these human cognitive attributes? We can limit the noise on a website or on a mobile screen. We can employ strategic chunking of information. Think about the proximity of related information. Are we arranging information and elements in a logical order? Think about whether we are forcing the user to open content in new tabs or not. 
+
+> "If the visual task is contrast, comparison, and choice – as so often, it
+> is – then, the more relevant information within eyespan, the better"
+> 
 > – Edward Tufte, *Envisioning Informatoin p. 50*
 
-So how can we design for this? We can limit the noise on a website or on a mobile screen. We can employ strategic chunking of information. Think about the colors and lines that are being placed into the user interface. Are they meaningful? Do they add value to the information? Did you make it easier for the user to digest that information, or did you make it more difficult for them to process it? "Wait, so I now have to figure out why that's green and this is blue and there's a line in between them?" If what you're adding to the interface doesn't add communicative value, you should eliminate it. Every element requires processing. 
+How about the colors, shapes, and lines that are being placed into the user interface. Are they meaningful? Do they add value to the information being presented? Did you make it easier for the user to digest that information, or did you make it more difficult for them to process it? "Wait, so I now have to figure out why that button is green and this one here is blue? And why is there a line in between them? Which is the one I want to click?" 
 
-> "As with tones in music - so with color - dissonance is as desireable as
-> it's opposite, consonance." 
-> – Josef Albers, *The Interaction of Color, p. 69*
-
-
-A quibus tantum dissentio, ut, cum Sophocles vel optime scripserit Electram, tamen male conversam Atilii mihi legendam putem, de quo Lucilius: 'ferreum scriptorem', verum, opinor, scriptorem tamen, ut legendus sit. rudem enim esse omnino in nostris poetis aut inertissimae segnitiae est aut fastidii delicatissimi. mihi quidem nulli satis eruditi videntur, quibus nostra ignota sunt. an 'Utinam ne in nemore . . .' nihilo minus legimus quam hoc idem Graecum, quae autem de bene beateque vivendo a Platone disputata sunt, haec explicari non placebit Latine?
+<div class="tip">
+<h5>Helpful Tip</h5> 
+If what you're adding to the interface doesn't add communicative value, you should eliminate it. Remember, every element requires processing.
+</div> 
 
 
-### Goals, Context, Culture, and Experience 
-
+## Goals, Context, Culture, and Experience 
 
 Goal related factors can affect atention. Using different parts of the brain to communicate to people through a screen. Biologically, we are not hjardwaired to multitask well, even gamers who claim they're amazing at it simply aren't. This is the reality of the human mind. Tasks are completed linearly, not in perallel on the web. It is safe to generalize, and research reports, that deep processing simply does not occur on the web. 
+
+
 What's salient, depends on culture. Here's a *shocking* statistic of multitaking behind the wheel: 
+
 
 > Twenty-seven percent of teens say they sometimes change clothes and shoes
 > while driving, a study finds. They also reported that they often change
 > contact lenses, put on makeup and do homework behind the wheel.
 > 
-> "Hey, I'm not texting. Surely this is safe."
-> 
 > – [Teens Say They Change Clothes And Do Homework While Driving], via NPR
+
 
 Tabs are used to organize, compartmentalize, and soprt and order. Think: browser tabs on the web, tasks are completed linearly, we are constantly switiching attention and focus, and for good reason. People apply tabs to create order, consider them "parking details". What can be parked for now and what might potentially disrupt the story we're telling? The downside to opening content in a new tab is that people are used to doing this themselves.
 
-### Things Aren't Always As They Seem
 
-ut verterunt nostri poetae fabulas, male, credo, mererer de meis civibus, si ad eorum cognitionem divina illa ingenia transferrem. sed id neque feci adhuc nec mihi tamen, ne faciam, interdictum puto. locos quidem quosdam, si videbitur, transferam, et maxime ab iis, quos modo nominavi, cum inciderit, ut id apte fieri possit, ut ab Homero Ennius, Afranius a Menandro solet. Nec vero, ut noster Lucilius, recusabo, quo minus omnes mea legant. utinam esset ille Persius, Scipio vero et Rutilius multo etiam magis, quorum ille iudicium reformidans Tarentinis ait se et Consentinis et Siculis scribere. facete is quidem, sicut alia; sed neque tam docti tum erant, ad quorum iudicium elaboraret, et sunt illius scripta leviora, ut urbanitas summa appareat, doctrina mediocris.
+### Things Aren't Always As They Seem
 
 Context in presentation of content. The brain takes over to create perception in a meaningful way, even if it's completely at odds with reality. (Image reference: checkerboard graphic). Things aren't always as they seem.
 
@@ -92,7 +122,8 @@ There are two imporant reasons why this occurs:
 
 7 to 10% of the population has a form of color blindness. This is why it's important that we only use color for emphasis when designing, and not a visual cue. If we are using color as a visual cue, it's best to use a supplement to it. For exampole, if the primary audience is primarily male, think about how red and green are utilized within the interface. 
 
-### Innattention to Change and the Law of Proximity
+### Innattention to Change and the Law of Proximity ###
+
 #### Peripheral Vision Cannot Detect Fine Details
 
 It's safe to be warry of putting calls to actions into what might might be your user's periphery.  Heat maps measure where people are focusing on the head-on view, not the peripheral view (yet). People tend to fixate on the meat of a page and avoid headers, titles, and aidebar content. Items in the periphery on a page can easily be overlooked. This is also referred to as, "change blindness". For better or for worse, people understand that advertisements are a necessary evil in the digital realm.
@@ -157,10 +188,7 @@ The most salient advice anyone could give a designer is to write well, or hire a
 **The Stroop Effect**: Interference of conflicting information or sensory input. Make connections for people to help them comprehend and understand information. People are not generally detail oriented and are very strategic in expending energy. People are less methodicaland immersive when reading online than when reading in print. People rely on existing knowledge and prior experiences. Allow users to assimilate where new information can fit into already existingknowledge. Accommodation is an overwhelming task and decreases overall comprehension. We only have seconds from our users to get meaning across, we need to make content accessible and comprehensible. 
 
 <div class="tip">
-<b>Helpful Tip: </b> 
-
-<hr>
-
+<h5>Helpful Tip: </h5>
 Provide content section headers, headlines, and chunk out content as much as relevantly possible.
 </div>
 
@@ -169,10 +197,7 @@ Provide content section headers, headlines, and chunk out content as much as rel
 Relying on heuristics to solve problems. Heuristics is also known as "the rule of thumb" or just plain old common sense.
 
 <div class="tip">
-<b>Helpful Tip: </b> 
-
-<hr>
-
+<h5>Helpful Tip: </h5> 
 Break content and experiences into goals and subgoals. Users love being guided through their own goals and subgoals. Proplr often prefer to have a decision made for them, especially online. This type of solution only works when you fully understand your target audiencer and the problem at hand.
 </div>
 
@@ -184,15 +209,12 @@ Progressively disclosing content that might be deemed horrible distractions if c
 
 People like the perception of choice, to percieve that they are in control. But, when push comes to shove, they dont really want to do the work. Too many options can overwhelm people. After all, individuals care about different attributes. Multi-attribute decision making models tend to help with this. Take the example of searching online for apartments or a hotel. 
 
+When you are designing a user interface, always remember to consider aspects from all perspectives. From the pragmatic side of design and from the attractive side of design. To be clear, these two perspectives do not respectively relate to usability and aesthetic; they treat both equally! 
+
 <div class="tip">
-<b>Helpful Tip: </b> 
-
-<hr>
-
+<h5>Helpful Tip: </h5>
 Never write "Fill this out in 3 easy steps!" Why? Because it's entirely subjective. 
 </div>
-
-When you are designing a user interface, always remember to consider aspects from all perspectives. From the pragmatic side of design and from the attractive side of design. To be clear, these two perspectives do not respectively relate to usability and aesthetic; they treat both equally! 
 
 #### Emotion   
 
@@ -215,7 +237,9 @@ When you are designing a user interface, always remember to consider aspects fro
 
 
 
+Citations
 
+Welford, A. T. (1967). Single-channel operation in the brain. Acta Psychologica, 27, 5– 22.
 
 
 
