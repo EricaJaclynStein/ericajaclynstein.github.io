@@ -1,8 +1,11 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,400italic|Libre+Baskerville:400,400italic);
+
+
 .post-content {
     margin-bottom: $spacing-unit * 4;
 
     p {
-        font-family: $serif-font-family;
+        font-family: 'Libre Baskerville', serif;
         font-size: 18px;
         font-weight: $font-normal;
         line-height: 1.8;

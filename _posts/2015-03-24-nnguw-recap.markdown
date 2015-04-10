@@ -21,6 +21,8 @@ We have to start somewhere! That somewhere is at the foundations of the differen
 
 There's an almost innate human tendency to believe that people around us will make the same decisions we might make. This is referred to as the False Consensus Effect, and it's one of the most fundamentally basic humanistic expressions that just can't help but rear it's self indulgent head 90% of the time. Yes, it's the tendency to assume that other people are just like you. 
 
+Just like the royal "we", great UX designers use the royal "our" or "their" when speaking about users and audiences. Why? Ah, this is because design is for many, not for "I", "you", "him" or "her".
+
 <div class="experiment">
 <h5>Social Experiment</h5> 
 Fold a piece of paper like so...
@@ -58,7 +60,7 @@ Otherwise known as, cognitive distraction during multitasking, states that peopl
 </div>
 
 
-So, how can we design for all of these human cognitive attributes? We can limit the noise on a website or on a mobile screen. We can employ strategic chunking of information. Think about the proximity of related information. Are we arranging information and elements in a logical order? Think about whether we are forcing the user to open content in new tabs or not. 
+So, how can we design for all of these definitively human traits? We can limit the noise within the UI, also known as, KISS (keep it simple, silly). We can prioritize and categorize related information, otherwise known as, chunking. Think Gestaltian, consider the proximity of related information, create hierachy, communicate importance. Manage relationships between content like an author would do with the characters in a book. Are we arranging information and elements in a logical order for our users? Think about whether we are forcing the user to open content in new tabs or not. 
 
 > "If the visual task is contrast, comparison, and choice – as so often, it
 > is – then, the more relevant information within eyespan, the better"

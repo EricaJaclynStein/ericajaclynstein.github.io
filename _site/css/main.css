@@ -1,6 +1,7 @@
 /********** SET BASE VARIABLES **********/
 /********** IMPORT SASS **********/
 /********** BASICS **********/
+@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,400italic|Libre+Baskerville:400,400italic);
 body, h1, h2, h3, h4, h5, h6,
 p, pre, hr,
 dl, dd, ol, ul, figure {
@@ -1060,7 +1061,7 @@ pre {
 .post-content {
   margin-bottom: 120px; }
   .post-content p {
-    font-family: "Merriweather", Georgia, serif;
+    font-family: 'Libre Baskerville', serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 1.8;
