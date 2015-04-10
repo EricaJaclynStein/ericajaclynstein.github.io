@@ -1030,7 +1030,7 @@ pre {
   text-align: center; }
 
 .post-excerpt {
-  font-family: "Merriweather", Georgia, serif;
+  font-family: 'Libre Baskerville', Georgia, serif;
   font-size: 14px;
   font-weight: 400; }
 
@@ -1061,13 +1061,13 @@ pre {
 .post-content {
   margin-bottom: 120px; }
   .post-content p {
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Libre Baskerville', Georgia, serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 1.8;
-    margin-bottom: 15px; }
+    margin-bottom: 30px; }
   .post-content ol li {
-    font-family: "Merriweather", Georgia, serif;
+    font-family: 'Libre Baskerville', Georgia, serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 1.8;
@@ -1092,41 +1092,89 @@ pre {
       font-size: 80%;
       line-height: 1.428;
       color: #6e748e; }
+  .post-content .separator {
+    border: 0;
+    border-top: 5px solid transparent;
+    -moz-border-image: -moz-linear-gradient(left, #10cbc4 0%, #3a4ed5 100%);
+    -webkit-border-image: -webkit-linear-gradient(left, #10cbc4 0%, #3a4ed5 100%);
+    border-image: linear-gradient(to right, #10cbc4 0%, #7442C8 40%, transparent 65%, transparent 75%, transparent 85%);
+    border-image-slice: 1;
+    padding-top: 10px; }
+    .post-content .separator .separator-animated {
+      background-image: linear-gradient(135deg, #3acfd5, #3a4ed5, #3acfd5, #3a4ed5);
+      background-size: 300%;
+      background-repeat: repeat;
+      height: 0; }
+      .post-content .separator .separator-animated:hover {
+        transition: all 1s linear;
+        background-position: 100% 100%; }
   .post-content .tip {
-    background-color: #F5F5F5;
-    border: 1px solid #F5F5F5;
-    border-radius: 5px;
-    color: #363946;
+    color: #575c71;
+    font-family: "Inconsolata", Consolas, monospace;
+    margin: 30px;
+    padding: 30px;
     font-size: 14px;
     line-height: 1.428;
-    margin: 60px;
-    text-align: left;
-    padding: 15px; }
+    text-align: left; }
+    .post-content .tip article {
+      margin-top: 15px; }
+    .post-content .tip a {
+      font-weight: 700; }
+      .post-content .tip a:hover {
+        color: #6e748e; }
     .post-content .tip h5 {
-      color: #FF0038; }
+      color: #363946; }
   .post-content .definition {
-    border-left: 5px solid #FF0038;
-    color: #363946;
+    color: #575c71;
+    font-family: "Inconsolata", Consolas, monospace;
+    margin: 30px;
+    padding: 30px;
     font-size: 14px;
     line-height: 1.428;
-    margin: 60px;
-    text-align: left;
-    padding-left: 15px;
-    padding-right: 15px; }
+    text-align: left; }
+    .post-content .definition article {
+      margin-top: 15px; }
+    .post-content .definition a {
+      font-weight: 700; }
+      .post-content .definition a:hover {
+        color: #6e748e; }
     .post-content .definition h5 {
-      color: #FF0038; }
+      color: #363946; }
   .post-content .experiment {
-    background-color: #363946;
-    border: 1px solid #363946;
-    border-radius: 5px;
-    color: #F5F5F5;
+    color: #575c71;
+    font-family: "Inconsolata", Consolas, monospace;
+    margin: 30px;
+    padding: 30px;
     font-size: 14px;
     line-height: 1.428;
-    margin: 60px;
-    text-align: left;
-    padding: 15px; }
+    text-align: left; }
+    .post-content .experiment article {
+      margin-top: 15px; }
+    .post-content .experiment a {
+      font-weight: 700; }
+      .post-content .experiment a:hover {
+        color: #6e748e; }
     .post-content .experiment h5 {
-      color: #12E3DB; }
+      color: #FF0038; }
+  .post-content .callout-red {
+    background-color: #F5F5F5;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: #363946;
+    font-family: "Inconsolata", Consolas, monospace;
+    margin: 30px;
+    padding: 30px;
+    font-size: 14px;
+    line-height: 1.428;
+    text-align: left; }
+    .post-content .callout-red article {
+      margin-top: 15px; }
+    .post-content .callout-red a {
+      font-weight: 700; }
+      .post-content .callout-red a:hover {
+        color: #6e748e; }
+    .post-content .callout-red h5 {
+      color: #FF0038; }
   .post-content h1 {
     font-size: 36px;
     letter-spacing: -1;
@@ -1143,7 +1191,7 @@ pre {
     font-weight: 700;
     letter-spacing: -1;
     margin-bottom: 30px;
-    margin-top: 60px;
+    margin-top: 90px;
     text-align: center;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; }
@@ -1154,7 +1202,7 @@ pre {
     font-size: 24px;
     margin-bottom: 30px;
     margin-top: 60px;
-    text-align: left;
+    text-align: center;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; }
     @media screen and (max-width: 700px) {

@@ -21,18 +21,19 @@ We have to start somewhere! That somewhere is at the foundations of the differen
 
 There's an almost innate human tendency to believe that people around us will make the same decisions we might make. This is referred to as the False Consensus Effect, and it's one of the most fundamentally basic humanistic expressions that just can't help but rear it's self indulgent head 90% of the time. Yes, it's the tendency to assume that other people are just like you. 
 
-Just like the royal "we", great UX designers use the royal "our" or "their" when speaking about users and audiences. Why? Ah, this is because design is for many, not for "I", "you", "him" or "her".
-
 <div class="experiment">
-<h5>Social Experiment</h5> 
+<h5><i class="fa fa-flask"></i> Social Experiment</h5> 
 Fold a piece of paper like so...
 </div>
 
 What makes us process and interpret information so differently? Humans tend to think that we make decisions on an individualistic level, but we often don't. The truth is that we are very heavily influenced by social norms. 
 
 <div class="definition">
-<h5>Cocktail Party Effect (Cherry, 1953)</h5>
-Twitter and Facebook are the biggest Cocktail Parties of the internet today. Get with it. This effect is the tendency to focus or direct one's listening attention to only one person in the room, ignoring a full stack of other noises and conversations. 
+<div class="separator"></div>
+  <h5>The Cocktail Party Effect (Cherry, 1953):</h5>
+      <article>
+        This effect is the tendency to focus or direct one's listening attention to only one person in the room, ignoring a full stack of other noises and conversations. Twitter and Facebook are the biggest Cocktail Parties of this generation.
+      </article>
 </div> 
 
 
@@ -41,22 +42,27 @@ Twitter and Facebook are the biggest Cocktail Parties of the internet today. Get
 On the web, when people often have many different choices to choose from, they will often choose the path of least resistance. This is referred to as the Principle of Least Effort. Usability is based in the foundations of Cognitive Psychology. Personas, Behavioral Economics, Mental Models, Psychographics; these flashy terms that appear in the field of Usability and User Experience Design wouldn't have much meaning at all if not for the foundational basics of Cognitive Psychology.
 
 <div class="tip">
-<h5>Helpful Tip</h5> 
-Remember that we are complex beings. We feel, we sense, we gauge, and most importantly, we believe. We are much more complex than rats and dogs. (B.F. Skinner)
+  <div class="separator separator-animated"></div>
+    <h5>Helpful Tip</h5>
+      Remember that we are complex beings. We feel, we sense, we gauge, and most importantly, we believe. We are much more complex than rats and dogs. (B.F. Skinner)
 </div>
 
-#### Inattentional Blindness ####
-
-A human phenomenon that is more commonly known as, Selective Attention. This theory states that we have a tendency to buffer ourselves from information overload by selectively filtering out information. People have selective and limited cognitive resources. When bottle necking occurs, a person will tend to sort, choose, and use only the information that supports the task at hand. There are several theories of attention in cognitive psychology, all of them very relevant to understanding how our users think. Remember, a great designer understands human capabilities and limitations. 
+Inattentional Blindness, a human phenomenon that is more commonly known as, Selective Attention, states that we have a tendency to buffer ourselves from information overload via selective filtering. People have selective and limited cognitive resources. When bottle necking occurs, a person will tend to sort, choose, and use only the information that supports the task at hand. There are several theories of attention in cognitive psychology, all of them very relevant to understanding how our users think. Remember, a great designer understands human capabilities and limitations. 
 
 <div class="experiment">
-<h5>Social Experiment</h5> 
-Take for example, this basketball passing video.
+  <h5><i class="fa fa-flask"></i> Social Experiment</h5>
+    View the video, <a href="YouTube video https://www.youtube.com/watch?v=vJG698U2Mvo">Selective Attention Test</a> by Danial Simons.
+
+    You can learn more about this awesome social experiment by visiting Dan Simon's <a href="https://www.youtube.com/user/profsimons">YouTube channel</a> or <a href="http://www.dansimons.com/videos.html">his website</a>
 </div> 
 
 <div class="definition">
+<div class="separator"></div>
 <h5>Cognitive Bottleneck Theory (CBT)</h5> 
-Otherwise known as, cognitive distraction during multitasking, states that people have a limited amount of cognitive resources with which they tend to eliminate unattended information. These constraints allow us to effectively perform one task at a time. Studies have shown that during multitasking performance suffers as task completion is slowed due to a limiting "bottleneck", or constraint (Welford, A. T., 1967). Moral of the story: We're only human.
+  <article>
+    Otherwise known as, cognitive distraction during multitasking, states that people have a limited amount of cognitive resources with which they tend to eliminate unattended information. These constraints allow us to effectively perform one task at a time. Studies have shown that during multitasking performance suffers as task completion is slowed due to a limiting "bottleneck", or constraint (Welford, A. T., 1967). 
+    </article>
+    Moral of the story: We're only humann
 </div>
 
 
@@ -70,12 +76,13 @@ So, how can we design for all of these definitively human traits? We can limit t
 How about the colors, shapes, and lines that are being placed into the user interface. Are they meaningful? Do they add value to the information being presented? Did you make it easier for the user to digest that information, or did you make it more difficult for them to process it? "Wait, so I now have to figure out why that button is green and this one here is blue? And why is there a line in between them? Which is the one I want to click?" 
 
 <div class="tip">
-<h5>Helpful Tip</h5> 
-If what you're adding to the interface doesn't add communicative value, you should eliminate it. Remember, every element requires processing.
+<div class="separator"></div>
+<h5>Helpful Tip!</h5> 
+If what you're adding to the UI doesn't add communicative value, truly, you should eliminate it. Remember, every element requires processing.
 </div> 
 
 
-## Goals, Context, Culture, and Experience 
+## Goals, Context, Culture, and Prior Experience 
 
 Goal related factors can affect atention. Using different parts of the brain to communicate to people through a screen. Biologically, we are not hjardwaired to multitask well, even gamers who claim they're amazing at it simply aren't. This is the reality of the human mind. Tasks are completed linearly, not in perallel on the web. It is safe to generalize, and research reports, that deep processing simply does not occur on the web. 
 
@@ -92,24 +99,45 @@ What's salient, depends on culture. Here's a *shocking* statistic of multitaking
 
 Tabs are used to organize, compartmentalize, and soprt and order. Think: browser tabs on the web, tasks are completed linearly, we are constantly switiching attention and focus, and for good reason. People apply tabs to create order, consider them "parking details". What can be parked for now and what might potentially disrupt the story we're telling? The downside to opening content in a new tab is that people are used to doing this themselves.
 
+<div class="tip">
+  <div class="separator separator-animated"></div>
+    <h5>Friendly Reminder</h5>
+      People's perception is their reality, but things aren't always as they seem.
+</div>
 
-### Things Aren't Always As They Seem
-
-Context in presentation of content. The brain takes over to create perception in a meaningful way, even if it's completely at odds with reality. (Image reference: checkerboard graphic). Things aren't always as they seem.
-
-### People's Perception Is Their Reality
+Context in presentation of content. The brain takes over to create perception in a meaningful way, even if it's completely at odds with reality. (Image reference: checkerboard graphic).
 
 Web users are prone to contextual distractions. Consider context of use - in which situations are people using our systems? 
 
 Previous experiences wholey affect perception. Practiced tasks become automatic. Requires proficiency, but even though resources are "freed up" for other tasks, mistakes are likely. Think about tapping "cancel" or "OK" in an alert view box - this is often an autopilot activity for the majority of mobile users.
 
-#### Banner Blindness and Overly Promoted Entry Points
+<div class="definition">
+  <div class="separator separator-animated"></div>
+    <h5>Banner Blindness</h5>  
+      Overly Promoted Entry Points
+</div>
 
 ### Meaning Is What We Make Of It
 
-If we can't attach meaning to what we're seeing, then we can't understand it, or are apt not to try. Reference Japanese website UI. An example of this would be a Japanese website to an American who's native language is English. Having such a busy website depicts reputation in this culture, the company must be "doing well" and is either wealthy or prosperous. This by no means infres that Japenese web users can multi-task more than native English web users can. We all have the same capabilities. 
+If we can't attach meaning to what we're seeing, then it's very difficult for us to understand it, or are apt not to try. An example of this would be a Japanese website to an American who's native language is English. Having such a busy website can define  reputation in this culture – the company will be judged as "doing well" and viewed as  either wealthy or prosperous. However, the cultural sentiments by no means infer that Japenese web users can multi-task more than native English web users can. Psychologically and biologically, they can't, we all have the same capabilities. 
 
-The whole is other than the sum of it's parts. This is known as the Gestalt view, taken directly from Gestalt psychological theory. The principles of gestals are hard wired into us, they've helped thinking and feeling species survive and evolve since the beginning of time. Help people see and understand relationships between information. Like, the relationship of objects. Placing related items closer together will likely increase conversion rates by 10%, that's how easy it is. You want the price tag to be hugging up right next to that big button that says "buy". Understand the priority and the information people need and then present it in a way that people expect and in which they can easily interpret. Think: hierarchy and importance when presenting information. Aesthetic is like appplying a "treatment", not just a "brand" – there's more to that word than we often think. Piggy backon prorotypical, learned behavioral patterns for all users, but harp on them when designing for acquisition. Be very careful when grouping content (slide 40). What is the cost–benefit? The value proposition? Lines are often disruptors – their essentially encourage people to just "stop". A familiar example might be with Google's Material Design in contrast to Apple's iOS 8 interface aesthetic - slim but line-heavy. Proximity of elements to each other can result in miscommunication.
+<div class="tip">
+  <div class="separator separator-animated"></div>
+    <h5>Helpful Tip!</h5>
+      Perceiving an image is often a much quicker cognitive process than reading text. Why? A greater number of innate associations are evoked by both shapes and colors together. Remember to always design with perspective and context in mind. 
+</div>
+
+<div class="tip">
+  <div class="separator separator-animated"></div>
+    <h5>Top-Down Processing, Richard Gregory (1970)</h5>
+      <article>
+        Otherwise known as, conceptual-driven processing, states that our brains tend to make the best guesses based on prior experiences. It also illustrates the idea that our perceptions are highly influenced by our surrounding contexts. Our perceptions and ultimately, our interpretations (Rational Emotive Theory), are rooted in our expectations, past experiences, prior knowledge, and our beliefs.
+      </article>
+</div>
+
+### The Whole Is Other... ###
+
+...than the sum of it's parts. This statement is drawn from Gestalt. The principles of Gestalt are hard wired into us, they've helped thinking and feeling species survive and evolve since the beginning of time. Help people see and understand relationships between information. Like, the relationship of objects. Placing related items closer together will likely increase conversion rates by 10%, that's how easy it is. You want the price tag to be hugging up right next to that big button that says "buy". Understand the priority and the information people need and then present it in a way that people expect and in which they can easily interpret. Think: hierarchy and importance when presenting information. Aesthetic is like appplying a "treatment", not just a "brand" – there's more to that word than we often think. Piggy backon prorotypical, learned behavioral patterns for all users, but harp on them when designing for acquisition. Be very careful when grouping content (slide 40). What is the cost–benefit? The value proposition? Lines are often disruptors – their essentially encourage people to just "stop". A familiar example might be with Google's Material Design in contrast to Apple's iOS 8 interface aesthetic - slim but line-heavy. Proximity of elements to each other can result in miscommunication.
 
 ### Visual Acuity and Perception and Interpretation.
 

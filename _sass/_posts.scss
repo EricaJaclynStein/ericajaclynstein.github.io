@@ -5,15 +5,15 @@
     margin-bottom: $spacing-unit * 4;
 
     p {
-        font-family: 'Libre Baskerville', serif;
+        font-family: 'Libre Baskerville', Georgia, serif;
         font-size: 18px;
         font-weight: $font-normal;
         line-height: 1.8;
-        margin-bottom: $spacing-unit / 2;
+        margin-bottom: $spacing-unit;
     }
 
     ol li {
-        font-family: $serif-font-family;
+        font-family: 'Libre Baskerville', Georgia, serif;
         font-size: 18px;
         font-weight: $font-normal;
         line-height: 1.8;
@@ -47,50 +47,133 @@
         }
     }
 
+    .separator {
+      border: 0;
+      border-top: 5px solid transparent;
+        -moz-border-image: -moz-linear-gradient(left, #10cbc4 0%, #3a4ed5 100%);
+        -webkit-border-image: -webkit-linear-gradient(left, #10cbc4 0%, #3a4ed5 100%);
+        border-image: 
+          linear-gradient(to right, #10cbc4 0%, #7442C8 40%, transparent 65%, transparent 75%, transparent 85%);
+        border-image-slice: 1;
+        padding-top: 10px;
+
+      .separator-animated {
+        background-image: linear-gradient(135deg, #3acfd5, #3a4ed5, #3acfd5, #3a4ed5 );
+        background-size: 300%;
+        background-repeat:repeat;
+        height: 0;
+
+        &:hover {
+            transition: all 1s linear;
+            background-position:100% 100%;
+        }
+      }
+    }
+
     .tip {
-        background-color: $mercury-gray;
-        border: 1px solid $mercury-gray;
-        border-radius: 5px;
-        color: $tungsten-gray;
+        color: lighten($tungsten-gray, 15%);
+        font-family: $mono-font-family;
+        margin: 30px;
+        padding: $spacing-unit;
         font-size: $base-font-size;
         line-height: $base-line-height;
-        margin: 60px;
         text-align: left;
-        padding: 15px;
+
+        article {
+            margin-top: 15px;
+        }
+
+        a {
+            font-weight: $font-bold;
+
+            &:hover {
+                color: lighten($tungsten-gray, 25%);
+            }
+        }
 
         h5 {
-            color: $maraschino;
+            color: $tungsten-gray;
         }
     }
 
     .definition {
-        border-left: 5px solid $maraschino;
-        color: $tungsten-gray;
+        color: lighten($tungsten-gray, 15%);
+        font-family: $mono-font-family;
+        margin: 30px;
+        padding: $spacing-unit;
         font-size: $base-font-size;
         line-height: $base-line-height;
-        margin: 60px;
         text-align: left;
-        padding-left: 15px;
-        padding-right: 15px;
+
+        article {
+            margin-top: 15px;
+        }
+
+        a {
+            font-weight: $font-bold;
+
+            &:hover {
+                color: lighten($tungsten-gray, 25%);
+            }
+        }
+
+        h5 {
+            color: $tungsten-gray;
+        }
+    }
+
+    .experiment {
+        color: lighten($tungsten-gray, 15%);
+        font-family: $mono-font-family;
+        margin: 30px;
+        padding: $spacing-unit;
+        font-size: $base-font-size;
+        line-height: $base-line-height;
+        text-align: left;
+
+        article {
+            margin-top: 15px;
+        }
+
+        a {
+            font-weight: $font-bold;
+
+            &:hover {
+                color: lighten($tungsten-gray, 25%);
+            }
+        }
 
         h5 {
             color: $maraschino;
         }
     }
 
-    .experiment {
-        background-color: $tungsten-gray;
-        border: 1px solid $tungsten-gray;
+    .callout-red {
+        background-color: $mercury-gray;
+        border: 1px solid transparent;
         border-radius: 5px;
-        color: $mercury-gray;
+        color: $tungsten-gray;
+        font-family: $mono-font-family;
+        margin: 30px;
+        padding: $spacing-unit;
         font-size: $base-font-size;
         line-height: $base-line-height;
-        margin: 60px;
         text-align: left;
-        padding: 15px;
+
+        article {
+            margin-top: 15px;
+        }
+
+        a {
+            font-weight: $font-bold;
+
+            &:hover {
+                color: lighten($tungsten-gray, 25%);
+            }
+        }
 
         h5 {
-            color: $pacific-green;
+            color: $maraschino;
         }
     }
 
@@ -113,7 +196,7 @@
         font-weight: $font-bold;
         letter-spacing: -1;
         margin-bottom: $spacing-unit;
-        margin-top: $spacing-unit * 2;
+        margin-top: $spacing-unit * 3;
         text-align: center;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
@@ -127,7 +210,7 @@
         font-size: $h3-font-size;
         margin-bottom: $spacing-unit;
         margin-top: $spacing-unit * 2;
-        text-align: left;
+        text-align: center;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
 
