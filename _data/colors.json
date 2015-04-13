@@ -1,26 +1,8 @@
 {
 "nodes":[
-    {
-        "Name": "Acid Green",
-        "Hex": "#B0BF1A",
-        "Hue": "65°",
-        "Saturation": "86%",
-        "Value": "75%"
-    },
-    {
-        "Name": "Aero",
-        "Hex": "#7CB9E8",
-        "Hue": "206°",
-        "Saturation": "47%",
-        "Value": "91%"
-    },
-    {
-        "Name": "Aero Blue",
-        "Hex": "#C9FFE5",
-        "Hue": "151°",
-        "Saturation": "21%",
-        "Value": "100%"
-    },
+    { "Name": "Acid Green", "Hex": "#B0BF1A", "Hue": "65°", "Saturation": "86%", "Value": "75%" },
+    { "Name": "Aero", "Hex": "#7CB9E8", "Hue": "206°", "Saturation": "47%", "Value": "91%" },
+    { "Name": "Aero Blue", "Hex": "#C9FFE5", "Hue": "151°", "Saturation": "21%", "Value": "100%" },
     {
         "Name": "African Violet",
         "Hex": "#B284BE",

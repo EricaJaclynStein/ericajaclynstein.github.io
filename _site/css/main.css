@@ -240,13 +240,19 @@ pre {
       color: #6e748e;
       text-decoration: none; }
 
-.node {
-  stroke: #fff;
-  stroke-width: 1.5px; }
+svg {
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto; }
 
-.link {
-  stroke: #999;
-  stroke-opacity: .6; }
+.bar {
+  display: inline-block;
+  width: 20px;
+  height: 75px;
+  /* Gets overriden by D3-assigned height below */
+  margin-right: 2px;
+  background-color: teal; }
 
 /********** CONTAINERS **********/
 .container {
