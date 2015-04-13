@@ -3293,17 +3293,3 @@
   ]
 }
 
-//  Tips for executing upon data
-
-//  Example loop
-//
-//  for (var i = 0; i < COLORS.length; i++) {
-//      console.log(COLORS[i]);  //Print all COLORS values to console
-//  }
-
-//  Declare single empty global object for complexity workarounds
-//  var COLORS = {};
-//  COLORS.name = "print the name";
-//  Vis.hex = "print the hex";
-//  Vis.hue = "print the hue";
-
