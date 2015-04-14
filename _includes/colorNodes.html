@@ -2,16 +2,17 @@
 <div class="colors">
   <script>
 
-  var dataset = {
 
+var dataset = {
         nodes:  [ 
           { name: "#000000" },  // 0, black
-          { name: "#414A4C" },  // 1, outer space (green)
-          { name: "#1A4876" },  // 2, midnight blue (blue)
-          { name: "#6E5160" },  // 3, eggplant (purple)
-          { name: "#95918C" },  // 4, gray (red)
+          // NEUTRALS
+          { name: "#95918C" },  // 1, gray
+          { name: "#CDC5C2" },
+          { name: "#DBD7D2" },
           // BLUES
-          { name: "#0D98BA" }, // 5
+          { name: "#1A4876" },  // 4, midnight blue
+          { name: "#0D98BA" },
           { name: "#1974D2" },
           { name: "#1CA9C9" },
           { name: "#1DACD6" },
@@ -24,8 +25,9 @@
           { name: "#6DAE81" },
           { name: "#71BC78" },
           { name: "#C5D0E6" },
-          { name: "#B0B7C6" },  // 18, Cadet Blue
+          { name: "#B0B7C6" },
           // GREENS
+          { name: "#414A4C" },  // 19, outer space
           { name: "#158078" },
           { name: "#17806D" },
           { name: "#1CAC78" },
@@ -41,10 +43,10 @@
           { name: "#1FCECB" },
           { name: "#BAB86C" },
           { name: "#C5E384" },
-          { name: "#CEFF1D" }, // 34, Electric Lime
-          { name: "#DBD7D2" }, // 35, Timberwolf
+          { name: "#CEFF1D" },
           // PURPLES
-          { name: "#979AAA" },  // Manatee
+          { name: "#6E5160" },  // 36, eggplant
+          { name: "#979AAA" },
           { name: "#5D76CB" },  
           { name: "#7366BD" },
           { name: "#7442C8" },
@@ -56,14 +58,9 @@
           { name: "#9D81BA" },
           { name: "#A2A2D0" },
           { name: "#A2ADD0" },
-          { name: "#8A795D" },
-          { name: "#9F8170" },
-          { name: "#A5694F" },
-          { name: "#D68A59" },
-          { name: "#B4674D" },
-          { name: "#BC5D58" }, // 53
+          { name: "#BC5D58" },
           // REDS
-          { name: "#CB4154" }, // brick red
+          { name: "#CB4154" },  // 50, brick red
           { name: "#CDA4DE" },
           { name: "#C0448F" },
           { name: "#C364C5" },
@@ -76,106 +73,107 @@
           { name: "#DD9475" },
           { name: "#DE5D83" },
           { name: "#E6A8D7" },
-          { name: "#EE204D" }, // red
-          { name: "#CDC5C2" }, // 68, silver
+          { name: "#EE204D" },
           // BROWNS
-          { name: "#CD9575" }, // 69, antique brass
-          { name: "#DEAA88" }, // 70, tumbleweed
-          { name: "#E7C697" }, // 71, gold
-          { name: "#EA7E5D" }, // 72, burnt sienna
-          { name: "#ECEABE" }  // 73, spring green
+          { name: "#8A795D" },  // 64, shadow
+          { name: "#CD9575" },
+          { name: "#DEAA88" },
+          { name: "#E7C697" },
+          { name: "#9F8170" },
+          { name: "#B4674D" },
+          { name: "#EA7E5D" },
+          { name: "#D68A59" },
+          { name: "#A5694F" },
+          { name: "#ECEABE" }  // 73
         ],
         
         edges:  [
           { source: 0, target: 1 },
-          { source: 0, target: 2 },
-          { source: 0, target: 3 },
           { source: 0, target: 4 },
+          { source: 0, target: 19 },
+          { source: 0, target: 36 },
+          { source: 0, target: 50 },
+          { source: 0, target: 64 },
 
-          { source: 2, target: 5 },
-          { source: 2, target: 6 },
-          { source: 2, target: 7 },
-          { source: 2, target: 8 },
-          { source: 2, target: 9 },
-          { source: 2, target: 10 },
-          { source: 2, target: 11 },
-          { source: 2, target: 12 },
-          { source: 2, target: 13 },
-          { source: 2, target: 14 },
-          { source: 2, target: 15 },
-          { source: 2, target: 16 },
-          { source: 2, target: 17 },
-          { source: 2, target: 18 },
+          { source: 1, target: 2 },
+          { source: 1, target: 3 },
 
-          { source: 1, target: 19 },
-          { source: 1, target: 20 },
-          { source: 1, target: 21 },
-          { source: 1, target: 22 },
-          { source: 1, target: 23 },
-          { source: 1, target: 24 },
-          { source: 1, target: 25 },
-          { source: 1, target: 26 },
-          { source: 1, target: 27 },
-          { source: 1, target: 28 },
-          { source: 1, target: 29 },
-          { source: 1, target: 30 },
-          { source: 1, target: 31 },
-          { source: 1, target: 32 },
-          { source: 1, target: 33 },
-          { source: 1, target: 34 },
-          { source: 1, target: 35 },
+          { source: 4, target: 5 },
+          { source: 4, target: 6 },
+          { source: 4, target: 7 },
+          { source: 4, target: 8 },
+          { source: 4, target: 9 },
+          { source: 4, target: 10 },
+          { source: 4, target: 11 },
+          { source: 4, target: 12 },
+          { source: 4, target: 13 },
+          { source: 4, target: 14 },
+          { source: 4, target: 15 },
+          { source: 4, target: 16 },
+          { source: 4, target: 17 },
+          { source: 4, target: 18 },
+
+          { source: 19, target: 20 },
+          { source: 19, target: 21 },
+          { source: 19, target: 22 },
+          { source: 19, target: 23 },
+          { source: 19, target: 24 },
+          { source: 19, target: 25 },
+          { source: 19, target: 26 },
+          { source: 19, target: 27 },
+          { source: 19, target: 28 },
+          { source: 19, target: 29 },
+          { source: 19, target: 30 },
+          { source: 19, target: 31 },
+          { source: 19, target: 32 },
+          { source: 19, target: 33 },
+          { source: 19, target: 34 },
+          { source: 19, target: 35 },
          
-          { source: 3, target: 36 },
-          { source: 3, target: 37 },
-          { source: 3, target: 38 },
-          { source: 3, target: 39 },
-          { source: 3, target: 40 },
-          { source: 3, target: 41 },
-          { source: 3, target: 42 },
-          { source: 3, target: 43 },
-          { source: 3, target: 44 },
-          { source: 3, target: 45 },
-          { source: 3, target: 46 },
-          { source: 3, target: 47 },
-          { source: 3, target: 48 },
-          { source: 3, target: 49 },
-          { source: 3, target: 50 },
-          { source: 3, target: 51 },
-          { source: 3, target: 52 },
-          { source: 3, target: 53 },
-          { source: 3, target: 54 },
-          { source: 3, target: 55 },
-          { source: 3, target: 50 },
-          { source: 3, target: 51 },
-          { source: 3, target: 52 },
-          { source: 3, target: 53 },
+          { source: 36, target: 37 },
+          { source: 36, target: 38 },
+          { source: 36, target: 39 },
+          { source: 36, target: 40 },
+          { source: 36, target: 41 },
+          { source: 36, target: 42 },
+          { source: 36, target: 43 },
+          { source: 36, target: 44 },
+          { source: 36, target: 45 },
+          { source: 36, target: 46 },
+          { source: 36, target: 47 },
+          { source: 36, target: 48 },
+          { source: 36, target: 49 },
 
-          { source: 4, target: 54 },
-          { source: 4, target: 55 },
-          { source: 4, target: 56 },
-          { source: 4, target: 57 },
-          { source: 4, target: 58 },
-          { source: 4, target: 59 },
-          { source: 4, target: 60 },
-          { source: 4, target: 61 },
-          { source: 4, target: 62 },
-          { source: 4, target: 63 },
-          { source: 4, target: 64 },
-          { source: 4, target: 65 },
-          { source: 4, target: 66 },
-          { source: 4, target: 67 },
-          { source: 4, target: 68 },
+          { source: 50, target: 51 },
+          { source: 50, target: 52 },
+          { source: 50, target: 53 },
+          { source: 50, target: 54 },
+          { source: 50, target: 55 },
+          { source: 50, target: 56 },
+          { source: 50, target: 57 },
+          { source: 50, target: 58 },
+          { source: 50, target: 59 },
+          { source: 50, target: 60 },
+          { source: 50, target: 61 },
+          { source: 50, target: 62 },
+          { source: 50, target: 63 },
 
-          { source: 4, target: 69 },
-          { source: 4, target: 70 },
-          { source: 4, target: 71 },
-          { source: 4, target: 72 },
-          { source: 4, target: 73 }
+          { source: 64, target: 65 },
+          { source: 64, target: 66 },
+          { source: 64, target: 67 },
+          { source: 64, target: 68 },
+          { source: 64, target: 69 },
+          { source: 64, target: 70 },
+          { source: 64, target: 71 },
+          { source: 64, target: 72 },
+          { source: 64, target: 73 }
         ]
     };
+    
 
     var w = 960;
     var h = 500;
+    var animationStep = 400;
 
     var force = d3.layout.force()
                      .nodes(dataset.nodes)
@@ -194,7 +192,7 @@
                 .append("svg")
                 .attr("width", w)
                 .attr("height", h);
-          
+
           var edges = svg.selectAll("line")
             .data(dataset.edges)
             .enter()
