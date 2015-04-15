@@ -3,37 +3,38 @@
 
 var dataset = {
         nodes:  [
-          { name: "#000000", label: "Black" },
-          { name: "#84DE02", label: "Alien Armpit" },
-          { name: "#E88E5A", label: "Big Foot Feet" },
-          { name: "#DDE26A", label: "Booger Buster" },
-          { name: "#C53151", label: "Dingy Dungeon" },
-          { name: "#FFDF46", label: "Gargoyle Gas" },
-          { name: "#B05C52", label: "Giant's Club" },
-          { name: "#FF4466", label: "Magic Potion" },
-          { name: "#828E84", label: "Mummy's Tomb" },
+          { name: "#000000", label: "Black" }, // 0
+          { name: "#84DE02", label: "Alien Armpit" },  // 1
+          { name: "#E88E5A", label: "Big Foot Feet" },  // 2
+          { name: "#DDE26A", label: "Booger Buster" },  // 3
+          { name: "#C53151", label: "Dingy Dungeon" },  // 4
+          { name: "#FFDF46", label: "Gargoyle Gas" },  // 5
+          { name: "#B05C52", label: "Giant's Club" },  // 6
+          { name: "#FF4466", label: "Magic Potion" },  // 7
+          { name: "#828E84", label: "Mummy's Tomb" },  // 8
           { name: "#FD5240", label: "Ogre Odor" },
-          { name: "#391285", label: "Pixie Powder" },
-          { name: "#FF85CF", label: "Princes Perfume" },
-          { name: "#FF4681", label: "Sasquatch Socks" },
-          { name: "#4BC7CF", label: "Sea Serpent" },
+          { name: "#391285", label: "Pixie Powder" },    // 10
+          { name: "#FF85CF", label: "Princes Perfume" }, // 11
+          { name: "#FF4681", label: "Sasquatch Socks" }, // 12
+          { name: "#4BC7CF", label: "Sea Serpent" },     // 13
           { name: "#FF6D3A", label: "Smashed Pumpkin" },
-          { name: "#FF404C", label: "Sunburnt Cyclops" },
+          { name: "#FF404C", label: "Sunburnt Cyclops" }, // 15
           { name: "#A0E6FF", label: "Winter Wizard" },
-          { name: "#5FBED7", label: "Aqua" },
-          { name: "#54626F", label: "Black Coral" },
-          { name: "#6ADA8E", label: "Caribbean Green" },
-          { name: "#E8F48C", label: "Key Lime" },
-          { name: "#F37A48", label: "Mandarin" },
-          { name: "#702670", label: "Midnight" } // 22
+          { name: "#5FBED7", label: "Aqua" },  // 17
+          { name: "#54626F", label: "Black Coral" },  // 18
+          { name: "#6ADA8E", label: "Caribbean Green" },  // 19
+          { name: "#E8F48C", label: "Key Lime" },  // 20
+          { name: "#F37A48", label: "Mandarin" },  // 21
+          { name: "#702670", label: "Midnight" }   // 22
         ],
         
         edges:  [
+          { source: 0, target: 8 },
           { source: 0, target: 18 },
           { source: 18, target: 8 },
-          { source: 8, target: 10 },
+          { source: 18, target: 13 },
+          { source: 18, target: 10 },
           { source: 10, target: 22 },
-          { source: 22, target: 13 },
           { source: 22, target: 11 },
           { source: 11, target: 12 },
           { source: 12, target: 7 },
@@ -45,9 +46,11 @@ var dataset = {
           { source: 2, target: 6 },
           { source: 13, target: 1 },
           { source: 1, target: 20 },
+          { source: 20, target: 19 },
           { source: 3, target: 20 },
           { source: 20, target: 5 },
           { source: 12, target: 4 },
+          { source: 4, target: 6 },
           { source: 13, target: 19 },
           { source: 13, target: 17 },
           { source: 17, target: 16 }
