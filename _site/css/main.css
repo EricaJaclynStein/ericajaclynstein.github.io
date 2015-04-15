@@ -254,6 +254,16 @@ svg {
   margin-right: 2px;
   background-color: teal; }
 
+.color-nodes {
+  vertical-align: baseline;
+  position: relative; }
+
+.project-credits {
+  text-align: center;
+  vertical-align: baseline; }
+  .project-credits a {
+    font-weight: 700; }
+
 /********** CONTAINERS **********/
 .container {
   padding-right: 15px;

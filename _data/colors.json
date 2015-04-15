@@ -1,108 +1,49 @@
 {
-    "nodes": [
 
-        { 
-            "name": "Black", 
-            "hex": "#000000" 
-            },
-        { 
-            "name": "Gray", 
-            "hex": "#95918C"
-            },
-        { 
-            "name": "Silver", 
-            "hex": "#CDC5C2" 
-            },
-        { 
-            "name": "Timberwolf", 
-            "hex": "#DBD7D2" 
-            },
-        { 
-            "name": "Midnight Blue", 
-            "hex": "#1A4876" 
-            },
-        { 
-            "name": "Blue Green", 
-            "hex": "#0D98BA" 
-            },
-        { 
-            "name": "Navy Blue", 
-            "hex": "#1974D2" 
-            },
-        { 
-            "name": "Pacific Blue", 
-            "hex": "#1CA9C9" 
-            },
-        { 
-            "name": "Cerulean", 
-            "hex": "#1DACD6" 
-            },
-        { 
-            "name": "Blue", 
-            "hex": "#1F75FE" 
-            },
-        { 
-            "name": "Turquoise Blue", 
-            "hex": "#77DDE7" 
-            },
-        { 
-            "name": "Aquamarine", 
-            "hex": "#78DBE2" 
-            },
-        { 
-            "name": "Sky Blue", 
-            "hex": "#80DAEB" 
-            },
-        { 
-            "name": "Cornflower", 
-            "hex": "#9ACEEB" 
-            },
-        { 
-            "name": "Denim", 
-            "hex": "#2B6CC4" 
-            },
-        { 
-            "name": "Periwinkle", 
-            "hex": "#C5D0E6" 
-            },
-        { 
-            "name": "Cadet Blue", 
-            "hex": "#B0B7C6" 
-            },
-        { 
-            "name": "Outer Space", 
-            "hex": "#414A4C" 
-            },
-        { 
-            "name": "Forest Green", 
-            "hex": "#6DAE81" 
-            },
-        { 
-            "name": "Fern", 
-            "hex": "#71BC78" 
-        }
-    ],
+  "nodes": [
+    {
+        "Hex": "#EFDECD",
+    },
+    {
+        "Hex": "#CD9575",
+    },
+    {
+        "Hex": "#FDD9B5",
+    },
+    {
+        "Hex": "#78DBE2",
+    },
+    {
+        "Hex": "#87A96B",
+    },
+    {
+        "Hex": "#FFA474",
+    },
+    {
+        "Hex": "#FAE7B5",
+    },
+    {
+        "Hex": "#9F8170",
+    },
+    {
+        "Hex": "#FD7C6E",
+    },
+    {
+        "Hex": "#000000",
+    }
+  ],
 
-    "links":[
-        { "source": 0, "target": 1 },
-        { "source": 1, "target": 2 },
-        { "source": 2, "target": 3 },
-        { "source": 0, "target": 4 },
-        { "source": 4, "target": 5 },
-        { "source": 4, "target": 6 },
-        { "source": 4, "target": 7 },
-        { "source": 4, "target": 8 },
-        { "source": 4, "target": 9 },
-        { "source": 4, "target": 10 },
-        { "source": 4, "target": 11 },
-        { "source": 4, "target": 12 },
-        { "source": 4, "target": 13 },
-        { "source": 4, "target": 14 },
-        { "source": 4, "target": 15 },
-        { "source": 4, "target": 16 },
-        { "source": 0, "target": 17 },
-        { "source": 17, "target": 18 },
-        { "source": 17, "target": 19 }
-    ]
-};
+  "edges":  [
+    { "source": 0, "target": 1 },
+    { "source": 0, "target": 2 },
+    { "source": 0, "target": 3 },
+    { "source": 0, "target": 4 },
+    { "source": 0, "target": 5 },
+    { "source": 0, "target": 6 },
+    { "source": 0, "target": 7 },
+    { "source": 0, "target": 8 },
+    { "source": 0, "target": 9 },
+    { "source": 0, "target": 10 }
+  ]
+}
 
