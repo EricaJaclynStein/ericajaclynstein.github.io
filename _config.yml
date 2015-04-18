@@ -1,9 +1,7 @@
-# SITE SETTINGS
-
-title: Projects
+title: HII
 author: Erica
 description: > # this means to ignore newlines until "baseurl:"
-  Action will deliniate and define you.
+  Human-Information Interaction
   
 baseurl: ""
 url: "http://www.ericajaclynstein.github.io"
