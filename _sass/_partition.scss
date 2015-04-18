@@ -1,3 +1,10 @@
+.diagram-container {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: auto;
+  position: relative;
+  width: $content-width;
+}
+
 form {
   position: absolute;
   right: 10px;
