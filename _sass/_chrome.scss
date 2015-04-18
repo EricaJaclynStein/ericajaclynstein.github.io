@@ -42,13 +42,13 @@
     }
 
     .page-link {
-        color: $maraschino;
-        border: 1px solid $maraschino;
-        color: $background-color;
-        font-size: $small-font-size;
-        font-weight: $font-light;
-        line-height: $base-line-height;
-        padding: .2em;
+      color: $maraschino;
+      border: 1px solid $maraschino;
+      color: $background-color;
+      font-size: $small-font-size;
+      font-weight: $font-light;
+      line-height: $base-line-height;
+      padding: .2em;
 
         &:not(:first-child) {
             margin-left: .2em;
