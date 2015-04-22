@@ -3,66 +3,58 @@
 
 var dataset = {
         nodes:  [
-          { name: "#000000", label: "Black" }, // 0
-          { name: "#84DE02", label: "Alien Armpit" },  // 1
-          { name: "#E88E5A", label: "Big Foot Feet" },  // 2
-          { name: "#DDE26A", label: "Booger Buster" },  // 3
-          { name: "#C53151", label: "Dingy Dungeon" },  // 4
-          { name: "#FFDF46", label: "Gargoyle Gas" },  // 5
-          { name: "#B05C52", label: "Giant's Club" },  // 6
-          { name: "#FF4466", label: "Magic Potion" },  // 7
-          { name: "#828E84", label: "Mummy's Tomb" },  // 8
-          { name: "#FD5240", label: "Ogre Odor" },
-          { name: "#391285", label: "Pixie Powder" },    // 10
-          { name: "#FF85CF", label: "Princes Perfume" }, // 11
-          { name: "#FF4681", label: "Sasquatch Socks" }, // 12
-          { name: "#4BC7CF", label: "Sea Serpent" },     // 13
-          { name: "#FF6D3A", label: "Smashed Pumpkin" },
-          { name: "#FF404C", label: "Sunburnt Cyclops" }, // 15
-          { name: "#A0E6FF", label: "Winter Wizard" },
+          { name: "#F5F5F5", label: "Cultured" },
+          { name: "#AAE6FF", label: "Winter Wizard" },
+          { name: "#9ACEEB", label: "Cornflower" },
+          { name: "#5DADEC", label: "Blue Jeans" },
+          { name: "#B0B7C6", label: "Cadet Blue" },
+          { name: "#4F86F7", label: "Blueberry" },  // 5
+          { name: "#2779FA", label: "Blue" },
+          { name: "#FFD3F8", label: "Bubble Gum" },
+          { name: "#FFFF99", label: "Canary" },
+          { name: "#99FF99", label: "Gel Green" },
+          { name: "#7CDBE1", label: "Aquamarine" }, // 10
           { name: "#5FBED7", label: "Aqua" },
-          { name: "#54626F", label: "Black Coral" },
-          { name: "#6ADA8E", label: "Caribbean Green" },
-          { name: "#E8F48C", label: "Key Lime" },  // 20
-          { name: "#F37A48", label: "Mandarin" },
-          { name: "#702670", label: "Midnight" },
-          { name: "#7B4259", label: "Orchid" },
-          { name: "#D65282", label: "Mystic" },
-          { name: "#4F42B5", label: "Ocean Blue" }, // 25
-          { name: "#48BF91", label: "Ocean Green" }
+          { name: "#2AADD4", label: "Cerulean" },
+          { name: "#6D9BC3", label: "Cerulean Frost" },
+          { name: "#1974D2", label: "Navy Blue" },
+          { name: "#2D5DA1", label: "Sapphire" }, // 15
+          { name: "#5D8DDF", label: "Caribbean Blue" },
+          { name: "#5D76CB", label: "Indigo" },
+          { name: "#2243B6", label: "Demin" }
         ],
         
         edges:  [
+          { source: 0, target: 1 },
+          { source: 0, target: 7 },
           { source: 0, target: 8 },
-          { source: 0, target: 18 },
-          { source: 18, target: 8 },
-          { source: 18, target: 13 },
-          { source: 18, target: 10 },
-          { source: 10, target: 22 },
-          { source: 22, target: 11 },
+          { source: 0, target: 9 },
+          { source: 1, target: 2 },
+          { source: 2, target: 3 },
+          { source: 2, target: 4 },
+          { source: 3, target: 4 },
+          { source: 3, target: 5 },
+          { source: 5, target: 6 },
+          { source: 9, target: 10 },
+          { source: 1, target: 10 },
+          { source: 10, target: 2 },
+          { source: 10, target: 11 },
+          { source: 11, target: 2 },
           { source: 11, target: 12 },
-          { source: 12, target: 7 },
-          { source: 7, target: 15 },
-          { source: 15, target: 9 },
-          { source: 9, target: 14 },
-          { source: 14, target: 21 },
-          { source: 21, target: 2 },
-          { source: 2, target: 6 },
-          { source: 19, target: 1 },
-          { source: 1, target: 20 },
-          { source: 3, target: 20 },
-          { source: 20, target: 5 },
-          { source: 12, target: 4 },
-          { source: 4, target: 6 },
-          { source: 26, target: 19 },
-          { source: 13, target: 17 },
-          { source: 17, target: 16 },
-          { source: 22, target: 23 },
-          { source: 23, target: 6 },
-          { source: 24, target: 23 },
-          { source: 24, target: 11 },
-          { source: 10, target: 25 },
-          { source: 13, target: 26 }
+          { source: 12, target: 3 },
+          { source: 12, target: 2 },
+          { source: 12, target: 13 },
+          { source: 13, target: 3 },
+          { source: 13, target: 5 },
+          { source: 13, target: 6 },
+          { source: 13, target: 14 },
+          { source: 14, target: 6 },
+          { source: 14, target: 15 },
+          { source: 15, target: 6 },
+          { source: 16, target: 6 },
+          { source: 16, target: 5 },
+          { source: 16, target: 13 },
+          { source: 16, target: 12 }
         ]
     };
     
