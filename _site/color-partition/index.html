@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Crayola Crayon Color Ref</title>
+    <meta name="description" content="Quickly reference any of the Crayola crayon colors for projects or just for fun.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!-- scripts -->
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="http://www.ericajaclynstein.github.io/color-partition/">
+    <link rel="alternate" type="application/rss+xml" title="arithmetically" href="http://www.ericajaclynstein.github.io/feed.xml" />
+    <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+
+    
+<header class="site-header">
+  <div class="header-wrapper">
+    <a class="site-title" href="/">
+      arithmetically
+    </a>
+  </div>
+</header>
+
+
+      <div class="page-content">
+        <div class="wrapper">
+            <div class="project-credits">
+    <p>
+      Colors data visualization features <a href="http://en.wikipedia.org/wiki/List_of_Crayola_crayon_colors" target="blank">Crayola Crayon</a> colors and is made possible in part by <a href="http://d3js.org/" target="blank">D3.js</a>
+    </p>
+  </div>
+
+  
+
+<script>
+
+var dataset = {
+  name: "Colors",
+    children: [{ 
+      name: "Standard Colors",
+        children: [{
+          name: "Greens",
+            children: [
+              { name: "Alien Armpit", size: 3938 }, 
+              { name: "Booger Buster", size: 3812 }, 
+              { name: "Gargoyle Gas", size: 6714 }, 
+              { name: "Sea Serpent", size: 743 }
+            ]}, { 
+          name: "Blues",
+            children: [
+              { name: "Alien Armpit", size: 3534 }, 
+              { name: "Alien Armpit", size: 5731 }, 
+              { name: "Alien Armpit", size: 7840 }, 
+              { name: "Alien Armpit", size: 5914 }, 
+              { name: "Alien Armpit", size: 3416 }
+            ]}, { 
+          name: "Purples",
+            children: [
+              { name: "Black", size: 7074 }
+            ]}
+        ]}, {
+      name: "Silly Scents",
+        children: [
+          { name: "Alien Armpit", size: 17010 }, { 
+          name: "Greens",
+            children: [
+              { name: "Alien Armpit", size: 1983 }, 
+              { name: "Alien Armpit", size: 2047 }, 
+              { name: "Alien Armpit", size: 1375 }, 
+              { name: "Alien Armpit", size: 8746 }, 
+              { name: "Alien Armpit", size: 2202 }, 
+              { name: "Alien Armpit", size: 1382 }, 
+              { name: "Alien Armpit", size: 1629 }, 
+              { name: "Alien Armpit", size: 1675 }, 
+              { name: "Alien Armpit", size: 2042 }
+            ]}, 
+              { name: "Alien Armpit", size: 1041 }, 
+              { name: "Alien Armpit", size: 5176 }, 
+              { name: "Alien Armpit", size: 449 }, 
+              { name: "Alien Armpit", size: 5593 }, 
+              { name: "Alien Armpit", size: 5534 }, 
+              { name: "Alien Armpit", size: 9201 }, 
+              { name: "Alien Armpit", size: 19975 }, 
+              { name: "Alien Armpit", size: 1116 }, 
+              { name: "Alien Armpit", size: 6006 
+            }]
+      }]
+  };
+    
+    var margin = {top: 40, right: 10, bottom: 10, left: 10},
+    width = 960 - margin.left - margin.right,
+    height = 500 - margin.top - margin.bottom;
+    var color = d3.scale.category20c();
+
+
+    var treemap = d3.layout.treemap()
+      .size([width, height])
+      .sticky(true)
+      .value(function(d) { return d.size; });
+
+    var div = d3.select("body")
+      .append("div")
+      .style("position", "relative")
+      .style("width", (width + margin.left + margin.right) + "px")
+      .style("height", (height + margin.top + margin.bottom) + "px")
+      .style("left", margin.left + "px")
+      .style("top", margin.top + "px");
+
+      var node = div.datum(dataset).selectAll(".node")
+        .data(treemap.nodes)
+        .enter().append("div")
+        .attr("class", "node")
+        .call(position)
+        .style("background", function(d) { return d.children ? color(d.name) : null; })
+        .text(function(d) { return d.children ? null : d.name; });
+
+      d3.selectAll("input").on("change", function change() {
+        var value = this.value === "count"
+          ? function() { return 1; }
+          : function(d) { return d.size; };
+
+          node
+            .data(treemap.value(value).nodes)
+            .transition()
+            .duration(1500)
+            .call(position);
+      });
+
+    function position() {
+      this.style("left", function(d) { return d.x + "px"; })
+        .style("top", function(d) { return d.y + "px"; })
+        .style("width", function(d) { return Math.max(0, d.dx - 1) + "px"; })
+        .style("height", function(d) { return Math.max(0, d.dy - 1) + "px"; });
+    }
+
+  </script>
+</div>
+
+
+  <!--
+  <div class="row">
+    
+  </div>
+  -->
+
+
+
+
+        </div>
+      </div>
+
+    <footer class="site-footer">
+  <div class="footer-wrapper">
+    <div class="footer-col">
+      <p class="footer-credits">Designed and built by 
+        <a href="http://www.sketchappsources.com/blog/post/erica-jaclyn-stein" target="blank">
+        Erica </a>using
+        <a href="http://jekyllrb.com/" target="blank">jekyll</a> + 
+        <a href="http://getbootstrap.com/" target="blank">Bootstrap</a>
+      </p>
+
+      <div class="social-list">
+        <ul>
+          
+            <li>
+              <a class="btn-xs btn-secondary" href="http://twitter.com/ericajaclyn" target="blank"> 
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+          
+          
+            <li>
+              <a class="btn-xs btn-secondary" href="https://medium.com/@ericajaclyn" target="blank"> 
+                <i class="fa fa-medium"></i>
+              </a>
+            </li>
+          
+          
+            <li>
+              <a class="btn-xs btn-secondary" href="https://github.com/ericajaclynstein" target="blank"> 
+                <i class="fa fa-github"></i>
+              </a>
+            </li>
+          
+          
+            <li>
+              <a class="btn-xs btn-secondary" href="http://www.dribbble.com/ericajaclyn" target="blank"> 
+                <i class="fa fa-dribbble"></i>
+              </a>
+            </li>
+          
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</footer>
+ 
+    
+  </body>
+
+</html>
