@@ -17,7 +17,3 @@ medium: "https://medium.com/@ericajaclyn"
 linkedin: "https://linkedin.com/ericajaclynstein"
 dribbble: "http://www.dribbble.com/ericajaclyn"
 google_plus: "https://plus.google.com/+EricaJaclynStein"
-
-collections:
-  projects:
-    output: true
