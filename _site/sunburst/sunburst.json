@@ -1,0 +1,219 @@
+{
+ "name": "Crayola Colors",
+ "children": [
+  {
+   "name": "Metallic FX",
+   "children": [
+      {"name": "Alloy Orange", "size": 3938},
+      {"name": "B'dazzled Blue", "size": 3812},
+      {"name": "Big Dip O' Ruby", "size": 6714},
+      {"name": "Bittersweet Shimmer", "size": 743},
+      {"name": "Blast Off Bronze", "size": 743},
+      {"name": "Cyber Grape", "size": 743},
+      {"name": "Deep Space Sparkle", "size": 743},
+      {"name": "Gold Fusion", "size": 743},
+      {"name": "Illuminating Emerald", "size": 743},
+      {"name": "Metallic Seaweed", "size": 743},
+      {"name": "Metallic Sunburst", "size": 743},
+      {"name": "Razzmic Berry", "size": 743},
+      {"name": "Sheen Green", "size": 743},
+      {"name": "Shimmering Blush", "size": 743},
+      {"name": "Sonic Silver", "size": 743},
+      {"name": "Steel Blue", "size": 743}
+     ]
+  },
+  {
+   "name": "Silly Scents",
+   "children": [
+    {"name": "Alien Armpit", "size": 17010},
+    {"name": "Big Foot Feet", "size": 17010},
+    {"name": "Booger Buster", "size": 17010},
+    {"name": "Dingy Dungeon", "size": 17010},
+    {"name": "Gargoyle Gas", "size": 17010},
+    {"name": "Giant's Club", "size": 17010},
+    {"name": "Magic Potion", "size": 5842},
+    {"name": "Mummy's Tomb", "size": 1041},
+    {"name": "Ogre Odor", "size": 5176},
+    {"name": "Pixie Powder", "size": 449},
+    {"name": "Princess Perfume", "size": 5593},
+    {"name": "Sasquatch Socks", "size": 5534},
+    {"name": "Sea Serpent", "size": 9201},
+    {"name": "Smashed Pumpkin", "size": 19975},
+    {"name": "Sunburnt Cyclops", "size": 1116},
+    {"name": "Winter Wizard", "size": 6006}
+   ]
+  },
+  {
+   "name": "Heads N Tails",
+   "children": [
+    {"name": "Sizzling Red", "size": 721},
+    {"name": "Red Salsa", "size": 4294},
+    {"name": "Tart Orange", "size": 9800},
+    {"name": "Orange Soda", "size": 1314},
+    {"name": "Bright Yellow", "size": 2220},
+    {"name": "Yellow Sunshine", "size": 721},
+    {"name": "Slimy Green", "size": 4294},
+    {"name": "Green Lizard", "size": 9800},
+    {"name": "Denim Blue", "size": 1314},
+    {"name": "Blue Jeans", "size": 2220},
+    {"name": "Plump Purple", "size": 1759},
+    {"name": "Purple Plum", "size": 2165},
+    {"name": "Sweet Brown", "size": 586},
+    {"name": "Brown Sugar", "size": 3331},
+    {"name": "Eerie Black", "size": 772},
+    {"name": "Black Shadows", "size": 3322}
+   ]
+  },
+  {
+   "name": "True To Life",
+   "children": [
+    {"name": "Amazon Forest", "size": 8833},
+    {"name": "Caribbean Current", "size": 1732},
+    {"name": "Florida Sunrise ", "size": 3623},
+    {"name": "Grand Canyon", "size": 10066},
+    {"name": "Maui Sunset", "size": 10066},
+    {"name": "Milky Way", "size": 10066},
+    {"name": "Sahara Desert", "size": 10066},
+    {"name": "Yosemite Campfire", "size": 10066}
+   ]
+  },
+  {
+   "name": "Extreme Twistables",
+   "children": [
+    {"name": "Fiery Rose", "size": 4116},
+    {"name": "Sizzling Sunrise", "size": 4116},
+    {"name": "Heat Wave", "size": 4116},
+    {"name": "Lemon Glacier", "size": 4116},
+    {"name": "Spring Frost", "size": 4116},
+    {"name": "Absolute Zero", "size": 4116},
+    {"name": "Winter Sky", "size": 4116},
+    {"name": "Frostbite", "size": 4116}
+   ]
+  },
+  {
+   "name": "Changeables",
+   "children": [
+    {"name": "Blue", "size": 1082},
+    {"name": "Black", "size": 1336},
+    {"name": "Blue", "size": 319},
+    {"name": "Green", "size": 10498},
+    {"name": "Green", "size": 2822},
+    {"name": "Orange", "size": 9983},
+    {"name": "Pink", "size": 2213},
+    {"name": "Red", "size": 1681},
+    {"name": "Yellow", "size": 1681},
+    {"name": "Magenta", "size": 1681},
+    {"name": "Violet", "size": 1681},
+    {"name": "Yellow", "size": 1681}
+   ]
+  },
+  {
+   "name": "Pearl Brite",
+   "children": [
+    {"name": "Aqua", "size": 1616},
+    {"name": "Black Coral", "size": 1027},
+    {"name": "Caribbean Green", "size": 3891},
+    {"name": "Cultured", "size": 891},
+    {"name": "Key Lime", "size": 2893},
+    {"name": "Ocean Green", "size": 5103},
+    {"name": "Ocean Blue", "size": 3677},
+    {"name": "Orchid", "size": 781},
+    {"name": "Midnight", "size": 4141},
+    {"name": "Mystic", "size": 933},
+    {"name": "Mandarin", "size": 5130},
+    {"name": "Rose", "size": 3617},
+    {"name": "Salmon", "size": 3240},
+    {"name": "Sunny", "size": 2732},
+    {"name": "Sunset", "size": 2039},
+    {"name": "Turquoise", "size": 1214}
+   ]
+  },
+  {
+   "name": "Gem Tones",
+   "children": [
+    {"name": "Amethyst", "size": 2105},
+    {"name": "Citrine", "size": 1316},
+    {"name": "Emerald", "size": 3151},
+    {"name": "Jade", "size": 3770},
+    {"name": "Jasper", "size": 2435},
+    {"name": "Lapis Lazuli", "size": 4839},
+    {"name": "Malachite", "size": 1756},
+    {"name": "Moonstone", "size": 4268},
+    {"name": "Onyx", "size": 1821},
+    {"name": "Peridot", "size": 5833},
+    {"name": "Pink Pearl", "size": 5833},
+    {"name": "Rose Quartz", "size": 5833},
+    {"name": "Ruby", "size": 5833},
+    {"name": "Sapphire", "size": 5833},
+    {"name": "Smokey Topaz", "size": 5833},
+    {"name": "Tiger's Eye", "size": 5833}
+   ]
+  },
+  {
+   "name": "Magic Scent",
+   "children": [
+    {"name": "Baby Powder", "size": 8258},
+    {"name": "Banana", "size": 10001},
+    {"name": "Blueberry", "size": 8217},
+    {"name": "Bubble Gum", "size": 12555},
+    {"name": "Cedar Chest", "size": 2324},
+    {"name": "Cherry", "size": 10993},
+    {"name": "Chocolate", "size": 9354},
+    {"name": "Coconut", "size": 1233},
+    {"name": "Daffodil", "size": 335},
+    {"name": "Dirt", "size": 383},
+    {"name": "Eucalyptus", "size": 874},
+    {"name": "Fresh Air", "size": 3165},
+    {"name": "Grape", "size": 2815},
+    {"name": "Jelly Bean", "size": 3366},
+    {"name": "Leather Jacket", "size": 17705},
+    {"name": "Lemon", "size": 1486},
+    {"name": "Licorice", "size": 6367},
+    {"name": "Lilac", "size": 1229},
+    {"name": "Lime", "size": 2059},
+    {"name": "Lumber", "size": 2291},
+    {"name": "New Car", "size": 5559},
+    {"name": "Orange", "size": 19118},
+    {"name": "Peach", "size": 6887},
+    {"name": "Pine", "size": 6557},
+    {"name": "Rose", "size": 22026},
+    {"name": "Shampoo", "size": 22026},
+    {"name": "Smoke", "size": 22026},
+    {"name": "Soap", "size": 22026},
+    {"name": "Strawberry", "size": 22026},
+    {"name": "Tulip", "size": 22026}
+   ]
+  },
+  {
+   "name": "Silver Swirls",
+   "children": [
+      {"name": "Aztec Gold", "size": 1302},
+      {"name": "Burnished Brown", "size": 24593},
+      {"name": "Cerulean Frost", "size": 652},
+      {"name": "Cinnamon Satin", "size": 636},
+      {"name": "Snowy Powder", "size": 6703},
+      {"name": "Copper Penny", "size": 2138},
+      {"name": "Cosmic Cobalt", "size": 3824},
+      {"name": "Green Sheen", "size": 1353},
+      {"name": "Glossy Grape", "size": 4665},
+      {"name": "Granite Gray", "size": 2649},
+      {"name": "Lilac Luster", "size": 2832},
+      {"name": "Misty Moss", "size": 4896},
+      {"name": "Mystic Maroon", "size": 763},
+      {"name": "Pearly Purple", "size": 5222},
+      {"name": "Pewter Blue", "size": 7862},
+      {"name": "Polished Pine", "size": 8435},
+      {"name": "Quick Silver", "size": 20544},
+      {"name": "Rose Dust", "size": 19788},
+      {"name": "Rusty Red", "size": 10349},
+      {"name": "Shadow Blue", "size": 3301},
+      {"name": "Shiny Shamrock", "size": 19382},
+      {"name": "Steel Teal", "size": 698},
+      {"name": "Sugar Plum", "size": 5569},
+      {"name": "Twilight Lavender", "size": 353},
+      {"name": "Wintergreen Dream", "size": 2247}
+     ]
+    },
+    {"name": "Visualization", "size": 16540}
+   ]
+}
