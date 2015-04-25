@@ -108,7 +108,7 @@ pre {
   .icon svg path {
     fill: #4c5063; }
 
-/********** SITE HEADER AND FOOTER **********/
+/********** SITE HEADER **********/
 .site-header {
   border-bottom: 1px solid transparent;
   min-height: 60px;
@@ -189,6 +189,7 @@ pre {
       .site-nav .page-link {
         display: block; } }
 
+/********** SITE FOOTER **********/
 .site-footer {
   background-color: #fff;
   margin-top: 60px;
@@ -1256,6 +1257,12 @@ text {
   font: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   cursor: pointer; }
+
+.instructions {
+  font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  text-align: center;
+  margin: 1em 0; }
 
 /**
  * Syntax highlighting styles

@@ -20,5 +20,4 @@ google_plus: "https://plus.google.com/+EricaJaclynStein"
 
 collections:
   projects:
-    layout: page
     output: true

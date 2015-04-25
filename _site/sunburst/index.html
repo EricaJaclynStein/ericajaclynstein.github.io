@@ -33,15 +33,16 @@
 
       <div class="page-content">
         <div class="wrapper">
+
             <div>
     <script>
 
       var width = 960,
-          height = 400,
-          radius = Math.min(width, height) / 2,
+          height = 600,
+          radius = width / 4,
           x = d3.scale.linear().range([0, 2 * Math.PI]),
           y = d3.scale.sqrt().range([0, radius]),
-          color = d3.scale.category20(),
+          color = d3.scale.category20b(),
           padding = 7;
 
       var svg = d3.select("body")
@@ -60,9 +61,9 @@
           .innerRadius(function(d) { return Math.max(0, y(d.y)); })
           .outerRadius(function(d) { return Math.max(0, y(d.y + d.dy)); });
 
-      d3.json("sunburst.json", function(error, root) {
+      d3.json("sunburst.json", function(error, json) {
         var path = svg.selectAll("path")
-          .data(partition.nodes(root))
+          .data(partition.nodes(json))
           .enter()
           .append("path")
           .attr("d", arc)
@@ -71,7 +72,7 @@
           .on("click", click);
 
         var text = svg.selectAll("text")
-          .data(partition.nodes(root))
+          .data(partition.nodes(json))
           .enter()
           .append("text")
           .style("fill-opacity", 1)
@@ -130,14 +131,19 @@
 
 <div class="project-credits">
   <p>
-    Sunburst data visualization featuring <a href="http://en.wikipedia.org/wiki/List_of_Crayola_crayon_colors" target="blank">Crayola Crayon</a> colors. Made possible in part by <a href="http://d3js.org/" target="blank">D3.js</a> and <a href="https://github.com/mbostock/d3/wiki/Partition-Layout" target="blank">mbostock's</a> <a href="http://bl.ocks.org/mbostock/4063423" target="blank">sunburst partition demo</a> and <a href="http://www.jasondavies.com/coffee-wheel/">jasondavies.com/coffee-wheel</a>
+    Sunburst data visualization. Made possible in part by <a href="http://d3js.org/" target="blank">D3.js</a>, <a href="https://github.com/mbostock/d3/wiki/Partition-Layout" target="blank">mbostock's</a> <a href="http://bl.ocks.org/mbostock/4063423" target="blank">partition demo</a> and <a href="http://www.jasondavies.com/coffee-wheel/">jasondavies.com/coffee-wheel</a>
   </p>
+</div>
+
+<div class="instructions">
+  <p>Click to Interact:</p>
 </div>
 
 
 
 
 
+          
         </div>
       </div>
 

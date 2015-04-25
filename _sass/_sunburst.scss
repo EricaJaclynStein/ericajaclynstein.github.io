@@ -8,3 +8,10 @@ text {
   font-weight: $font-light;
   cursor: pointer;
 }
+
+.instructions {
+  font: $base-font-family;
+  font-weight: $font-normal;
+  text-align: center;
+  margin: 1em 0;
+}
