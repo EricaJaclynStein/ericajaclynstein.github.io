@@ -124,6 +124,8 @@ pre {
     .site-header .site-title:hover {
       color: #6e748e;
       text-decoration: none; }
+    .site-header .site-title img {
+      max-width: 45px; }
 
 .header-wrapper {
   max-width: -webkit-calc(960px - (30px * 2));
