@@ -1,19 +1,31 @@
 title: arithmetically
 author: Erica
-description: > # this means to ignore newlines until "baseurl:"
+description: > #
   Human-Information Interaction
-  
 baseurl: ""
 url: "http://www.ericajaclynstein.github.io"
 
-markdown: redcarpet
+markdown:    kramdown
+highlighter: rouge
+lsi:         false
+excerpt_separator: "\n\n"
+
+
+# OUTPUT
+permalink:     date
+paginate_path: /page:num
 timezone: America/New_York
 
-# BASIC SOCIAL MEDIA
 
+# BASIC SOCIAL MEDIA
 twitter: "http://twitter.com/ericajaclyn"
 github:  "https://github.com/ericajaclynstein"
 medium: "https://medium.com/@ericajaclyn"
 linkedin: "https://linkedin.com/ericajaclynstein"
 dribbble: "http://www.dribbble.com/ericajaclyn"
 google_plus: "https://plus.google.com/+EricaJaclynStein"
+
+
+# PLUGINS
+whitelist: []
+gems:      []
