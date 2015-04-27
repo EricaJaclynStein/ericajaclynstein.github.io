@@ -4,6 +4,7 @@ title: Color Sunburst
 permalink:
 ---
 
+  <div>
     <script>
 
       var width = 960,
@@ -14,6 +15,7 @@ permalink:
           color = d3.scale.category20b(),
           padding = 7;
 
+      // Create svg element
       var svg = d3.select("body")
                   .append("svg")
                   .attr("width", width + padding)
@@ -45,16 +47,12 @@ permalink:
         // Call hover interaction on current element
         function mouseover(d) {
           d3.select(this)
-            .transition()
-            .duration(250)
-            .attr("fill", "purple");
+            text.transition()
+            .text("fill", "black");
         }
 
         function mouseout(d) {
-          d3.select(this)
-            .transition()
-            .duration(250)
-            .attr("fill", function(d) { return (d.hex); });
+          d3.select(text).remove();
         }
 
         // Call click interaction
@@ -79,26 +77,16 @@ permalink:
         };
       }
 
-      /* 
-      // http://www.w3.org/WAI/ER/WD-AERT/#color-contrast
-      function brightness(rgb) {
-        return rgb.r * .299 + rgb.g * .587 + rgb.b * .114;
-      }
-      */
-
     </script>
   </div>
 
-  <!--
+
   <div class="project-credits">
-    <p>Sunburst data visualization. Made possible in part by <a href="http://d3js.org/" target="blank">D3.js</a>, <a href="https://github.com/mbostock/d3/wiki/Partition-Layout" target="blank">mbostock's</a> <a href="http://bl.ocks.org/mbostock/4348373" target="blank">partition demo</a> and <a href="http://www.jasondavies.com/coffee-wheel/">jasondavies.com/coffee-wheel</a>
+    <h1>Color Sunburst!</h1>
+    <p>Data visualization. Made possible in part by <a href="http://d3js.org/" target="blank">D3.js</a>, with lots of help from <a href="https://github.com/mbostock/d3/wiki/Partition-Layout" target="blank">mbostock's</a> <a href="http://bl.ocks.org/mbostock/4348373" target="blank">partition demo</a> and <a href="http://www.jasondavies.com/coffee-wheel/">jasondavies.com/coffee-wheel</a>
     </p>
   </div>
 
-  <div class="instructions">
-    <p>Click to Interact:</p>
-  </div>
-  -->
 
 
 

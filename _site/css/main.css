@@ -116,7 +116,7 @@ pre {
   vertical-align: baseline;
   position: relative; }
   .site-header .site-title {
-    color: #363946;
+    color: #b5b8c6;
     font-size: 24px;
     font-weight: 700;
     line-height: 56px;
@@ -1252,7 +1252,7 @@ svg {
         font-size: 14px; } }
 
 path {
-  stroke: #FFF;
+  stroke: #F5F5F5;
   fill-rule: evenodd; }
 
 arc {
@@ -1267,11 +1267,13 @@ text {
   font-size: 28px;
   font-weight: 300; }
 
-.instructions {
-  font: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  text-align: center;
-  margin: 1em 0; }
+div.label {
+  background-color: #363946;
+  display: block;
+  height: 75px;
+  width: 400px;
+  margin: auto;
+  vertical-align: baseline; }
 
 /**
  * Syntax highlighting styles

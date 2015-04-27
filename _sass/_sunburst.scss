@@ -1,5 +1,5 @@
 path {
-  stroke: #FFF;
+  stroke: #F5F5F5;
   fill-rule: evenodd;
 }
 
@@ -17,9 +17,11 @@ text {
   font-weight: $font-light;
 }
 
-.instructions {
-  font: $base-font-family;
-  font-weight: $font-normal;
-  text-align: center;
-  margin: 1em 0;
+div.label {
+  background-color: $tungsten-gray;
+  display: block;
+  height: 75px;
+  width: 400px;
+  margin: auto;
+  vertical-align: baseline;
 }

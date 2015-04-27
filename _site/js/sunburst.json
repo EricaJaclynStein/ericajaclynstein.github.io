@@ -5,7 +5,7 @@
       "year": "2001", "hex": "#ebebeb",
       "children": [
         {
-          "name": "Metallic FX", "hex": "#798496",
+          "name": "Metallic FX", "hex": "#C46210",
           "children": [
               {"name": "Alloy Orange", "size": 3938, "hex": "#C46210"},
               {"name": "B'dazzled Blue", "size": 3812, "hex": "#2E5894"},
@@ -31,7 +31,7 @@
       "year": "2007", "hex": "#d6d6d6",
       "children": [
         {
-          "name": "Silly Scents", "hex": "#798496",
+          "name": "Silly Scents", "hex": "#84DE02",
           "children": [
             {"name": "Alien Armpit", "size": 17010, "hex": "#84DE02"},
             {"name": "Big Foot Feet", "size": 17010, "hex": "#E88E5A"},
@@ -52,7 +52,7 @@
           ]
         },
         {
-          "name": "True To Life", "hex": "#798496",
+          "name": "True To Life", "hex": "#92F646",
           "children": [
             {"name": "Amazon Forest", "size": 8833, "hex": "#92F646"},
             {"name": "Caribbean Current", "size": 1732, "hex": "#5D8DDF"},
@@ -70,7 +70,7 @@
       "year": "2006", "hex": "#ebebeb",
       "children": [
         {
-          "name": "Heads N Tails", "hex": "#798496",
+          "name": "Heads N Tails", "hex": "#FF3855",
           "children": [
             {"name": "Sizzling Red", "size": 721, "hex": "#FF3855"},
             {"name": "Red Salsa", "size": 4294, "hex": "#FD3A4A"},
@@ -96,7 +96,7 @@
       "year": "2009", "hex": "#ebebeb",
       "children": [
         {
-          "name": "Extreme Twistables", "hex": "#798496",
+          "name": "Extreme Twistables", "hex": "#FF5470",
           "children": [
             {"name": "Fiery Rose", "size": 4116, "hex": "#FF5470"},
             {"name": "Sizzling Sunrise", "size": 4116, "hex": "#FFDB00"},
@@ -114,7 +114,7 @@
       "year": "1995", "hex": "#ebebeb",
       "children": [
         {
-          "name": "Changeables", "hex": "#798496",
+          "name": "Changeables", "hex": "#C0E7F1",
           "children": [
             {"name": "Blue", "size": 1082, "hex": "#C0E7F1"},
             {"name": "Black", "size": 1336, "hex": "#000000"},
@@ -136,7 +136,7 @@
       "year": "1997", "hex": "#ebebeb",
       "children": [
         {
-          "name": "Pearl Brite", "hex": "#798496",
+          "name": "Pearl Brite", "hex": "#5FBED7",
           "children": [
             {"name": "Aqua", "size": 1616, "hex": "#5FBED7"},
             {"name": "Black Coral", "size": 1027, "hex": "#54626F"},
@@ -162,9 +162,9 @@
       "year": "1994", "hex": "#d6d6d6",
       "children": [
         {
-          "name": "Gem Tones", "hex": "#798496",
+          "name": "Gem Tones", "hex": "#64609A",
           "children": [
-            {"name": "Amethyst", "size": 2105, "hex": " #64609A"},
+            {"name": "Amethyst", "size": 2105, "hex": "#64609A"},
             {"name": "Citrine", "size": 1316, "hex": "#933709"},
             {"name": "Emerald", "size": 3151, "hex": "#14A989"},
             {"name": "Jade", "size": 3770, "hex": "#469A84"},
@@ -183,7 +183,7 @@
           ]
         },
         {
-          "name": "Magic Scent", "hex": "#798496",
+          "name": "Magic Scent", "hex": "#FEFEFA",
           "children": [
             {"name": "Baby Powder", "size": 8258, "hex": "#FEFEFA"},
             {"name": "Banana", "size": 10001, "hex": "#FFD12A"},
@@ -223,7 +223,7 @@
       "year": "1990", "hex": "#ebebeb",
       "children": [
         {
-          "name": "Silver Swirls", "hex": "#798496",
+          "name": "Silver Swirls", "hex": "#C39953",
           "children": [
             {"name": "Aztec Gold", "size": 1302, "hex": "#C39953"},
             {"name": "Burnished Brown", "size": 24593, "hex": "#A17A74"},

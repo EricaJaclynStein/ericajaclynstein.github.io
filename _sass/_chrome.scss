@@ -9,7 +9,7 @@
   position: relative;
 
   .site-title {
-    color: $tungsten-gray;
+    color: lighten($tungsten-gray, 50%);
     font-size: $h3-font-size;
     font-weight: $font-bold;
     line-height: 56px;
