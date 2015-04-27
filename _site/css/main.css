@@ -250,7 +250,6 @@ svg {
   display: inline-block;
   width: 20px;
   height: 75px;
-  /* Gets overriden by D3-assigned height below */
   margin-right: 2px;
   background-color: teal; }
 
@@ -1253,13 +1252,20 @@ svg {
         font-size: 14px; } }
 
 path {
-  stroke: #363946;
+  stroke: #FFF;
   fill-rule: evenodd; }
 
+arc {
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+
 text {
-  font: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  cursor: pointer; }
+  color: #6e748e;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 28px;
+  font-weight: 300; }
 
 .instructions {
   font: "Helvetica Neue", Helvetica, Arial, sans-serif;

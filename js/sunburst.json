@@ -1,219 +1,258 @@
 {
- "name": "Crayola Colors",
+ "name": "Crayola Colors", "hex": "#FFF",
  "children": [
-  {
-   "name": "Metallic FX",
-   "children": [
-      {"name": "Alloy Orange", "size": 3938},
-      {"name": "B'dazzled Blue", "size": 3812},
-      {"name": "Big Dip O' Ruby", "size": 6714},
-      {"name": "Bittersweet Shimmer", "size": 743},
-      {"name": "Blast Off Bronze", "size": 743},
-      {"name": "Cyber Grape", "size": 743},
-      {"name": "Deep Space Sparkle", "size": 743},
-      {"name": "Gold Fusion", "size": 743},
-      {"name": "Illuminating Emerald", "size": 743},
-      {"name": "Metallic Seaweed", "size": 743},
-      {"name": "Metallic Sunburst", "size": 743},
-      {"name": "Razzmic Berry", "size": 743},
-      {"name": "Sheen Green", "size": 743},
-      {"name": "Shimmering Blush", "size": 743},
-      {"name": "Sonic Silver", "size": 743},
-      {"name": "Steel Blue", "size": 743}
-     ]
-  },
-  {
-   "name": "Silly Scents",
-   "children": [
-    {"name": "Alien Armpit", "size": 17010},
-    {"name": "Big Foot Feet", "size": 17010},
-    {"name": "Booger Buster", "size": 17010},
-    {"name": "Dingy Dungeon", "size": 17010},
-    {"name": "Gargoyle Gas", "size": 17010},
-    {"name": "Giant's Club", "size": 17010},
-    {"name": "Magic Potion", "size": 5842},
-    {"name": "Mummy's Tomb", "size": 1041},
-    {"name": "Ogre Odor", "size": 5176},
-    {"name": "Pixie Powder", "size": 449},
-    {"name": "Princess Perfume", "size": 5593},
-    {"name": "Sasquatch Socks", "size": 5534},
-    {"name": "Sea Serpent", "size": 9201},
-    {"name": "Smashed Pumpkin", "size": 19975},
-    {"name": "Sunburnt Cyclops", "size": 1116},
-    {"name": "Winter Wizard", "size": 6006}
-   ]
-  },
-  {
-   "name": "Heads N Tails",
-   "children": [
-    {"name": "Sizzling Red", "size": 721},
-    {"name": "Red Salsa", "size": 4294},
-    {"name": "Tart Orange", "size": 9800},
-    {"name": "Orange Soda", "size": 1314},
-    {"name": "Bright Yellow", "size": 2220},
-    {"name": "Yellow Sunshine", "size": 721},
-    {"name": "Slimy Green", "size": 4294},
-    {"name": "Green Lizard", "size": 9800},
-    {"name": "Denim Blue", "size": 1314},
-    {"name": "Blue Jeans", "size": 2220},
-    {"name": "Plump Purple", "size": 1759},
-    {"name": "Purple Plum", "size": 2165},
-    {"name": "Sweet Brown", "size": 586},
-    {"name": "Brown Sugar", "size": 3331},
-    {"name": "Eerie Black", "size": 772},
-    {"name": "Black Shadows", "size": 3322}
-   ]
-  },
-  {
-   "name": "True To Life",
-   "children": [
-    {"name": "Amazon Forest", "size": 8833},
-    {"name": "Caribbean Current", "size": 1732},
-    {"name": "Florida Sunrise ", "size": 3623},
-    {"name": "Grand Canyon", "size": 10066},
-    {"name": "Maui Sunset", "size": 10066},
-    {"name": "Milky Way", "size": 10066},
-    {"name": "Sahara Desert", "size": 10066},
-    {"name": "Yosemite Campfire", "size": 10066}
-   ]
-  },
-  {
-   "name": "Extreme Twistables",
-   "children": [
-    {"name": "Fiery Rose", "size": 4116},
-    {"name": "Sizzling Sunrise", "size": 4116},
-    {"name": "Heat Wave", "size": 4116},
-    {"name": "Lemon Glacier", "size": 4116},
-    {"name": "Spring Frost", "size": 4116},
-    {"name": "Absolute Zero", "size": 4116},
-    {"name": "Winter Sky", "size": 4116},
-    {"name": "Frostbite", "size": 4116}
-   ]
-  },
-  {
-   "name": "Changeables",
-   "children": [
-    {"name": "Blue", "size": 1082},
-    {"name": "Black", "size": 1336},
-    {"name": "Blue", "size": 319},
-    {"name": "Green", "size": 10498},
-    {"name": "Green", "size": 2822},
-    {"name": "Orange", "size": 9983},
-    {"name": "Pink", "size": 2213},
-    {"name": "Red", "size": 1681},
-    {"name": "Yellow", "size": 1681},
-    {"name": "Magenta", "size": 1681},
-    {"name": "Violet", "size": 1681},
-    {"name": "Yellow", "size": 1681}
-   ]
-  },
-  {
-   "name": "Pearl Brite",
-   "children": [
-    {"name": "Aqua", "size": 1616},
-    {"name": "Black Coral", "size": 1027},
-    {"name": "Caribbean Green", "size": 3891},
-    {"name": "Cultured", "size": 891},
-    {"name": "Key Lime", "size": 2893},
-    {"name": "Ocean Green", "size": 5103},
-    {"name": "Ocean Blue", "size": 3677},
-    {"name": "Orchid", "size": 781},
-    {"name": "Midnight", "size": 4141},
-    {"name": "Mystic", "size": 933},
-    {"name": "Mandarin", "size": 5130},
-    {"name": "Rose", "size": 3617},
-    {"name": "Salmon", "size": 3240},
-    {"name": "Sunny", "size": 2732},
-    {"name": "Sunset", "size": 2039},
-    {"name": "Turquoise", "size": 1214}
-   ]
-  },
-  {
-   "name": "Gem Tones",
-   "children": [
-    {"name": "Amethyst", "size": 2105},
-    {"name": "Citrine", "size": 1316},
-    {"name": "Emerald", "size": 3151},
-    {"name": "Jade", "size": 3770},
-    {"name": "Jasper", "size": 2435},
-    {"name": "Lapis Lazuli", "size": 4839},
-    {"name": "Malachite", "size": 1756},
-    {"name": "Moonstone", "size": 4268},
-    {"name": "Onyx", "size": 1821},
-    {"name": "Peridot", "size": 5833},
-    {"name": "Pink Pearl", "size": 5833},
-    {"name": "Rose Quartz", "size": 5833},
-    {"name": "Ruby", "size": 5833},
-    {"name": "Sapphire", "size": 5833},
-    {"name": "Smokey Topaz", "size": 5833},
-    {"name": "Tiger's Eye", "size": 5833}
-   ]
-  },
-  {
-   "name": "Magic Scent",
-   "children": [
-    {"name": "Baby Powder", "size": 8258},
-    {"name": "Banana", "size": 10001},
-    {"name": "Blueberry", "size": 8217},
-    {"name": "Bubble Gum", "size": 12555},
-    {"name": "Cedar Chest", "size": 2324},
-    {"name": "Cherry", "size": 10993},
-    {"name": "Chocolate", "size": 9354},
-    {"name": "Coconut", "size": 1233},
-    {"name": "Daffodil", "size": 335},
-    {"name": "Dirt", "size": 383},
-    {"name": "Eucalyptus", "size": 874},
-    {"name": "Fresh Air", "size": 3165},
-    {"name": "Grape", "size": 2815},
-    {"name": "Jelly Bean", "size": 3366},
-    {"name": "Leather Jacket", "size": 17705},
-    {"name": "Lemon", "size": 1486},
-    {"name": "Licorice", "size": 6367},
-    {"name": "Lilac", "size": 1229},
-    {"name": "Lime", "size": 2059},
-    {"name": "Lumber", "size": 2291},
-    {"name": "New Car", "size": 5559},
-    {"name": "Orange", "size": 19118},
-    {"name": "Peach", "size": 6887},
-    {"name": "Pine", "size": 6557},
-    {"name": "Rose", "size": 22026},
-    {"name": "Shampoo", "size": 22026},
-    {"name": "Smoke", "size": 22026},
-    {"name": "Soap", "size": 22026},
-    {"name": "Strawberry", "size": 22026},
-    {"name": "Tulip", "size": 22026}
-   ]
-  },
-  {
-   "name": "Silver Swirls",
-   "children": [
-      {"name": "Aztec Gold", "size": 1302},
-      {"name": "Burnished Brown", "size": 24593},
-      {"name": "Cerulean Frost", "size": 652},
-      {"name": "Cinnamon Satin", "size": 636},
-      {"name": "Snowy Powder", "size": 6703},
-      {"name": "Copper Penny", "size": 2138},
-      {"name": "Cosmic Cobalt", "size": 3824},
-      {"name": "Green Sheen", "size": 1353},
-      {"name": "Glossy Grape", "size": 4665},
-      {"name": "Granite Gray", "size": 2649},
-      {"name": "Lilac Luster", "size": 2832},
-      {"name": "Misty Moss", "size": 4896},
-      {"name": "Mystic Maroon", "size": 763},
-      {"name": "Pearly Purple", "size": 5222},
-      {"name": "Pewter Blue", "size": 7862},
-      {"name": "Polished Pine", "size": 8435},
-      {"name": "Quick Silver", "size": 20544},
-      {"name": "Rose Dust", "size": 19788},
-      {"name": "Rusty Red", "size": 10349},
-      {"name": "Shadow Blue", "size": 3301},
-      {"name": "Shiny Shamrock", "size": 19382},
-      {"name": "Steel Teal", "size": 698},
-      {"name": "Sugar Plum", "size": 5569},
-      {"name": "Twilight Lavender", "size": 353},
-      {"name": "Wintergreen Dream", "size": 2247}
-     ]
+    {
+      "year": "2001", "hex": "#ebebeb",
+      "children": [
+        {
+          "name": "Metallic FX", "hex": "#798496",
+          "children": [
+              {"name": "Alloy Orange", "size": 3938, "hex": "#C46210"},
+              {"name": "B'dazzled Blue", "size": 3812, "hex": "#2E5894"},
+              {"name": "Big Dip O' Ruby", "size": 6714, "hex": "#9C2542"},
+              {"name": "Bittersweet Shimmer", "size": 743, "hex": "#BF4F51"},
+              {"name": "Blast Off Bronze", "size": 743, "hex": "#A57164"},
+              {"name": "Cyber Grape", "size": 743, "hex": "#58427C"},
+              {"name": "Deep Space Sparkle", "size": 743, "hex": "#4A646C"},
+              {"name": "Gold Fusion", "size": 743, "hex": "#85754E"},
+              {"name": "Illuminating Emerald", "size": 743, "hex": "#319177"},
+              {"name": "Metallic Seaweed", "size": 743, "hex": "#0A7E8C"},
+              {"name": "Metallic Sunburst", "size": 743, "hex": "#9C7C38"},
+              {"name": "Razzmic Berry", "size": 743, "hex": "#8D4E85"},
+              {"name": "Sheen Green", "size": 743, "hex": "#8FD400"},
+              {"name": "Shimmering Blush", "size": 743, "hex": "#D98695"},
+              {"name": "Sonic Silver", "size": 743, "hex": "#757575"},
+              {"name": "Steel Blue", "size": 743, "hex": "#0081AB"}
+          ]
+        }
+      ]
     },
-    {"name": "Visualization", "size": 16540}
-   ]
+    {
+      "year": "2007", "hex": "#d6d6d6",
+      "children": [
+        {
+          "name": "Silly Scents", "hex": "#798496",
+          "children": [
+            {"name": "Alien Armpit", "size": 17010, "hex": "#84DE02"},
+            {"name": "Big Foot Feet", "size": 17010, "hex": "#E88E5A"},
+            {"name": "Booger Buster", "size": 17010, "hex": "#DDE26A"},
+            {"name": "Dingy Dungeon", "size": 17010, "hex": "#C53151"},
+            {"name": "Gargoyle Gas", "size": 17010, "hex": "#FFDF46"},
+            {"name": "Giant's Club", "size": 17010, "hex": "#B05C52"},
+            {"name": "Magic Potion", "size": 5842, "hex": "#FF4466"},
+            {"name": "Mummy's Tomb", "size": 1041, "hex": "#828E84"},
+            {"name": "Ogre Odor", "size": 5176, "hex": "#FD5240"},
+            {"name": "Pixie Powder", "size": 449, "hex": "#391285"},
+            {"name": "Princess Perfume", "size": 5593, "hex": "#FF85CF"},
+            {"name": "Sasquatch Socks", "size": 5534, "hex": "#FF4681"},
+            {"name": "Sea Serpent", "size": 9201, "hex": "#4BC7CF"},
+            {"name": "Smashed Pumpkin", "size": 19975, "hex": "#FF6D3A"},
+            {"name": "Sunburnt Cyclops", "size": 1116, "hex": "#FF404C"},
+            {"name": "Winter Wizard", "size": 6006, "hex": "#A0E6FF"}
+          ]
+        },
+        {
+          "name": "True To Life", "hex": "#798496",
+          "children": [
+            {"name": "Amazon Forest", "size": 8833, "hex": "#92F646"},
+            {"name": "Caribbean Current", "size": 1732, "hex": "#5D8DDF"},
+            {"name": "Florida Sunrise ", "size": 3623, "hex": "#FFB329"},
+            {"name": "Grand Canyon", "size": 10066, "hex": "#6D3834"},
+            {"name": "Maui Sunset", "size": 10066, "hex": "#8E599F"},
+            {"name": "Milky Way", "size": 10066, "hex": "#070707"},
+            {"name": "Sahara Desert", "size": 10066, "hex": "#F5CBBD"},
+            {"name": "Yosemite Campfire", "size": 10066, "hex": "#ED4C44"}
+          ]
+        }
+      ]
+    },
+    {
+      "year": "2006", "hex": "#ebebeb",
+      "children": [
+        {
+          "name": "Heads N Tails", "hex": "#798496",
+          "children": [
+            {"name": "Sizzling Red", "size": 721, "hex": "#FF3855"},
+            {"name": "Red Salsa", "size": 4294, "hex": "#FD3A4A"},
+            {"name": "Tart Orange", "size": 9800, "hex": "#FB4D46"},
+            {"name": "Orange Soda", "size": 1314, "hex": "#FA5B3D"},
+            {"name": "Bright Yellow", "size": 2220, "hex": "#FFAA1D"},
+            {"name": "Yellow Sunshine", "size": 721, "hex": "#FFF700"},
+            {"name": "Slimy Green", "size": 4294, "hex": "#299617"},
+            {"name": "Green Lizard", "size": 9800, "hex": "#A7F432"},
+            {"name": "Denim Blue", "size": 1314, "hex": "#2243B6"},
+            {"name": "Blue Jeans", "size": 2220, "hex": "#5DADEC"},
+            {"name": "Plump Purple", "size": 1759, "hex": "#5946B2"},
+            {"name": "Purple Plum", "size": 2165, "hex": "#9C51B6"},
+            {"name": "Sweet Brown", "size": 586, "hex": "#A83731"},
+            {"name": "Brown Sugar", "size": 3331, "hex": "#AF6E4D"},
+            {"name": "Eerie Black", "size": 772, "hex": "#1B1B1B"},
+            {"name": "Black Shadows", "size": 3322, "hex": "#BFAFB2"}
+          ]
+        }
+      ]
+    },
+    {
+      "year": "2009", "hex": "#ebebeb",
+      "children": [
+        {
+          "name": "Extreme Twistables", "hex": "#798496",
+          "children": [
+            {"name": "Fiery Rose", "size": 4116, "hex": "#FF5470"},
+            {"name": "Sizzling Sunrise", "size": 4116, "hex": "#FFDB00"},
+            {"name": "Heat Wave", "size": 4116, "hex": "#FF7A00"},
+            {"name": "Lemon Glacier", "size": 4116, "hex": "#FDFF00"},
+            {"name": "Spring Frost", "size": 4116, "hex": "#87FF2A"},
+            {"name": "Absolute Zero", "size": 4116, "hex": "#0048BA"},
+            {"name": "Winter Sky", "size": 4116, "hex": "#FF007C"},
+            {"name": "Frostbite", "size": 4116, "hex": "#E936A7"}
+          ]
+        }
+      ]
+    },
+    {
+      "year": "1995", "hex": "#ebebeb",
+      "children": [
+        {
+          "name": "Changeables", "hex": "#798496",
+          "children": [
+            {"name": "Blue", "size": 1082, "hex": "#C0E7F1"},
+            {"name": "Black", "size": 1336, "hex": "#000000"},
+            {"name": "Blue", "size": 319, "hex": "#131391"},
+            {"name": "Green", "size": 10498,"hex": "#91E351"},
+            {"name": "Green", "size": 2822, "hex": "#4F7948"},
+            {"name": "Orange", "size": 9983, "hex": "#FF8071"},
+            {"name": "Pink", "size": 2213, "hex": "#FF8ABA"},
+            {"name": "Red", "size": 1681, "hex": "#F4405D"},
+            {"name": "Yellow", "size": 1681, "hex": "#FDFD07"},
+            {"name": "Magenta", "size": 1681, "hex": "#EB58DD"},
+            {"name": "Violet", "size": 1681, "hex": "#963D7F"},
+            {"name": "Yellow", "size": 1681, "hex": "#FFF7CC"}
+          ]
+        }
+      ]
+    },
+    {
+      "year": "1997", "hex": "#ebebeb",
+      "children": [
+        {
+          "name": "Pearl Brite", "hex": "#798496",
+          "children": [
+            {"name": "Aqua", "size": 1616, "hex": "#5FBED7"},
+            {"name": "Black Coral", "size": 1027, "hex": "#54626F"},
+            {"name": "Caribbean Green", "size": 3891, "hex": "#6ADA8E"},
+            {"name": "Cultured", "size": 891, "hex": "#F5F5F5"},
+            {"name": "Key Lime", "size": 2893, "hex": "#E8F48C"},
+            {"name": "Ocean Green", "size": 5103, "hex": "#48BF91"},
+            {"name": "Ocean Blue", "size": 3677, "hex": "#4F42B5"},
+            {"name": "Orchid", "size": 781, "hex": "#7B4259"},
+            {"name": "Midnight", "size": 4141, "hex": "#702670"},
+            {"name": "Mystic", "size": 933, "hex": "#D65282"},
+            {"name": "Mandarin", "size": 5130, "hex": "#F37A48"},
+            {"name": "Rose", "size": 3617, "hex": "#F03865"},
+            {"name": "Salmon", "size": 3240, "hex": "#F1444A"},
+            {"name": "Sunny", "size": 2732, "hex": "#F2F27A"},
+            {"name": "Sunset", "size": 2039, "hex": "#F1CC79"},
+            {"name": "Turquoise", "size": 1214, "hex": "#3BBCD0"}
+          ]
+        }
+      ]
+    },
+    {
+      "year": "1994", "hex": "#d6d6d6",
+      "children": [
+        {
+          "name": "Gem Tones", "hex": "#798496",
+          "children": [
+            {"name": "Amethyst", "size": 2105, "hex": " #64609A"},
+            {"name": "Citrine", "size": 1316, "hex": "#933709"},
+            {"name": "Emerald", "size": 3151, "hex": "#14A989"},
+            {"name": "Jade", "size": 3770, "hex": "#469A84"},
+            {"name": "Jasper", "size": 2435, "hex": "#D05340"},
+            {"name": "Lapis Lazuli", "size": 4839, "hex": "#436CB9"},
+            {"name": "Malachite", "size": 1756, "hex": "#469496"},
+            {"name": "Moonstone", "size": 4268, "hex": "#3AA8C1"},
+            {"name": "Onyx", "size": 1821, "hex": "#353839"},
+            {"name": "Peridot", "size": 5833, "hex": "#ABAD48"},
+            {"name": "Pink Pearl", "size": 5833, "hex": "#B07080"},
+            {"name": "Rose Quartz", "size": 5833, "hex": "#BD559C"},
+            {"name": "Ruby", "size": 5833, "hex": "#AA4069"},
+            {"name": "Sapphire", "size": 5833, "hex": "#2D5DA1"},
+            {"name": "Smokey Topaz", "size": 5833, "hex": "#832A0D"},
+            {"name": "Tiger's Eye", "size": 5833, "hex": "#B56917"}
+          ]
+        },
+        {
+          "name": "Magic Scent", "hex": "#798496",
+          "children": [
+            {"name": "Baby Powder", "size": 8258, "hex": "#FEFEFA"},
+            {"name": "Banana", "size": 10001, "hex": "#FFD12A"},
+            {"name": "Blueberry", "size": 8217, "hex": "#4F86F7"},
+            {"name": "Bubble Gum", "size": 12555, "hex": "#FFD3F8"},
+            {"name": "Cedar Chest", "size": 2324, "hex": "#C95A49"},
+            {"name": "Cherry", "size": 10993, "hex": "#DA2647"},
+            {"name": "Chocolate", "size": 9354, "hex": "#BD8260"},
+            {"name": "Coconut", "size": 1233, "hex": "#FEFEFE"},
+            {"name": "Daffodil", "size": 335, "hex": "#FFFF31"},
+            {"name": "Dirt", "size": 383, "hex": "#9B7653"},
+            {"name": "Eucalyptus", "size": 874, "hex": "#44D7A8"},
+            {"name": "Fresh Air", "size": 3165, "hex": "#A6E7FF"},
+            {"name": "Grape", "size": 2815, "hex": "#6F2DA8"},
+            {"name": "Jelly Bean", "size": 3366, "hex": "#DA614E"},
+            {"name": "Leather Jacket", "size": 17705, "hex": "#253529"},
+            {"name": "Lemon", "size": 1486, "hex": "#FFFF38"},
+            {"name": "Licorice", "size": 6367, "hex": "#1A1110"},
+            {"name": "Lilac", "size": 1229, "hex": "#DB91EF"},
+            {"name": "Lime", "size": 2059, "hex": "#B2F302"},
+            {"name": "Lumber", "size": 2291, "hex": "#FFE4CD"},
+            {"name": "New Car", "size": 5559, "hex": "#214FC6"},
+            {"name": "Orange", "size": 19118, "hex": "#FF8866"},
+            {"name": "Peach", "size": 6887, "hex": "#FFD0B9"},
+            {"name": "Pine", "size": 6557, "hex": "#45A27D"},
+            {"name": "Rose", "size": 22026, "hex": "#FF5050"},
+            {"name": "Shampoo", "size": 22026, "hex": "#FFCFF1"},
+            {"name": "Smoke", "size": 22026, "hex": "#738276"},
+            {"name": "Soap", "size": 22026, "hex": "#CEC8EF"},
+            {"name": "Strawberry", "size": 22026, "hex": "#FC5A8D"},
+            {"name": "Tulip", "size": 22026, "hex": "#FF878D"}
+          ]
+        }
+      ]
+    },
+    {
+      "year": "1990", "hex": "#ebebeb",
+      "children": [
+        {
+          "name": "Silver Swirls", "hex": "#798496",
+          "children": [
+            {"name": "Aztec Gold", "size": 1302, "hex": "#C39953"},
+            {"name": "Burnished Brown", "size": 24593, "hex": "#A17A74"},
+            {"name": "Cerulean Frost", "size": 652, "hex": "#6D9BC3"},
+            {"name": "Cinnamon Satin", "size": 636, "hex": "#CD607E"},
+            {"name": "Snowy Powder", "size": 6703, "hex": "#C45678"},
+            {"name": "Copper Penny", "size": 2138, "hex": "#AD6F69"},
+            {"name": "Cosmic Cobalt", "size": 3824, "hex": "#2E2D88"},
+            {"name": "Green Sheen", "size": 1353, "hex": "#6EAEA1"},
+            {"name": "Glossy Grape", "size": 4665, "hex": "#AB92B3"},
+            {"name": "Granite Gray", "size": 2649, "hex": "#676767"},
+            {"name": "Lilac Luster", "size": 2832, "hex": "#AE98AA"},
+            {"name": "Misty Moss", "size": 4896, "hex": "#BBB477"},
+            {"name": "Mystic Maroon", "size": 763, "hex": "#AD4379"},
+            {"name": "Pearly Purple", "size": 5222, "hex": "#B768A2"},
+            {"name": "Pewter Blue", "size": 7862, "hex": "#8BA8B7"},
+            {"name": "Polished Pine", "size": 8435, "hex": "#5DA493"},
+            {"name": "Quick Silver", "size": 20544, "hex": "#A6A6A6"},
+            {"name": "Rose Dust", "size": 19788, "hex": "#9E5E6F"},
+            {"name": "Rusty Red", "size": 10349, "hex": "#DA2C43"},
+            {"name": "Shadow Blue", "size": 3301, "hex": "#778BA5"},
+            {"name": "Shiny Shamrock", "size": 19382, "hex": "#5FA778"},
+            {"name": "Steel Teal", "size": 698, "hex": "#5F8A8B"},
+            {"name": "Sugar Plum", "size": 5569, "hex": "#914E75"},
+            {"name": "Twilight Lavender", "size": 353, "hex": "#8A496B"},
+            {"name": "Wintergreen Dream", "size": 2247, "hex": "#56887D"}
+          ]
+        }
+      ]
+    }
+  ]
 }
