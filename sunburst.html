@@ -40,20 +40,7 @@ permalink:
             .attr("d", arc)
             .attr("fill-rule", "evenodd")
             .attr("fill", function(d) { return (d.hex); })
-            .on("mouseover", mouseover)
-            .on("mouseout", mouseout)
             .on("click", click);
-
-        // Call hover interaction on current element
-        function mouseover(d) {
-          d3.select(this)
-            text.transition()
-            .text("fill", "black");
-        }
-
-        function mouseout(d) {
-          d3.select(text).remove();
-        }
 
         // Call click interaction
         function click(d) {
@@ -61,7 +48,8 @@ permalink:
             .duration(750)
             .attrTween("d", arcTween(d));
         }
-    });
+
+      });
 
       d3.select(self.frameElement).style("height", height + "px");
 

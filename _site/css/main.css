@@ -100,14 +100,6 @@ pre {
   display: table;
   clear: both; }
 
-.icon svg {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  vertical-align: middle; }
-  .icon svg path {
-    fill: #4c5063; }
-
 /********** SITE HEADER **********/
 .site-header {
   border-bottom: 1px solid transparent;
@@ -920,6 +912,17 @@ svg {
 
   .col-lg-offset-0 {
     margin-left: 0; } }
+.graphic {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px; }
+
+.icon {
+  display: inline-block;
+  fill: #FF0038; }
+  .icon:hover {
+    fill: #363946; }
+
 /********** SITE PAGES STYLES **********/
 .page-content {
   padding-top: 30px; }

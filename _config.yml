@@ -5,14 +5,10 @@ description: > #
 baseurl: ""
 url: "http://www.ericajaclynstein.github.io"
 
+# CONFIGURATION
 markdown:    kramdown
-highlighter: rouge
-lsi:         false
-excerpt_separator: "\n\n"
 
 # OUTPUT
-permalink:     date
-paginate_path: /page:num
 timezone: America/New_York
 
 # BASIC SOCIAL MEDIA
