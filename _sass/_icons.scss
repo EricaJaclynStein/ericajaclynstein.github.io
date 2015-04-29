@@ -1,14 +1,29 @@
 
-.graphic {
-	max-width: 50px;
-	height: 50px;
-	margin-bottom: 15px; 
+.icon-set {
+	padding-top: $spacing-unit;
+	padding-bottom: $spacing-unit;
+	text-align: center;
+	vertical-align: baseline;
+
+	ul {
+		margin: 0;
+	}
+
+	ul li {
+		display: inline-block;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+}
+
+svg {
+	overflow: hidden;
+	position: relative;
 }
 
 .icon {
     display: inline-block;
     fill: #FF0038;
-    text-anchor: middle;
 
     &:hover {
   		fill: #363946; 
