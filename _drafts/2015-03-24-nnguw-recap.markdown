@@ -235,6 +235,9 @@ Break content and experiences into goals and subgoals. Users love being guided t
 
 Progressively disclosing content that might be deemed horrible distractions if cued at the wrong times. Think: fashion sales representatives askinf to help you in a shopping experience - those who are great at it, spend only 10% of their time interacting with customers because the other 90% of their time is spent reading their customers' body language. 
 
+![alt text](assets/historyhere1.jpg "Logo Title Text 1")
+![alt text](assets/historyhere2.jpg "Logo Title Text 1")
+
 ### Decision Making 
 
 People like the perception of choice, to percieve that they are in control. But, when push comes to shove, they dont really want to do the work. Too many options can overwhelm people. After all, individuals care about different attributes. Multi-attribute decision making models tend to help with this. Take the example of searching online for apartments or a hotel. 
@@ -270,28 +273,6 @@ Never write "Fill this out in 3 easy steps!" Why? Because it's entirely subjecti
 Citations
 
 Welford, A. T. (1967). Single-channel operation in the brain. Acta Psychologica, 27, 5– 22.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
