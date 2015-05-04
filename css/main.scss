@@ -3,68 +3,67 @@
 ---
 @charset "utf-8";
 
-
 /********** SET BASE VARIABLES **********/
 
+$base-font-family:  "Roboto", Helvetica, Arial, sans-serif;
+$mono-font-family:  "Inconsolata", Consolas, monospace;
+$serif-font-family: "Libre Baskerville", Georgia, serif;
 
-$base-font-family:   "Helvetica Neue", Helvetica, Arial, sans-serif;
-$mono-font-family:   "Inconsolata", Consolas, monospace;
+$base-font-size:        14px;
+$base-line-height:      1.4;
+$small-font-size:	    $base-font-size * .85;
+$small-line-height:     1.2;
+$big-font-size:		    $base-font-size * 2;
+$big-line-height:       1.6;
+$longreads-font-size:   18px;
+$longreads-line-height: 1.8;
 
+$background-color: #fff;
+$maraschino:       #FF0038;
+$coconut-milk:     #FEFEFE;
+$mercury-gray:     #F5F5F5;
+$tungsten-gray:    #363946;
+$steel:            lighten($tungsten-gray, 25%);
+$pacific-green:    #12E3DB;
+$neon-carrot:      #FFA343;
+$laser-lemon:      #FEFE22;
 
-$base-font-size:    14px;
-$base-line-height:  1.428;
-$small-font-size:	$base-font-size * .85;
-$big-font-size:		$base-font-size * 2;
+$font-thin: 	100;
+$font-light:	300;
+$font-normal: 	400;
+$font-semibold: 500;
+$font-bold: 	700;
 
-$background-color:  #fff;
+$h1-font-size: 36px;
+$h2-font-size: 26px;
+$h3-font-size: 20px;
+$h4-font-size: 16px;
+$h5-font-size: 14px;
+$h6-font-size: $base-font-size * .85;
 
-$maraschino:        #FF0038;
-$coconut-milk:      #FEFEFE;
-$mercury-gray:      #F5F5F5;
-$steel-gray:        #798496;
-$tungsten-gray:     #363946;
-$pacific-green:     #12E3DB;
-$neon-carrot:       #FFA343;
-$laser-lemon:       #FEFE22;
-
-$font-thin: 	    100;
-$font-light:	    300;
-$font-normal: 	    400;
-$font-semibold:     500;
-$font-bold: 	    700;
-
-$h1-font-size: 	    36px; 	
-$h2-font-size:	    30px;
-$h3-font-size: 	  	24px;
-$h4-font-size:	  	18px;
-$h5-font-size:	  	14px;
-$h6-font-size:	  	12px;
-
-$spacing-unit:    	30px;
-$content-width:   	960px;
-$on-laptop:       	700px;
-$on-palm:         	600px;
-
+$spacing-unit:  30px;
+$content-width: 960px;
+$on-laptop:     700px;
+$on-palm:       600px;
 
 @mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
+  @media screen and (max-width: $device) {
+    @content;
+  }
 }
-
-
 
 /********** IMPORT SASS **********/
 
 @import
-        "base",
-        "chrome",
-        "force",
-        "grid",
-        "icons",
-        "pages",
-        "posts",
-        "sunburst",
-        "syntax-highlighting",
-        "tables"
+  "base",
+  "chrome",
+  "force",
+  "grid",
+  "homepage",
+  "icons",
+  "pages",
+  "posts",
+  "sunburst",
+  "syntax-highlighting",
+  "tables"
 ;

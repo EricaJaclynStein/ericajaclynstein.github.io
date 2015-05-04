@@ -1,259 +1,262 @@
-@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,400italic|Libre+Baskerville:400,400italic);
-
-
 .post-content {
-    margin-bottom: $spacing-unit * 4;
+  font-family: $serif-font-family;
+  font-size: $longreads-font-size;
+  font-weight: $font-normal;
+  line-height: $longreads-line-height;
+  margin-bottom: $spacing-unit;
 
-    p {
-        font-family: 'Libre Baskerville', Georgia, serif;
-        font-size: 18px;
-        font-weight: $font-normal;
-        line-height: 1.8;
-        margin-bottom: $spacing-unit;
+  p {
+    margin-bottom: $spacing-unit;
+
+    a {
+      color: $maraschino;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  
+  blockquote {
+    color: lighten($tungsten-gray, 25%);
+    font-size: $big-font-size;
+    font-style: italic;
+    line-height: $big-line-height;
+    padding-top: $spacing-unit;
+    text-align: center;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    small {
+      font-size: $longreads-font-size;
+    }
+  }
+
+  ol {
+    margin: $spacing-unit;
+    padding: $spacing-unit;
+    
+    li {
+      font-family: $serif-font-family;
+      font-size: $longreads-font-size;
+      font-weight: $font-normal;
+      line-height: $longreads-line-height;
+      list-style-type: decimal;
+      padding-bottom: $spacing-unit / 2;
+    }
+  }
+
+  .separator {
+    border: 0;
+    border-top: 5px solid transparent;
+    -moz-border-image: -moz-linear-gradient(
+      left, #10cbc4 0%, #3a4ed5 100%);
+    -webkit-border-image: -webkit-linear-gradient(
+      left, #10cbc4 0%, #3a4ed5 100%);
+    border-image: linear-gradient
+      (to right, #10cbc4 0%, #7442C8 40%, transparent 65%, transparent 75%, transparent 85%);
+    border-image-slice: 1;
+    padding-top: 10px;
+
+    .separator-animated {
+      background-image: linear-gradient(
+        135deg, #3acfd5, #3a4ed5, #3acfd5, #3a4ed5 );
+      background-size: 300%;
+      background-repeat:repeat;
+      height: 0;
+
+      &:hover {
+        transition: all 1s linear;
+        background-position:100% 100%;
+      }
+    }
+  }
+
+  .tip {
+    color: lighten($tungsten-gray, 15%);
+    font-family: $mono-font-family;
+    margin: 30px;
+    padding: $spacing-unit;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    text-align: left;
+
+    article {
+      margin-top: 15px;
     }
 
-    ol li {
-        font-family: 'Libre Baskerville', Georgia, serif;
-        font-size: 18px;
-        font-weight: $font-normal;
-        line-height: 1.8;
-        list-style-type: decimal;
-        margin-bottom: $spacing-unit / 2;
-        margin-left: $spacing-unit;
-        padding-left: 10px;
-    }
+    a {
+      font-weight: $font-bold;
 
-    blockquote {
+      &:hover {
         color: lighten($tungsten-gray, 25%);
-        font-size: $h2-font-size;
-        font-style: italic;
-        font-weight: $font-light;
-        line-height: $base-line-height;
-        padding: $spacing-unit;
-        text-align: center;
-
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-
-        :last-child     {
-            margin-bottom: 0;
-        }
-
-        .small {
-            display: block;
-            font-size: 80%;
-            line-height: $base-line-height;
-            color: lighten($tungsten-gray, 25%);
-        }
-    }
-
-    .separator {
-      border: 0;
-      border-top: 5px solid transparent;
-        -moz-border-image: -moz-linear-gradient(left, #10cbc4 0%, #3a4ed5 100%);
-        -webkit-border-image: -webkit-linear-gradient(left, #10cbc4 0%, #3a4ed5 100%);
-        border-image: 
-          linear-gradient(to right, #10cbc4 0%, #7442C8 40%, transparent 65%, transparent 75%, transparent 85%);
-        border-image-slice: 1;
-        padding-top: 10px;
-
-      .separator-animated {
-        background-image: linear-gradient(135deg, #3acfd5, #3a4ed5, #3acfd5, #3a4ed5 );
-        background-size: 300%;
-        background-repeat:repeat;
-        height: 0;
-
-        &:hover {
-            transition: all 1s linear;
-            background-position:100% 100%;
-        }
       }
     }
 
-    .tip {
-        color: lighten($tungsten-gray, 15%);
-        font-family: $mono-font-family;
-        margin: 30px;
-        padding: $spacing-unit;
-        font-size: $base-font-size;
-        line-height: $base-line-height;
-        text-align: left;
-
-        article {
-            margin-top: 15px;
-        }
-
-        a {
-            font-weight: $font-bold;
-
-            &:hover {
-                color: lighten($tungsten-gray, 25%);
-            }
-        }
-
-        h5 {
-            color: $tungsten-gray;
-        }
-    }
-
-    .definition {
-        color: lighten($tungsten-gray, 15%);
-        font-family: $mono-font-family;
-        margin: 30px;
-        padding: $spacing-unit;
-        font-size: $base-font-size;
-        line-height: $base-line-height;
-        text-align: left;
-
-        article {
-            margin-top: 15px;
-        }
-
-        a {
-            font-weight: $font-bold;
-
-            &:hover {
-                color: lighten($tungsten-gray, 25%);
-            }
-        }
-
-        h5 {
-            color: $tungsten-gray;
-        }
-    }
-
-    .experiment {
-        color: lighten($tungsten-gray, 15%);
-        font-family: $mono-font-family;
-        margin: 30px;
-        padding: $spacing-unit;
-        font-size: $base-font-size;
-        line-height: $base-line-height;
-        text-align: left;
-
-        article {
-            margin-top: 15px;
-        }
-
-        a {
-            font-weight: $font-bold;
-
-            &:hover {
-                color: lighten($tungsten-gray, 25%);
-            }
-        }
-
-        h5 {
-            color: $maraschino;
-        }
-    }
-
-    .callout-red {
-        background-color: $mercury-gray;
-        border: 1px solid transparent;
-        border-radius: 5px;
+    h5 {
         color: $tungsten-gray;
-        font-family: $mono-font-family;
-        margin: 30px;
-        padding: $spacing-unit;
-        font-size: $base-font-size;
-        line-height: $base-line-height;
-        text-align: left;
+    }
+  }
 
-        article {
-            margin-top: 15px;
-        }
+  .definition {
+    color: lighten($tungsten-gray, 15%);
+    font-family: $mono-font-family;
+    margin: 30px;
+    padding: $spacing-unit;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    text-align: left;
 
-        a {
-            font-weight: $font-bold;
-
-            &:hover {
-                color: lighten($tungsten-gray, 25%);
-            }
-        }
-
-        h5 {
-            color: $maraschino;
-        }
+    article {
+      margin-top: 15px;
     }
 
-    h1 {
-        font-size: $h1-font-size;
-        letter-spacing: -1;
-        margin-bottom: $spacing-unit / 2;
-        margin-top: $spacing-unit * 2;
-        text-align: center;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        
-        @include media-query($on-laptop) {
-            font-size: 28px;
-        }
-    }
+    a {
+      font-weight: $font-bold;
 
-    h2 {
-        font-size: $h2-font-size;
-        font-weight: $font-bold;
-        letter-spacing: -1;
-        margin-bottom: $spacing-unit;
-        margin-top: $spacing-unit * 3;
-        text-align: center;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-
-        @include media-query($on-laptop) {
-            font-size: 28px;
-        }
-    }
-
-    h3 {
-        font-size: $h3-font-size;
-        margin-bottom: $spacing-unit;
-        margin-top: $spacing-unit * 2;
-        text-align: center;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-
-        @include media-query($on-laptop) {
-            font-size: 22px;
-        }
-    }
-
-    h4 {
-        font-size: $h4-font-size;
-        margin-bottom: $spacing-unit;
-        margin-top: $spacing-unit * 2;
-        text-align: left;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-
-        @include media-query($on-laptop) {
-            font-size: 18px;
-        }
+      &:hover {
+        color: lighten($tungsten-gray, 25%);
+      }
     }
 
     h5 {
-        font-size: $h5-font-size;
-        text-align: left;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
+      color: $tungsten-gray;
+    }
+  }
 
-        @include media-query($on-laptop) {
-            font-size: 14px;
-        }
+  .experiment {
+    color: lighten($tungsten-gray, 15%);
+    font-family: $mono-font-family;
+    margin: 30px;
+    padding: $spacing-unit;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    text-align: left;
+
+    article {
+      margin-top: 15px;
     }
 
-    h6 {
-        font-size: $h5-font-size;
-        font-weight: $font-normal;
-        text-align: center;
-        margin-bottom: $spacing-unit;
-        margin-top: 0;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
+    a {
+      font-weight: $font-bold;
 
-        @include media-query($on-laptop) {
-            font-size: 14px;
-        }
+      &:hover {
+        color: lighten($tungsten-gray, 25%);
+      }
     }
+
+    h5 {
+      color: $maraschino;
+    }
+  }
+
+  .callout-red {
+    background-color: $mercury-gray;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: $tungsten-gray;
+    font-family: $mono-font-family;
+    margin: 30px;
+    padding: $spacing-unit;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    text-align: left;
+
+    article {
+      margin-top: 15px;
+    }
+
+    a {
+      font-weight: $font-bold;
+
+      &:hover {
+        color: lighten($tungsten-gray, 25%);
+      }
+    }
+
+    h5 {
+      color: $maraschino;
+    }
+  }
+
+  h1 {
+    font-size: $h1-font-size;
+    letter-spacing: -1;
+    margin-bottom: $spacing-unit / 2;
+    margin-top: $spacing-unit * 2;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+    @include media-query($on-laptop) {
+      font-size: 28px;
+    }
+ }
+
+  h2 {
+    font-size: $h2-font-size;
+    font-weight: $font-bold;
+    letter-spacing: -1;
+    margin-bottom: $spacing-unit;
+    margin-top: $spacing-unit * 3;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    @include media-query($on-laptop) {
+      font-size: 28px;
+    }
+  }
+
+  h3 {
+    font-size: $h3-font-size;
+    margin-bottom: $spacing-unit;
+    margin-top: $spacing-unit * 2;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    @include media-query($on-laptop) {
+      font-size: 22px;
+    }
+  }
+
+  h4 {
+    font-size: $h4-font-size;
+    margin-bottom: $spacing-unit;
+    margin-top: $spacing-unit * 2;
+    text-align: left;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    @include media-query($on-laptop) {
+      font-size: 18px;
+    }
+  }
+
+  h5 {
+    font-size: $h5-font-size;
+    text-align: left;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    @include media-query($on-laptop) {
+      font-size: 14px;
+    }
+  }
+
+  h6 {
+    font-size: $h5-font-size;
+    font-weight: $font-normal;
+    text-align: center;
+    margin-bottom: $spacing-unit;
+    margin-top: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    @include media-query($on-laptop) {
+      font-size: 14px;
+    }
+  }
 }

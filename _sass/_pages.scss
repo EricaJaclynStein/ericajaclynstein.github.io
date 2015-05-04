@@ -1,24 +1,21 @@
-
-/********** SITE PAGES STYLES **********/
-
 .page-content {
-    padding-top: $spacing-unit;
+  padding-top: $spacing-unit;
 }
 
 .page-header {
-    font-size: $h1-font-size;
-    font-weight: $font-bold;
+  font-size: $h1-font-size;
+  font-weight: $font-bold;
+  text-align: center;
+  margin-bottom: $spacing-unit;
+
+  a {
+    color: $maraschino;
+  }
+
+  @include media-query($on-palm) {
     text-align: center;
-    margin-bottom: $spacing-unit;
-
-    a {
-        color: $maraschino;
-    }
-
-    @include media-query($on-palm) {
-        text-align: center;
-        font-size: $h4-font-size;
-    }
+    font-size: $h4-font-size;
+  }
 }
 
 .page-lead {
@@ -58,15 +55,6 @@
     margin-bottom: $spacing-unit;
 }
 
-.home-heading {
-    color: lighten($tungsten-gray, 25%);
-    font-size: $h3-font-size;
-    font-weight: $font-light;
-    text-align: center;
-    vertical-align: baseline;
-    margin-bottom: $spacing-unit;
-}
-
 .page-icon {
     max-width: 30px;
     margin: 0;
@@ -81,45 +69,6 @@
 
     @include media-query($on-laptop) {
         font-size: 36px;
-    }
-}
-
-.page-list {
-    margin-left: 0;
-    list-style: none;
-    text-align: center;
-    vertical-align: baseline;
-
-    li {
-        margin-bottom: $spacing-unit;
-    }
-
-
-    .page-link {
-        display: block;
-        color: $tungsten-gray;
-        font-size: $h1-font-size;
-        letter-spacing: -1px;
-    
-        &:hover {
-            color: lighten($tungsten-gray, 25%);
-            text-decoration: none;
-        }
-    }
-
-    .post-link {
-        display: block;
-        color: $tungsten-gray;
-        font-size: $h1-font-size;
-    
-        &:hover {
-            color: lighten($tungsten-gray, 25%);
-            text-decoration: none;
-    }
-    
-        &:visited {
-            text-decoration: none;
-        }
     }
 }
 
@@ -156,49 +105,34 @@
 }
 
 .post-header {
-    margin-bottom: $spacing-unit;
-}
-
-.post-meta {
-    font-size: $small-font-size;
-    color: lighten($tungsten-gray, 25%);
-    text-align: center;
-}
-
-.post-excerpt {
-    font-family: 'Libre Baskerville', Georgia, serif;
-    font-size: $base-font-size;
-    font-weight: $font-normal;
+  margin-bottom: $spacing-unit;
 }
 
 .post-title {
-    font-size: $h1-font-size;
-    letter-spacing: -1px;
-    line-height: 1;
-    text-align: center;
+  font-size: $h1-font-size;
+  letter-spacing: -1px;
+  line-height: 1;
+  text-align: center;
 
-        @include media-query($on-laptop) {
-            font-size: 36px;
+  @include media-query($on-laptop) {
+    font-size: 36px;
     }
-  }
-
-
-/********** POST CONTENT STYLES  **********/
+}
 
 .post-wrapper {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 6));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 6));
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
-    @extend %clearfix;
+  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 6));
+  max-width:         calc(#{$content-width} - (#{$spacing-unit} * 6));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $spacing-unit;
+  padding-left: $spacing-unit;
 
-    @include media-query($on-laptop) {
-        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
-    }
+  @extend %clearfix;
+  @include media-query($on-laptop) {
+    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+    max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+    padding-right: $spacing-unit / 2;
+    padding-left: $spacing-unit / 2;
+  }
 }
 

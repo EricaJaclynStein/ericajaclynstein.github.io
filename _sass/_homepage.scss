@@ -1,0 +1,91 @@
+.homepage {
+	width: $on-palm;
+  margin: auto auto $spacing-unit;
+}
+
+.homepage-heading {
+  color: lighten($tungsten-gray, 25%);
+  font-size: $h3-font-size;
+  font-weight: $font-light;
+  text-align: left;
+  vertical-align: baseline;
+  margin-bottom: $spacing-unit;
+}
+
+.homepage-items {
+  margin-left: 0;
+  list-style: none;
+  text-align: left;
+  vertical-align: baseline;
+
+  li {
+  	display: block;
+    margin-bottom: $spacing-unit;
+
+    svg {
+      margin: 0;
+    }
+
+    .divider {
+      background-color: lighten($steel, 35%);
+  	  height: 1px;
+  	  margin: 10px 0 5px 0;
+  	  position: relative;
+  	  width: 25%;
+    }
+  }
+
+  .page-item {
+    color: $tungsten-gray;
+    font-size: $h2-font-size;
+    font-weight: $font-bold;
+    
+    &:hover {
+      color: lighten($tungsten-gray, 25%);
+      text-decoration: none;
+      transform-origin: 50% 50% 0px;
+	    transform: translate(0px, 0px) rotate(0deg) scale(1.25);
+      -webkit-transition: all 0.3s ease-in-out;
+	    transition: all 0.3s ease-in-out;
+    }
+  }
+
+  .post-item {
+    color: $tungsten-gray;
+    font-size: $h2-font-size;
+    
+    &:hover {
+      color: lighten($tungsten-gray, 25%);
+      text-decoration: none;
+      transform-origin: 50% 50% 0px;
+	    transform: translate(0px, 0px) rotate(0deg) scale(1.25);
+	    -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  .post-meta {
+    font-size: $small-font-size;
+    color: lighten($tungsten-gray, 25%);
+    text-align: center;
+  }
+
+  .page-date {
+    font-size: $small-font-size;
+    color: lighten($tungsten-gray, 25%);
+    text-align: left;
+  }
+
+  .page-tag {
+    font-weight: $font-light;
+    font-size: $small-font-size;
+    color: lighten($tungsten-gray, 50%);
+    text-align: left;
+  }
+
+  .post-excerpt {
+    font-family: $serif-font-family;
+    font-size: $base-font-size;
+    font-weight: $font-normal;
+  }
+}
