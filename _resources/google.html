@@ -1,7 +1,7 @@
 ---
 layout:      page
 category:    none
-title:       Good Reads
+title:       Google Thangs
 description: none
 tags:        ['resources']
 ---
@@ -9,11 +9,10 @@ tags:        ['resources']
 <div class="row">
   <div class ="col-lg-12">
     <ul>
-      <h3>Favorite Reads</h3>
-      {% for bookmark in site.data.bookmarks %}
+      <h3>Google Resources</h3>
+      {% for googleItems in site.data.googleItems %}
         <li>
-          <a class="btn-link" href="{{ bookmark.url }}" target="blank"> 
-            {{ bookmark.name }}</a>
+          <a class="btn-link" href="{{ googleItems.url }}" target="blank">{{ googleItems.name }}</a>
         </li>
       {% endfor %}
     </ul>

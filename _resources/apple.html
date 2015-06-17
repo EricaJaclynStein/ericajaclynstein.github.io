@@ -1,7 +1,7 @@
 ---
 layout:      page
 category:    none
-title:       Good Reads
+title:       Apple Things
 description: none
 tags:        ['resources']
 ---
@@ -9,11 +9,10 @@ tags:        ['resources']
 <div class="row">
   <div class ="col-lg-12">
     <ul>
-      <h3>Favorite Reads</h3>
-      {% for bookmark in site.data.bookmarks %}
+      <h3>Apple Resources</h3>
+      {% for appleItems in site.data.appleItems %}
         <li>
-          <a class="btn-link" href="{{ bookmark.url }}" target="blank"> 
-            {{ bookmark.name }}</a>
+          <a class="btn-link" href="{{ appleItems.url }}" target="blank">{{ appleItems.name }}</a>
         </li>
       {% endfor %}
     </ul>
