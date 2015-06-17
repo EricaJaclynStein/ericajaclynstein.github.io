@@ -18,8 +18,7 @@ body {
     -webkit-text-size-adjust: 100%;
 }
 
-h1, h2, h3, h4, h5, h6,
-p, pre,
+h1, h2, h3, h4, h5, h6, 
 ul, ol, dl, figure,
 %vertical-rhythm {
     margin-bottom: $spacing-unit / 2;
@@ -39,7 +38,6 @@ figcaption {
 }
 
 ul, ol {
-    margin-left: $spacing-unit;
     list-style-type: none;
 }
 

@@ -3,7 +3,7 @@ layout:     post
 category:   post
 title:      The Human Mind and Usability
 date:       2015-03-24
-tags:       [psychology]
+tags:       ['psychology']
 published:  false
 ---
 ###### NN/g Usability Week • [Hoa Loranger] 

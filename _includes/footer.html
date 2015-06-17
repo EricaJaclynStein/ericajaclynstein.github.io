@@ -1,45 +1,44 @@
 <footer class="site-footer">
   <div class="footer-wrapper">
-    <div class="footer-col">
-      <p class="footer-credits">Designed, built, and updated by 
-        <a href="http://www.sketchappsources.com/blog/post/erica-jaclyn-stein" target="blank">
-        {{ site.author }} </a>using <a href="http://jekyllrb.com/" target="blank">jekyll</a> + <a href="http://getbootstrap.com/" target="blank">Bootstrap</a>
-      </p>
-      <div class="social-list">
-        <ul>
-          {% if site.twitter %}
+    <div class="footer-nav">
+      <h1 class="site-title">{{ site.title }}</h1>
+      <div class="divider"></div>            
+        <div class="footer-nav-list">
+          <ul>
+            <li>About
+              <a href="http://www.sketchappsources.com/blog/post/erica-jaclyn-stein" target="blank">
+              {{ site.author }}</a>
+            </li>
+          </ul>
+        </div>
+        <div class="social-list">
+          <ul>
+            {% if site.twitter %}
             <li>
               <a class="btn-xs btn-secondary" href="{{ site.twitter }}" target="blank"> 
-                <i class="fa fa-twitter"></i>
-              </a>
+              <i class="fa fa-twitter"></i></a>
             </li>
-          {% endif %}
-          {% if site.medium %}
+            {% endif %}
+            {% if site.medium %}
             <li>
               <a class="btn-xs btn-secondary" href="{{ site.medium }}" target="blank"> 
-                <i class="fa fa-medium"></i>
-              </a>
+              <i class="fa fa-medium"></i></a>
             </li>
-          {% endif %}
-          {% if site.github %}
+            {% endif %}
+            {% if site.github %}
             <li>
               <a class="btn-xs btn-secondary" href="{{ site.github }}" target="blank"> 
-                <i class="fa fa-github"></i>
-              </a>
+              <i class="fa fa-github"></i></a>
             </li>
-          {% endif %}
-          {% if site.dribbble %}
+            {% endif %}
+            {% if site.dribbble %}
             <li>
               <a class="btn-xs btn-secondary" href="{{ site.dribbble }}" target="blank"> 
-                <i class="fa fa-dribbble"></i>
-              </a>
+              <i class="fa fa-dribbble"></i></a>
             </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <p class="description">{{ site.description }}</p>
-
+            {% endif %}
+          </ul>
+        </div>
     </div>
   </div>
 </footer>

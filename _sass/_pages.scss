@@ -72,38 +72,6 @@
     }
 }
 
-.social-list {
-    list-style-type: none;
-    text-align: center;
-    vertical-align: baseline;
-
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-
-        li {
-            display: inline-block;
-            margin: 0;
-        }
-
-        a {
-            color: $tungsten-gray;
-            display: block;
-            float: left;
-            font-size: $big-font-size;
-            line-height: $spacing-unit;
-            padding: 10px 10px;
-            text-decoration: none;
-            width: 30px;
-
-            &:hover {
-                color: lighten($tungsten-gray, 25%);
-            }
-        }
-    }
-}
-
 .post-header {
   margin-bottom: $spacing-unit;
 }

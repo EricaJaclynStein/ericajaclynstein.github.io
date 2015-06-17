@@ -1,0 +1,22 @@
+---
+layout:      page
+category:    none
+title:       Good Reads
+description: none
+date:        2015-05-1
+tags:        ['resources']
+---
+
+<div class="row">
+  <div class ="col-lg-12">
+    <ul>
+      <h3>Favorite Reads</h3>
+      {% for bookmark in site.data.bookmarks %}
+        <li>
+          <a class="btn-link" href="{{ bookmark.url }}" target="blank"> 
+            {{ bookmark.name }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

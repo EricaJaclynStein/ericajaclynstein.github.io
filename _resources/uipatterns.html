@@ -1,0 +1,21 @@
+---
+layout:      page
+category:    none
+title:       Patterns Nicities
+description: none
+date:        2015-05-1
+tags:        ['resources']
+---
+
+<div class="row">
+  <div class ="col-lg-12">
+    <ul>
+      <h3>UI Pattern Nicities</h3>
+      {% for nicities in site.data.nicities %}
+        <li>
+          <a class="btn-link" href="{{ nicities.url }}" target="blank">{{ nicities.name }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

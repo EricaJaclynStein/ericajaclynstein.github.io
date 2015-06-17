@@ -1,11 +1,11 @@
-title:     arythmetically
+title:     Arythmetically
 author:    Erica
 timezone:  America/New_York
 markdown:  kramdown
 url:       "http://www.ericajaclynstein.github.io"
 
 description: > #
-  A dime for your dreams?
+  Penny for your thoughts and a dime for your dreams?
 
 twitter:     "http://twitter.com/ericajaclyn"
 github:      "https://github.com/ericajaclynstein"
@@ -18,3 +18,6 @@ collections:
     resources:
        output: true
        permalink: /:path/
+    projects: 
+        output: true
+        permalink: /:path/

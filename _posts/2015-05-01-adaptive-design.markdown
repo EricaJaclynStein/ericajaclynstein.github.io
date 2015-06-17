@@ -3,8 +3,8 @@ layout:     post
 category:   post
 title:      Devising An Adaptive Content Strategy for Responsive Sites
 date:       2015-05-1
-tags:       [content]
-published:  false
+tags:       ['content strategy']
+published:  true
 ---
 
 ## Understanding Adaptive Design

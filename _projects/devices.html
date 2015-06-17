@@ -1,47 +1,13 @@
-<!DOCTYPE html>
-<html>
+---
+layout:      page
+title:       Device Cheat Sheet
+description: None
+date:        2015-03-1
+categories:  ['projects']
+tags:        ['reference']
+---
 
-  <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>Mobile Device Chart</title>
-  <meta name="description" content="A dime for your dreams?
-">
-
-  <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://www.ericajaclynstein.github.io/devices.html">
-  <link rel="alternate" type="application/rss+xml" title="arythmetically" href="http://www.ericajaclynstein.github.io/feed.xml" />
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Roboto:500,400italic,300,700,400' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
-</head>
-
-
-  <body>
-
-    
-<header class="site-header">
-  <div class="header-wrapper">
-    <a class="site-title effect-sonar" href="/">
-      arythmetically
-    </a>
-  </div>
-</header>
-
-
-    <div class="page-content">
-      <div class="wrapper">
-        <div class="page">
-
-  <header class="page-header">
-    <h1 class="page-title">Mobile Device Chart</h1>
-  </header>
-
-  <article class="page-content">
-    <table class="table" role="presentation">
+<table class="table" role="presentation">
 
   <thead>
     <tr>
@@ -324,136 +290,23 @@
           <td>
             <ul>
               <p class="row-heading">Additional Resources</p> 
-              
+              {% for appleItem in site.data.appleItems %}
               <li>
-                <a class="btn-link" href="https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/index.html" target="blank"> 
-                  iOS Human Interface Guidelines</a>
+                <a class="btn-link" href="{{ appleItem.url }}" target="blank"> 
+                  {{ appleItem.name }}</a>
               </li>
-              
-              <li>
-                <a class="btn-link" href="https://developer.apple.com/library/prerelease/ios/documentation/UserExperience/Conceptual/WatchHumanInterfaceGuidelines/index.html#//apple_ref/doc/uid/TP40014992-CH3-SW1" target="blank"> 
-                  Apple Watch Human Interface Guidelines</a>
-              </li>
-              
-              <li>
-                <a class="btn-link" href="https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/UIKitUICatalog/" target="blank"> 
-                  UIKit User Interface Catalog</a>
-              </li>
-              
-              <li>
-                <a class="btn-link" href="https://developer.apple.com/library/mac/documentation/UserExperience/Conceptual/OSXHIGuidelines/" target="blank"> 
-                  OS X Human Interface Guidelines</a>
-              </li>
-              
-              <li>
-                <a class="btn-link" href="https://developer.apple.com/library/safari/documentation/NetworkingInternet/Conceptual/SafariImageDeliveryBestPractices/Introduction/Introduction.html" target="blank"> 
-                  Safari Image Optimization</a>
-              </li>
-              
-              <li>
-                <a class="btn-link" href="https://developer.apple.com/accessibility/" target="blank"> 
-                  Accessibility Documentation</a>
-              </li>
-              
+              {% endfor %}
             </ul>
             <ul>
-              
+              {% for googleItem in site.data.googleItems %}
               <li>
-                <a class="btn-link" href="" target="blank"> 
-                  Material Design Guidelines</a>
+                <a class="btn-link" href="{{ googleItems.url }}" target="blank"> 
+                  {{ googleItem.name }}</a>
               </li>
-              
-              <li>
-                <a class="btn-link" href="" target="blank"> 
-                  Android App Documentation</a>
-              </li>
-              
-              <li>
-                <a class="btn-link" href="" target="blank"> 
-                  Google Glass Guidelines</a>
-              </li>
-              
-              <li>
-                <a class="btn-link" href="" target="blank"> 
-                  Polymer Guidelines</a>
-              </li>
-              
-              <li>
-                <a class="btn-link" href="" target="blank"> 
-                  Material Icons</a>
-              </li>
-              
-              <li>
-                <a class="btn-link" href="" target="blank"> 
-                  Material Palette</a>
-              </li>
-              
-              <li>
-                <a class="btn-link" href="" target="blank"> 
-                  Angular.js Documentation</a>
-              </li>
-              
+              {% endfor %}
             </ul>
           </td>
         </tr>
       </tbody>
   </table>
 </section>
-  </article>
-
-</div>
-
-      </div>
-    </div>
-
-    <footer class="site-footer">
-  <div class="footer-wrapper">
-    <div class="footer-col">
-      <p class="footer-credits">Designed, built, and updated by 
-        <a href="http://www.sketchappsources.com/blog/post/erica-jaclyn-stein" target="blank">
-        Erica </a>using <a href="http://jekyllrb.com/" target="blank">jekyll</a> + <a href="http://getbootstrap.com/" target="blank">Bootstrap</a>
-      </p>
-      <div class="social-list">
-        <ul>
-          
-            <li>
-              <a class="btn-xs btn-secondary" href="http://twitter.com/ericajaclyn" target="blank"> 
-                <i class="fa fa-twitter"></i>
-              </a>
-            </li>
-          
-          
-            <li>
-              <a class="btn-xs btn-secondary" href="https://medium.com/@ericajaclyn" target="blank"> 
-                <i class="fa fa-medium"></i>
-              </a>
-            </li>
-          
-          
-            <li>
-              <a class="btn-xs btn-secondary" href="https://github.com/ericajaclynstein" target="blank"> 
-                <i class="fa fa-github"></i>
-              </a>
-            </li>
-          
-          
-            <li>
-              <a class="btn-xs btn-secondary" href="http://www.dribbble.com/ericajaclyn" target="blank"> 
-                <i class="fa fa-dribbble"></i>
-              </a>
-            </li>
-          
-        </ul>
-      </div>
-
-      <p class="description">A dime for your dreams?
-</p>
-
-    </div>
-  </div>
-</footer>
-
-
-  </body>
-
-</html>

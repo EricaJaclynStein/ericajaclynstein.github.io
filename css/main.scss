@@ -5,46 +5,57 @@
 
 /********** SET BASE VARIABLES **********/
 
-$base-font-family:  "Roboto", Helvetica, Arial, sans-serif;
+$base-font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif;
 $mono-font-family:  "Inconsolata", Consolas, monospace;
-$serif-font-family: "Libre Baskerville", Georgia, serif;
+$serif-font-family: "Merriweather", Georgia, serif;
 
 $base-font-size:        14px;
 $base-line-height:      1.4;
-$small-font-size:	    $base-font-size * .85;
+$small-font-size:	      $base-font-size * .85;
 $small-line-height:     1.2;
-$big-font-size:		    $base-font-size * 2;
+$big-font-size:		      $base-font-size * 2;
 $big-line-height:       1.6;
 $longreads-font-size:   18px;
 $longreads-line-height: 1.8;
 
-$background-color: #fff;
-$maraschino:       #FF0038;
-$coconut-milk:     #FEFEFE;
 $mercury-gray:     #F5F5F5;
 $tungsten-gray:    #363946;
-$steel:            lighten($tungsten-gray, 25%);
-$pacific-green:    #12E3DB;
-$neon-carrot:      #FFA343;
-$laser-lemon:      #FEFE22;
 
-$font-thin: 	100;
-$font-light:	300;
+$maraschino:  #FF0038;
+$aqua:        #12E3DB;
+$seafoam:     #85fde3;
+$cantaloupe:  #ffcaa9;
+$lemon:       #FEFE22;
+$skyblue:     #00adff;
+$coconut:     #FDFDFD;
+$mercury:     #ebebeb;
+$silver:      #b5b8c6;
+$tungsten:    #363946;
+$steel:       lighten($tungsten-gray, 25%);
+
+$background-color: $coconut;
+
+$font-thin: 	  100;
+$font-light:	  300;
 $font-normal: 	400;
 $font-semibold: 500;
-$font-bold: 	700;
+$font-bold: 	  700;
 
-$h1-font-size: 36px;
-$h2-font-size: 26px;
-$h3-font-size: 20px;
-$h4-font-size: 16px;
-$h5-font-size: 14px;
-$h6-font-size: $base-font-size * .85;
+$title-font-size: 48px;
+$h1-font-size:    36px;
+$h2-font-size:    26px;
+$h3-font-size:    20px;
+$h4-font-size:    16px;
+$h5-font-size:    14px;
+$h6-font-size:    $base-font-size * .85;
+
+$title-font-mobile: $title-font-size / 2;
 
 $spacing-unit:  30px;
 $content-width: 960px;
-$on-laptop:     700px;
-$on-palm:       600px;
+$on-laptop:     768px;
+$on-tablet:     768px;
+$on-palm:       480px;
 
 @mixin media-query($device) {
   @media screen and (max-width: $device) {
