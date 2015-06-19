@@ -1,6 +1,6 @@
 ---
 layout:    post
-category:  post
+category:  posts
 title:     Sleep More, Think More, Be Better
 date:      2014-03-02
 tags:      ['content strategy']

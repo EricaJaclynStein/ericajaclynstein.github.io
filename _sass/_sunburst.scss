@@ -11,14 +11,14 @@ arc {
 }
 
 text {
-  color: lighten($tungsten-gray, 25%);
+  color: $steel;
   font-family: $base-font-family;
   font-size: $big-font-size;
   font-weight: $font-light;
 }
 
 div.label {
-  background-color: $tungsten-gray;
+  background-color: $tungsten;
   display: block;
   height: 75px;
   width: 400px;

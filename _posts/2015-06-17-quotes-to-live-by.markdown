@@ -1,13 +1,13 @@
 ---
 layout:    post
-category:  post
+category:  posts
 title:     And When Life Gives You Lots of Poop…
 date:      2015-05-17
 tags:      ['quotes']
 published: true
 ---
 
-**Sometimes life just gives you lots of poop. When I get stopped up and crampy, this quote helps remind me that I can always do something about it:**
+**Short story. Sometimes life just gives you lots of poop. When I get stopped up and crampy, this quote from Steve Jobs reminds me that I can always do something about it:**
 
 "The minute that you understand that you can poke life and actually something will, you know if you push in, something will pop out the other side, that you can change it, you can mold it. That’s maybe the most important thing. It’s to shake off this erroneous notion that life is there and you’re just gonna live in it, versus embrace it, change it, improve it, make your mark upon it. 
 

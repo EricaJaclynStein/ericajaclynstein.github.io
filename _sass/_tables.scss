@@ -9,7 +9,7 @@
 .caption {
   font-size: $base-font-size;
   font-weight: $font-light;
-  color: $tungsten-gray;
+  color: $tungsten;
 }
 
 
@@ -24,9 +24,9 @@ table {
   background-color: $background-color;
   width: 100%;
   max-width: 100%;
-  margin-bottom: $spacing-unit;
-  padding-left: $spacing-unit * 2;
-  padding-right: $spacing-unit * 2; 
+  margin-bottom: $spacing;
+  padding-left: $spacing-lg;
+  padding-right: $spacing-lg; 
 
   @media screen and (max-width: $on-palm) {
     padding: 0px;
@@ -39,7 +39,7 @@ table {
     }
 
     th {
-      padding-bottom: $spacing-unit;
+      padding-bottom: $spacing;
       text-align: left;
       vertical-align: bottom;
     }
@@ -52,7 +52,7 @@ table {
     }
 
     th {
-      padding-top: $spacing-unit;
+      padding-top: $spacing;
       text-align: left;
       vertical-align: top;
     }
@@ -66,7 +66,7 @@ table {
     }
 
     td {
-      padding-bottom: $spacing-unit / 2;
+      padding-bottom: $spacing-sm;
       text-align: left;
       vertical-align: top;
       width: 25%;
@@ -78,7 +78,7 @@ table {
       ul li {
         font-size: $base-font-size;
         font-weight: $font-normal;
-        color: $tungsten-gray;
+        color: $tungsten;
 
             .row-heading {
               font-size: $h5-font-size;
@@ -105,7 +105,7 @@ table {
 .table-striped {
   tbody 
   tr:nth-of-type(odd) {
-    background-color: $mercury-gray;
+    background-color: $mercury;
   }
 }
 
@@ -115,7 +115,7 @@ table {
 
 .table-hover {
   tbody tr:hover {
-    background-color: $mercury-gray;
+    background-color: $mercury;
   }
 
   tbody tr td.active:hover,
@@ -123,7 +123,7 @@ table {
   tbody tr.active:hover td,
   tbody tr:hover .active,
   tbody tr.active:hover th {
-    background-color: $mercury-gray;
+    background-color: $mercury;
   }
 }
 

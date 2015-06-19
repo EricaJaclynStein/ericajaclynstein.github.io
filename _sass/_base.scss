@@ -13,7 +13,7 @@ body {
     font-size: $base-font-size;
     line-height: $base-line-height;
     font-weight: $font-normal;
-    color: $tungsten-gray;
+    color: $tungsten;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
 }
@@ -21,7 +21,7 @@ body {
 h1, h2, h3, h4, h5, h6, 
 ul, ol, dl, figure,
 %vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
+    margin-bottom: $spacing-sm;
 }
 
 img {
@@ -53,15 +53,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-    color: $tungsten-gray;
+    color: $tungsten;
     text-decoration: none;
 
     &:visited {
-        color: lighten($tungsten-gray, 10%);
+        color: $steel;
     }
 
     &:hover {
-        color: lighten($tungsten-gray, 25%);
+        color: $steel;
         text-decoration: none;
     }
 }
@@ -69,7 +69,7 @@ a {
 pre,
 code {
     font-size: 15px;
-    border: 1px solid $mercury-gray;
+    border: 1px solid $mercury;
     border-radius: 3px;
     background-color: #eef;
 }
@@ -90,19 +90,19 @@ pre {
 }
 
 .wrapper {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+    max-width: -webkit-calc(#{$page-width} - (#{$spacing-lg}));
+    max-width:         calc(#{$page-width} - (#{$spacing-lg}));
     margin-right: auto;
     margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
+    padding-right: $spacing;
+    padding-left: $spacing;
     @extend %clearfix;
 
     @include media-query($on-laptop) {
-        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
+        max-width: -webkit-calc(#{$on-laptop} - (#{$spacing}));
+        max-width:         calc(#{$on-laptop} - (#{$spacing}));
+        padding-right: $spacing-sm;
+        padding-left: $spacing-sm;
     }
 }
 

@@ -1,6 +1,6 @@
 ---
 layout:     post
-category:   post
+category:   posts
 title:      The Human Mind and Usability
 date:       2015-03-24
 tags:       ['psychology']

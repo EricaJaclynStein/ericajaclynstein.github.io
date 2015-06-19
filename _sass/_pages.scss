@@ -1,12 +1,12 @@
 .page-content {
-  padding-top: $spacing-unit;
+  padding-top: $spacing;
 }
 
 .page-header {
   font-size: $h1-font-size;
   font-weight: $font-bold;
   text-align: center;
-  margin-bottom: $spacing-unit;
+  margin-bottom: $spacing;
 
   a {
     color: $maraschino;
@@ -30,8 +30,8 @@
 }
 
 .page-subheader {
-    margin-bottom: $spacing-unit;
-    margin-top: $spacing-unit * 2;
+    margin-bottom: $spacing;
+    margin-top: $spacing-lg;
 
     h2 {
         font-weight: $font-light;
@@ -39,9 +39,9 @@
 }
 
 .page-subsection {
-    margin-bottom: $spacing-unit;
-    margin-top: $spacing-unit * 2;
-    border-bottom: 1px solid $mercury-gray;
+    margin-bottom: $spacing;
+    margin-top: $spacing-lg;
+    border-bottom: 1px solid $mercury;
 
     h3 {
         font-weight: $font-semibold;
@@ -52,7 +52,7 @@
     font-size: $h1-font-size;
     text-align: center;
     vertical-align: baseline;
-    margin-bottom: $spacing-unit;
+    margin-bottom: $spacing;
 }
 
 .page-icon {
@@ -73,7 +73,7 @@
 }
 
 .post-header {
-  margin-bottom: $spacing-unit;
+  margin-bottom: $spacing;
 }
 
 .post-title {
@@ -88,19 +88,19 @@
 }
 
 .post-wrapper {
-  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 6));
-  max-width:         calc(#{$content-width} - (#{$spacing-unit} * 6));
+  max-width: -webkit-calc(#{$post-width} - (#{$spacing-lg} * 3));
+  max-width:         calc(#{$post-width} - (#{$spacing-lg} * 3));
   margin-right: auto;
   margin-left: auto;
-  padding-right: $spacing-unit;
-  padding-left: $spacing-unit;
+  padding-right: $spacing;
+  padding-left: $spacing;
 
   @extend %clearfix;
   @include media-query($on-laptop) {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-    padding-right: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
+    max-width: -webkit-calc(#{$on-laptop} - (#{$spacing}));
+    max-width:         calc(#{$on-laptop} - (#{$spacing}));
+    padding-right: $spacing-sm;
+    padding-left: $spacing-sm;
   }
 }
 

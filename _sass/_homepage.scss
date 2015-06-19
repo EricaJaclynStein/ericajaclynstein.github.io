@@ -1,69 +1,15 @@
 .homepage {
-  margin: auto auto $spacing-unit;
+  margin: auto auto $spacing;
 }
 
 .homepage-heading {
-  color: lighten($tungsten-gray, 25%);
+  color: $steel;
   text-align: left;
-  margin-bottom: $spacing-unit/2;
-}
-
-.project-items {
-  margin-top: $spacing-unit;
-  padding: 0; 
-
-  ul {
-    margin: 0;
-    text-align: left;
-
-    li {
-      background-color: transparent;
-      border: 1px solid $aqua;
-      border-radius: 3px;
-      display: inline-block;
-      list-style-type: none;
-      margin-right: 5px;
-      margin-top: 5px;
-      padding: 10px;
-
-      &:hover {
-        background-color: $seafoam;
-        border: 1px solid $seafoam;
-        transform-origin: 50% 50% 0px;
-        transform: translate(0px, 0px) rotate(0deg) scale(1.25);
-        -webkit-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out;
-      }
-
-      @media screen and (max-width: $on-tablet) {
-        display: block;
-        margin-bottom: 5px;
-        text-align: center;
-      }
-    }
-  }
-
-  .project-item-title {
-    color: $tungsten;
-    font-size: $base-font-size;
-    font-weight: $font-bold;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-
-  .project-item-date {
-    color: $steel;
-    font-family: $serif-font-family;
-    font-size: $small-font-size;
-    font-weight: $font-light;
-    margin-top: 3px;
-  }
+  margin-bottom: $spacing-sm;
 }
 
 .post-items {
-  margin-top: $spacing-unit;
+  margin-top: $spacing;
   padding: 0; 
 
   ul {
@@ -97,7 +43,7 @@
     }
   }
 
-  .post-item-title {
+  .item-title {
     color: $tungsten;
     font-size: $base-font-size;
     font-weight: $font-bold;
@@ -107,7 +53,7 @@
     }
   }
 
-  .post-item-date {
+  .item-date {
     color: $steel;
     font-family: $serif-font-family;
     font-size: $small-font-size;
@@ -115,16 +61,16 @@
     margin-top: 3px;
   }
 
-  .post-item-tags {
+  .item-tags {
     color: $steel;
     font-family: $serif-font-family;
     font-size: $small-font-size;
-    font-weight: $font-normal;
+    font-weight: $font-light;
   }
 }
 
 .resource-items {
-  margin-top: $spacing-unit;
+  margin-top: $spacing;
   padding: 0; 
 
   ul {
@@ -162,4 +108,23 @@
     font-size: $base-font-size;
     font-weight: $font-normal;
   }
+}
+
+.social-items {
+  margin-top: $spacing;
+  padding: 0; 
+}
+
+.widgets {
+  margin-top: $spacing;
+  display: inline-block;
+}
+
+.twitter-widget {
+  background-color:#FFF;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+  display: inline-block;
+  margin: auto;
+  padding: 5px 5px;
+  width: 290px;
 }

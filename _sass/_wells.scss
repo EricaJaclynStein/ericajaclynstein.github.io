@@ -2,16 +2,16 @@
 /********** BOOTSTRAP WELL STYLES **********/
 
 .color-well {
-    color: $tungsten-gray;
+    color: $tungsten;
     min-height: 15px;
     padding: 15px;
     margin-bottom: 15px;
-    background-color: $mercury-gray;
-    border: 1px solid $mercury-gray;
+    background-color: $mercury;
+    border: 1px solid $mercury;
     border-radius: 2px;
 
     .label {
-        color: $tungsten-gray;
+        color: $tungsten;
         font-weight: $font-normal;
         text-transform: uppercase;
     }

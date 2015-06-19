@@ -1,6 +1,6 @@
 ---
 layout:     post
-category:   post
+category:   posts
 title:      Devising An Adaptive Content Strategy for Responsive Sites
 date:       2015-05-1
 tags:       ['content strategy']

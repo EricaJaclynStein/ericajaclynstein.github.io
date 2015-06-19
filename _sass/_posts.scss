@@ -3,10 +3,10 @@
   font-size: $longreads-font-size;
   font-weight: $font-normal;
   line-height: $longreads-line-height;
-  margin-bottom: $spacing-unit;
+  margin-bottom: $spacing;
 
   p {
-    margin-bottom: $spacing-unit;
+    margin-bottom: $spacing;
 
     a {
       color: $maraschino;
@@ -18,11 +18,11 @@
   }
   
   blockquote {
-    color: lighten($tungsten-gray, 25%);
+    color: $steel;
     font-size: $big-font-size;
     font-style: italic;
     line-height: $big-line-height;
-    padding-top: $spacing-unit;
+    padding-top: $spacing;
     text-align: center;
 
     -webkit-font-smoothing: antialiased;
@@ -34,8 +34,8 @@
   }
 
   ol {
-    margin: $spacing-unit;
-    padding: $spacing-unit;
+    margin: $spacing;
+    padding: $spacing;
     
     li {
       font-family: $serif-font-family;
@@ -43,7 +43,7 @@
       font-weight: $font-normal;
       line-height: $longreads-line-height;
       list-style-type: decimal;
-      padding-bottom: $spacing-unit / 2;
+      padding-bottom: $spacing-sm;
     }
   }
 
@@ -74,10 +74,10 @@
   }
 
   .tip {
-    color: lighten($tungsten-gray, 15%);
+    color: $steel;
     font-family: $mono-font-family;
     margin: 30px;
-    padding: $spacing-unit;
+    padding: $spacing;
     font-size: $base-font-size;
     line-height: $base-line-height;
     text-align: left;
@@ -90,20 +90,20 @@
       font-weight: $font-bold;
 
       &:hover {
-        color: lighten($tungsten-gray, 25%);
+        color: $steel;
       }
     }
 
     h5 {
-        color: $tungsten-gray;
+        color: $tungsten;
     }
   }
 
   .definition {
-    color: lighten($tungsten-gray, 15%);
+    color: $steel;
     font-family: $mono-font-family;
     margin: 30px;
-    padding: $spacing-unit;
+    padding: $spacing;
     font-size: $base-font-size;
     line-height: $base-line-height;
     text-align: left;
@@ -116,20 +116,20 @@
       font-weight: $font-bold;
 
       &:hover {
-        color: lighten($tungsten-gray, 25%);
+        color: $steel;
       }
     }
 
     h5 {
-      color: $tungsten-gray;
+      color: $tungsten;
     }
   }
 
   .experiment {
-    color: lighten($tungsten-gray, 15%);
+    color: $steel;
     font-family: $mono-font-family;
     margin: 30px;
-    padding: $spacing-unit;
+    padding: $spacing;
     font-size: $base-font-size;
     line-height: $base-line-height;
     text-align: left;
@@ -142,7 +142,7 @@
       font-weight: $font-bold;
 
       &:hover {
-        color: lighten($tungsten-gray, 25%);
+        color: $steel;
       }
     }
 
@@ -152,13 +152,13 @@
   }
 
   .callout-red {
-    background-color: $mercury-gray;
+    background-color: $mercury;
     border: 1px solid transparent;
     border-radius: 5px;
-    color: $tungsten-gray;
+    color: $tungsten;
     font-family: $mono-font-family;
     margin: 30px;
-    padding: $spacing-unit;
+    padding: $spacing;
     font-size: $base-font-size;
     line-height: $base-line-height;
     text-align: left;
@@ -171,7 +171,7 @@
       font-weight: $font-bold;
 
       &:hover {
-        color: lighten($tungsten-gray, 25%);
+        color: $steel;
       }
     }
 
@@ -183,8 +183,8 @@
   h1 {
     font-size: $h1-font-size;
     letter-spacing: -1;
-    margin-bottom: $spacing-unit / 2;
-    margin-top: $spacing-unit * 2;
+    margin-bottom: $spacing-sm;
+    margin-top: $spacing-lg;
     text-align: center;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -198,8 +198,8 @@
     font-size: $h2-font-size;
     font-weight: $font-bold;
     letter-spacing: -1;
-    margin-bottom: $spacing-unit;
-    margin-top: $spacing-unit * 3;
+    margin-bottom: $spacing;
+    margin-top: $spacing-lg;
     text-align: center;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -211,8 +211,8 @@
 
   h3 {
     font-size: $h3-font-size;
-    margin-bottom: $spacing-unit;
-    margin-top: $spacing-unit * 2;
+    margin-bottom: $spacing;
+    margin-top: $spacing-lg;
     text-align: center;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -224,8 +224,8 @@
 
   h4 {
     font-size: $h4-font-size;
-    margin-bottom: $spacing-unit;
-    margin-top: $spacing-unit * 2;
+    margin-bottom: $spacing;
+    margin-top: $spacing-lg;
     text-align: left;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -250,7 +250,7 @@
     font-size: $h5-font-size;
     font-weight: $font-normal;
     text-align: center;
-    margin-bottom: $spacing-unit;
+    margin-bottom: $spacing;
     margin-top: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

@@ -1,6 +1,6 @@
 ---
 layout:   post
-category: sample
+category: posts
 title:    A Sample Post
 date:     2015-01-09
 tags:     ['sample']
