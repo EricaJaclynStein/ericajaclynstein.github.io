@@ -5,9 +5,15 @@
 
 /********** SET BASE VARIABLES **********/
 
-$base-font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif;
-$mono-font-family:  "Inconsolata", Consolas, monospace;
-$serif-font-family: "Merriweather", Georgia, serif;
+
+
+$base-font-family:      "Roboto", "Helvetica", Arial, sans-serif;
+$mono-font-family:      "Inconsolata", Consolas, monospace;
+$serif-font-family:     "Merriweather", Georgia, serif;
+
+
+/***** TYPOGRAPHY *****/
+
 
 $base-font-size:        14px;
 $base-line-height:      1.4;
@@ -15,48 +21,59 @@ $small-font-size:	      $base-font-size * .85;
 $small-line-height:     1.2;
 $big-font-size:		      $base-font-size * 2;
 $big-line-height:       1.6;
-$longreads-font-size:   18px;
-$longreads-line-height: 1.8;
+$longreads-font-size:   16px;
+$longreads-line-height: 1.7;
+$heading-line-height:   1.1;
 
+$title-font-size:       48px;
+$h1-font-size:          36px;
+$h2-font-size:          26px;
+$h3-font-size:          20px;
+$h4-font-size:          16px;
+$h5-font-size:          $base-font-size;
+$h6-font-size:          $small-font-size;
+
+$h1-mobile-size:        28px;
+$h2-mobile-size:        24px;
+$h3-mobile-size:        20px;
+
+$font-thin:             200;
+$font-light:            300;
+$font-normal:           400;
+$font-semibold:         500;
+$font-bold:             700;
+
+
+/***** COLORS *****/
+
+
+$coconut:     #FDFDFD;
 $maraschino:  #FF0038;
 $aqua:        #12E3DB;
 $seafoam:     #85fde3;
 $cantaloupe:  #ffcaa9;
 $lemon:       #FEFE22;
 $skyblue:     #00adff;
-$coconut:     #FDFDFD;
-$mercury:     #ebebeb;
-$silver:      #b5b8c6;
-$tungsten:    #363946;
-$steel:       lighten($tungsten, 25%);
+
+$mercury:     #CED5D9;
+$silver:      #B6BCBF;
+$tungsten:    #303233;
+$steel:       #787D7F;
+$deep-space:  #090A0C;
 
 $background-color: $coconut;
 
-$font-thin: 	  200;
-$font-light:	  300;
-$font-normal: 	400;
-$font-semibold: 500;
-$font-bold: 	  700;
-
-$title-font-size: 48px;
-$h1-font-size:    36px;
-$h2-font-size:    26px;
-$h3-font-size:    20px;
-$h4-font-size:    16px;
-$h5-font-size:    14px;
-$h6-font-size:    $base-font-size * .85;
-
-$title-font-mobile: $title-font-size / 2;
-
 $spacing:     30px;
+$spacing-xs:  5px;
 $spacing-sm:  15px;
 $spacing-lg:  60px;
 
-$post-width:    720px;
-$page-width:    960px;
-$project-width: 1200px;
+$content-width:    980px;
+$content-width-sm: 700px;
+$content-width-lg: 1200px;
 
-$on-laptop:     768px;
+$on-widescreen: 1200px;
+$on-desktop:    980px;
 $on-tablet:     768px;
 $on-palm:       480px;
 
@@ -66,13 +83,12 @@ $on-palm:       480px;
   }
 }
 
-/********** IMPORT SASS **********/
+/********** IMPORT SASSINESS **********/
 
 @import
   "base",
   "chrome",
   "force",
-  "grid",
   "homepage",
   "icons",
   "pages",

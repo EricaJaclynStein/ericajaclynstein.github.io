@@ -18,4 +18,4 @@ Most people never pick up the phone, most people never ask. And that’s what se
 – Steve Jobs
 
 
-##### Read more on [Brainpickings](http://t.co/AhRXE9KCLC)
+Read more on [Brainpickings](http://t.co/AhRXE9KCLC)

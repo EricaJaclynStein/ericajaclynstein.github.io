@@ -116,8 +116,7 @@
 }
 
 .footer-wrapper {
-  max-width: -webkit-calc(#{$page-width} + (#{$spacing-lg} * 3));
-  max-width:         calc(#{$page-width} + (#{$spacing-lg} * 3));
+  max-width: $content-width-lg;
   margin-right: auto;
   margin-left: auto;
   padding-right: $spacing;
@@ -125,9 +124,8 @@
   text-align: center;
   @extend %clearfix;
 
-  @include media-query($on-laptop) {
-    max-width: -webkit-calc(#{$on-laptop} - (#{$spacing}));
-    max-width:         calc(#{$on-laptop} - (#{$spacing}));
+  @include media-query($on-tablet) {
+    max-width: $on-tablet;
     padding-right: $spacing-sm;
     padding-left: $spacing-sm;
   }
