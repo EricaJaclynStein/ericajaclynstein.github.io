@@ -1,52 +1,31 @@
-.homepage {
-  margin: auto auto $spacing;
+.row {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: $spacing;
+  max-width: $content-width-sm;
+  text-align: center;
+}
+
+.col {
+  margin-left: $spacing-sm;
+  margin-right: $spacing-sm;
 }
 
 .homepage-heading {
   color: $steel;
-  text-align: left;
-  margin-bottom: $spacing-sm;
+  text-align: center;
 }
 
-.post-items {
-  margin-top: $spacing;
-  padding: 0; 
+.items {
+  margin-bottom: $spacing;
+  text-align: left;
 
-  ul {
-    margin: 0;
-    text-align: left;
-
-    li {
-      background-color: transparent;
-      border: 1px solid $aqua;
-      border-radius: 3px;
-      display: inline-block;
-      list-style-type: none;
-      margin-right: 5px;
-      margin-top: 5px;
-      padding: 10px;
-
-      &:hover {
-        background-color: $seafoam;
-        border: 1px solid $seafoam;
-        transform-origin: 50% 50% 0px;
-        transform: translate(0px, 0px) rotate(0deg) scale(1.15);
-        -webkit-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out;
-      }
-
-      @media screen and (max-width: $on-tablet) {
-        display: block;
-        margin-bottom: 5px;
-        text-align: center;
-      }
-    }
+  p {
+    margin-top: $spacing-xs;
   }
 
   .item-title {
     color: $tungsten;
-    font-size: $base-font-size;
-    font-weight: $font-bold;
 
     &:hover {
       text-decoration: underline;
@@ -55,76 +34,45 @@
 
   .item-date {
     color: $steel;
-    font-family: $serif-font-family;
     font-size: $small-font-size;
-    font-weight: $font-light;
-    margin-top: 3px;
-  }
-
-  .item-tags {
-    color: $steel;
-    font-family: $serif-font-family;
-    font-size: $small-font-size;
-    font-weight: $font-light;
+    font-weight: $font-normal;
+    line-height: 1;
   }
 }
 
-.resource-items {
-  margin-top: $spacing;
-  padding: 0; 
+.pills {
+  background-color: $aqua;
+  border: 1px solid $aqua;
+  border-radius: 30px;
+  display: inline-block;
+  line-height: 1;
+  list-style-type: none;
+  margin-bottom: $spacing-xs;
+  margin-right: $spacing-xs;
+  padding: 2px 10px;
+  text-align: center;
 
-  ul {
-    margin: 0;
-    text-align: left;
-
-    li {
-      background-color: $aqua;
-      border: 1px solid $aqua;
-      border-radius: 30px;
-      display: inline-block;
-      list-style-type: none;
-      margin-right: 5px;
-      padding: 2px 10px;
-
-      &:hover {
-        background-color: $seafoam;
-        border: 1px solid $seafoam;
-        transform-origin: 50% 50% 0px;
-        transform: translate(0px, 0px) rotate(0deg) scale(1.12);
-        -webkit-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out;
-      }
-
-      @media screen and (max-width: $on-tablet) {
-        display: block;
-        margin-bottom: 5px;
-        text-align: center;
-      }
-    }
-  }
-
-  .resource-item-title {
+  .pill-label {
     color: $tungsten;
     font-size: $base-font-size;
     font-weight: $font-normal;
   }
-}
 
-.social-items {
-  margin-top: $spacing;
-  padding: 0; 
-}
+  &:hover {
+    background-color: $seafoam;
+    border: 1px solid $seafoam;
+    transform-origin: 50% 50% 0px;
+    transform: translate(0px, 0px) rotate(0deg) scale(1.12);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
 
-.widgets {
-  margin-top: $spacing;
-  display: inline-block;
-}
-
-.twitter-widget {
-  background-color:#FFF;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
-  display: inline-block;
-  margin: auto;
-  padding: 5px 5px;
-  width: 290px;
+  @media screen and (max-width: $on-tablet) {
+    display: inline-block;
+    margin-bottom: $spacing-xs;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 2px 10px;
+    text-align: center;
+  }
 }

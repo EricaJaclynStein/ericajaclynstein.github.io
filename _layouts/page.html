@@ -1,15 +1,20 @@
----
-layout: default
----
+<!DOCTYPE html>
 
-<div class="page">
+<html>
+{% include head.html %}
+  <body>
+  {% include header.html %}
 
-  <header class="page-header">
-    <h1 class="page-title">{{ page.title }}</h1>
-  </header>
+      <div class="wrapper">
+        <header class="page-header">
+          <h1 class="page-title">{% if page.title %}{{ page.title }}{% endif %}</h1>
+          <p class="page-date">{% if page.date %}{{ page.date | date: "%b %-d, %Y" }}{% endif %}</p>
+        </header>
+        <article class="page-content">
+          {{ content }}
+        </article>
+      </div>
 
-  <article class="page-content">
-    {{ content }}
-  </article>
-
-</div>
+  {% include footer.html %}
+  </body>
+</html>

@@ -67,40 +67,9 @@
     text-align: center;
     vertical-align: baseline;
 
-    @include media-query($on-laptop) {
+    @include media-query($on-tablet) {
         font-size: 36px;
     }
 }
 
-.post-header {
-  margin-bottom: $spacing;
-}
-
-.post-title {
-  font-size: $h1-font-size;
-  letter-spacing: -1px;
-  line-height: 1;
-  text-align: center;
-
-  @include media-query($on-laptop) {
-    font-size: 36px;
-    }
-}
-
-.post-wrapper {
-  max-width: -webkit-calc(#{$post-width} - (#{$spacing-lg} * 3));
-  max-width:         calc(#{$post-width} - (#{$spacing-lg} * 3));
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: $spacing;
-  padding-left: $spacing;
-
-  @extend %clearfix;
-  @include media-query($on-laptop) {
-    max-width: -webkit-calc(#{$on-laptop} - (#{$spacing}));
-    max-width:         calc(#{$on-laptop} - (#{$spacing}));
-    padding-right: $spacing-sm;
-    padding-left: $spacing-sm;
-  }
-}
 
