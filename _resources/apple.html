@@ -7,14 +7,13 @@ tags:        ['resources']
 ---
 
 <div class="row">
-  <div class ="col-lg-12">
+  <div class ="col">
     <ul>
-      <h3>Apple Resources</h3>
-      {% for appleItems in site.data.appleItems %}
-        <li>
-          <a class="btn-link" href="{{ appleItems.url }}" target="blank">{{ appleItems.name }}</a>
-        </li>
-      {% endfor %}
+    {% for appleItems in site.data.appleItems %}
+      <li>
+        <a class="btn-link" href="{{ appleItems.url }}" target="blank">{{ appleItems.name }}</a>
+      </li>
+    {% endfor %}
     </ul>
   </div>
 </div>
