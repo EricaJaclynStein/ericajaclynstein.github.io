@@ -3,18 +3,19 @@
 <html>
 {% include head.html %}
   <body>
-  {% include header.html %}
-
-      <div class="wrapper">
-        <header class="page-header">
-          <h1 class="page-title">{% if page.title %}{{ page.title }}{% endif %}</h1>
-          <p class="page-date">{% if page.date %}{{ page.date | date: "%b %-d, %Y" }}{% endif %}</p>
-        </header>
-        <article class="page-content">
-          {{ content }}
-        </article>
+  {% include pheader.html %}
+    <div class="wrapper">
+      <div class="row">
+        <div class="col page-header">
+          <h1>{% if page.title %}{{ page.title }}{% endif %}</h1>
+        </div>
       </div>
-
+      <div class="row">
+        <div class="col col-narrow">
+        {{ content }}
+        </div>
+      </div>
+    </div>
   {% include footer.html %}
   </body>
 </html>
