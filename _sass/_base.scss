@@ -2,6 +2,7 @@ body {
   color: $tungsten;
   background-color: $background-color;
   font-family: $base-font-family;
+  font-weight: $font-normal;
   margin: 0;
   padding: 0; 
 
@@ -17,14 +18,14 @@ p {
   line-height: $base-line-height;
 }
 
-body h1, h2, h3, h4, h5, h6, 
+body p, h1, h2, h3, h4, h5, h6, 
 ul, ol, dl, figure,
 %vertical-rhythm {
   margin-bottom: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: $font-bold;
+  font-weight: $font-normal;
   line-height: 1;
   padding: 0;
   margin: 0;
@@ -57,7 +58,7 @@ a {
   }
 }
 
-/***** WRAPPER *****/
+/***** WRAPPER AND GRID *****/
 
 %clearfix {
 
@@ -70,11 +71,8 @@ a {
 
 .wrapper {
   max-width: $on-widescreen;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: $spacing;
-  padding-right: $spacing;
-
+  margin: 0 auto;
+  padding: 0 $spacing;
   @extend %clearfix;
 
   @include media-query($on-desktop) {
@@ -87,7 +85,36 @@ a {
 
   @include media-query($on-palm) {
     max-width: $on-palm;
-    padding-left: $spacing-sm;
-    padding-right: $spacing-sm;
+    padding: 0 $spacing-sm;
+  }
+}
+
+.row {
+  margin: $spacing auto;
+  max-width: $on-widescreen;
+  text-align: center;
+}
+
+.col {
+  margin: 0 $spacing;
+  max-width: $on-widescreen;
+  text-align: center;
+}
+
+.col-narrow {
+  margin: 0 auto;
+  text-align: center;
+  width: 50%; 
+
+  @include media-query($on-desktop) {
+    width: 75%;  
+  }
+
+  @include media-query($on-tablet) {
+    width: 75%;  
+  }
+
+  @include media-query($on-palm) {
+    width: 100%;  
   }
 }

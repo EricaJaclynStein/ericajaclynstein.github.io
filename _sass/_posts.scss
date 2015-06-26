@@ -1,22 +1,7 @@
-.post-wrapper {
-  max-width: $content-width-sm;
-  margin: auto;
-  padding-right: $spacing;
-  padding-left: $spacing;
-
-  @extend %clearfix;
-
-  @include media-query($on-tablet) {
-    max-width: $on-tablet;
-    padding-right: $spacing-sm;
-    padding-left: $spacing-sm;
-  }
-}
-
 .post-header {
   margin: auto;
-  max-width: $content-width-sm;
-  text-align: center;
+  padding: $spacing-sm;
+  max-width: $content-width;
 
   h1 {
     font-size: $h1-font-size;
@@ -27,17 +12,11 @@
       font-size: $h1-mobile-size;
     }
   }
-
-  .post-date {
-    margin: auto;
-    padding: $spacing-sm;
-    text-align: center;
-  }
 }
 
-.post-content {
-  margin-bottom: $spacing;
-  margin-top: $spacing;
+.post-article {
+  margin: 0 $spacing;
+  text-align: left;
 
   p {
     margin-bottom: $spacing-sm;
@@ -117,32 +96,6 @@ ol {
   }
 }
 
-.separator {
-  border: 0;
-  border-top: 5px solid transparent;
-  -moz-border-image: -moz-linear-gradient(
-    left, #10cbc4 0%, #3a4ed5 100%);
-  -webkit-border-image: -webkit-linear-gradient(
-    left, #10cbc4 0%, #3a4ed5 100%);
-  border-image: linear-gradient
-    (to right, #10cbc4 0%, #7442C8 40%, transparent 65%, transparent 75%, transparent 85%);
-  border-image-slice: 1;
-  padding-top: 10px;
-
-  .separator-animated {
-    background-image: linear-gradient(
-      135deg, #3acfd5, #3a4ed5, #3acfd5, #3a4ed5 );
-    background-size: 300%;
-    background-repeat:repeat;
-    height: 0;
-
-    &:hover {
-      transition: all 1s linear;
-      background-position:100% 100%;
-    }
-  }
-}
-
 .tip {
   color: $steel;
   font-family: $mono-font-family;
@@ -197,35 +150,6 @@ ol {
 
 .experiment {
   color: $steel;
-  font-family: $mono-font-family;
-  margin: 30px;
-  padding: $spacing;
-  font-size: $base-font-size;
-  line-height: $base-line-height;
-  text-align: left;
-
-  article {
-    margin-top: 15px;
-  }
-
-  a {
-    font-weight: $font-bold;
-
-    &:hover {
-      color: $steel;
-    }
-  }
-
-  h5 {
-    color: $maraschino;
-  }
-}
-
-.callout-red {
-  background-color: $mercury;
-  border: 1px solid transparent;
-  border-radius: 5px;
-  color: $tungsten;
   font-family: $mono-font-family;
   margin: 30px;
   padding: $spacing;

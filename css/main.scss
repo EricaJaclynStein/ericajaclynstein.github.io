@@ -6,7 +6,6 @@
 /********** SET BASE VARIABLES **********/
 
 
-
 $base-font-family:      "Roboto", "Helvetica", Arial, sans-serif;
 $mono-font-family:      "Inconsolata", Consolas, monospace;
 $serif-font-family:     "Merriweather", Georgia, serif;
@@ -47,13 +46,14 @@ $font-bold:             700;
 /***** COLORS *****/
 
 
-$coconut:     #FDFDFD;
+$coconut:     #FBFBFB;
 $maraschino:  #FF0038;
 $aqua:        #12E3DB;
-$seafoam:     #85fde3;
+$seafoam:     #85FDE3;
 $cantaloupe:  #ffcaa9;
 $lemon:       #FEFE22;
 $skyblue:     #00adff;
+$ultraviolet: #9000FF;
 
 $mercury:     #CED5D9;
 $silver:      #B6BCBF;
@@ -63,14 +63,11 @@ $deep-space:  #090A0C;
 
 $background-color: $coconut;
 
-$spacing:     30px;
-$spacing-xs:  5px;
-$spacing-sm:  15px;
-$spacing-lg:  60px;
-
-$content-width:    980px;
-$content-width-sm: 700px;
-$content-width-lg: 1200px;
+$spacing:          30px;
+$spacing-xs:       5px;
+$spacing-sm:       15px;
+$spacing-lg:       60px;
+$content-width:    690px;
 
 $on-widescreen: 1200px;
 $on-desktop:    980px;
@@ -89,7 +86,7 @@ $on-palm:       480px;
   "base",
   "chrome",
   "force",
-  "homepage",
+  "index",
   "icons",
   "pages",
   "posts",

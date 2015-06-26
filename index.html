@@ -1,11 +1,11 @@
 ---
-layout: homepage
+layout: default
 title:  You Are Here
-date:   2015-06-17
+date:   2015-06-23
 ---
 
 <div class="row">
-  <div class="col">
+  <div class="col col-narrow">
   {% for post in site.posts %}
     <div class="items">
     {% if post.title %}<h3><a class="item-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
@@ -16,7 +16,7 @@ date:   2015-06-17
   {% endfor %}
   {% for project in site.projects %}
     <div class="items">
-    {% if project.title %}<h3><a class="item-title" href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a></h3>
+    {% if project.title %}<h3><a href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a></h3>
     {% endif %}
     {% if project.date %}<p class="item-date">updated on {{ project.date | date: "%b %-d, %Y" }}</p>
     {% endif %}
@@ -24,12 +24,16 @@ date:   2015-06-17
   {% endfor %}
   </div>
 </div>
+
 <div class="row">
-  <div class="col">
+  <div class="col col-narrow">
   {% for resource in site.resources %}
     <div class="pills">
-    {% if resource.title %}<a class="pill-label" href="{{ resource.url | prepend: site.baseurl }}">{{ resource.title }}</a>
+    <div class="pill">
+    {% if resource.title %}
+      <a href="{{ resource.url | prepend: site.baseurl }}">{{ resource.title }}</a>
     {% endif %}
+    </div>
     </div>
   {% endfor %}
   </div>
