@@ -1,0 +1,68 @@
+.box {
+  background-color: transparent;
+  padding: $spacing-sm;
+}
+
+.container {
+  background-color: transparent;
+  margin: 0 auto;
+  padding: 0 $spacing-sm;
+  width: 100%;
+}
+
+.row {
+  margin: 0 -30px;
+}
+
+.col {
+  background-color: transparent;
+  padding-top: $spacing-sm;
+}
+
+.col-xs, .col-sm, .col-md, .col-lg, .col-xl {
+  float: left;
+  min-height: 1px;
+  padding-left: $spacing-sm;
+  padding-right: $spacing-sm;
+  position: relative;
+}
+
+.col-xs {
+  width: 25%;
+
+  @include media-query($on-tablet) {
+    width: 100%;  
+  }
+}
+
+.col-sm {
+  width: 41.66666667%;
+
+  @include media-query($on-tablet) {
+    width: 100%;  
+  }
+}
+
+.col-md {
+  width: 58.33333333%;
+
+  @include media-query($on-tablet) {
+    width: 100%;  
+  }
+}
+
+.col-lg {
+  width: 75%; 
+
+  @include media-query($on-palm) {
+    width: 100%;  
+  }
+}
+
+.col-xl {
+  width: 100%; 
+
+  @include media-query($on-palm) {
+    width: 100%;  
+  }
+}

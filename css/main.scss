@@ -3,24 +3,26 @@
 ---
 @charset "utf-8";
 
-/********** SET BASE VARIABLES **********/
+/* ==========================================================================
+   Erica Jaclyn Stein v1.0 | http://ericajaclynstein.github.io
+   Copyright 2014-2015
+   Licensed under MIT
+   Designed using paper, Sketch, and brain.
+   Built and generated using Sublime Text, Atom, Jekyll, and Bootstrap | http://getbootstrap.com | http://jekyllrb.com
+   ========================================================================== */
 
-
-$base-font-family:      "Roboto", "Helvetica", Arial, sans-serif;
+$base-font-family:      "Open Sans", "Helvetica Neue", "Helvetica", Arial, sans-serif;
 $mono-font-family:      "Inconsolata", Consolas, monospace;
 $serif-font-family:     "Merriweather", Georgia, serif;
 
-
-/***** TYPOGRAPHY *****/
-
-
 $base-font-size:        14px;
-$base-line-height:      1.4;
-$small-font-size:	      $base-font-size * .85;
-$small-line-height:     1.2;
-$big-font-size:		      $base-font-size * 2;
-$big-line-height:       1.6;
+$small-font-size:       80%;
+$big-font-size:         150%;
 $longreads-font-size:   16px;
+
+$base-line-height:      1.4;
+$small-line-height:     1.2;
+$big-line-height:       1.6;
 $longreads-line-height: 1.7;
 $heading-line-height:   1.1;
 
@@ -42,23 +44,19 @@ $font-normal:           400;
 $font-semibold:         500;
 $font-bold:             700;
 
-
-/***** COLORS *****/
-
-
 $coconut:     #FBFBFB;
 $maraschino:  #FF0038;
 $aqua:        #12E3DB;
 $seafoam:     #85FDE3;
-$cantaloupe:  #ffcaa9;
+$cantaloupe:  #FFCAA9;
 $lemon:       #FEFE22;
 $skyblue:     #00adff;
 $ultraviolet: #9000FF;
 
 $mercury:     #CED5D9;
 $silver:      #B6BCBF;
-$tungsten:    #303233;
 $steel:       #787D7F;
+$tungsten:    #303233;
 $deep-space:  #090A0C;
 
 $background-color: $coconut;
@@ -86,6 +84,7 @@ $on-palm:       480px;
   "base",
   "chrome",
   "force",
+  "grid",
   "index",
   "icons",
   "pages",

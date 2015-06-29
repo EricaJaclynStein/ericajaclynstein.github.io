@@ -1,7 +1,11 @@
 .site-header {
-  background-color: $background-color;
-  text-align: center;
-  width: 100%;
+  margin: $spacing-sm;
+  @extend %clearfix;
+}
+
+.header-nav {
+  display: inline-block;
+  padding: $spacing-sm;
 }
 
 .site-footer {
@@ -10,25 +14,21 @@
   width: 100%;
 }
 
-.header-nav {
-  display: inline-block;
-  padding: $spacing-sm;
-}
-
 .footer-nav {
   display: inline-block;
   padding: $spacing-sm;
 }
 
 .site-title {
-  font-family: $mono-font-family;
-  font-size: $base-font-size;
-  font-weight: $font-normal;
+  font-family: "Open Sans Condensed", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-size: 400%;
+  font-weight: $font-light;
   line-height: 1;
-  margin: 0;
+  text-transform: uppercase;
 
   a {
-    color: $maraschino;
+    color: $tungsten;
+    text-decoration: none;
   }
 
   &:hover {
@@ -40,14 +40,14 @@
   }
 }
 
-.site-author {
+.site-description {
+  color: $tungsten;
   font-family: $mono-font-family;
-  font-size: $base-font-size;
-  font-weight: $font-normal;
-  line-height: 1;
+  margin: $spacing 0;
 
   a {
     color: $tungsten;
+    font-family: $mono-font-family;
     font-weight: $font-bold;
 
     &:hover {
@@ -56,62 +56,17 @@
   }
 }
 
-.social-list {
-  color: $tungsten;
-  text-align: center;
-  margin-top: $spacing-sm;
-
-  a {
-    color: $tungsten;
-    float: left;
-    font-size: 20px;
-    line-height: 1px;
-    padding: 0 $spacing-sm;
-    text-decoration: none;
-    width: $spacing-sm;
-
-    &:hover {
-      color: $aqua;
-      transform-origin: 50% 50% 0px;
-      transform: translate(0px, 0px) rotate(0deg) scale(1.12);
-      -webkit-transition: all 0.3s ease-in-out;
-      transition: all 0.3s ease-in-out;
-    }
-  }
-
-  ul {
-    margin: 0;
-    padding: 0;
-
-    li {
-      list-style-type: none;
-      display: inline-block;
-      margin-top: 10px;
-    }
-  }
-}
-
-.site-description {
-  color: $tungsten;
-  font-family: $mono-font-family;
-  font-size: $small-font-size;
-  font-weight: $font-normal;
-  line-height: 1;
-  margin: $spacing 0;
-
-  border: 0;
-  border-bottom: 3px solid transparent;
-  -moz-border-image: -moz-linear-gradient( left, #85FDE3 0%, #9000FF 100% );
-  -webkit-border-image: -webkit-linear-gradient( left, #85FDE3 0%, #9000FF 100% );
-  border-image: linear-gradient( to right, #85FDE3 0%, #9000FF 50%, transparent 80%, transparent 90% );
-  border-image-slice: 1;
-}
-
 .divider {
-  background-color: $silver;
   height: 1px;
   margin: $spacing-sm auto;
   position: relative;
-  width: 27%;
+  width: 33.333333%;
+
+  border: 0;
+  background-image: transparent;
+  -moz-background-image: -moz-linear-gradient( left, #10cbc4 0%, #7442C8 50%, #7442C8 100% );
+  -webkit-background-image: -webkit-linear-gradient( left, #10cbc4 0%, #7442C8 50%, #7442C8 100% );
+  background-image: linear-gradient( to right, #10cbc4 0%, #7442C8 50%, #7442C8 100% );
+  background-image-slice: 1;
 }
 
