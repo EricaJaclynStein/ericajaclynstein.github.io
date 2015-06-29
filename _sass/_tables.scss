@@ -1,9 +1,12 @@
+table {
+  background-color: transparent;
+}
 
-/********** CUSTOM STYLES **********/
+.row-heading {
+  font-weight: $font-light;
+}
 
 .column-heading {
-  font-size: $base-font-size;
-  font-weight: $font-semibold;
 }
 
 .caption {
@@ -12,93 +15,51 @@
   color: $tungsten;
 }
 
-
-
-/********** BASIC TABLE **********/
-
-table {
-  background-color: #fff;
-}
-
 .table {
-  background-color: $background-color;
   width: 100%;
-  max-width: 100%;
   margin-bottom: $spacing;
-  padding-left: $spacing-lg;
-  padding-right: $spacing-lg; 
-
-  @media screen and (max-width: $on-palm) {
-    padding: 0px;
-  }
-
   thead {
-
-    tr {
-      margin: 0;
-    }
-
-    th {
-      padding-bottom: $spacing;
-      text-align: left;
-      vertical-align: bottom;
-    }
-  }
-
-  tfoot {
-
-    tr {
-      margin: 0;
-    }
-
-    th {
-      padding-top: $spacing;
-      text-align: left;
-      vertical-align: top;
-    }
-  }
-
-  tbody {
-
+    margin: 0;
     tr {
       text-align: left;
       vertical-align: top;
-    }
-
-    td {
-      padding-bottom: $spacing-sm;
-      text-align: left;
-      vertical-align: top;
-      width: 25%;
-
-      ul {
-        margin-left: 0;
-      }
-
-      ul li {
+      th {
+        padding: $spacing-sm;
         font-size: $base-font-size;
         font-weight: $font-normal;
-        color: $tungsten;
-
-            .row-heading {
-              font-size: $h5-font-size;
-              font-weight: $font-semibold;
-            }
-
-          @media screen and (max-width: $on-palm) {
-            font-size: $h6-font-size;
+      }
+    }
+  }
+  tfoot {
+    margin: 0;
+    tr {
+      text-align: left;
+      vertical-align: top;
+      th {
+        padding: $spacing-sm;
+      }
+    }
+  }
+  tbody {
+    text-align: left;
+    tr {
+      vertical-align: top;
+      td {
+        padding: $spacing-sm;
+        width: 25%;
+        ul {
+          margin: 0;
+          padding: 0;
+          li {
+            font-size: $base-font-size;
             font-weight: $font-normal;
+            color: $tungsten;
           }
         }
       }
     }
-
-  .table {
-    background-color: $background-color;
   }
 }
-
-
 
 /********** STRIPED TABLE **********/
 
@@ -108,8 +69,6 @@ table {
     background-color: $mercury;
   }
 }
-
-
 
 /********** HOVER EFFECT **********/
 

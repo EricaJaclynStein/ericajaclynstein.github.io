@@ -3,19 +3,16 @@
 <html>
 {% include head.html %}
   <body>
-  {% include pheader.html %}
+  {% include page-header.html %}
     <div class="wrapper">
-      <div class="row">
-        <div class="col post-header">
-          <h1>{% if page.title %}{{ page.title }}{% endif %}</h1>
-          <p>{% if page.date %}{{ page.date | date: "%b %-d, %Y" }}{% endif %}</p>
-        </div>
-      </div>
       <div class="row">
         <div class="col col-narrow">
           <article class="post-article"> 
           {{ content }}
           </article>
+          <div class="post-meta">
+            <p>written on {% if page.date %}{{ page.date | date: "%b %-d, %Y" }}{% endif %}</p>
+          </div>
         </div>
       </div>
     </div>

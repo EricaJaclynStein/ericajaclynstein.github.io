@@ -1,17 +1,8 @@
-.post-header {
-  margin: auto;
-  padding: $spacing-sm;
-  max-width: $content-width;
-
-  h1 {
-    font-size: $h1-font-size;
-    line-height: $heading-line-height;
-    text-align: center;
-    
-    @include media-query($on-tablet) {
-      font-size: $h1-mobile-size;
-    }
-  }
+.post-meta {
+  font-family: $mono-font-family;
+  margin: $spacing auto;
+  padding: $spacing;
+  text-align: center;
 }
 
 .post-article {
@@ -104,72 +95,4 @@ ol {
   font-size: $base-font-size;
   line-height: $base-line-height;
   text-align: left;
-
-  article {
-    margin-top: 15px;
-  }
-
-  a {
-    font-weight: $font-bold;
-
-    &:hover {
-      color: $steel;
-    }
-  }
-
-  h5 {
-      color: $tungsten;
-  }
-}
-
-.definition {
-  color: $steel;
-  font-family: $mono-font-family;
-  margin: 30px;
-  padding: $spacing;
-  font-size: $base-font-size;
-  line-height: $base-line-height;
-  text-align: left;
-
-  article {
-    margin-top: 15px;
-  }
-
-  a {
-    font-weight: $font-bold;
-
-    &:hover {
-      color: $steel;
-    }
-  }
-
-  h5 {
-    color: $tungsten;
-  }
-}
-
-.experiment {
-  color: $steel;
-  font-family: $mono-font-family;
-  margin: 30px;
-  padding: $spacing;
-  font-size: $base-font-size;
-  line-height: $base-line-height;
-  text-align: left;
-
-  article {
-    margin-top: 15px;
-  }
-
-  a {
-    font-weight: $font-bold;
-
-    &:hover {
-      color: $steel;
-    }
-  }
-
-  h5 {
-    color: $maraschino;
-  }
 }
