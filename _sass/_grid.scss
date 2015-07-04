@@ -1,22 +1,74 @@
-.box {
-  background-color: transparent;
-  padding: $spacing-sm;
+#default-container2 {
+  clear: left;
+  float: left;
+  width: 100%;
+  overflow: hidden;
+  background: url(/assets/old_mathematics.png) repeat fixed $seafoam; 
+
+  @include media-query($on-tablet) {
+    background: $background-color;
+  }
 }
 
-.container {
-  background-color: transparent;
-  margin: 0 auto;
-  padding: 0 $spacing-sm;
+#main-container2 {
+  clear: left;
+  float: left;
   width: 100%;
+  overflow: hidden;
+  background: url(/assets/stardust.png) repeat fixed $seafoam; 
+
+  @include media-query($on-tablet) {
+    background: $background-color;
+  }
+}
+
+#container1 {
+  float: left;
+  width: 100%;
+  position: relative;
+  right: 41.66666667%;
+  background: $background-color;
+}
+
+#main {
+  float: left;
+  left: 41.66666667%;
+  width: 58.33333333%;
+  position: relative;
+  overflow: hidden;
+
+  @include media-query($on-tablet) {
+    width: 100%;
+  }
+}
+
+#sidebar {
+  float: left;
+  left: 41.66666667%;
+  width: 41.66666667%;
+  margin-bottom: auto;
+  position: relative;
+  overflow: hidden;
+
+  @include media-query($on-tablet) {
+    width: 100%;
+    display: none !important;
+  }
+}
+
+.box {
+  background-color: transparent;
+  padding: $spacing;
 }
 
 .row {
-  margin: 0 -30px;
+  clear: both;
+  margin: 0 $spacing;
 }
 
 .col {
   background-color: transparent;
-  padding-top: $spacing-sm;
+  padding: $spacing-sm 0;
 }
 
 .col-xs, .col-sm, .col-md, .col-lg, .col-xl {

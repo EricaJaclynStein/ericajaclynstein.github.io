@@ -1,4 +1,6 @@
-html {
+body, html {
+  margin: 0;
+  padding: 0; 
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -25,7 +27,6 @@ body {
   color: $tungsten;
   font-family: $base-font-family;
   font-size: $base-font-size;
-  margin: 0;
 }
 
 footer, header {
@@ -108,8 +109,6 @@ a {
     text-decoration: underline;
   }
 }
-
-/***** WRAPPER AND GRID *****/
 
 %clearfix {
 

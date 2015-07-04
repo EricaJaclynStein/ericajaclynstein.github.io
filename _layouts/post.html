@@ -1,21 +1,25 @@
-<!DOCTYPE html>
+---
+layout: default   
+---
 
-<html>
-{% include head.html %}
-  <body>
-  {% include page-header.html %}
-    <div class="wrapper">
-      <div class="row">
-        <div class="col col-narrow">
-          <article class="post-article"> 
-          {{ content }}
-          </article>
+<div id="main">
+{% include postheader.html %}
+
+  <div class="row">
+    <div class="col">
+      <div class="post-box">
+        <article class="post-article">
+        {{ content }}
           <div class="post-meta">
-            <p>written on {% if page.date %}{{ page.date | date: "%b %-d, %Y" }}{% endif %}</p>
+            written on {% if page.date %}{{ page.date | date: "%b %-d, %Y" }}{% endif %}
           </div>
-        </div>
+        </article>
       </div>
     </div>
-  {% include footer.html %}
-  </body>
-</html>
+
+    {% include footer.html %}
+
+  </div>
+</div>
+
+{% include postsidebar.html %}

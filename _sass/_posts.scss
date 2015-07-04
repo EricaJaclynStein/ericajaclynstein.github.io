@@ -1,25 +1,37 @@
+.title-box2 {
+  background: transparent;
+  margin-top: $spacing;
+  p {
+    color: $tungsten;
+    font-family: $mono-font-family;
+    margin-bottom: $spacing-sm;
+  }
+}
+
+.post-box {
+  background: transparent;
+  padding: 0 $spacing;
+}
+
 .post-meta {
   font-family: $mono-font-family;
   margin: $spacing auto;
-  padding: $spacing;
-  text-align: center;
+  text-align: left;
 }
 
 .post-article {
-  margin: 0 $spacing;
+  padding: 0 $spacing;
   text-align: left;
-
+  max-width: $content-width;
   p {
     margin-bottom: $spacing-sm;
     font-family: $serif-font-family;
     font-size: $longreads-font-size;
     font-weight: $font-normal;
     line-height: $longreads-line-height;
-
     a {
       color: $maraschino;
       font-weight: $font-bold;
-
       &:hover {
         text-decoration: underline;
       }
@@ -64,6 +76,14 @@
     margin: $spacing-sm;
     text-align: center;
   }
+
+  @include media-query($on-palm) { 
+    padding: 0;
+    p {    
+      font-size: $base-font-size;
+      line-height: $base-line-height;
+    }
+  }
 }
   
 blockquote {
@@ -87,12 +107,6 @@ ol {
   }
 }
 
-.tip {
-  color: $steel;
-  font-family: $mono-font-family;
-  margin: 30px;
-  padding: $spacing;
-  font-size: $base-font-size;
-  line-height: $base-line-height;
-  text-align: left;
+.postsidebar-content {
+  background: transparent;
 }

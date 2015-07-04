@@ -1,69 +1,51 @@
 ---
-layout: default
-title:  You Are Here
-date:   2015-06-23
+layout: main
+title:  You Are Here      
 ---
 
-<div class="row">
-  <div class="container">
-        <div class="col col-md">
-          <div class="box">
-            {% for post in site.posts %}
-              <div class="list-item-group">
-                <div class="list-item-title">
-                {% if post.title %}<h2><a class="item-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>{% endif %}
-                </div>
-                <div class="list-item-date">
-                {% if post.date %}<small>written on {{ post.date | date: "%b %-d, %Y" }}</small>{% endif %}
-                </div>
-              </div>
-            {% endfor %}
-            {% for project in site.projects %}
-              <div class="list-item-group">
-                <div class="list-item-title">
-                {% if project.title %}<h2><a href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a></h2>{% endif %}
-                </div>
-                <div class="list-item-date">
-                {% if project.date %}<small>updated on {{ project.date | date: "%b %-d, %Y" }}</small>{% endif %}
-                </div>
-              </div>
-            {% endfor %}
-          </div>
-        </div>
-
-        <div class="col col-sm">
-          <div class="box">
-            <div class="display-quote"><p>I recognize terror as the finest emotion and so I will try to terrorize the reader. But if I find that I cannot terrify, I will try to horrify, and if I find that I cannot horrify, I'll go for the gross-out. I'm not proud. – Stephen King</p>
-            </div>
-          </div>
-        </div>
-  </div>
-</div>
-
-<div class="row">
-  <div class="container">
-    <div class="col col-xl">
+<div id="main">
+  
+{% include header.html %}
+  
+  <div class="row">
+    <div class="col">
       <div class="box">
-        <div class="button-group">
-          <div class="button">
-          {% for resource in site.resources %}
-            {% if resource.title %}<a href="{{ resource.url | prepend: site.baseurl }}">{{ resource.title }}</a>{% endif %}
-          {% endfor %}
+        {% for post in site.posts %}
+        <div class="list-item-group">
+          <div class="list-item-title">
+          {% if post.title %}<h2><a class="item-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+          {% endif %}
           </div>
-          <div class="button">
-          {% if site.twitter %}<a href="{{ site.twitter }}" target="blank"> <i class="fa fa-twitter"></i></a>{% endif %}
-          </div>
-          <div class="button">
-          {% if site.medium %}<a class="btn-xs btn-secondary" href="{{ site.medium }}" target="blank"> <i class="fa fa-medium"></i></a>{% endif %}
-          </div>
-          <div class="button">
-          {% if site.github %}<a class="btn-xs btn-secondary" href="{{ site.github }}" target="blank"> <i class="fa fa-github"></i></a>{% endif %}
-          </div>
-          <div class="button">
-          {% if site.dribbble %}<a class="btn-xs btn-secondary" href="{{ site.dribbble }}" target="blank"> <i class="fa fa-dribbble"></i></a>{% endif %}
+          <div class="list-item-date">
+          {% if post.date %}<p>written on {{ post.date | date: "%b %-d, %Y" }}</p>
+          {% endif %}
           </div>
         </div>
+        {% endfor %}
+        {% for project in site.projects %}
+        <div class="list-item-group">
+          <div class="list-item-title">
+          {% if project.title %}<h2><a href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a></h2>
+          {% endif %}
+          </div>
+          <div class="list-item-date">
+          {% if project.date %}<p>updated on {{ project.date | date: "%b %-d, %Y" }}</p>
+          {% endif %}
+          </div>
+        </div>
+        {% endfor %}
       </div>
     </div>
+    
+    {% include social.html %}
+
+    {% include footer.html %}
+  
   </div>
 </div>
+
+{% include mainsidebar.html %}
+
+
+
+      

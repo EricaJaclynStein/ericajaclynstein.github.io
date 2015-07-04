@@ -1,0 +1,8 @@
+<div class="social-box">    
+  <div class="button">
+  {% for resource in site.resources %}
+    {% if resource.title %}<a href="{{ resource.url | prepend: site.baseurl }}">{{ resource.title }}</a>
+    {% endif %}
+  {% endfor %}
+  </div>
+</div>

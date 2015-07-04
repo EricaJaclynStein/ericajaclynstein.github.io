@@ -1,0 +1,96 @@
+.mainsidebar-content {
+  background: transparent;
+  p {
+    color: $steel;
+    padding: $spacing;
+  }
+}
+
+.site-title {
+  font-family: "Open Sans Condensed", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-size: 300%;
+  font-weight: $font-light;
+  line-height: 1;
+  text-transform: uppercase;
+  a {
+    color: $tungsten;
+    text-decoration: none;
+  }
+}
+
+.title-box {
+  background-color: $seafoam;
+  padding: $spacing;
+  backgound-image: transparent;
+  -moz-background-image: -moz-linear-gradient(left, #12E3DB 0%, #85FDE3 100%);
+  -webkit-background-image: -webkit-linear-gradient(left, #12E3DB 0%, #85FDE3 100%);
+  background-image: linear-gradient(to right, #12E3DB 0%, #85FDE3 40%, #85FDE3 100%);
+  background-size: 300%;
+  background-repeat:repeat;
+  background-image-slice: 1;
+  &:hover {
+    transition: all 1s linear;
+    background-position:100% 100%;
+    transform-origin: 50% 50% 0px;
+    transform: translate(0px, 0px) rotate(0deg) scale(1.02);
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.list-item-group {
+  margin-bottom: $spacing;
+  padding: 0;
+  text-align: left;
+}
+
+.list-item-title {
+  display: block;
+  line-height: 1;
+  position: relative;
+  a {
+    color: $tungsten;
+    font-family: $base-font-family;
+    font-weight: $font-normal;
+    text-decoration: none;
+  }
+}
+
+.list-item-date {
+  color: $steel;
+  font-family: $mono-font-family;
+  line-height: 1;
+  position: relative;
+}
+
+.social-box {
+  display: inline-block;
+  padding: 0 $spacing;
+}
+
+.button {
+  background-color: $steel;
+  display: inline-block;
+  line-height: 1;
+  margin-bottom: $spacing-xs;
+  margin-right: $spacing-xs;
+  padding: 3px 11px;
+  text-align: center;
+
+  a {
+    color: $coconut;
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    text-decoration: none;
+  }
+
+  &:hover {
+    transform-color: $seafoam;
+    transform-origin: 50% 50% 0px;
+    transform: translate(0px, 0px) rotate(0deg) scale(1.12);
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+}

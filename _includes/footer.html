@@ -1,10 +1,23 @@
 <footer>
   <div class="site-footer">
-    <div class="footer-nav">
-	    <div class="site-description">
-	      <small>{{ site.description }}</small>
-	    <div class="divider"></div>
-	      <small>About <a href="http://www.sketchappsources.com/blog/post/erica-jaclyn-stein" target="blank">{{ site.author }}</a></small>
+    <div class="footer-box">
+	    <div class="footer-meta">
+		    <small>{{ site.description }}</small> 
+		    &#47;
+		    <small>About <a href="http://www.sketchappsources.com/blog/post/erica-jaclyn-stein" target="blank">{{ site.author }}</a></small> 
+	      <div class="footer-meta-social">
+	      {% if site.twitter %}<small><a class="btn-xs" href="{{ site.twitter }}" target="blank"> <i class="fa fa-twitter"></i> Twitter</a></small>
+	      {% endif %}
+	      &#47;
+	      {% if site.medium %}<small><a class="btn-xs" href="{{ site.medium }}" target="blank"> <i class="fa fa-medium"></i> Medium</a></small>
+	      {% endif %}
+	      &#47;
+	      {% if site.github %}<small><a class="btn-xs" href="{{ site.github }}" target="blank"> <i class="fa fa-github"></i> Github</a></small>
+	      {% endif %}
+	      &#47;
+	      {% if site.dribbble %}<small><a class="btn-xs" href="{{ site.dribbble }}" target="blank"> <i class="fa fa-dribbble"></i> Dribble</a></small>
+	      {% endif %}
+	      </div>
 	    </div>
     </div>
   </div>
