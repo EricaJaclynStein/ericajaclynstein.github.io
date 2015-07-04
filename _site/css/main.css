@@ -298,7 +298,7 @@ svg {
 
 .col {
   background-color: transparent;
-  padding: 15px 0; }
+  padding: 0; }
 
 .col-xs, .col-sm, .col-md, .col-lg, .col-xl {
   float: left;
@@ -407,13 +407,14 @@ svg {
     font-family: "Open Sans", "Helvetica Neue", "Helvetica", Arial, sans-serif;
     font-size: 16px;
     line-height: 1.4;
+    margin-left: 5px;
     text-decoration: none; }
 
 .main-item-date {
   color: #787D7F;
   font-family: "Inconsolata", Consolas, monospace;
   line-height: 1;
-  position: relative; }
+  margin-left: 15px; }
 
 .social-box {
   display: inline-block;
