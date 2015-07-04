@@ -416,21 +416,17 @@ svg {
   line-height: 1;
   margin-left: 15px; }
 
-.social-box {
-  display: inline-block;
-  padding: 0 30px; }
-
 .button {
-  background-color: #787D7F;
+  background-color: #303233;
   display: inline-block;
   line-height: 1;
   margin-bottom: 5px;
   margin-right: 5px;
-  padding: 3px 11px;
+  padding: 5px 11px;
   text-align: center; }
   .button a {
-    color: #FBFBFB;
-    font-family: "Open Sans", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    color: #FFF;
+    font-family: "Inconsolata", Consolas, monospace;
     font-size: 14px;
     text-decoration: none; }
   .button:hover {

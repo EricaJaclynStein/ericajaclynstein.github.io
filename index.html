@@ -28,7 +28,16 @@ title:  You Are Here
         </div>
       </div>
     </div>
-    {% include social.html %}
+    <div class="col">
+      <div class="box">    
+        <div class="button">
+        {% for resource in site.resources %}
+          {% if resource.title %}<a href="{{ resource.url | prepend: site.baseurl }}">{{ resource.title }}</a>
+          {% endif %}
+        {% endfor %}
+        </div>
+      </div>
+    </div>
     {% include footer.html %}
   </div>
 </div>

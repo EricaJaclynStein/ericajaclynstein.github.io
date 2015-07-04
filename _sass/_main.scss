@@ -64,27 +64,20 @@
   margin-left: $spacing-sm;
 }
 
-.social-box {
-  display: inline-block;
-  padding: 0 $spacing;
-}
-
 .button {
-  background-color: $steel;
+  background-color: $tungsten;
   display: inline-block;
   line-height: 1;
   margin-bottom: $spacing-xs;
   margin-right: $spacing-xs;
-  padding: 3px 11px;
+  padding: 5px 11px;
   text-align: center;
-
   a {
-    color: $coconut;
-    font-family: $base-font-family;
+    color: #FFF;
+    font-family: $mono-font-family;
     font-size: $base-font-size;
     text-decoration: none;
   }
-
   &:hover {
     transform-color: $seafoam;
     transform-origin: 50% 50% 0px;
