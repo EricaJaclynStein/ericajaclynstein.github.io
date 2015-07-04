@@ -58,15 +58,15 @@ body p, h1, h2, h3, h4, h5, h6, ul, ol, dl, figure,
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-size: $base-font-size;
   font-weight: $font-normal;
-  line-height: 1;
+  line-height: $heading-line-height;
   padding: 0;
   margin: 0;
 }
 
 img {
   vertical-align: middle;
-  
   .thumbnail {
     display: block;
     max-width: 100%;
@@ -78,15 +78,14 @@ img {
 }
 
 hr {
+  height: 0;
   -webkit-box-sizing: content-box;
      -moz-box-sizing: content-box;
           box-sizing: content-box;
-  height: 0;
 }
 
 ul, ol {
   list-style-type: none;
-
   li {
     margin: 0;
   }
@@ -96,13 +95,11 @@ a {
   background-color: transparent;
   color: $tungsten;
   text-decoration: none;
-
   &:active,
   &:hover {
     color: $steel;
     outline: 0;
   }
-
   &:hover,
   &:focus {
     color: $steel;
@@ -111,7 +108,6 @@ a {
 }
 
 %clearfix {
-
   &:after {
     content: "";
     display: table;
@@ -123,15 +119,12 @@ a {
   margin: $spacing auto;
   padding: 0 $spacing;
   @extend %clearfix;
-
   @include media-query($on-desktop) {
     max-width: $on-desktop;
   }
-
   @include media-query($on-tablet) {
     max-width: $on-tablet;
   }
-
   @include media-query($on-palm) {
     max-width: $on-palm;
     padding: 0 $spacing-sm;

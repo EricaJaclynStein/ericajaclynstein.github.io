@@ -56,8 +56,9 @@ body p, h1, h2, h3, h4, h5, h6, ul, ol, dl, figure,
   margin-bottom: 0; }
 
 h1, h2, h3, h4, h5, h6 {
+  font-size: 14px;
   font-weight: 400;
-  line-height: 1;
+  line-height: 1.1;
   padding: 0;
   margin: 0; }
 
@@ -72,10 +73,10 @@ img {
     transition: all 0.2s ease-in-out; }
 
 hr {
+  height: 0;
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  height: 0; }
+  box-sizing: content-box; }
 
 ul, ol {
   list-style-type: none; }
@@ -158,6 +159,18 @@ a {
   background-color: transparent;
   padding: 30px; }
 
+.post-header-meta {
+  background: transparent;
+  margin-top: 30px;
+  max-width: 400px; }
+
+.post-header-item a {
+  color: #303233;
+  font-family: "Inconsolata", Consolas, monospace; }
+.post-header-item h1 {
+  font-size: 16px;
+  margin-top: 30px; }
+
 .site-header {
   margin: 0 15px; }
 
@@ -194,16 +207,10 @@ a {
     text-decoration: none; }
 
 .divider {
-  height: 1px;
-  margin: 15px auto;
-  position: relative;
-  width: 33.333333%;
-  border: 0;
-  background-image: transparent;
-  -moz-background-image: -moz-linear-gradient(left, #10cbc4 0%, #7442C8 50%, #7442C8 100%);
-  -webkit-background-image: -webkit-linear-gradient(left, #10cbc4 0%, #7442C8 50%, #7442C8 100%);
-  background-image: linear-gradient(to right, #10cbc4 0%, #7442C8 50%, #7442C8 100%);
-  background-image-slice: 1; }
+  height: 5px;
+  margin-top: 7px;
+  width: 30px;
+  background-color: #303233; }
 
 svg {
   display: block;
@@ -456,14 +463,6 @@ svg {
     font-family: "Inconsolata", Consolas, monospace; }
     .page-items a:hover {
       text-decoration: underline; }
-
-.title-box2 {
-  background: transparent;
-  margin-top: 30px; }
-  .title-box2 p {
-    color: #303233;
-    font-family: "Inconsolata", Consolas, monospace;
-    margin-bottom: 15px; }
 
 .post-box {
   background: transparent;

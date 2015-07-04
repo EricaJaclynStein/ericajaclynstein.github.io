@@ -7,6 +7,23 @@
   padding: $spacing;
 }
 
+.post-header-meta {
+  background: transparent;
+  margin-top: $spacing;
+  max-width: 400px;
+}
+
+.post-header-item {
+  a {
+    color: $tungsten;
+    font-family: $mono-font-family;
+  }
+  h1 {
+    font-size: $longreads-font-size;
+    margin-top: $spacing;
+  }
+}
+
 .site-header {
   margin: 0 $spacing-sm;
   @extend %clearfix;
@@ -51,16 +68,9 @@
 }
 
 .divider {
-  height: 1px;
-  margin: $spacing-sm auto;
-  position: relative;
-  width: 33.333333%;
-
-  border: 0;
-  background-image: transparent;
-  -moz-background-image: -moz-linear-gradient( left, #10cbc4 0%, #7442C8 50%, #7442C8 100% );
-  -webkit-background-image: -webkit-linear-gradient( left, #10cbc4 0%, #7442C8 50%, #7442C8 100% );
-  background-image: linear-gradient( to right, #10cbc4 0%, #7442C8 50%, #7442C8 100% );
-  background-image-slice: 1;
+  height: 5px;
+  margin-top: 7px;
+  width: $spacing;
+  background-color: $tungsten;
 }
 
