@@ -11,7 +11,7 @@ title:  You Are Here
         <div class="main-list-group">
           {% for post in site.posts %}
             <div class="main-list-item">
-              <h1>&times; {% if post.title %}<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>{% endif %}
+              <h1>{% if post.title %}<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>{% endif %}
               <div class="main-item-date">
               {% if post.date %}<p>written on {{ post.date | date: "%b %-d, %Y" }}</p>{% endif %}
               </div>
@@ -19,7 +19,7 @@ title:  You Are Here
           {% endfor %}
           {% for project in site.projects %}
             <div class="main-list-item">
-              <h1>&times; {% if project.title %}<a href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a></h1>{% endif %}
+              <h1>{% if project.title %}<a href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a></h1>{% endif %}
               <div class="main-item-date">
               {% if project.date %}<p>updated on {{ project.date | date: "%b %-d, %Y" }}</p>{% endif %}
               </div>
