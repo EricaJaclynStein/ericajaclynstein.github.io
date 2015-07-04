@@ -393,16 +393,13 @@ svg {
   text-align: left; }
 
 .main-list-item {
-  margin-bottom: 30px; }
-
-.main-item-title {
+  margin-bottom: 30px;
   display: block; }
-  .main-item-title a {
+  .main-list-item a {
     color: #303233;
     font-family: "Open Sans", "Helvetica Neue", "Helvetica", Arial, sans-serif;
-    font-size: 26px;
-    font-weight: 300;
-    line-height: 1.1;
+    font-size: 16px;
+    line-height: 1.4;
     text-decoration: none; }
 
 .main-item-date {

@@ -46,16 +46,12 @@
 
 .main-list-item {
   margin-bottom: $spacing;
-}
-
-.main-item-title {
   display: block;
   a {
     color: $tungsten;
     font-family: $base-font-family;
-    font-size: $h2-font-size;
-    font-weight: $font-light;
-    line-height: $heading-line-height;
+    font-size: $longreads-font-size;
+    line-height: $base-line-height;
     text-decoration: none;
   }
 }
