@@ -240,7 +240,7 @@ svg {
   float: left;
   width: 100%;
   overflow: hidden;
-  background: url(/assets/old_mathematics.png) repeat fixed #85FDE3; }
+  background: url(/assets/shattered.png) repeat fixed #85FDE3; }
   @media screen and (max-width: 768px) {
     #default-container2 {
       background: #FBFBFB; } }
@@ -250,11 +250,7 @@ svg {
   float: left;
   width: 100%;
   overflow: hidden;
-  background: url(/assets/pool.jpeg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
+  background: url(/assets/shattered.png) repeat fixed #85FDE3; }
   @media screen and (max-width: 768px) {
     #main-container2 {
       background: #FBFBFB; } }

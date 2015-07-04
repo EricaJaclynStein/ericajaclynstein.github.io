@@ -3,7 +3,7 @@
   float: left;
   width: 100%;
   overflow: hidden;
-  background: url(/assets/old_mathematics.png) repeat fixed $seafoam; 
+  background: url(/assets/shattered.png) repeat fixed $seafoam; 
 
   @include media-query($on-tablet) {
     background: $background-color;
@@ -15,11 +15,7 @@
   float: left;
   width: 100%;
   overflow: hidden;
-  background: url(/assets/pool.jpeg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: url(/assets/shattered.png) repeat fixed $seafoam; 
 
   @include media-query($on-tablet) {
     background: $background-color;
