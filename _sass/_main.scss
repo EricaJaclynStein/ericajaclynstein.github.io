@@ -39,25 +39,28 @@
   }
 }
 
-.list-item-group {
+.main-list-group {
   margin-bottom: $spacing;
-  padding: 0;
   text-align: left;
 }
 
-.list-item-title {
+.main-list-item {
+  margin-bottom: $spacing;
+}
+
+.main-item-title {
   display: block;
-  line-height: 1;
-  position: relative;
   a {
     color: $tungsten;
     font-family: $base-font-family;
-    font-weight: $font-normal;
+    font-size: $h2-font-size;
+    font-weight: $font-light;
+    line-height: $heading-line-height;
     text-decoration: none;
   }
 }
 
-.list-item-date {
+.main-item-date {
   color: $steel;
   font-family: $mono-font-family;
   line-height: 1;

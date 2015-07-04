@@ -243,7 +243,11 @@ svg {
   float: left;
   width: 100%;
   overflow: hidden;
-  background: url(/assets/stardust.png) repeat fixed #85FDE3; }
+  background: url(/assets/pool.jpeg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
   @media screen and (max-width: 768px) {
     #main-container2 {
       background: #FBFBFB; } }
@@ -384,22 +388,24 @@ svg {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out; }
 
-.list-item-group {
+.main-list-group {
   margin-bottom: 30px;
-  padding: 0;
   text-align: left; }
 
-.list-item-title {
-  display: block;
-  line-height: 1;
-  position: relative; }
-  .list-item-title a {
+.main-list-item {
+  margin-bottom: 30px; }
+
+.main-item-title {
+  display: block; }
+  .main-item-title a {
     color: #303233;
     font-family: "Open Sans", "Helvetica Neue", "Helvetica", Arial, sans-serif;
-    font-weight: 400;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 1.1;
     text-decoration: none; }
 
-.list-item-date {
+.main-item-date {
   color: #787D7F;
   font-family: "Inconsolata", Consolas, monospace;
   line-height: 1;
