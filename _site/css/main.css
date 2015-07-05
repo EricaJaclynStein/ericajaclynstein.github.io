@@ -152,18 +152,6 @@ a {
 .affix {
   position: fixed; }
 
-.post-header-meta {
-  background: transparent;
-  margin-top: 30px;
-  max-width: 400px; }
-
-.post-header-item a {
-  color: #303233;
-  font-family: "Inconsolata", Consolas, monospace; }
-.post-header-item h1 {
-  font-size: 16px;
-  margin-top: 30px; }
-
 .site-footer {
   clear: both;
   display: block;
@@ -466,9 +454,34 @@ svg {
     .page-items a:hover {
       text-decoration: underline; }
 
+.post-title-box {
+  background: #FBFBFB;
+  padding: 30px; }
+  @media screen and (max-width: 480px) {
+    .post-title-box {
+      padding: 15px; } }
+
+.post-header-meta {
+  background: transparent;
+  margin-top: 30px;
+  max-width: 400px; }
+  @media screen and (max-width: 480px) {
+    .post-header-meta {
+      margin: 0; } }
+
+.post-header-item a {
+  color: #303233;
+  font-family: "Inconsolata", Consolas, monospace; }
+.post-header-item h1 {
+  font-size: 16px;
+  margin-top: 30px; }
+
 .post-box {
   background: transparent;
   padding: 0 30px; }
+  @media screen and (max-width: 480px) {
+    .post-box {
+      padding: 0; } }
 
 .post-meta {
   font-family: "Inconsolata", Consolas, monospace;
