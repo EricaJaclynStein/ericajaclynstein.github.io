@@ -5,10 +5,13 @@
 
 /* ==========================================================================
    Erica Jaclyn Stein v1.0 | http://ericajaclynstein.github.io
-   Copyright 2014-2015
-   Licensed under MIT
-   Designed using paper, Sketch, and brain.
-   Built and generated using Sublime Text, Atom, Jekyll, and Bootstrap | http://getbootstrap.com | http://jekyllrb.com
+   Copyright Lars von Freud 2014-2015 | Under MIT License
+   Designed, built, and generated using: 
+   Sketch | http://bohemiancoding.com/sketch
+   Sublime Text | www.sublimetext.com
+   Atom | http://atom.io
+   Jekyll | http://jekyllrb.com
+   and Bootstrap | http://getbootstrap.com
    ========================================================================== */
 
 $base-font-family:      "Open Sans", "Helvetica Neue", "Helvetica", Arial, sans-serif;
@@ -83,7 +86,7 @@ $on-palm:       480px;
 
 @import
   "base",
-  "chrome",
+  "footer",
   "force",
   "grid",
   "icons",
