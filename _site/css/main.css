@@ -156,36 +156,28 @@ a {
   position: fixed; }
 
 .site-footer {
+  background: #FBFBFB;
   clear: both;
   display: block;
-  background-color: #FBFBFB;
   margin-top: 30px;
   width: 100%; }
-
-.footer-box {
-  display: inline-block;
-  padding: 30px; }
-  @media screen and (max-width: 480px) {
-    .footer-box {
-      padding: 0; } }
 
 .footer-meta {
   color: #787D7F;
   font-family: "Inconsolata", Consolas, monospace;
-  margin: 30px 0; }
-  .footer-meta a {
-    color: #787D7F;
-    font-weight: 700;
-    text-decoration: none; }
-
-.footer-meta-social {
-  color: #787D7F;
-  font-family: "Inconsolata", Consolas, monospace;
-  margin-top: 5px; }
-  .footer-meta-social a {
-    color: #787D7F;
-    font-weight: 700;
-    text-decoration: none; }
+  padding: 30px; }
+  .footer-meta ul {
+    list-style-type: none;
+    padding: 0; }
+    .footer-meta ul li {
+      display: inline-block;
+      color: #787D7F;
+      font-family: "Inconsolata", Consolas, monospace;
+      margin-top: 5px; }
+      .footer-meta ul li a {
+        color: #787D7F;
+        font-weight: 700;
+        text-decoration: none; }
 
 .divider {
   height: 5px;

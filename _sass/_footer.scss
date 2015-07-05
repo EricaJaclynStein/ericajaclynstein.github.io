@@ -1,42 +1,33 @@
 .site-footer {
+  background: $background-color;
   clear:both;
   display: block;
-  background-color: $background-color;
   margin-top: $spacing;
   width: 100%;
-}
-
-.footer-box {
-  display: inline-block;
-  padding: $spacing;
-
-  @include media-query($on-palm) {
-    padding: 0;
-  }
 }
 
 .footer-meta {
   color: $steel;
   font-family: $mono-font-family;
-  margin: $spacing 0;
+  padding: $spacing;  
 
-  a {
-    color: $steel;
-    font-weight: $font-bold;
-    text-decoration: none;
+  ul {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      color: $steel;
+      font-family: $mono-font-family;
+      margin-top: $spacing-xs;
+
+      a {
+        color: $steel;
+        font-weight: $font-bold;
+        text-decoration: none;
+      }
+    }
   }
-}
-
-.footer-meta-social {
-  color: $steel;
-  font-family: $mono-font-family;
-  margin-top: $spacing-xs;
-  
-  a {
-    color: $steel;
-    font-weight: $font-bold;
-    text-decoration: none;
-  }  
 }
 
 .divider {
