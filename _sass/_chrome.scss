@@ -1,11 +1,4 @@
-#header {
-  margin: 0 $spacing;
-}
 
-.header-box {
-  background-color: transparent;
-  padding: $spacing;
-}
 
 .post-header-meta {
   background: transparent;
@@ -22,11 +15,6 @@
     font-size: $longreads-font-size;
     margin-top: $spacing;
   }
-}
-
-.site-header {
-  margin: 0 $spacing-sm;
-  @extend %clearfix;
 }
 
 .site-footer {

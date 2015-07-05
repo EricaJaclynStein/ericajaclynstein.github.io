@@ -94,7 +94,7 @@ a {
     color: #787D7F;
     text-decoration: underline; }
 
-.wrapper:after, .site-header:after {
+.wrapper:after {
   content: "";
   display: table;
   clear: both; }
@@ -152,13 +152,6 @@ a {
 .affix {
   position: fixed; }
 
-#header {
-  margin: 0 30px; }
-
-.header-box {
-  background-color: transparent;
-  padding: 30px; }
-
 .post-header-meta {
   background: transparent;
   margin-top: 30px;
@@ -170,9 +163,6 @@ a {
 .post-header-item h1 {
   font-size: 16px;
   margin-top: 30px; }
-
-.site-header {
-  margin: 0 15px; }
 
 .site-footer {
   clear: both;
@@ -362,17 +352,22 @@ svg {
     color: #787D7F;
     padding: 30px; }
 
-.site-title {
-  font-family: "Open Sans Condensed", "Helvetica Neue", "Helvetica", Arial, sans-serif;
-  font-size: 300%;
-  font-weight: 300;
-  line-height: 1;
-  text-transform: uppercase; }
-  .site-title a {
-    color: #303233;
-    text-decoration: none; }
+/* Main Header
+============================= */
+#main-header {
+  margin: 0 30px; }
+  @media screen and (max-width: 480px) {
+    #main-header {
+      margin: 0; } }
 
-.title-box {
+.main-header-box {
+  background-color: transparent;
+  padding: 30px; }
+  @media screen and (max-width: 480px) {
+    .main-header-box {
+      padding: 15px; } }
+
+.main-title-box {
   background-color: #85FDE3;
   padding: 30px;
   backgound-image: transparent;
@@ -382,7 +377,7 @@ svg {
   background-size: 300%;
   background-repeat: repeat;
   background-image-slice: 1; }
-  .title-box:hover {
+  .main-title-box:hover {
     transition: all 1s linear;
     background-position: 100% 100%;
     transform-origin: 50% 50% 0px;
@@ -390,6 +385,22 @@ svg {
     -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out; }
+  @media screen and (max-width: 480px) {
+    .main-title-box {
+      padding: 15px; } }
+
+.site-title {
+  font-family: "Open Sans Condensed", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-size: 300%;
+  font-weight: 300;
+  line-height: 1;
+  text-transform: uppercase; }
+  .site-title a {
+    color: #303233;
+    text-decoration: none; }
+  @media screen and (max-width: 480px) {
+    .site-title {
+      font-size: 200%; } }
 
 .main-list-group {
   margin-bottom: 30px;

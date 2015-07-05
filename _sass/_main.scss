@@ -6,19 +6,26 @@
   }
 }
 
-.site-title {
-  font-family: "Open Sans Condensed", "Helvetica Neue", "Helvetica", Arial, sans-serif;
-  font-size: 300%;
-  font-weight: $font-light;
-  line-height: 1;
-  text-transform: uppercase;
-  a {
-    color: $tungsten;
-    text-decoration: none;
+/* Main Header
+============================= */
+#main-header {
+  margin: 0 $spacing;
+  
+  @include media-query($on-palm) {
+    margin: 0;
   }
 }
 
-.title-box {
+.main-header-box {
+  background-color: transparent;
+  padding: $spacing;
+  
+  @include media-query($on-palm) {
+    padding: $spacing-sm;
+  }
+}
+
+.main-title-box {
   background-color: $seafoam;
   padding: $spacing;
   backgound-image: transparent;
@@ -36,6 +43,26 @@
     -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+  }
+  @include media-query($on-palm) {
+    padding: $spacing-sm;
+  }
+}
+
+.site-title {
+  font-family: "Open Sans Condensed", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-size: 300%;
+  font-weight: $font-light;
+  line-height: 1;
+  text-transform: uppercase;
+  
+  a {
+    color: $tungsten;
+    text-decoration: none;
+  }
+
+  @include media-query($on-palm) {
+    font-size: 200%;
   }
 }
 
