@@ -6,66 +6,6 @@
   }
 }
 
-/* Main Header
-============================= */
-#main-header {
-  margin: 0 $spacing;
-  
-  @include media-query($on-palm) {
-    margin: 0;
-  }
-}
-
-.main-header-box {
-  background-color: transparent;
-  padding: $spacing;
-  
-  @include media-query($on-palm) {
-    padding: $spacing-sm;
-  }
-}
-
-.main-title-box {
-  background-color: $seafoam;
-  padding: $spacing;
-  backgound-image: transparent;
-  -moz-background-image: -moz-linear-gradient(left, #12E3DB 0%, #85FDE3 100%);
-  -webkit-background-image: -webkit-linear-gradient(left, #12E3DB 0%, #85FDE3 100%);
-  background-image: linear-gradient(to right, #12E3DB 0%, #85FDE3 40%, #85FDE3 100%);
-  background-size: 300%;
-  background-repeat:repeat;
-  background-image-slice: 1;
-  &:hover {
-    transition: all 1s linear;
-    background-position:100% 100%;
-    transform-origin: 50% 50% 0px;
-    transform: translate(0px, 0px) rotate(0deg) scale(1.02);
-    -moz-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-  }
-  @include media-query($on-palm) {
-    padding: $spacing-sm;
-  }
-}
-
-.site-title {
-  font-family: "Open Sans Condensed", "Helvetica Neue", "Helvetica", Arial, sans-serif;
-  font-size: 300%;
-  font-weight: $font-light;
-  line-height: 1;
-  text-transform: uppercase;
-  
-  a {
-    color: $tungsten;
-    text-decoration: none;
-  }
-
-  @include media-query($on-palm) {
-    font-size: 200%;
-  }
-}
-
 .main-list-group {
   margin-bottom: $spacing;
   text-align: left;
