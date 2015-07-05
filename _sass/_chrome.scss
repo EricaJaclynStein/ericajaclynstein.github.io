@@ -9,6 +9,7 @@
 .footer-box {
   display: inline-block;
   padding: $spacing;
+
   @include media-query($on-palm) {
     padding: 0;
   }
@@ -18,6 +19,7 @@
   color: $steel;
   font-family: $mono-font-family;
   margin: $spacing 0;
+
   a {
     color: $steel;
     font-weight: $font-bold;
@@ -29,6 +31,7 @@
   color: $steel;
   font-family: $mono-font-family;
   margin-top: $spacing-xs;
+  
   a {
     color: $steel;
     font-weight: $font-bold;

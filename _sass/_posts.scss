@@ -33,7 +33,7 @@
   padding: 0 $spacing;
 
   @include media-query($on-palm) {
-    padding: 0;
+    padding: $spacing-sm;
   }
 }
 

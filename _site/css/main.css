@@ -268,7 +268,7 @@ svg {
 
 .row {
   clear: both;
-  margin: 0 30px; }
+  margin: 0 15px; }
 
 .col {
   background-color: transparent;
@@ -481,7 +481,7 @@ svg {
   padding: 0 30px; }
   @media screen and (max-width: 480px) {
     .post-box {
-      padding: 0; } }
+      padding: 15px; } }
 
 .post-meta {
   font-family: "Inconsolata", Consolas, monospace;
