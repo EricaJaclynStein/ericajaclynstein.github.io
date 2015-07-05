@@ -306,6 +306,72 @@ svg {
     .col-xl {
       width: 100%; } }
 
+/* Main Header
+============================== */
+#header {
+  background: #FBFBFB; }
+
+.header-box {
+  background: transparent;
+  padding: 30px; }
+  @media screen and (max-width: 480px) {
+    .header-box {
+      padding: 15px; } }
+
+.header-gradient-bg {
+  background-color: #85FDE3;
+  padding: 30px;
+  backgound-image: transparent;
+  -moz-background-image: -moz-linear-gradient(left, #12E3DB 0%, #85FDE3 100%);
+  -webkit-background-image: -webkit-linear-gradient(left, #12E3DB 0%, #85FDE3 100%);
+  background-image: linear-gradient(to right, #12E3DB 0%, #85FDE3 40%, #85FDE3 100%);
+  background-size: 300%;
+  background-repeat: repeat;
+  background-image-slice: 1; }
+  .header-gradient-bg:hover {
+    transition: all 1s linear;
+    background-position: 100% 100%;
+    transform-origin: 50% 50% 0px;
+    transform: translate(0px, 0px) rotate(0deg) scale(1.02);
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+  @media screen and (max-width: 480px) {
+    .header-gradient-bg {
+      padding: 15px; } }
+
+.site-title {
+  font-family: "Open Sans Condensed", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-size: 300%;
+  font-weight: 300;
+  line-height: 1;
+  text-transform: uppercase; }
+  .site-title a {
+    color: #303233;
+    text-decoration: none; }
+  @media screen and (max-width: 480px) {
+    .site-title {
+      font-size: 200%; } }
+
+/* Post Header
+============================== */
+.post-header-group {
+  background: #FBFBFB;
+  padding: 30px; }
+  .post-header-group a {
+    color: #303233;
+    font-family: "Inconsolata", Consolas, monospace; }
+  .post-header-group h1 {
+    font-size: 16px;
+    margin-top: 30px; }
+  @media screen and (max-width: 480px) {
+    .post-header-group {
+      padding: 15px; } }
+
+.post-header-meta {
+  background: transparent;
+  max-width: 400px; }
+
 .icon-set {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -334,56 +400,6 @@ svg {
   .mainsidebar-content p {
     color: #787D7F;
     padding: 30px; }
-
-/* Main Header
-============================= */
-#main-header {
-  margin: 0 30px; }
-  @media screen and (max-width: 480px) {
-    #main-header {
-      margin: 0; } }
-
-.main-header-box {
-  background-color: transparent;
-  padding: 30px; }
-  @media screen and (max-width: 480px) {
-    .main-header-box {
-      padding: 15px; } }
-
-.main-title-box {
-  background-color: #85FDE3;
-  padding: 30px;
-  backgound-image: transparent;
-  -moz-background-image: -moz-linear-gradient(left, #12E3DB 0%, #85FDE3 100%);
-  -webkit-background-image: -webkit-linear-gradient(left, #12E3DB 0%, #85FDE3 100%);
-  background-image: linear-gradient(to right, #12E3DB 0%, #85FDE3 40%, #85FDE3 100%);
-  background-size: 300%;
-  background-repeat: repeat;
-  background-image-slice: 1; }
-  .main-title-box:hover {
-    transition: all 1s linear;
-    background-position: 100% 100%;
-    transform-origin: 50% 50% 0px;
-    transform: translate(0px, 0px) rotate(0deg) scale(1.02);
-    -moz-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out; }
-  @media screen and (max-width: 480px) {
-    .main-title-box {
-      padding: 15px; } }
-
-.site-title {
-  font-family: "Open Sans Condensed", "Helvetica Neue", "Helvetica", Arial, sans-serif;
-  font-size: 300%;
-  font-weight: 300;
-  line-height: 1;
-  text-transform: uppercase; }
-  .site-title a {
-    color: #303233;
-    text-decoration: none; }
-  @media screen and (max-width: 480px) {
-    .site-title {
-      font-size: 200%; } }
 
 .main-list-group {
   margin-bottom: 30px;
@@ -448,28 +464,6 @@ svg {
     font-family: "Inconsolata", Consolas, monospace; }
     .page-items a:hover {
       text-decoration: underline; }
-
-.post-title-box {
-  background: #FBFBFB;
-  padding: 30px; }
-  @media screen and (max-width: 480px) {
-    .post-title-box {
-      padding: 15px; } }
-
-.post-header-meta {
-  background: transparent;
-  margin-top: 30px;
-  max-width: 400px; }
-  @media screen and (max-width: 480px) {
-    .post-header-meta {
-      margin: 0; } }
-
-.post-header-item a {
-  color: #303233;
-  font-family: "Inconsolata", Consolas, monospace; }
-.post-header-item h1 {
-  font-size: 16px;
-  margin-top: 30px; }
 
 .post-box {
   background: transparent;
