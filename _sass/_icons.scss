@@ -1,18 +1,15 @@
-
 .icon-set {
-	padding-top: $spacing;
-	padding-bottom: $spacing;
+	padding: 0 $padding;
 	text-align: center;
 	vertical-align: baseline;
 
 	ul {
 		margin: 0;
-	}
-
-	ul li {
-		display: inline-block;
-		margin-left: 15px;
-		margin-right: 15px;
+	
+		li {
+			display: inline-block;
+			margin: 0 $margin;
+		}
 	}
 }
 

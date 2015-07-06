@@ -29,17 +29,19 @@ title:  You Are Here
       </div>
     </div>
     <div class="col">
-      <div class="box">    
-        <div class="button">
-        {% for resource in site.resources %}
-          {% if resource.title %}<a href="{{ resource.url | prepend: site.baseurl }}">{{ resource.title }}</a>
-          {% endif %}
-        {% endfor %}
+      <div class="box"> 
+        <div class="main-list-group">   
+          <div class="button gradient">
+          {% for resource in site.resources %}
+            {% if resource.title %}<a href="{{ resource.url | prepend: site.baseurl }}">{{ resource.title }}</a>
+            {% endif %}
+          {% endfor %}
+          </div>
         </div>
       </div>
     </div>
-    {% include footer.html %}
   </div>
+  {% include footer.html %}
 </div>
 {% include mainsidebar.html %}
 

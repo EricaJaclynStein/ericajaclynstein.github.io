@@ -1,6 +1,6 @@
 .page-header {
   margin: auto;
-  padding: $spacing-sm;
+  padding: 15px;
   max-width: $content-width;
 
   h1 {
@@ -15,12 +15,12 @@
 }
 
 .page-items {
-  margin-bottom: $spacing;
-  padding: 0 $spacing; 
+  margin-bottom: 30px;
+  padding: 0 30px; 
   text-align: left;
 
   p {
-    margin-top: $spacing-xs;
+    margin-top: 5px;
   }
 
   a {

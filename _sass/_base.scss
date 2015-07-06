@@ -23,7 +23,7 @@ body, html {
 }
 
 body {
-  background-color: $background-color;
+  background: $background-color;
   color: $tungsten;
   font-family: $base-font-family;
   font-size: $base-font-size;
@@ -38,6 +38,7 @@ p {
   font-size: $base-font-size;
   line-height: $base-line-height;
   margin: 0;
+  padding: 0;
 }
 
 b, strong {
@@ -61,33 +62,18 @@ h1, h2, h3, h4, h5, h6 {
   font-size: $base-font-size;
   font-weight: $font-normal;
   line-height: $heading-line-height;
-  padding: 0;
   margin: 0;
-}
-
-img {
-  vertical-align: middle;
-  .thumbnail {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    -webkit-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-  }
-}
-
-hr {
-  height: 0;
-  -webkit-box-sizing: content-box;
-     -moz-box-sizing: content-box;
-          box-sizing: content-box;
+  padding: 0;
 }
 
 ul, ol {
   list-style-type: none;
+  margin: 5px;
+  padding: 0;
+
   li {
-    margin: 0;
+    margin: 5px;
+    padding: 0;
   }
 }
 
@@ -95,11 +81,13 @@ a {
   background-color: transparent;
   color: $tungsten;
   text-decoration: none;
+  
   &:active,
   &:hover {
     color: $steel;
     outline: 0;
   }
+
   &:hover,
   &:focus {
     color: $steel;
@@ -116,8 +104,8 @@ a {
 }
 
 .wrapper {
-  margin: $spacing auto;
-  padding: 0 $spacing;
+  margin: $margin auto;
+  padding: 0 $padding;
   @extend %clearfix;
   @include media-query($on-desktop) {
     max-width: $on-desktop;
@@ -127,7 +115,7 @@ a {
   }
   @include media-query($on-palm) {
     max-width: $on-palm;
-    padding: 0 $spacing-sm;
+    padding: 0;
   }
 }
 
@@ -150,18 +138,6 @@ a {
 .center-block {
   display: block;
   margin: 0 auto;
-}
-
-.pull-right {
-  float: right !important;
-}
-
-.pull-left {
-  float: left !important;
-}
-
-.hide {
-  display: none !important;
 }
 
 .show {

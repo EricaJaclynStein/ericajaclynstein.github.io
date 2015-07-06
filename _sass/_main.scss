@@ -1,23 +1,26 @@
 .mainsidebar-content {
   background: transparent;
+  
   p {
     color: $steel;
-    padding: $spacing;
+    padding: $padding;
   }
 }
 
 .main-list-group {
-  margin-bottom: $spacing;
+  margin-bottom: $margin * 2;
   text-align: left;
 }
 
 .main-list-item {
-  margin-bottom: $spacing;
+  margin-bottom: $margin * 2;
   display: block;
+  
   a {
     color: $tungsten;
     font-family: $base-font-family;
     font-size: $longreads-font-size;
+    font-weight: $font-light;
     line-height: $base-line-height;
     text-decoration: none;
   }
@@ -30,23 +33,46 @@
 }
 
 .button {
-  background-color: $tungsten;
+  background-color: $mercury;
   display: inline-block;
   line-height: 1;
-  margin-bottom: $spacing-xs;
-  margin-right: $spacing-xs;
+  margin-bottom: 5px;
+  margin-right: 5px;
   padding: 5px 11px;
   text-align: center;
+  
   a {
-    color: #FFF;
+    color: $tungsten;
     font-family: $mono-font-family;
     font-size: $base-font-size;
     text-decoration: none;
   }
+  
   &:hover {
     transform-color: $seafoam;
     transform-origin: 50% 50% 0px;
     transform: translate(0px, 0px) rotate(0deg) scale(1.12);
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.gradient {
+  background-color: $seafoam;
+  backgound-image: transparent;
+  -moz-background-image: -moz-linear-gradient(left, #12E3DB 0%, #85FDE3 100%);
+  -webkit-background-image: -webkit-linear-gradient(left, #12E3DB 0%, #85FDE3 100%);
+  background-image: linear-gradient(to right, #12E3DB 0%, #85FDE3 40%, #85FDE3 100%);
+  background-size: 300%;
+  background-repeat:repeat;
+  background-image-slice: 1;
+
+  &:hover {
+    transition: all 1s linear;
+    background-position:100% 100%;
+    transform-origin: 50% 50% 0px;
+    transform: translate(0px, 0px) rotate(0deg) scale(1.02);
     -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;

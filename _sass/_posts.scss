@@ -1,41 +1,58 @@
-.post-box {
-  background: transparent;
-  padding: 0 $spacing;
+.divider {
+  height: 5px;
+  margin-top: 7px;
+  width: 30px;
+  background-color: $tungsten;
+}
 
-  @include media-query($on-palm) {
-    padding: $spacing-sm;
-  }
+.post-box {
+  background: $background-color;
+  padding: 0 $padding;
 }
 
 .post-meta {
+  color: $steel;
   font-family: $mono-font-family;
-  margin: $spacing auto;
+  margin-bottom: $margin;
   text-align: left;
 }
 
+.postsidebar-content {
+  background: transparent;
+}
+
 .post-article {
-  padding: 0 $spacing;
-  text-align: left;
   max-width: $content-width;
+  padding: 0 $padding;
+  text-align: left;
+
   p {
-    margin-bottom: $spacing-sm;
+    margin-bottom: $margin;
     font-family: $serif-font-family;
     font-size: $longreads-font-size;
-    font-weight: $font-normal;
     line-height: $longreads-line-height;
+    
     a {
-      color: $maraschino;
+      color: $steel;
       font-weight: $font-bold;
+
       &:hover {
         text-decoration: underline;
       }
     }
   }
 
+  blockquote {
+    font-size: $big-font-size;
+    font-style: italic;
+    line-height: $big-line-height;
+  }
+
   h2 {
     font-size: $h2-font-size;
     line-height: $heading-line-height;
-    margin: $spacing;
+    margin-bottom: $margin;
+    margin-top: $margin * 2;
     text-align: center;
 
     @include media-query($on-tablet) {
@@ -45,7 +62,8 @@
 
   h3 {
     font-size: $h3-font-size;
-    margin: $spacing;
+    margin-bottom: $margin;
+    margin-top: $margin * 2;
     text-align: center;
 
     @include media-query($on-tablet) {
@@ -55,52 +73,37 @@
 
   h4 {
     font-size: $h4-font-size;
-    margin: $spacing;
+    margin-bottom: $margin;
+    margin-top: $margin * 2;
     text-align: center;
   }
 
   h5 {
     font-size: $h5-font-size;
-    margin: $spacing-sm;
+    margin: $margin;
     text-align: left;
   }
 
   h6 {
     font-size: $h6-font-size;
-    margin: $spacing-sm;
+    margin: $margin;
     text-align: center;
   }
 
-  @include media-query($on-palm) { 
+  @include media-query($on-desktop) { 
     padding: 0;
-    p {    
-      font-size: $base-font-size;
-      line-height: $base-line-height;
-    }
   }
 }
-  
-blockquote {
-  color: $steel;
-  font-size: $big-font-size;
-  font-style: italic;
-  line-height: $big-line-height;
-  text-align: center;
-}
 
-ol {
-  margin: $spacing-sm;
-  padding: $spacing-sm;
+ul ol {
+  margin-top: $margin;
+  padding: $padding;
   
   li {
     font-family: $serif-font-family;
     font-size: $longreads-font-size;
     line-height: $longreads-line-height;
     list-style-type: decimal;
-    padding-bottom: $spacing-sm;
+    margin-bottom: $margin;
   }
-}
-
-.postsidebar-content {
-  background: transparent;
 }

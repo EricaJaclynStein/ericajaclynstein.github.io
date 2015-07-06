@@ -16,7 +16,7 @@
 
 $base-font-family:      "Open Sans", "Helvetica Neue", "Helvetica", Arial, sans-serif;
 $mono-font-family:      "Inconsolata", Consolas, monospace;
-$serif-font-family:     "Merriweather", Georgia, serif;
+$serif-font-family:     "Source Serif Pro", Georgia, serif;
 
 $base-font-size:        14px;
 $small-font-size:       80%;
@@ -64,12 +64,10 @@ $deep-space:  #090A0C;
 
 $background-color: $coconut;
 
-$spacing:          30px;
-$spacing-xs:       5px;
-$spacing-sm:       15px;
-$spacing-lg:       60px;
+$margin:  15px;
+$padding: 30px;
 
-$content-width:    690px;
+$content-width:    600px;
 
 $on-widescreen: 1200px;
 $on-desktop:    980px;
@@ -86,10 +84,9 @@ $on-palm:       480px;
 
 @import
   "base",
-  "footer",
+  "chrome",
   "force",
   "grid",
-  "header",
   "icons",
   "main",
   "pages",

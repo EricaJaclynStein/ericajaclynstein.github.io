@@ -17,14 +17,14 @@ table {
 
 .table {
   width: 100%;
-  margin-bottom: $spacing;
+  margin-bottom: 30px;
   thead {
     margin: 0;
     tr {
       text-align: left;
       vertical-align: top;
       th {
-        padding: $spacing-sm;
+        padding: 15px;
         font-size: $base-font-size;
         font-weight: $font-normal;
       }
@@ -36,7 +36,7 @@ table {
       text-align: left;
       vertical-align: top;
       th {
-        padding: $spacing-sm;
+        padding: 15px;
       }
     }
   }
@@ -45,7 +45,7 @@ table {
     tr {
       vertical-align: top;
       td {
-        padding: $spacing-sm;
+        padding: 15px;
         width: 25%;
         ul {
           margin: 0;
