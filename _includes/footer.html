@@ -1,35 +1,36 @@
 <footer id="footer">
   <div class="footer-meta">
     <ul>
-	    <li><small>{{ site.description }}
-	        </small>
-	        </li>
-	    <li>&#47; 
-	    		<small>About <a href="http://www.sketchappsources.com/blog/post/erica-jaclyn-stein" target="blank">{{ site.author }}</a>
-	    		</small>
-	        </li>
+	    <li>
+	      <small>
+	      {{ site.description }} &#9679; About <a href="http://www.sketchappsources.com/blog/post/erica-jaclyn-stein" target="blank">
+	    	{{ site.author }}</a>
+	      </small>
+	    </li>
+	  	<li>
+	  		&#10744;
+      	{% if site.twitter %}
+      	<small><a href="{{ site.twitter }}" target="blank"> <i class="fa fa-twitter"></i> Twitter</a></small>
+		    {% endif %}
+		  </li>
+		  <li>
+		    &#10744;
+		    {% if site.medium %}
+		      <small><a href="{{ site.medium }}" target="blank"> <i class="fa fa-medium"></i> Medium</a></small>
+		    {% endif %}
+		  </li>
+		  <li>
+		    &#10744;
+		    {% if site.dribbble %}
+		    <small><a href="{{ site.dribbble }}" target="blank"> <i class="fa fa-dribbble"></i> Dribble</a></small>
+		    {% endif %}
+		  </li>
+		  <li>
+		  	&#10744;
+		    {% if site.github %}
+		    <small><a href="{{ site.github }}" target="blank">Github</a></small>
+		    {% endif %}
+		  </li>
 	  </ul>
-	  <ul>
-      <li>&#47;
-      		{% if site.twitter %}<small><a class="btn-xs" href="{{ site.twitter }}" target="blank"> <i class="fa fa-twitter"></i> Twitter</a>
-      		</small>
-		      {% endif %}
-		      </li>
-		  <li>&#47;
-		      {% if site.medium %}<small><a class="btn-xs" href="{{ site.medium }}" target="blank"> <i class="fa fa-medium"></i> Medium</a>
-		      </small>
-		      {% endif %}
-		      </li>
-		  <li>&#47;
-		      {% if site.github %}<small><a class="btn-xs" href="{{ site.github }}" target="blank"> <i class="fa fa-github"></i> Github</a>
-		      </small>
-		      {% endif %}
-		      </li>
-		  <li>&#47;
-		      {% if site.dribbble %}<small><a class="btn-xs" href="{{ site.dribbble }}" target="blank"> <i class="fa fa-dribbble"></i> Dribble</a>
-		      </small>
-		      {% endif %}
-		      </li>
-    </ul>
   </div>
 </footer>

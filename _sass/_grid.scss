@@ -15,7 +15,7 @@
   float: left;
   width: 100%;
   overflow: hidden;
-  background: url(/assets/pool.jpg) no-repeat fixed $seafoam; 
+  background: $tungsten; 
 
   @include media-query($on-tablet) {
     background: $background-color;
@@ -71,11 +71,10 @@
 }
 
 .col {
-  margin: 0 $margin;
   padding: 0 $padding;
 
   @include media-query($on-palm) {
-    padding: 0 $padding/2;
+    padding: 0 15px;
   }
 }
 

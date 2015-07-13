@@ -19,8 +19,8 @@ $mono-font-family:      "Inconsolata", Consolas, monospace;
 $serif-font-family:     "Source Serif Pro", Georgia, serif;
 
 $base-font-size:        14px;
-$small-font-size:       80%;
-$big-font-size:         150%;
+$small-font-size:       $base-font-size * .8;
+$big-font-size:         $base-font-size * 1.25;
 $longreads-font-size:   16px;
 
 $base-line-height:      1.4;
@@ -41,11 +41,11 @@ $h1-mobile-size:        28px;
 $h2-mobile-size:        24px;
 $h3-mobile-size:        20px;
 
-$font-thin:             200;
 $font-light:            300;
 $font-normal:           400;
-$font-semibold:         500;
+$font-semibold:         600;
 $font-bold:             700;
+$font-extra-bold:       800;
 
 $coconut:     #FBFBFB;
 $maraschino:  #FF0038;
@@ -54,12 +54,13 @@ $seafoam:     #85FDE3;
 $cantaloupe:  #FFCAA9;
 $lemon:       #FEFE22;
 $skyblue:     #00adff;
+$seablue:     #32A1EE;
 $ultraviolet: #9000FF;
 
 $mercury:     #CED5D9;
-$silver:      #B6BCBF;
-$steel:       #787D7F;
-$tungsten:    #303233;
+$silver:      #B6BCBF; //lighten($steel, 55%)
+$steel:       #718599;
+$tungsten:    #2B303B;
 $deep-space:  #090A0C;
 
 $background-color: $coconut;
@@ -69,8 +70,8 @@ $padding: 30px;
 
 $content-width:    600px;
 
-$on-widescreen: 1200px;
-$on-desktop:    980px;
+$on-widescreen: 1440px;
+$on-desktop:    1024px;
 $on-tablet:     768px;
 $on-palm:       480px;
 

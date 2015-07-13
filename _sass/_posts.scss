@@ -11,9 +11,7 @@
 }
 
 .post-meta {
-  color: $steel;
-  font-family: $mono-font-family;
-  margin-bottom: $margin;
+  margin: 30px 0;
   text-align: left;
 }
 
@@ -23,7 +21,6 @@
 
 .post-article {
   max-width: $content-width;
-  padding: 0 $padding;
   text-align: left;
 
   p {
@@ -51,8 +48,7 @@
   h2 {
     font-size: $h2-font-size;
     line-height: $heading-line-height;
-    margin-bottom: $margin;
-    margin-top: $margin * 2;
+    margin: $margin 0;
     text-align: center;
 
     @include media-query($on-tablet) {
@@ -63,7 +59,7 @@
   h3 {
     font-size: $h3-font-size;
     margin-bottom: $margin;
-    margin-top: $margin * 2;
+    margin-top: 30px;
     text-align: center;
 
     @include media-query($on-tablet) {

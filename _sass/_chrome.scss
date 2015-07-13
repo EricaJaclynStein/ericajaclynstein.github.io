@@ -4,7 +4,7 @@
   padding: $padding;
 
   @include media-query($on-palm) {
-    padding: $padding / 2;
+    padding: 15px 0;
   }
 }
 
@@ -33,10 +33,8 @@
 }
 
 .site-title {
-  border-left: 5px solid $aqua;
   color: $tungsten;
   line-height: 1;
-  padding-left: 7px;
   text-transform: uppercase;
   
   a {
@@ -55,15 +53,13 @@
 }
 
 .footer-meta {
-  color: $steel;
-  font-family: $mono-font-family;
   padding: $padding;
 
   ul {
     list-style-type: none;
 
     li {
-      display: inline-block;
+      display: inline;
       color: $steel;
       font-family: $mono-font-family;
 

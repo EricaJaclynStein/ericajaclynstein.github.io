@@ -46,7 +46,7 @@ b, strong {
 }
 
 small {
-  font-size: 85%;
+  font-size: $small-font-size;
 }
 
 dfn {
@@ -68,11 +68,11 @@ h1, h2, h3, h4, h5, h6 {
 
 ul, ol {
   list-style-type: none;
-  margin: 5px;
+  margin: 5px 0;
   padding: 0;
 
   li {
-    margin: 5px;
+    margin: 5px 0;
     padding: 0;
   }
 }
@@ -104,18 +104,22 @@ a {
 }
 
 .wrapper {
-  margin: $margin auto;
-  padding: 0 $padding;
+  margin: 0 60px;
   @extend %clearfix;
+
   @include media-query($on-desktop) {
+    margin: 0 30px;
     max-width: $on-desktop;
   }
+
   @include media-query($on-tablet) {
+    margin: 0 30px;
     max-width: $on-tablet;
   }
+
   @include media-query($on-palm) {
+    margin: 0 15px;
     max-width: $on-palm;
-    padding: 0;
   }
 }
 

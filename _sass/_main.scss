@@ -8,28 +8,22 @@
 }
 
 .main-list-group {
-  margin-bottom: $margin * 2;
   text-align: left;
 }
 
 .main-list-item {
-  margin-bottom: $margin * 2;
+  margin-bottom: 30px;
   display: block;
   
   a {
+    border-bottom: 3px solid $tungsten;
     color: $tungsten;
     font-family: $base-font-family;
-    font-size: $longreads-font-size;
-    font-weight: $font-light;
+    font-size: $big-font-size;
     line-height: $base-line-height;
+    padding-bottom: 3px;
     text-decoration: none;
   }
-}
-
-.main-item-date {
-  color: $steel;
-  font-family: $mono-font-family;
-  line-height: 1;
 }
 
 .button {

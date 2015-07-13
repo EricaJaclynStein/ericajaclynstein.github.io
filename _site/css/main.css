@@ -32,7 +32,7 @@ body, html {
 
 body {
   background: #FBFBFB;
-  color: #303233;
+  color: #2B303B;
   font-family: "Open Sans", "Helvetica Neue", "Helvetica", Arial, sans-serif;
   font-size: 14px; }
 
@@ -40,7 +40,7 @@ footer, header {
   display: block; }
 
 p {
-  color: #303233;
+  color: #2B303B;
   font-size: 14px;
   line-height: 1.4;
   margin: 0;
@@ -50,7 +50,7 @@ b, strong {
   font-weight: bold; }
 
 small {
-  font-size: 85%; }
+  font-size: 11.2px; }
 
 dfn {
   font-style: italic; }
@@ -68,21 +68,21 @@ h1, h2, h3, h4, h5, h6 {
 
 ul, ol {
   list-style-type: none;
-  margin: 5px;
+  margin: 5px 0;
   padding: 0; }
   ul li, ol li {
-    margin: 5px;
+    margin: 5px 0;
     padding: 0; }
 
 a {
   background-color: transparent;
-  color: #303233;
+  color: #2B303B;
   text-decoration: none; }
   a:active, a:hover {
-    color: #787D7F;
+    color: #718599;
     outline: 0; }
   a:hover, a:focus {
-    color: #787D7F;
+    color: #718599;
     text-decoration: underline; }
 
 .wrapper:after {
@@ -91,18 +91,19 @@ a {
   clear: both; }
 
 .wrapper {
-  margin: 15px auto;
-  padding: 0 30px; }
-  @media screen and (max-width: 980px) {
+  margin: 0 60px; }
+  @media screen and (max-width: 1024px) {
     .wrapper {
-      max-width: 980px; } }
+      margin: 0 30px;
+      max-width: 1024px; } }
   @media screen and (max-width: 768px) {
     .wrapper {
+      margin: 0 30px;
       max-width: 768px; } }
   @media screen and (max-width: 480px) {
     .wrapper {
-      max-width: 480px;
-      padding: 0; } }
+      margin: 0 15px;
+      max-width: 480px; } }
 
 .clearfix:before,
 .clearfix:after,
@@ -140,7 +141,7 @@ a {
   padding: 30px; }
   @media screen and (max-width: 480px) {
     #header {
-      padding: 15px; } }
+      padding: 15px 0; } }
 
 #footer {
   background: #FBFBFB;
@@ -150,7 +151,7 @@ a {
 .header-group {
   padding: 30px; }
   .header-group a {
-    color: #303233;
+    color: #2B303B;
     font-family: "Inconsolata", Consolas, monospace; }
   .header-group h1 {
     font-size: 16px;
@@ -160,10 +161,8 @@ a {
       padding: 15px; } }
 
 .site-title {
-  border-left: 5px solid #12E3DB;
-  color: #303233;
+  color: #2B303B;
   line-height: 1;
-  padding-left: 7px;
   text-transform: uppercase; }
   .site-title a {
     font-family: "Open Sans Condensed", "Helvetica Neue", "Helvetica", Arial, sans-serif;
@@ -176,17 +175,15 @@ a {
         font-size: 200%; } }
 
 .footer-meta {
-  color: #787D7F;
-  font-family: "Inconsolata", Consolas, monospace;
   padding: 30px; }
   .footer-meta ul {
     list-style-type: none; }
     .footer-meta ul li {
-      display: inline-block;
-      color: #787D7F;
+      display: inline;
+      color: #718599;
       font-family: "Inconsolata", Consolas, monospace; }
       .footer-meta ul li a {
-        color: #787D7F;
+        color: #718599;
         font-weight: 700;
         text-decoration: none; }
 
@@ -228,7 +225,7 @@ svg {
   float: left;
   width: 100%;
   overflow: hidden;
-  background: url(/assets/pool.jpg) no-repeat fixed #85FDE3; }
+  background: #2B303B; }
   @media screen and (max-width: 768px) {
     #main-container2 {
       background: #FBFBFB; } }
@@ -274,7 +271,6 @@ svg {
   margin: 15px 0; }
 
 .col {
-  margin: 0 15px;
   padding: 0 30px; }
   @media screen and (max-width: 480px) {
     .col {
@@ -304,28 +300,23 @@ svg {
 .mainsidebar-content {
   background: transparent; }
   .mainsidebar-content p {
-    color: #787D7F;
+    color: #718599;
     padding: 30px; }
 
 .main-list-group {
-  margin-bottom: 30px;
   text-align: left; }
 
 .main-list-item {
   margin-bottom: 30px;
   display: block; }
   .main-list-item a {
-    color: #303233;
+    border-bottom: 3px solid #2B303B;
+    color: #2B303B;
     font-family: "Open Sans", "Helvetica Neue", "Helvetica", Arial, sans-serif;
-    font-size: 16px;
-    font-weight: 300;
+    font-size: 17.5px;
     line-height: 1.4;
+    padding-bottom: 3px;
     text-decoration: none; }
-
-.main-item-date {
-  color: #787D7F;
-  font-family: "Inconsolata", Consolas, monospace;
-  line-height: 1; }
 
 .button {
   background-color: #CED5D9;
@@ -336,7 +327,7 @@ svg {
   padding: 5px 11px;
   text-align: center; }
   .button a {
-    color: #303233;
+    color: #2B303B;
     font-family: "Inconsolata", Consolas, monospace;
     font-size: 14px;
     text-decoration: none; }
@@ -385,7 +376,7 @@ svg {
   .page-items p {
     margin-top: 5px; }
   .page-items a {
-    color: #303233;
+    color: #2B303B;
     font-family: "Inconsolata", Consolas, monospace; }
     .page-items a:hover {
       text-decoration: underline; }
@@ -394,16 +385,14 @@ svg {
   height: 5px;
   margin-top: 7px;
   width: 30px;
-  background-color: #303233; }
+  background-color: #2B303B; }
 
 .post-box {
   background: #FBFBFB;
   padding: 0 30px; }
 
 .post-meta {
-  color: #787D7F;
-  font-family: "Inconsolata", Consolas, monospace;
-  margin-bottom: 15px;
+  margin: 30px 0;
   text-align: left; }
 
 .postsidebar-content {
@@ -411,7 +400,6 @@ svg {
 
 .post-article {
   max-width: 600px;
-  padding: 0 30px;
   text-align: left; }
   .post-article p {
     margin-bottom: 15px;
@@ -419,19 +407,18 @@ svg {
     font-size: 16px;
     line-height: 1.7; }
     .post-article p a {
-      color: #787D7F;
+      color: #718599;
       font-weight: 700; }
       .post-article p a:hover {
         text-decoration: underline; }
   .post-article blockquote {
-    font-size: 150%;
+    font-size: 17.5px;
     font-style: italic;
     line-height: 1.6; }
   .post-article h2 {
     font-size: 26px;
     line-height: 1.1;
-    margin-bottom: 15px;
-    margin-top: 30px;
+    margin: 15px 0;
     text-align: center; }
     @media screen and (max-width: 768px) {
       .post-article h2 {
@@ -454,10 +441,10 @@ svg {
     margin: 15px;
     text-align: left; }
   .post-article h6 {
-    font-size: 80%;
+    font-size: 11.2px;
     margin: 15px;
     text-align: center; }
-  @media screen and (max-width: 980px) {
+  @media screen and (max-width: 1024px) {
     .post-article {
       padding: 0; } }
 
@@ -482,13 +469,13 @@ arc {
   transition: all 0.3s; }
 
 text {
-  color: #787D7F;
+  color: #718599;
   font-family: "Open Sans", "Helvetica Neue", "Helvetica", Arial, sans-serif;
-  font-size: 150%;
+  font-size: 17.5px;
   font-weight: 300; }
 
 div.label {
-  background-color: #303233;
+  background-color: #2B303B;
   display: block;
   height: 75px;
   width: 400px;
@@ -643,7 +630,7 @@ table {
 .caption {
   font-size: 14px;
   font-weight: 300;
-  color: #303233; }
+  color: #2B303B; }
 
 .table {
   width: 100%;
@@ -677,7 +664,7 @@ table {
           .table tbody tr td ul li {
             font-size: 14px;
             font-weight: 400;
-            color: #303233; }
+            color: #2B303B; }
 
 /********** STRIPED TABLE **********/
 .table-striped tbody
