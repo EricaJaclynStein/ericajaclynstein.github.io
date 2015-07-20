@@ -1,20 +1,346 @@
 ---
-layout:      project1
-category:    projects
-title:       Crayola Color Balls
-description: Force data visualization featuring Crayola Crayon colors
+layout:      project
+category:    project
 date:        2015-04-30
-tags:        ['dataviz']
+title:       Crayola Color Force
+description: Data visualization featuring Crayola Crayon colors
+tags:        
 ---
 
-  <div class="row">
-  
-    {% include colorforce.html %}
+	<div class="row">  
+	  <div class="color-nodes">
+	    <script>
+				var dataset = {
+		        nodes:  [
+		          { name: "#F5F5F5", label: "Cultured" }, // 0
+		          { name: "#AAE6FF", label: "Winter Wizard" },
+		          { name: "#FFD3F8", label: "Bubble Gum" },
+		          { name: "#FFFF99", label: "Canary" },
+		          { name: "#99FF99", label: "Gel Green" },
+		          { name: "#CEC8EF", label: "Soap" }, // 5
+		          { name: "#FFD0B9", label: "Peach" },
+		          { name: "#FDFF00", label: "Lemon Glacier" },
+		          { name: "#7CDBE1", label: "Aquamarine" },
+		          { name: "#9ACEEB", label: "Cornflower" },
+		          { name: "#5FBED7", label: "Aqua" }, // 10
+		          { name: "#B0B7C6", label: "Cadet Blue" },
+		          { name: "#12E3DB", label: "Gel Aqua" },
+		          { name: "#93DFB8", label: "Sea Green" },
+		          { name: "#76FF7A", label: "Screamin Green" },
+		          { name: "#87FF2A", label: "Spring Forest" }, // 15
+		          { name: "#CDA4DE", label: "Wisteria" },
+		          { name: "#DB91EF", label: "Lilac" },
+		          { name: "#AB92B3", label: "Glossy Grape" },
+		          { name: "#FFAACC", label: "Carnation Pink" },
+		          { name: "#FF8ABA", label: "Baby's Blanket" }, // 20
+		          { name: "#F5CBBD", label: "Sahara Desert" },
+		          { name: "#F1CC79", label: "Sunset" },
+		          { name: "#FFDB00", label: "Sizzlin Sunrise" },
+		          { name: "#DDE26A", label: "Booger Buster" },
+		          { name: "#D98695", label: "Shimmering Blush" }, // 25
+		          { name: "#E936A7", label: "Magenta" },
+		          { name: "#FE4EDA", label: "Purple Pizzazz" },
+		          { name: "#E936A7", label: "Wild Strawberry" },
+		          { name: "#C364C5", label: "Fuschia" },
+		          { name: "#9C51B6", label: "Purple Plum" }, // 30
+		          { name: "#7442C8", label: "Purple Heart" },
+		          { name: "#5946B2", label: "Plump Purple" },
+		          { name: "#58427C", label: "Cyber Grape" },
+		          { name: "#6F2DA8", label: "Grape" },
+		          { name: "#64609A", label: "Amethyst" }, // 35
+		          { name: "#4F42B5", label: "Ocean Blue" },
+		          { name: "#8E599F", label: "Maui Sunset" },
+		          { name: "#8D4E85", label: "Razzmic Berry" },
+		          { name: "#FF007C", label: "Winter Sky" },
+		          { name: "#FF4466", label: "Magic Potion" }, // 40
+		          { name: "#FF5470", label: "Fiery Rose" },
+		          { name: "#FF8071", label: "Orange" },
+		          { name: "#FAA76C", label: "Tan" },
+		          { name: "#FFB329", label: "Florida Sunrise" },
+		          { name: "#C39953", label: "Aztec Gold" }, // 45
+		          { name: "#FF7A00", label: "Heat Wave" },
+		          { name: "#FF6D3A", label: "Smashed Pumpkin" },
+		          { name: "#EA7E5D", label: "Burnt Sienna" },
+		          { name: "#DA614E", label: "Jelly Bean" },
+		          { name: "#B05C52", label: "Giants Club" }, // 50
+		          { name: "#6D3834", label: "Grand Canyon" },
+		          { name: "#FB4D46", label: "Tart Orange" },
+		          { name: "#CD4A4C", label: "Mahogany" },
+		          { name: "#FD3A4A", label: "Red Salsa" },
+		          { name: "#E3256B", label: "Razzmatazz" }, // 55
+		          { name: "#DD4492", label: "Cerise" },
+		          { name: "#E936A7", label: "Frostbite" },
+		          { name: "#963D7F", label: "Violet" },
+		          { name: "#702670", label: "Midnight" },
+		          { name: "#AD4379", label: "Mystic Maroon" }, // 60
+		          { name: "#9E5E6F", label: "Rose Dust" },
+		          { name: "#CA3767", label: "Jazzberry Jam" },
+		          { name: "#C53151", label: "Dingy Dungeon" },
+		          { name: "#9C2542", label: "Big Dip O' Ruby" },
+		          { name: "#5DADEC", label: "Blue Jeans" }, // 65
+		          { name: "#5D8DDF", label: "Caribbean Ocean" },
+		          { name: "#2779FA", label: "Blue" },
+		          { name: "#5D76CB", label: "Indigo" },
+		          { name: "#2243B6", label: "Denim" },
+		          { name: "#2E2D88", label: "Cosmic Cobalt" }, // 70
+		          { name: "#391285", label: "Pixie Powder" },
+		          { name: "#4F86F7", label: "Blueberry" },
+		          { name: "#2AADD4", label: "Cerulean" },
+		          { name: "#6D9BC3", label: "Cerulean Frost" },
+		          { name: "#1974D2", label: "Navy Blue" }, // 75
+		          { name: "#2D5DA1", label: "Sapphire" },
+		          { name: "#8BA8B7", label: "Pewter Blue" },
+		          { name: "#778BA5", label: "Shadow Blue" },
+		          { name: "#4BC7CF", label: "Sea Serpent" },
+		          { name: "#2FCECA", label: "Robin's Eggs Blue" }, // 80
+		          { name: "#6ADA8E", label: "Caribbean Green" },
+		          { name: "#92F646", label: "Amazon Forest" },
+		          { name: "#BBB477", label: "Misty Moss" },
+		          { name: "#ABAD48", label: "Peridot" },
+		          { name: "#3BBCD0", label: "Turquoise" }, // 85
+		          { name: "#44D7A8", label: "Eucalyptus" },
+		          { name: "#28A9C7", label: "Pacific Blue" },
+		          { name: "#0D98BA", label: "Blue Green" },
+		          { name: "#0081AB", label: "Steel Blue" },
+		          { name: "#1A4876", label: "Midnight Blue" }, // 90
+		          { name: "#070707", label: "Milky Way" },
+		          { name: "#54626F", label: "Black Coral" },
+		          { name: "#0A7E8C", label: "Metallic Seaweed" },
+		          { name: "#469496", label: "Malachite" },
+		          { name: "#5FA778", label: "Green Sheen" }, // 95
+		          { name: "#48BF91", label: "Ocean Green" },
+		          { name: "#45CEA2", label: "Shamrock" },
+		          { name: "#30BA8F", label: "Mountain Meadow" }
+		        ],
+		        edges:  [
+		          { source: 0, target: 1 },
+		          { source: 0, target: 2 },
+		          { source: 0, target: 3 },
+		          { source: 0, target: 4 },
+		          { source: 1, target: 5 },
+		          { source: 5, target: 2 },
+		          { source: 2, target: 6 },
+		          { source: 6, target: 3 },
+		          { source: 3, target: 7 },
+		          { source: 7, target: 4 },
+		          { source: 4, target: 8 },
+		          { source: 8, target: 1 },
+		          { source: 1, target: 9 },
+		          { source: 8, target: 10 },
+		          { source: 10, target: 9 },
+		          { source: 5, target: 11 },
+		          { source: 11, target: 9 },
+		          { source: 10, target: 12 },
+		          { source: 12, target: 13 },
+		          { source: 13, target: 8 },
+		          { source: 13, target: 14 },
+		          { source: 4, target: 14 },
+		          { source: 14, target: 15 },
+		          { source: 15, target: 7 },
+		          { source: 11, target: 16 },
+		          { source: 17, target: 16 },
+		          { source: 5, target: 17 },
+		          { source: 16, target: 18 },
+		          { source: 11, target: 18 },
+		          { source: 19, target: 17 },
+		          { source: 19, target: 2 },
+		          { source: 19, target: 20 },
+		          { source: 6, target: 20 },
+		          { source: 6, target: 21 },
+		          { source: 21, target: 22 },
+		          { source: 22, target: 3 },
+		          { source: 23, target: 22 },
+		          { source: 23, target: 7 },
+		          { source: 24, target: 23 },
+		          { source: 24, target: 15 },
+		          { source: 20, target: 25 },
+		          { source: 25, target: 21 },
+		          { source: 17, target: 26 },
+		          { source: 26, target: 27 },
+		          { source: 27, target: 19 },
+		          { source: 27, target: 28 },
+		          { source: 28, target: 20 },
+		          { source: 26, target: 29 },
+		          { source: 29, target: 16 },
+		          { source: 30, target: 29 },
+		          { source: 30, target: 18 },
+		          { source: 31, target: 30 },
+		          { source: 31, target: 32 },
+		          { source: 32, target: 33 },
+		          { source: 33, target: 34 },
+		          { source: 31, target: 34 },
+		          { source: 31, target: 35 },
+		          { source: 18, target: 35 },
+		          { source: 35, target: 36 },
+		          { source: 32, target: 36 },
+		          { source: 37, target: 34 },
+		          { source: 37, target: 30 },
+		          { source: 38, target: 37 },
+		          { source: 38, target: 29 },
+		          { source: 39, target: 25 },
+		          { source: 39, target: 28 },
+		          { source: 40, target: 39 },
+		          { source: 40, target: 41 },
+		          { source: 41, target: 25 },
+		          { source: 41, target: 42 },
+		          { source: 42, target: 21 },
+		          { source: 42, target: 43 },
+		          { source: 43, target: 22 },
+		          { source: 43, target: 44 },
+		          { source: 44, target: 23 },
+		          { source: 44, target: 45 },
+		          { source: 45, target: 24 },
+		          { source: 46, target: 44 },
+		          { source: 46, target: 47 },
+		          { source: 46, target: 48 },
+		          { source: 48, target: 43 },
+		          { source: 48, target: 49 },
+		          { source: 49, target: 47 },
+		          { source: 49, target: 51 },
+		          { source: 50, target: 51 },
+		          { source: 50, target: 48 },
+		          { source: 50, target: 42 },
+		          { source: 52, target: 50 },
+		          { source: 52, target: 41 },
+		          { source: 52, target: 53 },
+		          { source: 53, target: 40 },
+		          { source: 54, target: 40 },
+		          { source: 55, target: 54 },
+		          { source: 55, target: 39 },
+		          { source: 56, target: 55 },
+		          { source: 56, target: 28 },
+		          { source: 56, target: 57 },
+		          { source: 57, target: 27 },
+		          { source: 57, target: 58 },
+		          { source: 58, target: 26 },
+		          { source: 58, target: 38 },
+		          { source: 58, target: 59 },
+		          { source: 59, target: 60 },
+		          { source: 60, target: 57 },
+		          { source: 60, target: 61 },
+		          { source: 61, target: 56 },
+		          { source: 61, target: 62 },
+		          { source: 62, target: 55 },
+		          { source: 62, target: 63 },
+		          { source: 63, target: 54 },
+		          { source: 64, target: 63 },
+		          { source: 64, target: 51 },
+		          { source: 64, target: 53 },
+		          { source: 65, target: 9 },
+		          { source: 65, target: 66 },
+		          { source: 66, target: 67 },
+		          { source: 66, target: 68 },
+		          { source: 68, target: 35 },
+		          { source: 68, target: 11 },
+		          { source: 68, target: 9 },
+		          { source: 69, target: 67 },
+		          { source: 69, target: 70 },
+		          { source: 70, target: 71 },
+		          { source: 71, target: 36 },
+		          { source: 72, target: 36 },
+		          { source: 72, target: 70 },
+		          { source: 72, target: 68 },
+		          { source: 72, target: 67 },
+		          { source: 73, target: 65 },
+		          { source: 73, target: 10 },
+		          { source: 73, target: 74 },
+		          { source: 74, target: 66 },
+		          { source: 74, target: 75 },
+		          { source: 75, target: 67 },
+		          { source: 75, target: 76 },
+		          { source: 76, target: 69 },
+		          { source: 76, target: 77 },
+		          { source: 77, target: 78 },
+		          { source: 78, target: 75 },
+		          { source: 78, target: 79 },
+		          { source: 79, target: 74 },
+		          { source: 79, target: 80 },
+		          { source: 80, target: 73 },
+		          { source: 80, target: 12 },
+		          { source: 81, target: 14 },
+		          { source: 81, target: 82 },
+		          { source: 82, target: 15 },
+		          { source: 82, target: 83 },
+		          { source: 83, target: 24 },
+		          { source: 83, target: 84 },
+		          { source: 84, target: 45 },
+		          { source: 85, target: 12 },
+		          { source: 85, target: 86 },
+		          { source: 85, target: 87 },
+		          { source: 86, target: 13 },
+		          { source: 87, target: 80 },
+		          { source: 87, target: 88 },
+		          { source: 88, target: 79 },
+		          { source: 88, target: 89 },
+		          { source: 89, target: 78 },
+		          { source: 89, target: 90 },
+		          { source: 90, target: 77 },
+		          { source: 90, target: 91 },
+		          { source: 91, target: 92 },
+		          { source: 92, target: 93 },
+		          { source: 93, target: 89 },
+		          { source: 93, target: 94 },
+		          { source: 94, target: 88 },
+		          { source: 94, target: 95 },
+		          { source: 95, target: 87 },
+		          { source: 95, target: 96 },
+		          { source: 96, target: 85 },
+		          { source: 96, target: 97 },
+		          { source: 97, target: 86 },
+		          { source: 97, target: 98 },
+		          { source: 98, target: 81 }
+		        ]
+			  };
+			    
+		    var w = 1200;
+		    var h = 768;
+		    var animationStep = 400;
 
-  </div>
+		    var force = d3.layout.force()
+		                     .nodes(dataset.nodes)
+		                     .links(dataset.edges)
+		                     .size([w, h])
+		                     .distance(20)
+		                     .linkStrength(9)
+		                     .charge(-400)
+		                     .gravity(0.4)
+		                     .theta(0.9)
+		                     .start();
 
-  <div class="project-credits">
-    <p>
-      Force data visualization featuring <a href="http://en.wikipedia.org/wiki/List_of_Crayola_crayon_colors" target="blank">Crayola Crayon</a> colors. Made possible in part by <a href="http://d3js.org/" target="blank">D3.js</a>
-    </p>
+		    var colors = d3.scale.category10();
+
+		    var svg = d3.select("body")
+	        .append("svg")
+	        .attr("width", w)
+	        .attr("height", h);
+
+	      var edges = svg.selectAll("line")
+	        .data(dataset.edges)
+	        .enter()
+	        .append("line")
+	        .style("stroke", "#bbb")
+	        .style("stroke-width", 1);
+			          
+	      var nodes = svg.selectAll("circle")
+	        .data(dataset.nodes)
+	        .enter()
+	        .append("circle")
+	        .attr("r", 10)
+	        .style("fill", function(d) { return (d.name); })
+	        .call(force.drag);
+
+		      force.on("tick", function() {
+
+	        edges.attr("x1", function(d) { return d.source.x; })
+	           .attr("y1", function(d) { return d.source.y; })
+	           .attr("x2", function(d) { return d.target.x; })
+	           .attr("y2", function(d) { return d.target.y; });
+	      
+	        nodes.attr("cx", function(d) { return d.x; })
+	           .attr("cy", function(d) { return d.y; });
+		      
+		      });
+
+	    </script>
+	  </div>
   </div>

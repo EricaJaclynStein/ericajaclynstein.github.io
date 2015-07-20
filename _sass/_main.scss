@@ -15,19 +15,26 @@
   margin-bottom: 30px;
   display: block;
   
+  p {
+    font-size: $small-font-size;
+    padding-bottom: 5px;
+  }
+
   a {
-    border-bottom: 3px solid $tungsten;
+    border-bottom: 2px solid $seablue;
     color: $tungsten;
     font-family: $base-font-family;
     font-size: $big-font-size;
-    line-height: $base-line-height;
-    padding-bottom: 3px;
+    line-height: $big-line-height;
+    padding-bottom: 1px;
     text-decoration: none;
   }
 }
 
 .button {
-  background-color: $mercury;
+  background-color: $seablue;
+  border: 1px solid transparent;
+  border-radius: 2px;
   display: inline-block;
   line-height: 1;
   margin-bottom: 5px;
@@ -36,7 +43,7 @@
   text-align: center;
   
   a {
-    color: $tungsten;
+    color: $coconut;
     font-family: $mono-font-family;
     font-size: $base-font-size;
     text-decoration: none;
@@ -55,9 +62,9 @@
 .gradient {
   background-color: $seafoam;
   backgound-image: transparent;
-  -moz-background-image: -moz-linear-gradient(left, #12E3DB 0%, #85FDE3 100%);
-  -webkit-background-image: -webkit-linear-gradient(left, #12E3DB 0%, #85FDE3 100%);
-  background-image: linear-gradient(to right, #12E3DB 0%, #85FDE3 40%, #85FDE3 100%);
+  -moz-background-image: -moz-linear-gradient(left, #32A1EE 0%, #00adff 100%);
+  -webkit-background-image: -webkit-linear-gradient(left, #32A1EE 0%, #00adff 100%);
+  background-image: linear-gradient(to right, #32A1EE 0%, #00adff 40%, #00adff 100%);
   background-size: 300%;
   background-repeat:repeat;
   background-image-slice: 1;

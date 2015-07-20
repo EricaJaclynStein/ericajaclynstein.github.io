@@ -1,0 +1,43 @@
+.page-header {
+  margin: auto;
+  padding: 15px;
+  max-width: $content-width;
+
+  h1 {
+    font-size: $h1-font-size;
+    line-height: $heading-line-height;
+    text-align: center;
+    
+    @include media-query($on-tablet) {
+      font-size: $h1-mobile-size;
+    }
+  }
+}
+
+.page-items {
+  margin-bottom: 30px;
+  padding: 0 30px; 
+  text-align: left;
+
+  p {
+    margin-top: 5px;
+  }
+
+  a {
+    color: $tungsten;
+    font-family: $mono-font-family;
+
+    &:hover {
+      text-decoration: underline;  
+    }
+  }
+}
+
+.project-credits {
+  text-align: center;
+  vertical-align: baseline;
+
+  a {
+    font-weight: $font-bold;
+  }
+}

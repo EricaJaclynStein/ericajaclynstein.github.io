@@ -143,11 +143,6 @@ a {
     #header {
       padding: 15px 0; } }
 
-#footer {
-  background: #FBFBFB;
-  clear: both;
-  margin-top: 15px; }
-
 .header-group {
   padding: 30px; }
   .header-group a {
@@ -174,12 +169,19 @@ a {
       .site-title a {
         font-size: 200%; } }
 
+#footer {
+  background: #FBFBFB;
+  border-top: 1px solid #CED5D9;
+  clear: both;
+  margin-top: 90px;
+  text-align: center; }
+
 .footer-meta {
   padding: 30px; }
   .footer-meta ul {
     list-style-type: none; }
     .footer-meta ul li {
-      display: inline;
+      display: inline-block;
       color: #718599;
       font-family: "Inconsolata", Consolas, monospace; }
       .footer-meta ul li a {
@@ -203,12 +205,6 @@ svg {
 .color-nodes {
   vertical-align: baseline;
   position: relative; }
-
-.project-credits {
-  text-align: center;
-  vertical-align: baseline; }
-  .project-credits a {
-    font-weight: 700; }
 
 #default-container2 {
   clear: left;
@@ -309,17 +305,22 @@ svg {
 .main-list-item {
   margin-bottom: 30px;
   display: block; }
+  .main-list-item p {
+    font-size: 11.2px;
+    padding-bottom: 5px; }
   .main-list-item a {
-    border-bottom: 3px solid #2B303B;
+    border-bottom: 2px solid #32A1EE;
     color: #2B303B;
     font-family: "Open Sans", "Helvetica Neue", "Helvetica", Arial, sans-serif;
     font-size: 17.5px;
-    line-height: 1.4;
-    padding-bottom: 3px;
+    line-height: 1.6;
+    padding-bottom: 1px;
     text-decoration: none; }
 
 .button {
-  background-color: #CED5D9;
+  background-color: #32A1EE;
+  border: 1px solid transparent;
+  border-radius: 2px;
   display: inline-block;
   line-height: 1;
   margin-bottom: 5px;
@@ -327,7 +328,7 @@ svg {
   padding: 5px 11px;
   text-align: center; }
   .button a {
-    color: #2B303B;
+    color: #FBFBFB;
     font-family: "Inconsolata", Consolas, monospace;
     font-size: 14px;
     text-decoration: none; }
@@ -342,9 +343,9 @@ svg {
 .gradient {
   background-color: #85FDE3;
   backgound-image: transparent;
-  -moz-background-image: -moz-linear-gradient(left, #12E3DB 0%, #85FDE3 100%);
-  -webkit-background-image: -webkit-linear-gradient(left, #12E3DB 0%, #85FDE3 100%);
-  background-image: linear-gradient(to right, #12E3DB 0%, #85FDE3 40%, #85FDE3 100%);
+  -moz-background-image: -moz-linear-gradient(left, #32A1EE 0%, #00adff 100%);
+  -webkit-background-image: -webkit-linear-gradient(left, #32A1EE 0%, #00adff 100%);
+  background-image: linear-gradient(to right, #32A1EE 0%, #00adff 40%, #00adff 100%);
   background-size: 300%;
   background-repeat: repeat;
   background-image-slice: 1; }
@@ -457,30 +458,6 @@ ul ol {
     line-height: 1.7;
     list-style-type: decimal;
     margin-bottom: 15px; }
-
-path {
-  stroke: #F5F5F5;
-  fill-rule: evenodd; }
-
-arc {
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s; }
-
-text {
-  color: #718599;
-  font-family: "Open Sans", "Helvetica Neue", "Helvetica", Arial, sans-serif;
-  font-size: 17.5px;
-  font-weight: 300; }
-
-div.label {
-  background-color: #2B303B;
-  display: block;
-  height: 75px;
-  width: 400px;
-  margin: auto;
-  vertical-align: baseline; }
 
 /**
  * Syntax highlighting styles
@@ -622,14 +599,18 @@ div.label {
     color: #099; }
 
 table {
-  background-color: transparent; }
+  background-color: transparent;
+  border: none; }
 
 .row-heading {
-  font-weight: 300; }
+  font-family: "Inconsolata", Consolas, monospace;
+  font-size: 14px;
+  font-weight: 700;
+  color: #2B303B; }
 
 .caption {
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   color: #2B303B; }
 
 .table {
@@ -641,7 +622,8 @@ table {
       text-align: left;
       vertical-align: top; }
       .table thead tr th {
-        padding: 15px;
+        border: 1px solid #00adff;
+        padding: 5px;
         font-size: 14px;
         font-weight: 400; }
   .table tfoot {
@@ -650,35 +632,44 @@ table {
       text-align: left;
       vertical-align: top; }
       .table tfoot tr th {
-        padding: 15px; }
+        border: 1px solid #00adff;
+        padding: 5px; }
   .table tbody {
-    text-align: left; }
+    margin: 0; }
     .table tbody tr {
+      border: 1px solid #00adff;
+      border-radius: 3px;
+      text-align: left;
       vertical-align: top; }
       .table tbody tr td {
-        padding: 15px;
+        padding: 5px;
         width: 25%; }
         .table tbody tr td ul {
-          margin: 0;
-          padding: 0; }
+          text-align: left; }
           .table tbody tr td ul li {
+            font-family: "Inconsolata", Consolas, monospace;
             font-size: 14px;
-            font-weight: 400;
             color: #2B303B; }
 
-/********** STRIPED TABLE **********/
-.table-striped tbody
+/* TABLE EFFECTS 
+========================= */
+.t-filled tbody
+tr:nth-of-type(odd) {
+  background-color: #718599; }
+.t-filled tr:nth-of-type(even) {
+  background-color: #CED5D9; }
+
+.t-striped tbody
 tr:nth-of-type(odd) {
   background-color: #CED5D9; }
 
-/********** HOVER EFFECT **********/
-.table-hover tbody tr:hover {
+.t-hover tbody tr:hover {
   background-color: #CED5D9; }
-.table-hover tbody tr td.active:hover,
-.table-hover tbody tr th.active:hover,
-.table-hover tbody tr.active:hover td,
-.table-hover tbody tr:hover .active,
-.table-hover tbody tr.active:hover th {
+.t-hover tbody tr td.active:hover,
+.t-hover tbody tr th.active:hover,
+.t-hover tbody tr.active:hover td,
+.t-hover tbody tr:hover .active,
+.t-hover tbody tr.active:hover th {
   background-color: #CED5D9; }
 
 table col[class*="col-"] {

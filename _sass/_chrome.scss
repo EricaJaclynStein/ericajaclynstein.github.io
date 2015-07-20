@@ -8,12 +8,6 @@
   }
 }
 
-#footer {
-  background: $background-color;
-  clear:both;
-  margin-top: $margin;
-}
-
 .header-group {
   padding: $padding;
 
@@ -52,6 +46,14 @@
   }
 }
 
+#footer {
+  background: $background-color;
+  border-top: 1px solid $mercury;
+  clear:both;
+  margin-top: 90px;
+  text-align: center;
+}
+
 .footer-meta {
   padding: $padding;
 
@@ -59,7 +61,7 @@
     list-style-type: none;
 
     li {
-      display: inline;
+      display: inline-block;
       color: $steel;
       font-family: $mono-font-family;
 

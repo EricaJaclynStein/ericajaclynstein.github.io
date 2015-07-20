@@ -1,58 +1,74 @@
 table {
   background-color: transparent;
+  border: none;
 }
 
 .row-heading {
-  font-weight: $font-light;
-}
-
-.column-heading {
+  font-family: $mono-font-family;
+  font-size: $base-font-size;
+  font-weight: $font-bold;
+  color: $tungsten;
 }
 
 .caption {
   font-size: $base-font-size;
-  font-weight: $font-light;
+  font-weight: $font-normal;
   color: $tungsten;
 }
 
 .table {
   width: 100%;
   margin-bottom: 30px;
+
   thead {
     margin: 0;
+    
     tr {
       text-align: left;
       vertical-align: top;
+      
       th {
-        padding: 15px;
+        border: 1px solid $skyblue;
+        padding: 5px;
         font-size: $base-font-size;
         font-weight: $font-normal;
       }
     }
   }
+
   tfoot {
     margin: 0;
+    
     tr {
       text-align: left;
       vertical-align: top;
+      
       th {
-        padding: 15px;
+        border: 1px solid $skyblue;
+        padding: 5px;
       }
     }
   }
+
   tbody {
-    text-align: left;
+    margin: 0;
+    
     tr {
+      border: 1px solid $skyblue;
+      border-radius: 3px;
+      text-align: left;
       vertical-align: top;
+      
       td {
-        padding: 15px;
+        padding: 5px;
         width: 25%;
+        
         ul {
-          margin: 0;
-          padding: 0;
+          text-align: left;
+          
           li {
+            font-family: $mono-font-family;
             font-size: $base-font-size;
-            font-weight: $font-normal;
             color: $tungsten;
           }
         }
@@ -61,18 +77,27 @@ table {
   }
 }
 
-/********** STRIPED TABLE **********/
+/* TABLE EFFECTS 
+========================= */
 
-.table-striped {
+.t-filled {
+  tbody 
+  tr:nth-of-type(odd) {
+    background-color: $steel;
+  }
+  tr:nth-of-type(even) {
+    background-color: $mercury;
+  }
+}
+
+.t-striped {
   tbody 
   tr:nth-of-type(odd) {
     background-color: $mercury;
   }
 }
 
-/********** HOVER EFFECT **********/
-
-.table-hover {
+.t-hover {
   tbody tr:hover {
     background-color: $mercury;
   }
@@ -85,6 +110,7 @@ table {
     background-color: $mercury;
   }
 }
+
 
 table col[class*="col-"] {
   position: static;

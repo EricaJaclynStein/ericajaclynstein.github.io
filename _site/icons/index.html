@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <title>Svg Practice</title>
+  <title>Svg Icon Practice</title>
   <meta name="description" content="Action will delineate and define you.
 ">
+  
+  <script src="http://d3js.org/d3.v3.min.js"></script>
 
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="http://www.ericajaclynstein.github.io/icons/">
   <link rel="alternate" type="application/rss+xml" title="A Work In Progress." href="http://www.ericajaclynstein.github.io/feed.xml" />
+  
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:300italic,400italic,400,300,600,700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700' rel='stylesheet' type='text/css'>
 </head>
 
+
   <body>
-  <header id="header"> 
+  	<div class="wrapper">
+
+		<header id="header"> 
 	<div class="header-group">
 	  <div class="site-title">
 	    <a href="/">A Work In Progress.</a>
@@ -29,119 +36,113 @@
 	</div>
 </header>
 
-    <div class="wrapper">
-      <div class="row">
-        <div class="col page-header">
-          <h1>Svg Practice</h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-        <div class="row">
-  <div class ="col-lg-12">
-    <div class="icon-set">
-      <ul>
-        <li>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 55" width="35px" height="35px"><path class="icon" d="M27 25L27 44 17 44 17 25 0 7 7 0 22 15 31 6 25 0 44 0 44 19 38 13C33 17 27 25 27 25Z" id="getdirections"/></svg>
-        </li>
-        <li>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 55" width="35px" height="35px"><path class="icon" d="M6 16L0 16 10 0 20 16 14 16 14 41 6 41 6 16ZM30 25L24 25 34 41 44 25 38 25 38 0 30 0 30 25Z" id="direction"/></svg>
-        </li>
-        <li>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 55" width="35px" height="35px"><path class="icon" d="M14 50L15 50C19 29 28 23 28 13 28 5 22 0 14 0 6 0 0 5 0 13 0 23 9 29 14 50ZM14 20C18 20 21 17 21 13 21 9 18 6 14 6 10 6 7 9 7 13 7 17 10 20 14 20Z" id="marker"/></svg>
-        </li>
-        <li>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 55" width="35px" height="35px"><path class="icon" d="M27 31C24 33 21 34 17 34 8 34 0 26 0 17 0 8 8 0 17 0 26 0 34 8 34 17 34 21 33 24 31 27L33 28C34 28 34 28 35 29L43 37C43 37 46 40 43 43 40 46 37 43 37 43L29 35C28 34 28 34 28 33L27 31ZM17 28C23 28 28 23 28 17 28 11 23 6 17 6 11 6 6 11 6 17 6 23 11 28 17 28Z" id="search"/></svg>
-        </li>
-        <li>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 55" width="35px" height="35px"><path class="icon" d="M0 0L12 0 12 12 0 12 0 0ZM16 0L28 0 28 12 16 12 16 0ZM16 16L28 16 28 28 16 28 16 16ZM32 0L44 0 44 12 32 12 32 0ZM32 16L44 16 44 28 32 28 32 16ZM0 32L12 32 12 44 0 44 0 32ZM0 16L12 16 12 28 0 28 0 16ZM16 32L28 32 28 44 16 44 16 32ZM32 32L44 32 44 44 32 44 32 32Z" id="apps"/></svg>
-        </li>
-        <li>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 55" width="35px" height="35px"><path class="icon" d="M5 10C8 10 10 8 10 5 10 2 8 0 5 0 2 0 0 2 0 5 0 8 2 10 5 10ZM22 10C25 10 27 8 27 5 27 2 25 0 22 0 19 0 17 2 17 5 17 8 19 10 22 10ZM39 10C42 10 44 8 44 5 44 2 42 0 39 0 36 0 34 2 34 5 34 8 36 10 39 10Z" id="more"/></svg>
-        </li>
-        <li>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 55" width="35px" height="35px"><path class="icon" d="M25 19L25 13 19 13 19 19 13 19 13 25 19 25 19 31 25 31 25 25 31 25 31 19 25 19ZM0 4C0 2 2 0 4 0L40 0C42 0 44 2 44 4L44 40C44 42 42 44 40 44L4 44C2 44 0 42 0 40L0 4ZM4 6C4 5 5 4 6 4L38 4C39 4 40 5 40 6L40 38C40 39 39 40 38 40L6 40C5 40 4 39 4 38L4 6Z" id="zoomin"/></svg>
-        </li>
-        <li>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 55" width="35px" height="35px"><path class="icon" d="M0 4C0 2 2 0 4 0L40 0C42 0 44 2 44 4L44 40C44 42 42 44 40 44L4 44C2 44 0 42 0 40L0 4ZM4 6C4 5 5 4 6 4L38 4C39 4 40 5 40 6L40 38C40 39 39 40 38 40L6 40C5 40 4 39 4 38L4 6ZM13 19L31 19 31 25 13 25 13 19Z" id="zoomout"/></svg>
-        </li>
-        <li>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 55" width="35px" height="35px"><path class="icon" d="M25 39C32 37 37 32 39 25L44 25 44 19 39 19 39 19C37 12 32 7 25 5L25 5 25 0 19 0 19 5C12 7 7 12 5 19L5 19 0 19 0 25 5 25C7 32 12 37 19 39L19 44 25 44 25 39ZM22 35C30 35 35 30 35 22 35 14 30 9 22 9 14 9 9 14 9 22 9 30 14 35 22 35ZM22 30C27 30 30 27 30 22 30 17 27 14 22 14 17 14 14 17 14 22 14 27 17 30 22 30Z" id="nearby"/></svg>
-        </li>
-        <li>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 55" width="35px" height="35px"><path class="icon" d="M22 44C34 44 44 34 44 22 44 10 34 0 22 0 10 0 0 10 0 22 0 34 10 44 22 44ZM13 26L15 26 15 17C15 14 17 11 22 11 27 11 29 14 29 17L29 26 31 26 31 29 25 29C25 29 24 31 22 31 20 31 19 29 19 29L13 29 13 26Z" id="bell"/></svg>
-        </li>
-      </ul>
-  </div>
-</div>
 
-<div class="row">
-  <div class ="col-lg-12">
-    <div class="icon-set">
-      <ul>
-        <li>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 55" width="35px" height="35px"><path class="icon" d="M11 0L37 0C41 0 41 3 42 5L48 21C48 22 48 22 48 23L48 32 0 32 0 23C0 22 0 22 0 21L6 5C7 3 7 0 11 0ZM12 24C12 22 11 21 9 21 7 21 6 22 6 24 6 26 7 27 9 27 11 27 12 26 12 24ZM42 24C42 22 41 21 39 21 37 21 36 22 36 24 36 26 37 27 39 27 41 27 42 26 42 24ZM11 4L37 4 41 15 7 15 11 4ZM0 36L0 33 48 33 48 36 48 36 48 40C48 41 47 42 46 42L43 42C42 42 41 41 41 40L41 37 7 37 7 40C7 41 6 42 5 42L2 42C1 42 0 41 0 40L0 36Z" id="driving"/></svg>
-        </li>
-        <li>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 55" width="35px" height="35px"><path class="icon" d="M30 0C35 0 38 2 38 5L38 35 0 35 0 5C0 2 2 0 8 0L30 0ZM11 29C11 27 10 26 8 26 6 26 5 27 5 29 5 31 6 32 8 32 10 32 11 31 11 29ZM33 29C33 27 32 26 30 26 28 26 27 27 27 29 27 31 28 32 30 32 32 32 33 31 33 29ZM38 36C38 36 38 40 33 40L29 40 29 44 9 44 9 40 5 40C0 40 0 36 0 36L38 36ZM33 8L33 21 21 21 21 8 33 8ZM17 8L17 21 5 21 5 8 17 8Z" id="transit"/></svg>
-        </li>
-        <li>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 55" width="35px" height="35px"><path class="icon" d="M26 18L26 7C26 3 24 0 22 0 20 0 18 3 18 7L18 18 18 18 1 30C0 31 0 31 0 32L0 35C0 36 0 36 1 36L3 36 18 30 18 37 14 44 14 46C14 47 14 47 15 47L16 47 22 43 28 47 29 47C30 47 30 47 30 46L30 44 26 37 26 37 26 30 41 36 43 36C44 36 44 36 44 35L44 32C44 31 44 31 43 30L26 18Z" id="airplane"/></svg>
-        </li>
-      </ul>
+  		  <div class="row">
+    <div class ="col-lg-12">
+      <div class="icon-set">
+        <ul>
+          <li>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 55" width="35px" height="35px"><path class="icon" d="M27 25L27 44 17 44 17 25 0 7 7 0 22 15 31 6 25 0 44 0 44 19 38 13C33 17 27 25 27 25Z" id="getdirections"/></svg>
+          </li>
+          <li>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 55" width="35px" height="35px"><path class="icon" d="M6 16L0 16 10 0 20 16 14 16 14 41 6 41 6 16ZM30 25L24 25 34 41 44 25 38 25 38 0 30 0 30 25Z" id="direction"/></svg>
+          </li>
+          <li>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 55" width="35px" height="35px"><path class="icon" d="M14 50L15 50C19 29 28 23 28 13 28 5 22 0 14 0 6 0 0 5 0 13 0 23 9 29 14 50ZM14 20C18 20 21 17 21 13 21 9 18 6 14 6 10 6 7 9 7 13 7 17 10 20 14 20Z" id="marker"/></svg>
+          </li>
+          <li>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 55" width="35px" height="35px"><path class="icon" d="M27 31C24 33 21 34 17 34 8 34 0 26 0 17 0 8 8 0 17 0 26 0 34 8 34 17 34 21 33 24 31 27L33 28C34 28 34 28 35 29L43 37C43 37 46 40 43 43 40 46 37 43 37 43L29 35C28 34 28 34 28 33L27 31ZM17 28C23 28 28 23 28 17 28 11 23 6 17 6 11 6 6 11 6 17 6 23 11 28 17 28Z" id="search"/></svg>
+          </li>
+          <li>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 55" width="35px" height="35px"><path class="icon" d="M0 0L12 0 12 12 0 12 0 0ZM16 0L28 0 28 12 16 12 16 0ZM16 16L28 16 28 28 16 28 16 16ZM32 0L44 0 44 12 32 12 32 0ZM32 16L44 16 44 28 32 28 32 16ZM0 32L12 32 12 44 0 44 0 32ZM0 16L12 16 12 28 0 28 0 16ZM16 32L28 32 28 44 16 44 16 32ZM32 32L44 32 44 44 32 44 32 32Z" id="apps"/></svg>
+          </li>
+          <li>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 55" width="35px" height="35px"><path class="icon" d="M5 10C8 10 10 8 10 5 10 2 8 0 5 0 2 0 0 2 0 5 0 8 2 10 5 10ZM22 10C25 10 27 8 27 5 27 2 25 0 22 0 19 0 17 2 17 5 17 8 19 10 22 10ZM39 10C42 10 44 8 44 5 44 2 42 0 39 0 36 0 34 2 34 5 34 8 36 10 39 10Z" id="more"/></svg>
+          </li>
+          <li>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 55" width="35px" height="35px"><path class="icon" d="M25 19L25 13 19 13 19 19 13 19 13 25 19 25 19 31 25 31 25 25 31 25 31 19 25 19ZM0 4C0 2 2 0 4 0L40 0C42 0 44 2 44 4L44 40C44 42 42 44 40 44L4 44C2 44 0 42 0 40L0 4ZM4 6C4 5 5 4 6 4L38 4C39 4 40 5 40 6L40 38C40 39 39 40 38 40L6 40C5 40 4 39 4 38L4 6Z" id="zoomin"/></svg>
+          </li>
+          <li>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 55" width="35px" height="35px"><path class="icon" d="M0 4C0 2 2 0 4 0L40 0C42 0 44 2 44 4L44 40C44 42 42 44 40 44L4 44C2 44 0 42 0 40L0 4ZM4 6C4 5 5 4 6 4L38 4C39 4 40 5 40 6L40 38C40 39 39 40 38 40L6 40C5 40 4 39 4 38L4 6ZM13 19L31 19 31 25 13 25 13 19Z" id="zoomout"/></svg>
+          </li>
+          <li>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 55" width="35px" height="35px"><path class="icon" d="M25 39C32 37 37 32 39 25L44 25 44 19 39 19 39 19C37 12 32 7 25 5L25 5 25 0 19 0 19 5C12 7 7 12 5 19L5 19 0 19 0 25 5 25C7 32 12 37 19 39L19 44 25 44 25 39ZM22 35C30 35 35 30 35 22 35 14 30 9 22 9 14 9 9 14 9 22 9 30 14 35 22 35ZM22 30C27 30 30 27 30 22 30 17 27 14 22 14 17 14 14 17 14 22 14 27 17 30 22 30Z" id="nearby"/></svg>
+          </li>
+          <li>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 55" width="35px" height="35px"><path class="icon" d="M22 44C34 44 44 34 44 22 44 10 34 0 22 0 10 0 0 10 0 22 0 34 10 44 22 44ZM13 26L15 26 15 17C15 14 17 11 22 11 27 11 29 14 29 17L29 26 31 26 31 29 25 29C25 29 24 31 22 31 20 31 19 29 19 29L13 29 13 26Z" id="bell"/></svg>
+          </li>
+        </ul>
     </div>
   </div>
-</div>
 
-<div class="row">
-  <div class ="col-lg-12">
-    <div class="icon-set">
-      <ul>
-        <li>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="45px" height="45px"><path class="icon" d="M60 83C64 81 103 76 144 76 185 76 224 81 228 83 235 87 245 104 241 108 235 114 181 118 144 118 107 118 53 114 47 108 43 104 53 87 60 83L60 83ZM10 77C12 78 24 81 28 81 30 81 35 76 37 76 39 76 47 81 47 83 47 88 10 111 10 127L11 136C14 136 46 139 46 139 46 139 64 140 70 140 74 140 81 138 80 134 78 127 66 122 66 120 68 120 107 124 107 126 107 128 92 146 84 149 80 150 46 150 46 150L7 150C2 150 0 131 0 82 0 81 0 60 3 50 5 45 18 34 21 34L45 36C47 35 65 15 81 7 87 5 93 0 144 0 195 0 200 5 206 7 222 15 241 35 243 36L267 34C270 34 283 45 285 50 288 60 288 81 288 82 288 131 286 150 281 150L242 150C242 150 208 150 204 149 196 146 181 128 181 126 181 124 220 120 222 120 222 122 210 127 208 134 207 138 214 140 218 140 224 140 242 139 242 139 242 139 274 136 277 136L278 127C278 111 241 88 241 83 241 81 249 76 251 76 253 76 258 81 260 81 264 81 276 78 278 77 280 76 280 58 278 58 276 58 258 68 224 75 214 75 197 70 144 70 91 70 74 75 64 75 30 68 13 58 10 58 8 58 8 76 10 77ZM227 34C227 34 227 34 216 34 206 34 169 31 144 31 128 31 82 34 72 34 61 34 61 34 61 34 61 32 77 19 84 15 94 10 116 9 144 9 171 9 193 10 203 15 210 19 227 32 227 34ZM144 128C160 128 168 128 169 128 174 130 187 138 187 141L102 141C102 138 115 130 119 128 121 128 128 128 144 128L144 128Z" id="infinity-vision-gt"/></svg>
-        </li>
-        <li>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="45px" height="45px"><path class="icon" d="M6 58C1 63 1 84 1 87 1 90-1 158 4 163 7 163 36 163 38 163 38 161 38 154 38 151 41 151 118 151 140 151 163 151 239 151 242 151 242 154 242 161 242 164 245 164 271 164 274 164 279 159 279 90 279 87 279 84 279 63 274 58 269 53 250 48 247 48 247 46 210 5 204 5 202 5 173 0 140 0 107 0 78 5 76 5 70 5 33 46 33 48 30 48 11 53 6 58ZM100 129C92 129 89 117 77 113 66 108 30 100 30 92 30 85 59 96 59 91 59 80 23 62 13 72 2 92 32 111 32 126 32 136 30 142 30 143 33 143 100 144 100 144L140 144 180 144C180 144 247 143 250 143 250 142 248 136 248 126 248 111 278 92 267 72 257 62 220 80 220 91 220 96 249 85 249 92 249 100 213 108 202 113 190 117 188 129 180 129L140 129C140 129 103 129 100 129ZM75 15C77 14 83 8 140 8 197 8 203 14 205 15 213 22 230 48 230 48 230 48 221 55 206 56L140 56 73 56C59 55 50 48 50 48 50 48 67 22 75 15Z" id="mclaren-650s-spider"/></svg>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-<div class="row">
-  <div class ="col-lg-12">
-    <ul> 
-    <h3>Resources</h3>
-        <li>
-          <a class="btn-link" href="http://snook.ca/archives/html_and_css/icons-and-type" target="blank"> 
-            Icons and Type</a>
-        </li>
-        <li>
-          <a class="btn-link" href="http://csswizardry.com/2015/04/cyclomatic-complexity-logic-in-css/" target="blank"> 
-            Cyclomatic Complexity: Logic in CSS</a>
-        </li>
-        <li>
-          <a class="btn-link" href="https://github.com/vendocrat/PaymentFont" target="blank"> 
-            Payment Font on Github</a>
-        </li>
-        <li>
-          <a class="btn-link" href="http://petercollingridge.appspot.com/svg-editor" target="blank"> 
-            SVG Optimizer/Editor by Peter Collingridge</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
-        </div>
+  <div class="row">
+    <div class ="col-lg-12">
+      <div class="icon-set">
+        <ul>
+          <li>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 55" width="35px" height="35px"><path class="icon" d="M11 0L37 0C41 0 41 3 42 5L48 21C48 22 48 22 48 23L48 32 0 32 0 23C0 22 0 22 0 21L6 5C7 3 7 0 11 0ZM12 24C12 22 11 21 9 21 7 21 6 22 6 24 6 26 7 27 9 27 11 27 12 26 12 24ZM42 24C42 22 41 21 39 21 37 21 36 22 36 24 36 26 37 27 39 27 41 27 42 26 42 24ZM11 4L37 4 41 15 7 15 11 4ZM0 36L0 33 48 33 48 36 48 36 48 40C48 41 47 42 46 42L43 42C42 42 41 41 41 40L41 37 7 37 7 40C7 41 6 42 5 42L2 42C1 42 0 41 0 40L0 36Z" id="driving"/></svg>
+          </li>
+          <li>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 55" width="35px" height="35px"><path class="icon" d="M30 0C35 0 38 2 38 5L38 35 0 35 0 5C0 2 2 0 8 0L30 0ZM11 29C11 27 10 26 8 26 6 26 5 27 5 29 5 31 6 32 8 32 10 32 11 31 11 29ZM33 29C33 27 32 26 30 26 28 26 27 27 27 29 27 31 28 32 30 32 32 32 33 31 33 29ZM38 36C38 36 38 40 33 40L29 40 29 44 9 44 9 40 5 40C0 40 0 36 0 36L38 36ZM33 8L33 21 21 21 21 8 33 8ZM17 8L17 21 5 21 5 8 17 8Z" id="transit"/></svg>
+          </li>
+          <li>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 55" width="35px" height="35px"><path class="icon" d="M26 18L26 7C26 3 24 0 22 0 20 0 18 3 18 7L18 18 18 18 1 30C0 31 0 31 0 32L0 35C0 36 0 36 1 36L3 36 18 30 18 37 14 44 14 46C14 47 14 47 15 47L16 47 22 43 28 47 29 47C30 47 30 47 30 46L30 44 26 37 26 37 26 30 41 36 43 36C44 36 44 36 44 35L44 32C44 31 44 31 43 30L26 18Z" id="airplane"/></svg>
+          </li>
+        </ul>
       </div>
     </div>
-  <footer id="footer">
+  </div>
+
+  <div class="row">
+    <div class ="col-lg-12">
+      <div class="icon-set">
+        <ul>
+          <li>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="45px" height="45px"><path class="icon" d="M60 83C64 81 103 76 144 76 185 76 224 81 228 83 235 87 245 104 241 108 235 114 181 118 144 118 107 118 53 114 47 108 43 104 53 87 60 83L60 83ZM10 77C12 78 24 81 28 81 30 81 35 76 37 76 39 76 47 81 47 83 47 88 10 111 10 127L11 136C14 136 46 139 46 139 46 139 64 140 70 140 74 140 81 138 80 134 78 127 66 122 66 120 68 120 107 124 107 126 107 128 92 146 84 149 80 150 46 150 46 150L7 150C2 150 0 131 0 82 0 81 0 60 3 50 5 45 18 34 21 34L45 36C47 35 65 15 81 7 87 5 93 0 144 0 195 0 200 5 206 7 222 15 241 35 243 36L267 34C270 34 283 45 285 50 288 60 288 81 288 82 288 131 286 150 281 150L242 150C242 150 208 150 204 149 196 146 181 128 181 126 181 124 220 120 222 120 222 122 210 127 208 134 207 138 214 140 218 140 224 140 242 139 242 139 242 139 274 136 277 136L278 127C278 111 241 88 241 83 241 81 249 76 251 76 253 76 258 81 260 81 264 81 276 78 278 77 280 76 280 58 278 58 276 58 258 68 224 75 214 75 197 70 144 70 91 70 74 75 64 75 30 68 13 58 10 58 8 58 8 76 10 77ZM227 34C227 34 227 34 216 34 206 34 169 31 144 31 128 31 82 34 72 34 61 34 61 34 61 34 61 32 77 19 84 15 94 10 116 9 144 9 171 9 193 10 203 15 210 19 227 32 227 34ZM144 128C160 128 168 128 169 128 174 130 187 138 187 141L102 141C102 138 115 130 119 128 121 128 128 128 144 128L144 128Z" id="infinity-vision-gt"/></svg>
+          </li>
+          <li>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="45px" height="45px"><path class="icon" d="M6 58C1 63 1 84 1 87 1 90-1 158 4 163 7 163 36 163 38 163 38 161 38 154 38 151 41 151 118 151 140 151 163 151 239 151 242 151 242 154 242 161 242 164 245 164 271 164 274 164 279 159 279 90 279 87 279 84 279 63 274 58 269 53 250 48 247 48 247 46 210 5 204 5 202 5 173 0 140 0 107 0 78 5 76 5 70 5 33 46 33 48 30 48 11 53 6 58ZM100 129C92 129 89 117 77 113 66 108 30 100 30 92 30 85 59 96 59 91 59 80 23 62 13 72 2 92 32 111 32 126 32 136 30 142 30 143 33 143 100 144 100 144L140 144 180 144C180 144 247 143 250 143 250 142 248 136 248 126 248 111 278 92 267 72 257 62 220 80 220 91 220 96 249 85 249 92 249 100 213 108 202 113 190 117 188 129 180 129L140 129C140 129 103 129 100 129ZM75 15C77 14 83 8 140 8 197 8 203 14 205 15 213 22 230 48 230 48 230 48 221 55 206 56L140 56 73 56C59 55 50 48 50 48 50 48 67 22 75 15Z" id="mclaren-650s-spider"/></svg>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class ="col-lg-12">
+      <ul> 
+      <h3>Resources</h3>
+          <li>
+            <a class="btn-link" href="http://snook.ca/archives/html_and_css/icons-and-type" target="blank"> 
+              Icons and Type</a>
+          </li>
+          <li>
+            <a class="btn-link" href="http://csswizardry.com/2015/04/cyclomatic-complexity-logic-in-css/" target="blank"> 
+              Cyclomatic Complexity: Logic in CSS</a>
+          </li>
+          <li>
+            <a class="btn-link" href="https://github.com/vendocrat/PaymentFont" target="blank"> 
+              Payment Font on Github</a>
+          </li>
+          <li>
+            <a class="btn-link" href="http://petercollingridge.appspot.com/svg-editor" target="blank"> 
+              SVG Optimizer/Editor by Peter Collingridge</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  	</div>
+
+		<footer id="footer">
   <div class="footer-meta">
     <ul>
 	    <li>
 	      <small>
 	      Action will delineate and define you.
- &#9679; About <a href="http://www.sketchappsources.com/blog/post/erica-jaclyn-stein" target="blank">
+ &#10744;  
+	      About <a href="http://www.sketchappsources.com/blog/post/erica-jaclyn-stein" target="blank">
 	    	Erica</a>
 	      </small>
 	    </li>
@@ -150,21 +151,15 @@
       	
       	<small><a href="http://twitter.com/ericajaclyn" target="blank"> <i class="fa fa-twitter"></i> Twitter</a></small>
 		    
-		  </li>
-		  <li>
 		    &#10744;
 		    
 		      <small><a href="https://medium.com/@ericajaclyn" target="blank"> <i class="fa fa-medium"></i> Medium</a></small>
 		    
-		  </li>
-		  <li>
 		    &#10744;
 		    
 		    <small><a href="http://www.dribbble.com/ericajaclyn" target="blank"> <i class="fa fa-dribbble"></i> Dribble</a></small>
 		    
-		  </li>
-		  <li>
-		  	&#10744;
+		    &#10744;
 		    
 		    <small><a href="https://github.com/ericajaclynstein" target="blank">Github</a></small>
 		    
@@ -172,6 +167,7 @@
 	  </ul>
   </div>
 </footer>
+ 
 
   </body>
 </html>
