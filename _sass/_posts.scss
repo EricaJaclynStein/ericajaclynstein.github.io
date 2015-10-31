@@ -1,105 +1,197 @@
-.divider {
-  height: 5px;
-  margin-top: 7px;
-  width: 30px;
-  background-color: $tungsten;
+/*** POST HEADER 
+***************/
+.postHeader {
+  left: 0px;
+  top: 0px;
+  clear: both;
 }
 
-.post-box {
-  background: $background-color;
-  padding: 0 $padding;
+.postHeaderContainer {
+  background-color: rgba(206, 213, 217, 0.9);
+  margin: $spacingUnitSmall;
+  max-width: 100px;
+  padding: $spacingUnitSmall;
 }
 
-.post-meta {
-  margin: 30px 0;
+.postHeaderNav a {
+  color: $ultraviolet;
+  &:hover {
+    color: darken($ultraviolet, 15%);
+    text-decoration: none;
+  }
+}
+
+.postHeaderMeta {
+  @include media-query($phonePortrait) {
+    display: none !important;
+  }
+  p {
+    color: $tungsten;
+    font-size: $fontSizeSmall;
+    margin-top: $spacingUnitSmall;
+  }
+}
+
+
+/*** POST CONTAINER 
+******************/
+#postContainer {
+  background: $tungsten;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: auto;
+  width: auto;
+  overflow-x: hidden;
+}
+
+#postContentContainer {
+  background-color: $background-color;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: auto;
+  width: 60%;
+  overflow-x: hidden;
+  @include media-query($tabletLandscape) {
+    width: 80%;
+  }
+  @include media-query($tabletPortrait) {
+    width: 100%;
+  }
+}
+
+
+/*** POST CONTENT 
+****************/
+#postArticleContainer {
+  max-width: $maxContentWidth;
+  margin: $spacingUnitBase;
+  padding: $spacingUnitBase;
   text-align: left;
+  @include media-query($phonePortrait) {
+    margin: $spacingUnitBase 0 0 0;
+    padding: $spacingUnitBase 0 0 0;
+  }
 }
 
-.postsidebar-content {
-  background: transparent;
-}
-
-.post-article {
-  max-width: $content-width;
-  text-align: left;
+.postArticle {
+    font-family: $serif-font-family;
 
   p {
-    margin-bottom: $margin;
-    font-family: $serif-font-family;
-    font-size: $longreads-font-size;
-    line-height: $longreads-line-height;
-    
-    a {
-      color: $steel;
-      font-weight: $font-bold;
+    font-size: $fontSizePost;
+    line-height: $postLeading;
+    margin-bottom: $spacingUnitBase;
+    @include media-query($phonePortrait) {
+      font-size: $fontSizeBase;
+      line-height: $baseLeading;
+      margin-bottom: $spacingUnitSmall;
+    }
 
+    a {
+      color: $seablue;
+      text-decoration: underline;
       &:hover {
-        text-decoration: underline;
+        color: darken($seablue, 15%);
       }
     }
   }
 
-  blockquote {
-    font-size: $big-font-size;
-    font-style: italic;
-    line-height: $big-line-height;
+  h1 {
+    font-family: $serif-font-family;
+    font-size: $h1FontSize;
+    line-height: $headingLeading;
+    text-align: center;
+    text-transform: uppercase;
+    @include media-query($phonePortrait) {
+      font-size: $h1FontSizeMobile;
+    }
   }
 
   h2 {
-    font-size: $h2-font-size;
-    line-height: $heading-line-height;
-    margin: $margin 0;
+    font-size: $h2FontSize;
+    line-height: $headingLeading;
+    margin-bottom: $spacingUnitBase;
+    margin-top: $spacingUnitBase;
     text-align: center;
-
-    @include media-query($on-tablet) {
-      font-size: $h2-mobile-size;
+    text-transform: uppercase;
+    @include media-query($phonePortrait) {
+      font-size: $h2FontSizeMobile;
     }
   }
 
   h3 {
-    font-size: $h3-font-size;
-    margin-bottom: $margin;
-    margin-top: 30px;
+    font-size: $h3FontSize;
+    font-weight: $fontBold;
+    margin-bottom: $spacingUnitBase;
+    margin-top: $spacingUnitLarge;
     text-align: center;
-
-    @include media-query($on-tablet) {
-      font-size: $h3-mobile-size;
-    }
+    text-transform: uppercase;
   }
 
   h4 {
-    font-size: $h4-font-size;
-    margin-bottom: $margin;
-    margin-top: $margin * 2;
-    text-align: center;
+    font-size: $h4FontSize;
+    font-weight: $fontBold;
+    margin-top: $spacingUnitBase;
+    padding-top: $spacingUnitBase;
+    text-align: left;
+    text-transform: uppercase;
   }
 
   h5 {
-    font-size: $h5-font-size;
-    margin: $margin;
+    font-size: $h5FontSize;
+    margin: $spacingUnitSmall;
     text-align: left;
+    text-transform: uppercase;
   }
 
-  h6 {
-    font-size: $h6-font-size;
-    margin: $margin;
-    text-align: center;
+  blockquote {
+    font-size: $fontSizeLarge;
+    font-style: italic;
+    line-height: $largeLeading;
+    @include media-query($phonePortrait) {
+      margin: $spacingUnitSmall;
+      padding: $spacingUnitSmall;
+    }
   }
 
-  @include media-query($on-desktop) { 
-    padding: 0;
+  ul,
+  ol {
+    margin: $spacingUnitSmall;
+    padding: 0 $spacingUnitSmall;
+  }
+
+  ul li {
+    font-size: $fontSizePost;
+    line-height: $postLeading;
+    list-style-type: circle;
+  }
+  
+  ol li {
+    font-size: $fontSizePost;
+    line-height: $postLeading;
+    list-style-type: decimal;
   }
 }
 
-ul ol {
-  margin-top: $margin;
-  padding: $padding;
+#postArticleMeta {
+  margin: $spacingUnitSmall;
+  text-align: center;
+}
+
+#postArticleNav {
+  margin: $spacingUnitSmall;
+  text-align: center;
   
-  li {
-    font-family: $serif-font-family;
-    font-size: $longreads-font-size;
-    line-height: $longreads-line-height;
-    list-style-type: decimal;
-    margin-bottom: $margin;
+  a {
+    color: $ultraviolet;
+    &:hover {
+      color: darken($ultraviolet, 15%);
+      text-decoration: none;
+    }
   }
 }

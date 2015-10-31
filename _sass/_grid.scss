@@ -1,47 +1,3 @@
-#default-container2 {
-  clear: left;
-  float: left;
-  width: 100%;
-  overflow: hidden;
-  background: url(/assets/shattered.png) repeat fixed $seafoam; 
-
-  @include media-query($on-tablet) {
-    background: $background-color;
-  }
-}
-
-#main-container2 {
-  clear: left;
-  float: left;
-  width: 100%;
-  overflow: hidden;
-  background: $tungsten; 
-
-  @include media-query($on-tablet) {
-    background: $background-color;
-  }
-}
-
-#container1 {
-  float: left;
-  width: 100%;
-  position: relative;
-  right: 41.66666667%;
-  background: $background-color;
-}
-
-#main {
-  float: left;
-  left: 41.66666667%;
-  width: 58.33333333%;
-  position: relative;
-  overflow: hidden;
-
-  @include media-query($on-tablet) {
-    width: 100%;
-  }
-}
-
 #sidebar {
   float: left;
   left: 41.66666667%;
@@ -49,18 +5,49 @@
   margin-bottom: auto;
   position: relative;
   overflow: hidden;
+}
 
-  @include media-query($on-tablet) {
+/*** PAGE CONTAINER 
+******************/
+#pageContentContainer {
+  float: left;
+  left: 41.66666667%;
+  width: 58.33333333%;
+  position: relative;
+  overflow: hidden;
+
+  @include media-query($tabletPortrait) {
     width: 100%;
-    display: none !important;
   }
 }
 
-.box {
-  background: $background-color;
-  padding: 0 $padding;
+#pageSidebarContainer {
+  clear: left;
+  float: left;
+  width: 100%;
+  overflow: hidden;
+  background: $steel;
+}
 
-  @include media-query($on-palm) {
+#pagePositionContainer {
+  float: left;
+  width: 100%;
+  position: relative;
+  right: 41.66666667%;
+  background: $background-color;
+
+  @include media-query($tabletPortrait) {
+    width: 100%;
+  }
+}
+
+
+
+/*** GRID ELEMENTS
+*****************/
+.box {
+  padding: 0 $spacingUnitBase;
+  @include media-query($phonePortrait) {
     padding: 0;
   }
 }
@@ -72,7 +59,6 @@
 
 .col {
   padding: 0 $padding;
-
   @include media-query($on-palm) {
     padding: 0 15px;
   }

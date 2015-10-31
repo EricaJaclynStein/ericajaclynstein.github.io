@@ -1,30 +1,28 @@
-<footer id="footer">
-  <div class="footer-meta">
+<footer id="footerFixed">
+  <div class="footerMeta">
     <ul>
-	    <li>
-	      <small>
-	      {{ site.description }} &#10744;  
-	      About <a href="http://www.sketchappsources.com/blog/post/erica-jaclyn-stein" target="blank">
-	    	{{ site.author }}</a>
-	      </small>
-	    </li>
+			<li>
+				<p><a href="http://www.sketchappsources.com/blog/post/erica-jaclyn-stein" target="blank">Who, me?</a></p>
+			</li>
 	  	<li>
-	  		&#10744;
-      	{% if site.twitter %}
-      	<small><a href="{{ site.twitter }}" target="blank"> <i class="fa fa-twitter"></i> Twitter</a></small>
-		    {% endif %}
-		    &#10744;
-		    {% if site.medium %}
-		      <small><a href="{{ site.medium }}" target="blank"> <i class="fa fa-medium"></i> Medium</a></small>
-		    {% endif %}
-		    &#10744;
-		    {% if site.dribbble %}
-		    <small><a href="{{ site.dribbble }}" target="blank"> <i class="fa fa-dribbble"></i> Dribble</a></small>
-		    {% endif %}
-		    &#10744;
-		    {% if site.github %}
-		    <small><a href="{{ site.github }}" target="blank">Github</a></small>
-		    {% endif %}
+	  	{% if site.twitter %}
+      	<p><a href="{{ site.twitter }}" target="blank"> <i class="fa fa-twitter"></i> Twitter</a></p>
+		  {% endif %}
+		  </li>
+		  <li>
+		  {% if site.medium %}
+		    <p><a href="{{ site.medium }}" target="blank"> <i class="fa fa-medium"></i> Medium</a></p>
+		  {% endif %}
+		  </li>
+		  <li>  
+		  {% if site.dribbble %}
+		    <p><a href="{{ site.dribbble }}" target="blank"> <i class="fa fa-dribbble"></i> Dribble</a></p>
+		  {% endif %}
+		  </li>
+		  <li>  
+		  {% if site.github %}
+		    <p><a href="{{ site.github }}" target="blank"> <i class="fa fa-github"></i> Github</a></p>
+		  {% endif %}
 		  </li>
 	  </ul>
   </div>

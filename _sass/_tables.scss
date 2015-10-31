@@ -4,8 +4,8 @@ table {
 }
 
 .row-heading {
-  font-family: $mono-font-family;
-  font-size: $base-font-size;
+  font-family: $base-font-family;
+  font-size: $big-font-size;
   font-weight: $font-bold;
   color: $tungsten;
 }
@@ -28,10 +28,11 @@ table {
       vertical-align: top;
       
       th {
-        border: 1px solid $skyblue;
+        border-bottom: 1px solid $tungsten;
         padding: 5px;
         font-size: $base-font-size;
         font-weight: $font-normal;
+        text-transform: uppercase;
       }
     }
   }
@@ -67,9 +68,14 @@ table {
           text-align: left;
           
           li {
-            font-family: $mono-font-family;
+            font-family: $base-font-family;
             font-size: $base-font-size;
             color: $tungsten;
+
+            .header {
+              font-size: $base-font-size;
+              font-weight: $font-bold;
+            }
           }
         }
       }

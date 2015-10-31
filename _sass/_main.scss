@@ -1,31 +1,120 @@
-.mainsidebar-content {
-  background: transparent;
+/*** HOMEPAGE STYLES 
+*******************/
+
+
+/*** HOMEPAGE HEADER 
+*******************/
+#mainHeader {
+    clear:both;
+    float: left;
+    padding: $spacingUnitSmall;
+
+    @include media-query($phonePortrait) {
+      float: left;
+      padding: $spacingUnitSmall 0;
+    }
+}
+
+.siteTitle {
+  line-height: 1;
+  text-transform: uppercase;
   
-  p {
+  a {
     color: $steel;
-    padding: $padding;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  h1 {
+    font-size: 300%;
+    font-weight: $fontHeavy;
+
+    @include media-query($phonePortrait) {
+      font-size: 200%;
+    }
   }
 }
 
-.main-list-group {
-  text-align: left;
+
+/*** HOMEPAGE CONTAINER 
+**********************/
+#mainContainer {
+  background: #282537;
+    background-image: -webkit-radial-gradient(top, circle cover, #253750 0%, #282537 80%, #252227 100%);
+    background-image: -moz-radial-gradient(top, circle cover, #3c3b52 0%, #252227 80%);
+    background-image: -o-radial-gradient(top, circle cover, #3c3b52 0%, #252227 80%);
+    background-image: radial-gradient(top, circle cover, #3c3b52 0%, #252227 80%);
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: auto;
+  width: auto;
+  overflow-x: hidden;
 }
 
-.main-list-item {
-  margin-bottom: 30px;
+#mainContentContainer {
+  background: url(/assets/mistyforest.jpeg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: auto;
+  width: 80%;
+  overflow-x: hidden;
+  @include media-query($phonePortrait) {
+    width: 100%;
+  }
+}
+
+/*** SIDEBAR CONTENT
+*******************/
+#mainSidebar {
+  float: right;
+  width: 20%;
+  margin-bottom: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.mainSidebarContent {
+  background: transparent;
+  width: 20%;
+  
+  p {
+    color: $coconut;
+    padding: $spacingUnitBase;
+  }
+}
+
+.mainList {
+  float: right;
+  text-align: right;
+}
+
+.mainListItem {
+  margin-bottom: $spacingUnitBase;
   display: block;
   
   p {
-    font-size: $small-font-size;
-    padding-bottom: 5px;
+    color: $steel;
+    padding-bottom: 3px;
   }
 
   a {
-    border-bottom: 2px solid $seablue;
-    color: $tungsten;
+    border-bottom: 3px solid $aqua;
+    color: $coconut;
     font-family: $base-font-family;
-    font-size: $big-font-size;
-    line-height: $big-line-height;
+    font-size: $fontSizeLarge;
+    font-weight: $fontLight;
+    line-height: $largeLeading;
     padding-bottom: 1px;
     text-decoration: none;
   }
@@ -45,7 +134,7 @@
   a {
     color: $coconut;
     font-family: $mono-font-family;
-    font-size: $base-font-size;
+    font-size: $fontSizeBase;
     text-decoration: none;
   }
   

@@ -4,10 +4,7 @@ date:        2015-07-19
 title:       Bookmarks
 ---
 
-<div id="main">
-
 {% include postheader.html %}
-
 	<div class="row">
 		<div class="col">
 			<div class="box">
@@ -16,25 +13,21 @@ title:       Bookmarks
 				    <p><a href="{{ appleItems.url }}" target="blank">{{ appleItems.name }}</a></p>
 				{% endfor %}
 				</div>
-
 				<div class="page-items">
 				{% for googleItems in site.data.googleItems %}
 				    <p><a href="{{ googleItems.url }}" target="blank">{{ googleItems.name }}</a></p>
 				{% endfor %}
 				</div>
-
 				<div class="page-items">
 				{% for toolbox in site.data.toolbox %}
 				    <p><a href="{{ toolbox.url }}" target="blank">{{ toolbox.name }}</a></p>
 				{% endfor %}
 				</div>
-
 				<div class="page-items">
 				{% for nicities in site.data.nicities %}
 				    <p><a href="{{ nicities.url }}" target="blank">{{ nicities.name }}</a></p>
 				{% endfor %}
 				</div>
-
 				<div class="page-items">
 				{% for bookmark in site.data.bookmarks %}
 				    <p><a href="{{ bookmark.url }}" target="blank">{{ bookmark.name }}</a></p>
@@ -42,11 +35,5 @@ title:       Bookmarks
 				</div>	
 			</div>
 		</div>
-
     {% include footer.html %}
-	
 	</div>
-</div>
-
-{% include mainsidebar.html %}
-

@@ -1,65 +1,49 @@
 ---
 layout: main
-title:  You Are Here      
 ---
 
-<div id="main">
-  <div class="wrapper">
-
-  {% include header.html %}
-
-    <div class="row">
-      <div class="col">
-        <div class="box">
-          <div class="main-list-group">
-
-            {% for post in site.posts %}
-
-            <div class="main-list-item">
-              <p> {% if post.date %} written on {{ post.date | date: "%b %-d, %Y" }} {% endif %} </p>
-              <h1> {% if post.title %} <a href="{{ post.url | prepend: site.baseurl }}"> {{ post.title }} </a> {% endif %} </h1>
+<div id="mainContainer">
+  <div id="mainContentContainer">
+    <div class="wrapper">
+    {% include header.html %}
+      <div class="row">
+        <div class="col">
+          <div class="box">
+            <div class="mainList">
+              {% for post in site.posts %}
+              <div class="mainListItem">
+                <p> {% if post.date %} {{ post.date | date: "%b %-d, %Y" }} {% endif %} </p>
+                <h1> {% if post.title %} <a href="{{ post.url | prepend: site.baseurl }}"> {{ post.title }} </a> {% endif %} </h1>
+              </div>
+              {% endfor %}
+              {% for project in site.projects %}
+              <div class="mainListItem">
+                <p> {% if project.date %} updated on {{ project.date | date: "%b %-d, %Y" }} {% endif %} </p>
+                <h1> {% if project.title %} <a href="{{ project.url | prepend: site.baseurl }}"> {{ project.title }} </a> {% endif %} </h1>
+              </div>
+              {% endfor %}
             </div>
-
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="box"> 
+            <div class="mainList"> 
+            {% for resource in site.resources %}
+              <div class="button gradient">
+              {% if resource.title %} <a href="{{ resource.url | prepend: site.baseurl }}"> {{ resource.title }} </a>
+              {% endif %}
+              </div> 
             {% endfor %}
-
-            {% for project in site.projects %}
-
-            <div class="main-list-item">
-              <p> {% if project.date %} updated on {{ project.date | date: "%b %-d, %Y" }} {% endif %} </p>
-              <h1> {% if project.title %} <a href="{{ project.url | prepend: site.baseurl }}"> {{ project.title }} </a> {% endif %} </h1>
             </div>
-
-            {% endfor %}
-
           </div>
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col">
-        <div class="box"> 
-          <div class="main-list-group"> 
-
-          {% for resource in site.resources %}
-
-            <div class="button gradient">
-            {% if resource.title %} <a href="{{ resource.url | prepend: site.baseurl }}"> {{ resource.title }} </a>
-            {% endif %}
-            </div>
-              
-          {% endfor %}
-
-          </div>
-        </div>
-      </div>
-    </div>
+    {% include footer.html %}
   </div>
-  
-  {% include footer.html %}
-
 </div>
-
-{% include mainsidebar.html %}
 
 
 

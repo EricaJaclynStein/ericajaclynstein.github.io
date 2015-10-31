@@ -1,7 +1,11 @@
-<header id="header">
-  <div class="header-group"> 
-  	<p> &#10094; <a href="{{ site.baseurl }}/"> Back</a></p>
-		<h1>{% if page.title %}{{ page.title }}{% endif %}</h1>			  
-	  <div class="divider"></div>
-  </div>
+<header class="postHeader affix">
+	<div class="postHeaderContainer">
+	  <div class="postHeaderNav">
+	  	<a href="{{ site.baseurl }}/">&#10094; Back</a>
+	  </div>
+	  <div class="postHeaderMeta">
+			<p>{% if page.title %}{{ page.title }}{% endif %}</p>
+		  <div class="divider"></div>
+		</div>
+	</div>
 </header>

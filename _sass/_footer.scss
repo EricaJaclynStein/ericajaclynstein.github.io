@@ -1,0 +1,26 @@
+#footerFixed {
+  background-color: rgba(51, 55, 59, .75);
+  bottom: 0;
+  margin: $margin;
+  max-width: 100px;
+  padding: 0 10px;
+  position: fixed;
+  text-align: left;
+  clear:both;
+}
+
+.footerMeta {
+  ul {
+    list-style-type: none;
+
+    li {
+      display: inline-block;
+      font-family: $mono-font-family;
+
+      a {
+        color: $mercury;
+        text-decoration: none;
+      }
+    }
+  }
+}

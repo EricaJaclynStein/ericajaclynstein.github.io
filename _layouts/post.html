@@ -1,24 +1,29 @@
----
-layout: default
----
+<!DOCTYPE html>
 
-<div id="main">
-  <div class="wrapper">
-  {% include postheader.html %}
-    <div class="row">
-      <div class="col">
-        <div class="box">
-          <article class="post-article">
-          {{ content }}
-          <div class="post-meta">
-            <small>written on {% if page.date %}{{ page.date | date: "%b %-d, %Y" }}{% endif %}</small>
+<html>
+{% include head.html %}
+  <body>
+    <div id="postContainer">
+      <div id="postContentContainer">
+        <div class="wrapper">
+        {% include postheader.html %}
+          <div class="row">
+            <div class="col">
+              <div id="postArticleContainer">
+                <article class="postArticle">
+                {{ content }}
+                </article>
+                <div id="postArticleMeta">
+                  <small>written on {% if page.date %}{{ page.date | date: "%b %-d, %Y" }}{% endif %}</small>
+                </div>                  
+              </div>
+              <div id="postArticleNav">
+                <a href="{{ site.baseurl }}/">Next &#10095;</a>
+              </div>
+            </div>
           </div>
-          </article>
-          <small> &#9650; <a href="#">Back to Top</a></small>
         </div>
       </div>
     </div>
-  {% include footer.html %}
-  </div>
-</div>
-{% include mainsidebar.html %}
+  </body>
+</html>
