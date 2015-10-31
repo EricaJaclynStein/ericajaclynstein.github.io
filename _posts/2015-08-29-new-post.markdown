@@ -4,7 +4,7 @@ category:  posts
 title:     Talent Hides, Fear Reveals
 date:      2015-08-29
 tags:      ['quotes']
-published: true
+published: false
 ---
 
 An ongoing conversation on the topic of 'talent'. I'm not quite sure what it is exactly, are you?
