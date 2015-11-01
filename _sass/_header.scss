@@ -61,7 +61,11 @@
   max-width: 200px;
   padding: $spacingUnitSmall;
 
-  @include media-query($tabletPortrait) {
+  @include media-query($desktop) {
+    max-width: 150px;
+  }
+
+  @include media-query($tabletLandscape) {
     max-width: 125px;
   }
 }
