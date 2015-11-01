@@ -5,20 +5,20 @@ table {
 
 .row-heading {
   font-family: $base-font-family;
-  font-size: $big-font-size;
-  font-weight: $font-bold;
+  font-size: $fontSizeLarge;
+  font-weight: $fontBold;
   color: $tungsten;
 }
 
 .caption {
-  font-size: $base-font-size;
-  font-weight: $font-normal;
+  font-size: $fontSizeBase;
+  font-weight: $fontNormal;
   color: $tungsten;
 }
 
 .table {
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: $spacingUnitBase;
 
   thead {
     margin: 0;
@@ -30,8 +30,8 @@ table {
       th {
         border-bottom: 1px solid $tungsten;
         padding: 5px;
-        font-size: $base-font-size;
-        font-weight: $font-normal;
+        font-size: $fontSizeBase;
+        font-weight: $fontNormal;
         text-transform: uppercase;
       }
     }
@@ -45,7 +45,7 @@ table {
       vertical-align: top;
       
       th {
-        border: 1px solid $skyblue;
+        border: 1px solid $seablue;
         padding: 5px;
       }
     }
@@ -55,7 +55,7 @@ table {
     margin: 0;
     
     tr {
-      border: 1px solid $skyblue;
+      border: 1px solid $seablue;
       border-radius: 3px;
       text-align: left;
       vertical-align: top;
@@ -69,12 +69,12 @@ table {
           
           li {
             font-family: $base-font-family;
-            font-size: $base-font-size;
+            font-size: $fontSizeBase;
             color: $tungsten;
 
             .header {
-              font-size: $base-font-size;
-              font-weight: $font-bold;
+              font-size: $fontSizeBase;
+              font-weight: $fontBold;
             }
           }
         }

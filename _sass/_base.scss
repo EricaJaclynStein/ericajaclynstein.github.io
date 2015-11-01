@@ -23,10 +23,10 @@ body, html {
 }
 
 body {
-  background: $background-color;
+  background: $BGcolor;
   color: $tungsten;
   font-family: $base-font-family;
-  font-size: $base-font-size;
+  font-size: $fontSizeBase;
 }
 
 footer, header {
@@ -35,8 +35,8 @@ footer, header {
 
 p {
   color: $tungsten;
-  font-size: $base-font-size;
-  line-height: $base-line-height;
+  font-size: $fontSizeBase;
+  line-height: $baseLeading;
   margin: 0;
   padding: 0;
 }
@@ -59,9 +59,8 @@ body p, h1, h2, h3, h4, h5, h6, ul, ol, dl, figure,
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-size: $base-font-size;
-  font-weight: $font-normal;
-  line-height: $heading-line-height;
+  font-weight: $fontNormal;
+  line-height: $headingLeading;
   margin: 0;
   padding: 0;
 }
@@ -107,19 +106,19 @@ a {
   margin: 0 60px;
   @extend %clearfix;
 
-  @include media-query($on-desktop) {
+  @include media-query($desktop) {
     margin: 0 30px;
-    max-width: $on-desktop;
+    max-width: $desktop;
   }
 
-  @include media-query($on-tablet) {
+  @include media-query($tabletPortrait) {
     margin: 0 30px;
-    max-width: $on-tablet;
+    max-width: $tabletPortrait;
   }
 
-  @include media-query($on-palm) {
+  @include media-query($phonePortrait) {
     margin: 0 15px;
-    max-width: $on-palm;
+    max-width: $phonePortrait;
   }
 }
 

@@ -8,29 +8,19 @@
    Jekyll | http://jekyllrb.com
    and Bootstrap | http://getbootstrap.com
    ========================================================================== */
-/***
-FONT WEIGHTS
-***********/
-/***
-RESPONSIVE FONT SIZES
-********************/
+/*** RESPONSIVE FONT SIZES ***/
 /*12.75*/
 /*17.25*/
 /*19.5*/
-/***
-COLORS
-*****/
+/*** FONT WEIGHTS ***/
+/*** COLORS ***/
 /* rgba(251, 251, 251, 1.0) */
 /* rgba(206, 213, 217, 1.0) */
 /* rgba(182, 188, 191, 1.0) */
 /* rgba(113, 133, 153, 1.0) */
 /* rgba(43, 48, 59, 1.0) */
-/***
-SPACING UNITS
-************/
-/***
-BREAKPOINTS FOR RESPONSIVE DESIGN 
-********************************/
+/*** SPACING UNITS ***/
+/*** BREAKPOINTS FOR RESPONSIVE DESIGN ***/
 /* iPhone 4, 5, 6, 6plus */
 /* iPhone 4, 5, 6, 6plus */
 /***
@@ -60,16 +50,16 @@ body, html {
 body {
   background: #FBFBFB;
   color: #2B303B;
-  font-family: -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 13px; }
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px; }
 
 footer, header {
   display: block; }
 
 p {
   color: #2B303B;
-  font-size: 13px;
-  line-height: 1.4;
+  font-size: 15px;
+  line-height: 1.55;
   margin: 0;
   padding: 0; }
 
@@ -87,7 +77,6 @@ body p, h1, h2, h3, h4, h5, h6, ul, ol, dl, figure,
   margin-bottom: 0; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-size: 13px;
   font-weight: 400;
   line-height: 1.1;
   margin: 0;
@@ -119,18 +108,18 @@ a {
 
 .wrapper {
   margin: 0 60px; }
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1200px) {
     .wrapper {
       margin: 0 30px;
-      max-width: 1024px; } }
+      max-width: 1200px; } }
   @media screen and (max-width: 768px) {
     .wrapper {
       margin: 0 30px;
       max-width: 768px; } }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 375px) {
     .wrapper {
       margin: 0 15px;
-      max-width: 480px; } }
+      max-width: 375px; } }
 
 .clearfix:before,
 .clearfix:after,
@@ -284,7 +273,7 @@ svg {
 
 .col {
   padding: 0 30px; }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 375px) {
     .col {
       padding: 0 15px; } }
 
@@ -339,7 +328,10 @@ svg {
   margin: 15px;
   max-width: 200px;
   padding: 15px; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1200px) {
+    .postHeaderContainer {
+      max-width: 150px; } }
+  @media screen and (max-width: 1024px) {
     .postHeaderContainer {
       max-width: 125px; } }
 
@@ -361,7 +353,7 @@ svg {
     display: none !important; } }
 
 .icon-set {
-  padding: 0 30px;
+  padding: 0 15px;
   text-align: center;
   vertical-align: baseline; }
   .icon-set ul {
@@ -432,7 +424,7 @@ svg {
 .mainList {
   float: right;
   font-family: "Inconsolata", Consolas, monospace;
-  max-width: 520px;
+  max-width: 560px;
   margin-top: 15px;
   text-align: right; }
 
@@ -498,7 +490,7 @@ svg {
 .page-header {
   margin: auto;
   padding: 15px;
-  max-width: 600px; }
+  max-width: 560px; }
   .page-header h1 {
     font-size: 36px;
     line-height: 1.1;
@@ -522,7 +514,7 @@ svg {
 /*** POST CONTAINER 
 ******************/
 #postContainer {
-  background: url(/assets/ocean.jpeg) no-repeat center center fixed;
+  background: url(/assets/mistyforest.jpeg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -546,7 +538,7 @@ svg {
     background-image: -moz-radial-gradient(top, circle cover, #253750 0%, #282537 80%, #252227 100%);
     background-image: -o-radial-gradient(top, circle cover, #253750 0%, #282537 80%, #252227 100%);
     background-image: radial-gradient(top, circle cover, #253750 0%, #282537 80%, #252227 100%);
-    opacity: 0.75; }
+    opacity: 0.65; }
 
 #postContentContainer {
   background-color: #FBFBFB;
@@ -556,7 +548,7 @@ svg {
   right: 0;
   bottom: 0;
   height: auto;
-  width: 60%;
+  width: 70%;
   overflow-x: hidden; }
   @media screen and (max-width: 1024px) {
     #postContentContainer {
@@ -569,10 +561,10 @@ svg {
 ****************/
 #postArticleContainer {
   float: right;
-  max-width: 520px;
+  max-width: 560px;
   margin-left: 60px;
   padding: 30px;
-  text-align: justify; }
+  text-align: left; }
   @media screen and (max-width: 568px) {
     #postArticleContainer {
       margin: 30px 0 0 0;
@@ -655,10 +647,12 @@ svg {
     list-style-type: decimal; }
 
 #postArticleMeta {
+  font-family: "Inconsolata", Consolas, monospace;
   margin: 15px;
   text-align: center; }
 
 #postArticleNav {
+  position: relative;
   margin: 15px;
   text-align: center; }
   #postArticleNav a {
@@ -811,13 +805,13 @@ table {
   border: none; }
 
 .row-heading {
-  font-family: -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16.25px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 19.5px;
   font-weight: 700;
   color: #2B303B; }
 
 .caption {
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 400;
   color: #2B303B; }
 
@@ -832,7 +826,7 @@ table {
       .table thead tr th {
         border-bottom: 1px solid #2B303B;
         padding: 5px;
-        font-size: 13px;
+        font-size: 15px;
         font-weight: 400;
         text-transform: uppercase; }
   .table tfoot {
@@ -841,12 +835,12 @@ table {
       text-align: left;
       vertical-align: top; }
       .table tfoot tr th {
-        border: 1px solid #00adff;
+        border: 1px solid #32A1EE;
         padding: 5px; }
   .table tbody {
     margin: 0; }
     .table tbody tr {
-      border: 1px solid #00adff;
+      border: 1px solid #32A1EE;
       border-radius: 3px;
       text-align: left;
       vertical-align: top; }
@@ -856,11 +850,11 @@ table {
         .table tbody tr td ul {
           text-align: left; }
           .table tbody tr td ul li {
-            font-family: -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
-            font-size: 13px;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 15px;
             color: #2B303B; }
             .table tbody tr td ul li .header {
-              font-size: 13px;
+              font-size: 15px;
               font-weight: 700; }
 
 /* TABLE EFFECTS 

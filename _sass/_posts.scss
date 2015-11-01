@@ -1,7 +1,7 @@
 /*** POST CONTAINER 
 ******************/
 #postContainer {
-  background: url(/assets/ocean.jpeg) no-repeat center center fixed;
+  background: url(/assets/mistyforest.jpeg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -26,19 +26,19 @@
     background-image: -moz-radial-gradient(top, circle cover, #253750 0%, #282537 80%, #252227 100%);
     background-image: -o-radial-gradient(top, circle cover, #253750 0%, #282537 80%, #252227 100%);
     background-image: radial-gradient(top, circle cover, #253750 0%, #282537 80%, #252227 100%);
-    opacity: 0.75;
+    opacity: 0.65;
   }
 }
 
 #postContentContainer {
-  background-color: $background-color;
+  background-color: $BGcolor;
   position: absolute;
   left: 0;
   top: 0;
   right: 0;
   bottom: 0;
   height: auto;
-  width: 60%;
+  width: 70%;
   overflow-x: hidden;
 
   @include media-query($tabletLandscape) {
@@ -57,7 +57,7 @@
   max-width: $maxContentWidth;
   margin-left: $spacingUnitLarge;
   padding: $spacingUnitBase;
-  text-align: justify;
+  text-align: left;
 
   @include media-query($phoneLandscape) {
     margin: $spacingUnitBase 0 0 0;
@@ -167,11 +167,13 @@
 }
 
 #postArticleMeta {
+  font-family: $monospace;
   margin: $spacingUnitSmall;
   text-align: center;
 }
 
 #postArticleNav {
+  position: relative;
   margin: $spacingUnitSmall;
   text-align: center;
   

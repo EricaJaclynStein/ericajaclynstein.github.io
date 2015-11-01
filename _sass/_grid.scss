@@ -34,7 +34,7 @@
   width: 100%;
   position: relative;
   right: 41.66666667%;
-  background: $background-color;
+  background: $BGcolor;
 
   @include media-query($tabletPortrait) {
     width: 100%;
@@ -54,12 +54,12 @@
 
 .row {
   clear: both;
-  margin: $margin 0;
+  margin: $spacingUnitSmall 0;
 }
 
 .col {
-  padding: 0 $padding;
-  @include media-query($on-palm) {
+  padding: 0 $spacingUnitBase;
+  @include media-query($phonePortrait) {
     padding: 0 15px;
   }
 }

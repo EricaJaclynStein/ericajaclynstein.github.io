@@ -1,22 +1,22 @@
 .page-header {
   margin: auto;
-  padding: 15px;
-  max-width: $content-width;
+  padding: $spacingUnitSmall;
+  max-width: $maxContentWidth;
 
   h1 {
-    font-size: $h1-font-size;
-    line-height: $heading-line-height;
+    font-size: $h1FontSize;
+    line-height: $headingLeading;
     text-align: center;
     
-    @include media-query($on-tablet) {
-      font-size: $h1-mobile-size;
+    @include media-query($tabletPortrait) {
+      font-size: $h1FontSizeMobile;
     }
   }
 }
 
 .page-items {
-  margin-bottom: 30px;
-  padding: 0 30px; 
+  margin-bottom: $spacingUnitBase;
+  padding: 0 $spacingUnitBase; 
   text-align: left;
 
   p {
@@ -25,7 +25,7 @@
 
   a {
     color: $tungsten;
-    font-family: $mono-font-family;
+    font-family: $monospace;
 
     &:hover {
       text-decoration: underline;  
