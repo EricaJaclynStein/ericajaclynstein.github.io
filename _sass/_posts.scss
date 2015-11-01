@@ -1,42 +1,11 @@
-/*** POST HEADER 
-***************/
-.postHeader {
-  left: 0px;
-  top: 0px;
-  clear: both;
-}
-
-.postHeaderContainer {
-  background-color: rgba(206, 213, 217, 0.9);
-  margin: $spacingUnitSmall;
-  max-width: 100px;
-  padding: $spacingUnitSmall;
-}
-
-.postHeaderNav a {
-  color: $ultraviolet;
-  &:hover {
-    color: darken($ultraviolet, 15%);
-    text-decoration: none;
-  }
-}
-
-.postHeaderMeta {
-  @include media-query($phonePortrait) {
-    display: none !important;
-  }
-  p {
-    color: $tungsten;
-    font-size: $fontSizeSmall;
-    margin-top: $spacingUnitSmall;
-  }
-}
-
-
 /*** POST CONTAINER 
 ******************/
 #postContainer {
-  background: $tungsten;
+  background: url(/assets/ocean.jpeg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   position: absolute;
   left: 0;
   top: 0;
@@ -45,6 +14,20 @@
   height: auto;
   width: auto;
   overflow-x: hidden;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-image: -webkit-radial-gradient(top, circle cover, #253750 0%, #282537 80%, #252227 100%);
+    background-image: -moz-radial-gradient(top, circle cover, #253750 0%, #282537 80%, #252227 100%);
+    background-image: -o-radial-gradient(top, circle cover, #253750 0%, #282537 80%, #252227 100%);
+    background-image: radial-gradient(top, circle cover, #253750 0%, #282537 80%, #252227 100%);
+    opacity: 0.75;
+  }
 }
 
 #postContentContainer {
@@ -57,25 +40,29 @@
   height: auto;
   width: 60%;
   overflow-x: hidden;
+
   @include media-query($tabletLandscape) {
     width: 80%;
   }
+
   @include media-query($tabletPortrait) {
     width: 100%;
   }
 }
 
-
 /*** POST CONTENT 
 ****************/
 #postArticleContainer {
+  float: right;
   max-width: $maxContentWidth;
-  margin: $spacingUnitBase;
+  margin-left: $spacingUnitLarge;
   padding: $spacingUnitBase;
-  text-align: left;
-  @include media-query($phonePortrait) {
+  text-align: justify;
+
+  @include media-query($phoneLandscape) {
     margin: $spacingUnitBase 0 0 0;
     padding: $spacingUnitBase 0 0 0;
+    text-align: left;
   }
 }
 
@@ -86,6 +73,7 @@
     font-size: $fontSizePost;
     line-height: $postLeading;
     margin-bottom: $spacingUnitBase;
+
     @include media-query($phonePortrait) {
       font-size: $fontSizeBase;
       line-height: $baseLeading;

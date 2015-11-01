@@ -20,14 +20,17 @@ RESPONSIVE FONT SIZES
 /***
 COLORS
 *****/
+/* rgba(251, 251, 251, 1.0) */
+/* rgba(206, 213, 217, 1.0) */
+/* rgba(182, 188, 191, 1.0) */
+/* rgba(113, 133, 153, 1.0) */
+/* rgba(43, 48, 59, 1.0) */
 /***
 SPACING UNITS
 ************/
 /***
 BREAKPOINTS FOR RESPONSIVE DESIGN 
 ********************************/
-/* laptop, desktop */
-/* iPad, laptop */
 /* iPhone 4, 5, 6, 6plus */
 /* iPhone 4, 5, 6, 6plus */
 /***
@@ -57,7 +60,7 @@ body, html {
 body {
   background: #FBFBFB;
   color: #2B303B;
-  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-family: -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px; }
 
 footer, header {
@@ -159,24 +162,59 @@ a {
 .affix {
   position: fixed; }
 
-#footerFixed {
-  background-color: rgba(51, 55, 59, 0.75);
+#mainFooter {
+  background: transparent;
   bottom: 0;
-  margin: 15px;
-  max-width: 100px;
-  padding: 0 10px;
+  float: left;
+  max-width: 200px;
   position: fixed;
-  text-align: left;
   clear: both; }
+  @media screen and (max-width: 768px) {
+    #mainFooter {
+      position: relative; } }
 
-.footerMeta ul {
-  list-style-type: none; }
-  .footerMeta ul li {
-    display: inline-block;
-    font-family: "Inconsolata", Consolas, monospace; }
-    .footerMeta ul li a {
-      color: #CED5D9;
-      text-decoration: none; }
+.mainFooterContent {
+  font-family: "Inconsolata", Consolas, monospace;
+  font-size: 12.75px;
+  text-align: left;
+  display: inline-block;
+  margin-bottom: 15px; }
+
+.footerButton {
+  background-color: rgba(206, 213, 217, 0.75);
+  display: inline-block;
+  line-height: 1;
+  margin-bottom: 5px;
+  padding: 7px 13px;
+  text-align: center; }
+  .footerButton a {
+    color: #9000FF;
+    text-decoration: none; }
+  .footerButton:hover {
+    transform-color: #85FDE3;
+    transform-origin: 50% 50% 0px;
+    transform: translate(0px, 0px) rotate(0deg) scale(1.08);
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+
+.footerMetaButton {
+  background-color: rgba(206, 213, 217, 0.75);
+  display: inline-block;
+  line-height: 1;
+  margin-bottom: 5px;
+  padding: 7px 13px;
+  text-align: center; }
+  .footerMetaButton a {
+    color: #32A1EE;
+    text-decoration: none; }
+  .footerMetaButton:hover {
+    transform-color: #85FDE3;
+    transform-origin: 50% 50% 0px;
+    transform: translate(0px, 0px) rotate(0deg) scale(1.08);
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
 
 svg {
   display: block;
@@ -250,13 +288,77 @@ svg {
     .col {
       padding: 0 15px; } }
 
-/*** GLOBAL HEADER ELEMENTS 
-**************************/
-.divider {
+.mainDivider {
+  height: 5px;
+  margin-top: 7px;
+  width: 30px;
+  background-color: #9000FF; }
+
+.postDivider {
   height: 5px;
   margin-top: 7px;
   width: 30px;
   background-color: #FEFE22; }
+
+/*** HOMEPAGE HEADER 
+*******************/
+#mainHeader {
+  background: transparent;
+  float: left;
+  margin: 15px;
+  padding: 15px;
+  max-width: 200px;
+  clear: both; }
+  @media screen and (max-width: 375px) {
+    #mainHeader {
+      float: left;
+      padding: 15px 0; } }
+
+.siteTitle {
+  line-height: 1;
+  text-transform: uppercase; }
+  .siteTitle a {
+    color: #FF0038; }
+    .siteTitle a:hover {
+      text-decoration: none; }
+  .siteTitle h1 {
+    font-size: 200%;
+    font-weight: 700;
+    font-style: italic; }
+
+/*** POST HEADER 
+***************/
+.postHeader {
+  left: 0px;
+  top: 0px;
+  position: fixed;
+  clear: both; }
+
+.postHeaderContainer {
+  background-color: rgba(206, 213, 217, 0.9);
+  margin: 15px;
+  max-width: 200px;
+  padding: 15px; }
+  @media screen and (max-width: 768px) {
+    .postHeaderContainer {
+      max-width: 125px; } }
+
+.postHeaderNav a {
+  color: #9000FF;
+  font-family: "Inconsolata", Consolas, monospace; }
+  .postHeaderNav a:hover {
+    color: #6500b3;
+    text-decoration: none; }
+
+.postHeaderTitle p {
+  color: #2B303B;
+  font-family: "Inconsolata", Consolas, monospace;
+  font-size: 12.75px;
+  line-height: 1.2;
+  margin-top: 15px; }
+@media screen and (max-width: 568px) {
+  .postHeaderTitle {
+    display: none !important; } }
 
 .icon-set {
   padding: 0 30px;
@@ -279,52 +381,10 @@ svg {
   .icon:hover {
     fill: #363946; }
 
-/*** HOMEPAGE STYLES 
-*******************/
-/*** HOMEPAGE HEADER 
-*******************/
-#mainHeader {
-  clear: both;
-  float: left;
-  padding: 15px; }
-  @media screen and (max-width: 375px) {
-    #mainHeader {
-      float: left;
-      padding: 15px 0; } }
-
-.siteTitle {
-  line-height: 1;
-  text-transform: uppercase; }
-  .siteTitle a {
-    color: #718599; }
-    .siteTitle a:hover {
-      text-decoration: none; }
-  .siteTitle h1 {
-    font-size: 300%;
-    font-weight: 800; }
-    @media screen and (max-width: 375px) {
-      .siteTitle h1 {
-        font-size: 200%; } }
-
 /*** HOMEPAGE CONTAINER 
 **********************/
 #mainContainer {
-  background: #282537;
-  background-image: -webkit-radial-gradient(top, circle cover, #253750 0%, #282537 80%, #252227 100%);
-  background-image: -moz-radial-gradient(top, circle cover, #3c3b52 0%, #252227 80%);
-  background-image: -o-radial-gradient(top, circle cover, #3c3b52 0%, #252227 80%);
-  background-image: radial-gradient(top, circle cover, #3c3b52 0%, #252227 80%);
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  height: auto;
-  width: auto;
-  overflow-x: hidden; }
-
-#mainContentContainer {
-  background: url(/assets/mistyforest.jpeg) no-repeat center center fixed;
+  background: url(/assets/solorock.jpeg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -335,70 +395,82 @@ svg {
   right: 0;
   bottom: 0;
   height: auto;
-  width: 80%;
+  width: auto;
   overflow-x: hidden; }
-  @media screen and (max-width: 375px) {
+  #mainContainer:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-image: -webkit-radial-gradient(top, circle cover, #253750 0%, #282537 80%, #252227 100%);
+    background-image: -moz-radial-gradient(top, circle cover, #253750 0%, #282537 80%, #252227 100%);
+    background-image: -o-radial-gradient(top, circle cover, #253750 0%, #282537 80%, #252227 100%);
+    background-image: radial-gradient(top, circle cover, #253750 0%, #282537 80%, #252227 100%);
+    opacity: 0.85; }
+
+#mainContentContainer {
+  background: #fbfbfb;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: auto;
+  width: 60%;
+  overflow-x: hidden; }
+  @media screen and (max-width: 1024px) {
+    #mainContentContainer {
+      width: 75%; } }
+  @media screen and (max-width: 768px) {
     #mainContentContainer {
       width: 100%; } }
 
-/*** SIDEBAR CONTENT
-*******************/
-#mainSidebar {
-  float: right;
-  width: 20%;
-  margin-bottom: auto;
-  position: relative;
-  overflow: hidden; }
-
-.mainSidebarContent {
-  background: transparent;
-  width: 20%; }
-  .mainSidebarContent p {
-    color: #FBFBFB;
-    padding: 30px; }
-
+/*** TABLE OF CONTENTS
+*********************/
 .mainList {
   float: right;
+  font-family: "Inconsolata", Consolas, monospace;
+  max-width: 520px;
+  margin-top: 15px;
   text-align: right; }
 
-.mainListItem {
-  margin-bottom: 30px;
-  display: block; }
-  .mainListItem p {
-    color: #718599;
-    padding-bottom: 3px; }
-  .mainListItem a {
-    border-bottom: 3px solid #12E3DB;
-    color: #FBFBFB;
-    font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
-    font-size: 19.5px;
-    font-weight: 300;
-    line-height: 1.6;
-    padding-bottom: 1px;
-    text-decoration: none; }
+.mainListGroup {
+  display: block;
+  margin-bottom: 30px; }
 
-.button {
-  background-color: #32A1EE;
-  border: 1px solid transparent;
-  border-radius: 2px;
-  display: inline-block;
-  line-height: 1;
-  margin-bottom: 5px;
-  margin-right: 5px;
-  padding: 5px 11px;
-  text-align: center; }
-  .button a {
-    color: #FBFBFB;
+.mainListDate p {
+  color: #718599;
+  padding-top: 5px; }
+
+.mainListTitle a {
+  border-bottom: 3px solid #FFCAA9;
+  color: #2B303B;
+  font-size: 19.5px;
+  line-height: 1.6;
+  padding-bottom: 2px;
+  text-decoration: none; }
+
+/*** PHOTO SIDEBAR
+*****************/
+#mainSidebarContainer {
+  width: 40%;
+  float: right;
+  text-align: right;
+  position: relative; }
+
+.sidebarButton {
+  margin: 15px;
+  padding: 15px;
+  text-align: right; }
+  .sidebarButton a {
+    color: #CED5D9;
     font-family: "Inconsolata", Consolas, monospace;
-    font-size: 15px;
-    text-decoration: none; }
-  .button:hover {
-    transform-color: #85FDE3;
-    transform-origin: 50% 50% 0px;
-    transform: translate(0px, 0px) rotate(0deg) scale(1.12);
-    -moz-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out; }
+    font-size: 12.75px; }
+    .sidebarButton a:hover {
+      color: #32A1EE;
+      text-decoration: none; }
 
 .gradient {
   background-color: #85FDE3;
@@ -417,6 +489,11 @@ svg {
     -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out; }
+
+.grayscale {
+  -webkit-filter: grayscale(100%) contrast(0.9);
+  -moz-filter: grayscale(100%) contrast(0.9);
+  filter: grayscale(100%) contrast(0.9); }
 
 .page-header {
   margin: auto;
@@ -442,37 +519,14 @@ svg {
     .page-items a:hover {
       text-decoration: underline; }
 
-/*** POST HEADER 
-***************/
-.postHeader {
-  left: 0px;
-  top: 0px;
-  clear: both; }
-
-.postHeaderContainer {
-  background-color: rgba(206, 213, 217, 0.9);
-  margin: 15px;
-  max-width: 100px;
-  padding: 15px; }
-
-.postHeaderNav a {
-  color: #9000FF; }
-  .postHeaderNav a:hover {
-    color: #6500b3;
-    text-decoration: none; }
-
-@media screen and (max-width: 375px) {
-  .postHeaderMeta {
-    display: none !important; } }
-.postHeaderMeta p {
-  color: #2B303B;
-  font-size: 12.75px;
-  margin-top: 15px; }
-
 /*** POST CONTAINER 
 ******************/
 #postContainer {
-  background: #2B303B;
+  background: url(/assets/ocean.jpeg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   position: absolute;
   left: 0;
   top: 0;
@@ -481,6 +535,18 @@ svg {
   height: auto;
   width: auto;
   overflow-x: hidden; }
+  #postContainer:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-image: -webkit-radial-gradient(top, circle cover, #253750 0%, #282537 80%, #252227 100%);
+    background-image: -moz-radial-gradient(top, circle cover, #253750 0%, #282537 80%, #252227 100%);
+    background-image: -o-radial-gradient(top, circle cover, #253750 0%, #282537 80%, #252227 100%);
+    background-image: radial-gradient(top, circle cover, #253750 0%, #282537 80%, #252227 100%);
+    opacity: 0.75; }
 
 #postContentContainer {
   background-color: #FBFBFB;
@@ -502,17 +568,19 @@ svg {
 /*** POST CONTENT 
 ****************/
 #postArticleContainer {
-  max-width: 600px;
-  margin: 30px;
+  float: right;
+  max-width: 520px;
+  margin-left: 60px;
   padding: 30px;
-  text-align: left; }
-  @media screen and (max-width: 375px) {
+  text-align: justify; }
+  @media screen and (max-width: 568px) {
     #postArticleContainer {
       margin: 30px 0 0 0;
-      padding: 30px 0 0 0; } }
+      padding: 30px 0 0 0;
+      text-align: left; } }
 
 .postArticle {
-  font-family: "Libre Baskerville", Georgia, serif; }
+  font-family: "Libre Baskerville", Georgia, Times, serif; }
   .postArticle p {
     font-size: 17.25px;
     line-height: 1.75;
@@ -528,7 +596,7 @@ svg {
       .postArticle p a:hover {
         color: #107ac3; }
   .postArticle h1 {
-    font-family: "Libre Baskerville", Georgia, serif;
+    font-family: "Libre Baskerville", Georgia, Times, serif;
     font-size: 36px;
     line-height: 1.1;
     text-align: center;
@@ -743,7 +811,7 @@ table {
   border: none; }
 
 .row-heading {
-  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-family: -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16.25px;
   font-weight: 700;
   color: #2B303B; }
@@ -788,7 +856,7 @@ table {
         .table tbody tr td ul {
           text-align: left; }
           .table tbody tr td ul li {
-            font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+            font-family: -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
             font-size: 13px;
             color: #2B303B; }
             .table tbody tr td ul li .header {

@@ -1,62 +1,7 @@
-/*** HOMEPAGE STYLES 
-*******************/
-
-
-/*** HOMEPAGE HEADER 
-*******************/
-#mainHeader {
-    clear:both;
-    float: left;
-    padding: $spacingUnitSmall;
-
-    @include media-query($phonePortrait) {
-      float: left;
-      padding: $spacingUnitSmall 0;
-    }
-}
-
-.siteTitle {
-  line-height: 1;
-  text-transform: uppercase;
-  
-  a {
-    color: $steel;
-    &:hover {
-      text-decoration: none;
-    }
-  }
-
-  h1 {
-    font-size: 300%;
-    font-weight: $fontHeavy;
-
-    @include media-query($phonePortrait) {
-      font-size: 200%;
-    }
-  }
-}
-
-
 /*** HOMEPAGE CONTAINER 
 **********************/
 #mainContainer {
-  background: #282537;
-    background-image: -webkit-radial-gradient(top, circle cover, #253750 0%, #282537 80%, #252227 100%);
-    background-image: -moz-radial-gradient(top, circle cover, #3c3b52 0%, #252227 80%);
-    background-image: -o-radial-gradient(top, circle cover, #3c3b52 0%, #252227 80%);
-    background-image: radial-gradient(top, circle cover, #3c3b52 0%, #252227 80%);
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  height: auto;
-  width: auto;
-  overflow-x: hidden;
-}
-
-#mainContentContainer {
-  background: url(/assets/mistyforest.jpeg) no-repeat center center fixed;
+  background: url(/assets/solorock.jpeg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -67,84 +12,96 @@
   right: 0;
   bottom: 0;
   height: auto;
-  width: 80%;
+  width: auto;
   overflow-x: hidden;
-  @include media-query($phonePortrait) {
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-image: -webkit-radial-gradient(top, circle cover, #253750 0%, #282537 80%, #252227 100%);
+    background-image: -moz-radial-gradient(top, circle cover, #253750 0%, #282537 80%, #252227 100%);
+    background-image: -o-radial-gradient(top, circle cover, #253750 0%, #282537 80%, #252227 100%);
+    background-image: radial-gradient(top, circle cover, #253750 0%, #282537 80%, #252227 100%);
+    opacity: 0.85;
+  }
+}
+
+#mainContentContainer {
+  background: rgba(251, 251, 251, 1.0);
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: auto;
+  width: 60%;
+  overflow-x: hidden;
+
+  @include media-query($tabletLandscape) {
+    width: 75%;
+  }
+
+  @include media-query($tabletPortrait) {
     width: 100%;
   }
 }
 
-/*** SIDEBAR CONTENT
-*******************/
-#mainSidebar {
-  float: right;
-  width: 20%;
-  margin-bottom: auto;
-  position: relative;
-  overflow: hidden;
-}
-
-.mainSidebarContent {
-  background: transparent;
-  width: 20%;
-  
-  p {
-    color: $coconut;
-    padding: $spacingUnitBase;
-  }
-}
-
+/*** TABLE OF CONTENTS
+*********************/
 .mainList {
   float: right;
+  font-family: $monospace;
+  max-width: $maxContentWidth;
+  margin-top: $spacingUnitSmall;
   text-align: right;
 }
 
-.mainListItem {
-  margin-bottom: $spacingUnitBase;
+.mainListGroup {
   display: block;
-  
-  p {
-    color: $steel;
-    padding-bottom: 3px;
-  }
-
-  a {
-    border-bottom: 3px solid $aqua;
-    color: $coconut;
-    font-family: $base-font-family;
-    font-size: $fontSizeLarge;
-    font-weight: $fontLight;
-    line-height: $largeLeading;
-    padding-bottom: 1px;
-    text-decoration: none;
-  }
+  margin-bottom: $spacingUnitBase;
 }
 
-.button {
-  background-color: $seablue;
-  border: 1px solid transparent;
-  border-radius: 2px;
-  display: inline-block;
-  line-height: 1;
-  margin-bottom: 5px;
-  margin-right: 5px;
-  padding: 5px 11px;
-  text-align: center;
+.mainListDate p {
+  color: $steel;
+  padding-top: 5px;
+}
+
+.mainListTitle a {
+  border-bottom: 3px solid $cantaloupe;
+  color: $tungsten;
+  font-size: $fontSizeLarge;
+  line-height: $largeLeading;
+  padding-bottom: 2px;
+  text-decoration: none;
+}
+
+/*** PHOTO SIDEBAR
+*****************/
+#mainSidebarContainer {
+  width: 40%;
+  float: right;
+  text-align: right;
+  position: relative;
+}
+
+.sidebarButton {
+  margin: $spacingUnitSmall;
+  padding: $spacingUnitSmall;
+  text-align: right;
   
   a {
-    color: $coconut;
-    font-family: $mono-font-family;
-    font-size: $fontSizeBase;
-    text-decoration: none;
-  }
-  
-  &:hover {
-    transform-color: $seafoam;
-    transform-origin: 50% 50% 0px;
-    transform: translate(0px, 0px) rotate(0deg) scale(1.12);
-    -moz-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+    color: $mercury;
+    font-family: $monospace;
+    font-size: $fontSizeSmall;
+    
+    &:hover {
+      color: $seablue;
+      text-decoration: none;
+    }
   }
 }
 
@@ -168,3 +125,10 @@
     transition: all 0.3s ease-in-out;
   }
 }
+
+.grayscale {
+  -webkit-filter: grayscale(100%) contrast(0.9);
+  -moz-filter: grayscale(100%) contrast(0.9);
+  filter: grayscale(100%) contrast(0.9);
+}
+

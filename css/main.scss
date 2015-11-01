@@ -14,9 +14,10 @@
    and Bootstrap | http://getbootstrap.com
    ========================================================================== */
 
-$base-font-family:      "Helvetica Neue", "Helvetica", Arial, sans-serif;
+$base-font-family:      -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
 $mono-font-family:      "Inconsolata", Consolas, monospace;
-$serif-font-family:     "Libre Baskerville", Georgia, serif;
+$monospace:      "Inconsolata", Consolas, monospace;
+$serif-font-family:     "Libre Baskerville", Georgia, Times, serif;
 
 $base-font-size:        13px;
 $small-font-size:       $base-font-size * .8;
@@ -57,7 +58,7 @@ $fontLight:     300;
 $fontNormal:    400;
 $fontSemibold:  500;
 $fontBold:      700;
-$fontHeavy:     800;
+$fontHeavy:     900;
 
 
 /***
@@ -90,7 +91,7 @@ $h5FontSize:  $fontSizeSmall;
 /***
 COLORS
 *****/
-$coconut:     #FBFBFB;
+$coconut:     #FBFBFB; /* rgba(251, 251, 251, 1.0) */
 $maraschino:  #FF0038;
 $aqua:        #12E3DB;
 $seafoam:     #85FDE3;
@@ -100,10 +101,10 @@ $skyblue:     #00adff;
 $seablue:     #32A1EE;
 $ultraviolet: #9000FF;
 
-$mercury:     #CED5D9;
-$silver:      #B6BCBF;
-$steel:       #718599;
-$tungsten:    #2B303B;
+$mercury:     #CED5D9; /* rgba(206, 213, 217, 1.0) */
+$silver:      #B6BCBF; /* rgba(182, 188, 191, 1.0) */
+$steel:       #718599; /* rgba(113, 133, 153, 1.0) */
+$tungsten:    #2B303B; /* rgba(43, 48, 59, 1.0) */
 $deep-space:  #090A0C;
 $background-color: $coconut;
 
@@ -111,7 +112,7 @@ $background-color: $coconut;
 /***
 SPACING UNITS
 ************/
-$maxContentWidth:    600px;
+$maxContentWidth:    520px;
 $spacingUnitSmall:   15px;
 $spacingUnitBase:    30px;
 $spacingUnitLarge:   60px;
@@ -119,7 +120,6 @@ $spacingUnitLarge:   60px;
 $margin: 15px;
 $padding: 30px;
 $content-width:    600px;
-$on-widescreen: 1440px;
 $on-desktop:    1024px;
 $on-tablet:     768px;
 $on-palm:       480px;
@@ -128,9 +128,11 @@ $on-palm:       480px;
 /***
 BREAKPOINTS FOR RESPONSIVE DESIGN 
 ********************************/
-$widescreen:      1440px;
-$desktop:         992px;    /* laptop, desktop */
-$tabletLandscape: 1024px;   /* iPad, laptop */
+$widescreen:      2560px;
+$hiDPIscreen:     1440px;
+$MDPIscreen:      1280px;                
+$desktop:         992px; 
+$tabletLandscape: 1024px;
 $tabletPortrait:  768px;
 $phoneLandscape:  568px;    /* iPhone 4, 5, 6, 6plus */
 $phonePortrait:   375px;    /* iPhone 4, 5, 6, 6plus */ 
