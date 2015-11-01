@@ -1,8 +1,91 @@
-/*** GLOBAL HEADER ELEMENTS 
-**************************/
-.divider {
+.mainDivider {
+  height: 5px;
+  margin-top: 7px;
+  width: 30px;
+  background-color: $ultraviolet;
+}
+
+.postDivider {
   height: 5px;
   margin-top: 7px;
   width: 30px;
   background-color: $lemon;
+}
+
+/*** HOMEPAGE HEADER 
+*******************/
+#mainHeader {
+    background: transparent;
+    float: left;
+    margin: $spacingUnitSmall;
+    padding: $spacingUnitSmall;
+    max-width: 200px;
+    clear:both;
+
+    @include media-query($phonePortrait) {
+      float: left;
+      padding: $spacingUnitSmall 0;
+    }
+}
+
+.siteTitle {
+  line-height: 1;
+  text-transform: uppercase;
+  
+  a {
+    color: $maraschino;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  h1 {
+    font-size: 200%;
+    font-weight: $fontBold;
+    font-style: italic;
+  }
+}
+
+/*** POST HEADER 
+***************/
+.postHeader {
+  left: 0px;
+  top: 0px;
+  position: fixed;
+  clear: both;
+}
+
+.postHeaderContainer {
+  background-color: rgba(206, 213, 217, 0.9);
+  margin: $spacingUnitSmall;
+  max-width: 200px;
+  padding: $spacingUnitSmall;
+
+  @include media-query($tabletPortrait) {
+    max-width: 125px;
+  }
+}
+
+.postHeaderNav a {
+  color: $ultraviolet;
+  font-family: $monospace;
+  
+  &:hover {
+    color: darken($ultraviolet, 15%);
+    text-decoration: none;
+  }
+}
+
+.postHeaderTitle {
+	p {
+	  color: $tungsten;
+	  font-family: $monospace;
+	  font-size: $fontSizeSmall;
+	  line-height: $smallLeading;
+	  margin-top: $spacingUnitSmall;
+	}
+
+  @include media-query($phoneLandscape) {
+    display: none !important;
+  }
 }

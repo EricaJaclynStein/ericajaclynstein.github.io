@@ -1,26 +1,67 @@
-#footerFixed {
-  background-color: rgba(51, 55, 59, .75);
+#mainFooter {
+  background: transparent;
   bottom: 0;
-  margin: $margin;
-  max-width: 100px;
-  padding: 0 10px;
+  float: left;
+  max-width: 200px;
   position: fixed;
-  text-align: left;
-  clear:both;
-}
+  clear: both;
 
-.footerMeta {
-  ul {
-    list-style-type: none;
-
-    li {
-      display: inline-block;
-      font-family: $mono-font-family;
-
-      a {
-        color: $mercury;
-        text-decoration: none;
-      }
-    }
+  @include media-query($tabletPortrait) {
+    position: relative;
   }
 }
+
+.mainFooterContent {
+  font-family: $monospace;
+  font-size: $fontSizeSmall;
+  text-align: left;
+  display: inline-block;
+  margin-bottom: $spacingUnitSmall;
+}
+
+.footerButton {
+  background-color: rgba(206, 213, 217, .75);
+  display: inline-block;
+  line-height: 1;
+  margin-bottom: 5px;
+  padding: 7px 13px;
+  text-align: center;
+  
+  a {
+    color: $ultraviolet;
+    text-decoration: none;
+  }
+  
+  &:hover {
+    transform-color: $seafoam;
+    transform-origin: 50% 50% 0px;
+    transform: translate(0px, 0px) rotate(0deg) scale(1.08);
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.footerMetaButton {
+  background-color: rgba(206, 213, 217, 0.75);
+  display: inline-block;
+  line-height: 1;
+  margin-bottom: 5px;
+  padding: 7px 13px;
+  text-align: center;
+  
+  a {
+    color: $seablue;
+    text-decoration: none;
+  }
+  
+  &:hover {
+    transform-color: $seafoam;
+    transform-origin: 50% 50% 0px;
+    transform: translate(0px, 0px) rotate(0deg) scale(1.08);
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+}
+

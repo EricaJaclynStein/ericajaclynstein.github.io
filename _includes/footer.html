@@ -1,29 +1,36 @@
-<footer id="footerFixed">
-  <div class="footerMeta">
-    <ul>
-			<li>
-				<p><a href="http://www.sketchappsources.com/blog/post/erica-jaclyn-stein" target="blank">Who, me?</a></p>
-			</li>
-	  	<li>
-	  	{% if site.twitter %}
-      	<p><a href="{{ site.twitter }}" target="blank"> <i class="fa fa-twitter"></i> Twitter</a></p>
-		  {% endif %}
-		  </li>
-		  <li>
-		  {% if site.medium %}
-		    <p><a href="{{ site.medium }}" target="blank"> <i class="fa fa-medium"></i> Medium</a></p>
-		  {% endif %}
-		  </li>
-		  <li>  
-		  {% if site.dribbble %}
-		    <p><a href="{{ site.dribbble }}" target="blank"> <i class="fa fa-dribbble"></i> Dribble</a></p>
-		  {% endif %}
-		  </li>
-		  <li>  
-		  {% if site.github %}
-		    <p><a href="{{ site.github }}" target="blank"> <i class="fa fa-github"></i> Github</a></p>
-		  {% endif %}
-		  </li>
-	  </ul>
-  </div>
+<footer>
+	<div id="mainFooter">
+		<div class="mainFooterContent"> 
+			{% for resource in site.resources %}
+		    <div class="footerButton">
+		    {% if resource.title %} 
+		    	<a href="{{ resource.url | prepend: site.baseurl }}">{{ resource.title }}</a>
+		    {% endif %}
+		    </div> 
+			{% endfor %}
+			{% if site.twitter %}
+			<div class="footerButton">
+				<a href="{{ site.twitter }}" target="blank"> <i class="fa fa-twitter"></i> Twitter</a>
+			</div>
+			{% endif %}
+			{% if site.medium %}
+			<div class="footerButton">
+		  	<a href="{{ site.medium }}" target="blank"> <i class="fa fa-medium"></i> Medium</a>
+			{% endif %}
+			</div>
+			<div class="footerButton">
+			{% if site.dribbble %}
+		  	<a href="{{ site.dribbble }}" target="blank"> <i class="fa fa-dribbble"></i> Dribble</a>
+			{% endif %}
+			</div>
+			<div class="footerButton">
+			{% if site.github %}
+	  		<a href="{{ site.github }}" target="blank"> <i class="fa fa-github"></i> Github</a>
+			{% endif %}
+			</div>
+		  <div class="footerMetaButton"> 
+				<a href="http://www.sketchappsources.com/blog/post/erica-jaclyn-stein" target="blank">{{site.author}}</a>
+			</div>
+		</div>
+	</div>
 </footer>
