@@ -3,12 +3,16 @@
 <html>
 {% include head.html %}
   <body>
-		<div id="pageSidebarContainer">
-		  <div id="pagePositionContainer">
-		    <div id="pageContentContainer">
-      {{ content }}
-      	</div>
-      	<div id="sidebar"><div class="pagesidebar-content affix"></div></div>
+    <div id="pageContainer">
+      <div id="pageContentContainer">
+        {% include postheader.html %}
+        <div class="wrapper">
+          <div class="row">
+            <div class="col">
+              {{ content }}
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>

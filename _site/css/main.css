@@ -1,31 +1,23 @@
-/* ==========================================================================
-   Erica Jaclyn Stein v1.0 | http://ericajaclynstein.github.io
-   Copyright Lars von Freud 2014-2015 | Under MIT License
-   Designed, built, and generated using: 
-   Sketch | http://bohemiancoding.com/sketch
-   Sublime Text | www.sublimetext.com
-   Atom | http://atom.io
-   Jekyll | http://jekyllrb.com
-   and Bootstrap | http://getbootstrap.com
-   ========================================================================== */
-/*** RESPONSIVE FONT SIZES ***/
+/* 
+==========================================================================
+Erica Jaclyn Stein v2.0 | http://ericajaclynstein.github.io
+Copyright Lars von Freud 2014-2015 | Under MIT License
+
+Designed, built, and generated using Sketch (bohemiancoding.com),
+Sublime Text (sublimetext.com), Atom (atom.io), Jekyll (jekyllrb.com),
+and Bootstrap (getbootstrap.com)
+========================================================================== 
+*/
 /*12.75*/
 /*17.25*/
 /*19.5*/
-/*** FONT WEIGHTS ***/
-/*** COLORS ***/
 /* rgba(251, 251, 251, 1.0) */
 /* rgba(206, 213, 217, 1.0) */
 /* rgba(182, 188, 191, 1.0) */
 /* rgba(113, 133, 153, 1.0) */
 /* rgba(43, 48, 59, 1.0) */
-/*** SPACING UNITS ***/
-/*** BREAKPOINTS FOR RESPONSIVE DESIGN ***/
 /* iPhone 4, 5, 6, 6plus */
 /* iPhone 4, 5, 6, 6plus */
-/***
-IMPORT SASSINESS 
-***************/
 body, html {
   margin: 0;
   padding: 0;
@@ -482,10 +474,27 @@ svg {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out; }
 
-.grayscale {
-  -webkit-filter: grayscale(100%) contrast(0.9);
-  -moz-filter: grayscale(100%) contrast(0.9);
-  filter: grayscale(100%) contrast(0.9); }
+#pageContainer {
+  background: #FBFBFB;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: auto;
+  width: auto;
+  overflow-x: hidden; }
+
+#pageContentContainer {
+  background-color: transparent;
+  position: relative;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: auto;
+  width: 100%;
+  overflow-x: hidden; }
 
 .page-header {
   margin: auto;
@@ -800,91 +809,153 @@ svg {
   .highlight .il {
     color: #099; }
 
-table {
-  background-color: transparent;
-  border: none; }
-
-.row-heading {
+/* 
+=======================================================
+Credits go to Bootstrap, getbootstrap.com, and
+Charlie Cathcart, http://codepen.io/pixelchar/pen/rfuqK
+=======================================================
+*/
+body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 19.5px;
-  font-weight: 700;
   color: #2B303B; }
 
-.caption {
-  font-size: 15px;
-  font-weight: 400;
-  color: #2B303B; }
+a {
+  color: #32A1EE; }
+  a:hover, a:focus {
+    color: #107ac3; }
 
-.table {
+.container {
+  margin: 5% 3%; }
+  @media (min-width: 48em) {
+    .container {
+      margin: 8% 2%; } }
+  @media (min-width: 75em) {
+    .container {
+      margin: 2em auto;
+      max-width: 75em; } }
+
+.responsive-table {
   width: 100%;
-  margin-bottom: 30px; }
-  .table thead {
-    margin: 0; }
-    .table thead tr {
-      text-align: left;
-      vertical-align: top; }
-      .table thead tr th {
-        border-bottom: 1px solid #2B303B;
-        padding: 5px;
-        font-size: 15px;
-        font-weight: 400;
-        text-transform: uppercase; }
-  .table tfoot {
-    margin: 0; }
-    .table tfoot tr {
-      text-align: left;
-      vertical-align: top; }
-      .table tfoot tr th {
-        border: 1px solid #32A1EE;
-        padding: 5px; }
-  .table tbody {
-    margin: 0; }
-    .table tbody tr {
-      border: 1px solid #32A1EE;
-      border-radius: 3px;
-      text-align: left;
-      vertical-align: top; }
-      .table tbody tr td {
-        padding: 5px;
-        width: 25%; }
-        .table tbody tr td ul {
-          text-align: left; }
-          .table tbody tr td ul li {
-            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-            font-size: 15px;
-            color: #2B303B; }
-            .table tbody tr td ul li .header {
-              font-size: 15px;
-              font-weight: 700; }
-
-/* TABLE EFFECTS 
-========================= */
-.t-filled tbody
-tr:nth-of-type(odd) {
-  background-color: #718599; }
-.t-filled tr:nth-of-type(even) {
-  background-color: #CED5D9; }
-
-.t-striped tbody
-tr:nth-of-type(odd) {
-  background-color: #CED5D9; }
-
-.t-hover tbody tr:hover {
-  background-color: #CED5D9; }
-.t-hover tbody tr td.active:hover,
-.t-hover tbody tr th.active:hover,
-.t-hover tbody tr.active:hover td,
-.t-hover tbody tr:hover .active,
-.t-hover tbody tr.active:hover th {
-  background-color: #CED5D9; }
-
-table col[class*="col-"] {
-  position: static;
-  float: none;
-  display: table-column; }
-
-table td[class*="col-"],
-table th[class*="col-"] {
-  position: static;
-  float: none;
-  display: table-cell; }
+  margin-bottom: 1.5em; }
+  @media (min-width: 48em) {
+    .responsive-table {
+      font-size: .9em; } }
+  @media (min-width: 62em) {
+    .responsive-table {
+      font-size: 1em; } }
+  .responsive-table thead {
+    position: absolute;
+    clip: rect(1px 1px 1px 1px);
+    /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden; }
+    @media (min-width: 48em) {
+      .responsive-table thead {
+        position: relative;
+        clip: auto;
+        height: auto;
+        width: auto;
+        overflow: auto; } }
+    .responsive-table thead th {
+      background-color: transparent;
+      border-bottom: 3px solid rgba(113, 133, 153, 0.65);
+      font-weight: fontNormal;
+      text-align: center;
+      color: #2B303B; }
+      .responsive-table thead th:first-of-type {
+        text-align: left; }
+  .responsive-table tbody,
+  .responsive-table tr,
+  .responsive-table th,
+  .responsive-table td {
+    display: block;
+    padding: 0;
+    text-align: left;
+    white-space: normal; }
+  @media (min-width: 48em) {
+    .responsive-table tr {
+      display: table-row; } }
+  .responsive-table th,
+  .responsive-table td {
+    padding: .5em;
+    vertical-align: middle; }
+    @media (min-width: 30em) {
+      .responsive-table th,
+      .responsive-table td {
+        padding: .75em .5em; } }
+    @media (min-width: 48em) {
+      .responsive-table th,
+      .responsive-table td {
+        display: table-cell;
+        padding: .5em; } }
+    @media (min-width: 62em) {
+      .responsive-table th,
+      .responsive-table td {
+        padding: .75em .5em; } }
+    @media (min-width: 75em) {
+      .responsive-table th,
+      .responsive-table td {
+        padding: .75em; } }
+  .responsive-table caption {
+    margin-bottom: 1em;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center; }
+    @media (min-width: 48em) {
+      .responsive-table caption {
+        font-size: 1.5em; } }
+  .responsive-table tfoot {
+    font-size: .8em;
+    font-style: italic; }
+    @media (min-width: 62em) {
+      .responsive-table tfoot {
+        font-size: .9em; } }
+  @media (min-width: 48em) {
+    .responsive-table tbody {
+      display: table-row-group; } }
+  .responsive-table tbody tr {
+    margin-bottom: 1em;
+    border: 3px solid #32A1EE; }
+    @media (min-width: 48em) {
+      .responsive-table tbody tr {
+        display: table-row;
+        border-width: 1px; } }
+    .responsive-table tbody tr:last-of-type {
+      margin-bottom: 0; }
+    @media (min-width: 48em) {
+      .responsive-table tbody tr:nth-of-type(even) {
+        background-color: transparent;
+        /* alternating row fill */ } }
+  .responsive-table tbody th[scope="row"] {
+    background-color: transparent;
+    color: #2B303B; }
+    @media (min-width: 48em) {
+      .responsive-table tbody th[scope="row"] {
+        background-color: transparent;
+        color: #2B303B;
+        text-align: left; } }
+  .responsive-table tbody td {
+    text-align: right; }
+    @media (min-width: 30em) {
+      .responsive-table tbody td {
+        border-bottom: 1px solid #CED5D9; } }
+    @media (min-width: 48em) {
+      .responsive-table tbody td {
+        text-align: center; } }
+  .responsive-table tbody td[data-type=currency] {
+    text-align: right; }
+  .responsive-table tbody td[data-title]:before {
+    content: attr(data-title);
+    float: left;
+    font-size: .8em;
+    color: #2B303B; }
+    @media (min-width: 30em) {
+      .responsive-table tbody td[data-title]:before {
+        font-size: .9em; } }
+    @media (min-width: 48em) {
+      .responsive-table tbody td[data-title]:before {
+        content: none; } }

@@ -1,3 +1,27 @@
+#pageContainer {
+  background: $BGcolor;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: auto;
+  width: auto;
+  overflow-x: hidden;
+}
+
+#pageContentContainer {
+  background-color: transparent;
+  position: relative;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: auto;
+  width: 100%;
+  overflow-x: hidden;
+}
+
 .page-header {
   margin: auto;
   padding: $spacingUnitSmall;
