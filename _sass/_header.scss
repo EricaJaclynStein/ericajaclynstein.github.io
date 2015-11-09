@@ -20,11 +20,13 @@
     margin: $spacingUnitSmall;
     padding: $spacingUnitSmall;
     max-width: 200px;
+    position: fixed;
     clear:both;
 
-    @include media-query($phonePortrait) {
+    @include media-query($tabletPortrait) {
       float: left;
       padding: $spacingUnitSmall 0;
+      position: relative;
     }
 }
 

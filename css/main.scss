@@ -19,7 +19,6 @@ $base-font-family:      "Helvetica Neue", Helvetica, Arial, sans-serif;
 $serif-font-family:     "Libre Baskerville", Georgia, Times, serif;
 $monospace:             "Inconsolata", Consolas, monospace;
 
-
 $fontSizeBase:    15px;
 $fontSizeSmall:   $fontSizeBase * .85;  /*12.75*/
 $fontSizePost:    $fontSizeBase * 1.15; /*17.25*/
@@ -37,8 +36,7 @@ $baseLeading:     1.55;
 $smallLeading:    1.2;
 $postLeading:     1.75;
 $largeLeading:    1.6;
-$headingLeading:    1.1;
-
+$headingLeading:  1.2;
 
 $fontThin:      100;
 $fontLight:     300;
@@ -46,7 +44,6 @@ $fontNormal:    400;
 $fontSemibold:  500;
 $fontBold:      700;
 $fontHeavy:     900;
-
 
 $coconut:     #FBFBFB; /* rgba(251, 251, 251, 1.0) */
 $maraschino:  #FF0038;
@@ -64,7 +61,6 @@ $steel:       #718599; /* rgba(113, 133, 153, 1.0) */
 $tungsten:    #2B303B; /* rgba(43, 48, 59, 1.0) */
 $deep-space:  #090A0C;
 $BGcolor:     $coconut;
-
 
 $maxContentWidth:    560px;
 

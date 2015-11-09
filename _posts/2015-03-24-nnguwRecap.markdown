@@ -1,7 +1,7 @@
 ---
 layout:     post
 category:   posts
-title:      The Human Mind and Usability
+title:      "The Human Mind and Usability: A recap of what went down during Nielsen Norman usability week, 2015"
 date:       2015-03-24
 tags:       ['psychology']
 published:  false

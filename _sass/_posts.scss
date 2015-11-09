@@ -81,10 +81,10 @@
     }
 
     a {
-      color: $seablue;
+      color: darken($seablue, 15%);
       text-decoration: underline;
       &:hover {
-        color: darken($seablue, 15%);
+        color: darken($seablue, 25%);
       }
     }
   }
@@ -93,6 +93,7 @@
     font-family: $serif-font-family;
     font-size: $h1FontSize;
     line-height: $headingLeading;
+    margin-bottom: $spacingUnitBase;
     text-align: center;
     text-transform: uppercase;
     @include media-query($phonePortrait) {
