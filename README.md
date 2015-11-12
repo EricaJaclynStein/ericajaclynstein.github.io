@@ -1,6 +1,8 @@
-# Jekyll site. # 
-Playing around, learning things, maybe.
-*Modified frequently on account of therapeutic side effects.*
+# Hello hope!
+
+### Jekyll site side bae.
+
+_Modified frequently on account of therapeutic side effects._
 
 [Here I am](http://twitter.com/ericajaclyn)
 
