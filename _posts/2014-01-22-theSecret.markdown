@@ -1,7 +1,7 @@
 ---
 layout:    post
 category:  posts
-title:     "The Secret to Becoming a Better Human Being: Sleep"
+title:     "The Secret to Becoming a Better Human Being"
 date:      2014-03-02
 tags:      ['psychology']
 published: true

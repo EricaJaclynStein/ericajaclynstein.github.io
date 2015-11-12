@@ -116,7 +116,7 @@
   h3 {
     font-size: $h3FontSize;
     font-weight: $fontBold;
-    margin-bottom: $spacingUnitBase;
+    margin-bottom: $spacingUnitSmall;
     margin-top: $spacingUnitLarge;
     text-align: center;
     text-transform: uppercase;
@@ -125,8 +125,7 @@
   h4 {
     font-size: $h4FontSize;
     font-weight: $fontBold;
-    margin-top: $spacingUnitBase;
-    padding-top: $spacingUnitBase;
+    margin-bottom: $spacingUnitSmall;
     text-align: left;
     text-transform: uppercase;
   }

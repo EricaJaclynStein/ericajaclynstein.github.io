@@ -1,9 +1,10 @@
 ---
-layout: post
-title:  "Story Time, I Did A Thing"
-date:   2015-03-24
-category: design
-tags: [story]
+layout:    post
+title:     "Story Time, I Did A Thing"
+date:      2015-03-24
+category:  design
+tags:      ['story']
+published: false
 ---
 
 Today, I found myself partaking in a peculiar experience. I think I would call it a location-based mobile search use case - in the wild! 

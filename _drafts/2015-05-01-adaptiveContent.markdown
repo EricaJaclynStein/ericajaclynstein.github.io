@@ -3,8 +3,8 @@ layout:     post
 category:   posts
 title:      "Responsive UI: Devising A Strategy for Adaptive Content"
 date:       2015-05-1
-tags:       ['content strategy']
-published:  true
+tags:       ['design']
+published:  false
 ---
 
 #Responsive UI: Devising A Strategy for Adaptive Content

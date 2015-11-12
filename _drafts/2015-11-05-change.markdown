@@ -1,9 +1,10 @@
 ---
-layout: post
-title:  Change is what life is all about
-date:   2015-11-08
-category: design
-tags: [story]
+layout:    post
+title:     Change is what life is all about
+date:      2015-11-08
+category:  design
+tags:      ['story']
+published: false
 ---
 
 # 100 Quotes To Remind Us That Change is What Life is All About #

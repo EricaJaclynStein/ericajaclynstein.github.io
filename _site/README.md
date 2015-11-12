@@ -1,6 +1,8 @@
-# My Jekyll Blog, Woohoo! #
+# Hello, my friend!
 
-###### Updated frequently
+### Jekyll site side bae.
 
-Contact me on [Twitter](http://twitter.com/ericajaclyn)
+_Modified frequently on account of therapeutic side effects._
+
+[Here I am](http://twitter.com/ericajaclyn)
 
