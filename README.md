@@ -1,4 +1,4 @@
-# Hello hope!
+# Hello, my friend!
 
 ### Jekyll site side bae.
 
