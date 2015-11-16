@@ -1,7 +1,5 @@
-/*** POST CONTAINER 
-******************/
 #postContainer {
-  background: url(/assets/mistyforest.jpeg) no-repeat center center fixed;
+  background: url(/assets/pool.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -38,143 +36,124 @@
   right: 0;
   bottom: 0;
   height: auto;
-  width: 70%;
+  width: 60%;
   overflow-x: hidden;
 
-  @include media-query($tabletLandscape) {
+  @include media-query($bp-freud) {
     width: 80%;
   }
 
-  @include media-query($tabletPortrait) {
+  @include media-query($bp-fromm) {
     width: 100%;
   }
 }
 
-/*** POST CONTENT 
-****************/
 #postArticleContainer {
   float: right;
-  max-width: $maxContentWidth;
-  margin-left: $spacingUnitLarge;
-  padding: $spacingUnitBase;
-  text-align: left;
+  margin: $base-spacing-unit 0;
+  padding: $base-spacing-unit 0;
+  margin-left: 90px;
 
-  @include media-query($phoneLandscape) {
-    margin: $spacingUnitBase 0 0 0;
-    padding: $spacingUnitBase 0 0 0;
-    text-align: left;
+  @include media-query($bp-pavlov) {
+    margin: $base-spacing-unit 0;
+    padding: $base-spacing-unit 0;
   }
 }
 
-.postArticle {
-    font-family: $serif-font-family;
+.postArticleContent {
+  max-width: $content-width;
+  text-align: left;
 
   p {
-    font-size: $fontSizePost;
-    line-height: $postLeading;
-    margin-bottom: $spacingUnitBase;
+    font-family: $serif-font-family;
+    font-size: $base-font-size;
+    line-height: $base-leading;
+    margin-bottom: $base-spacing-unit;
+  }
 
-    @include media-query($phonePortrait) {
-      font-size: $fontSizeBase;
-      line-height: $baseLeading;
-      margin-bottom: $spacingUnitSmall;
-    }
-
-    a {
-      color: darken($seablue, 15%);
-      text-decoration: underline;
-      &:hover {
-        color: darken($seablue, 25%);
-      }
+  a {
+    color: darken($seablue, 15%);
+    text-decoration: underline;
+      
+    &:hover {
+      color: darken($seablue, 25%);
     }
   }
 
-  h1 {
-    font-family: $serif-font-family;
-    font-size: $h1FontSize;
-    line-height: $headingLeading;
-    margin-bottom: $spacingUnitBase;
-    text-align: center;
+  blockquote p {
+    border: 5px solid $lemon;
+    color: $steel;
+    padding: $spacing-unit-sm;
+  }
+
+  h1, h2, h3, h4 {
+    font-weight: $font-bold;
+    line-height: $head-line-height;
     text-transform: uppercase;
-    @include media-query($phonePortrait) {
-      font-size: $h1FontSizeMobile;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: $font-size-h1;
+    margin-bottom: $base-spacing-unit;
+    
+    @include media-query($bp-pavlov) {
+      font-size: $font-size-h1m;
     }
   }
 
   h2 {
-    font-size: $h2FontSize;
-    line-height: $headingLeading;
-    margin-bottom: $spacingUnitBase;
-    margin-top: $spacingUnitBase;
-    text-align: center;
-    text-transform: uppercase;
-    @include media-query($phonePortrait) {
-      font-size: $h2FontSizeMobile;
+    font-size: $font-size-h2;
+    margin: $base-spacing-unit 0;
+
+    @include media-query($bp-pavlov) {
+      font-size: $font-size-h2m;
     }
   }
 
   h3 {
-    font-size: $h3FontSize;
-    font-weight: $fontBold;
-    margin-bottom: $spacingUnitSmall;
-    margin-top: $spacingUnitLarge;
-    text-align: center;
-    text-transform: uppercase;
-  }
+    font-size: $font-size-h3;
+    margin-bottom: $spacing-unit-sm;
+    margin-top: $spacing-unit-lg;
 
-  h4 {
-    font-size: $h4FontSize;
-    font-weight: $fontBold;
-    margin-bottom: $spacingUnitSmall;
-    text-align: left;
-    text-transform: uppercase;
-  }
-
-  h5 {
-    font-size: $h5FontSize;
-    margin: $spacingUnitSmall;
-    text-align: left;
-    text-transform: uppercase;
-  }
-
-  blockquote {
-    font-size: $fontSizeLarge;
-    font-style: italic;
-    line-height: $largeLeading;
-    @include media-query($phonePortrait) {
-      margin: $spacingUnitSmall;
-      padding: $spacingUnitSmall;
+    @include media-query($bp-pavlov) {
+      font-size: $font-size-h3m;
     }
   }
 
-  ul,
-  ol {
-    margin: $spacingUnitSmall;
-    padding: 0 $spacingUnitSmall;
+  h4 {
+    font-size: $font-size-h4;
+    margin-bottom: $spacing-unit-sm;
+    text-align: left;
+  }
+
+  ul, ol {
+    margin: $spacing-unit-sm;
+    padding: 0 $spacing-unit-sm;
   }
 
   ul li {
-    font-size: $fontSizePost;
-    line-height: $postLeading;
+    font-size: $base-font-size;
+    line-height: $base-leading;
     list-style-type: circle;
   }
   
   ol li {
-    font-size: $fontSizePost;
-    line-height: $postLeading;
+    font-size: $base-font-size;
+    line-height: $base-leading;
     list-style-type: decimal;
   }
 }
 
 #postArticleMeta {
   font-family: $monospace;
-  margin: $spacingUnitSmall;
+  margin-top: $spacing-unit-lg;
   text-align: center;
 }
 
 #postArticleNav {
   position: relative;
-  margin: $spacingUnitSmall;
+  margin: $spacing-unit-sm;
   text-align: center;
   
   a {

@@ -1,15 +1,15 @@
 .color-well {
     color: $tungsten;
-    min-height: $spacingUnitSmall;
-    padding: $spacingUnitSmall;
-    margin-bottom: $spacingUnitSmall;
+    min-height: $spacing-unit-sm;
+    padding: $spacing-unit-sm;
+    margin-bottom: $spacing-unit-sm;
     background-color: $mercury;
     border: 1px solid $mercury;
     border-radius: 2px;
 
     .label {
         color: $tungsten;
-        font-weight: $fontNormal;
+        font-weight: $font-normal;
         text-transform: uppercase;
     }
 }

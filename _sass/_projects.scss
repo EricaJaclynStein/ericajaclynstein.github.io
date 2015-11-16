@@ -1,22 +1,22 @@
 .page-header {
   margin: auto;
-  padding: $spacingUnitSmall;
-  max-width: $maxContentWidth;
+  padding: $spacing-unit-sm;
+  max-width: $content-width;
 
   h1 {
-    font-size: $h1FontSize;
-    line-height: $headingLeading;
+    font-size: $font-size-h1m;
+    line-height: $leading-heading;
     text-align: center;
     
     @include media-query($tabletPortrait) {
-      font-size: $h1FontSizeMobile;
+      font-size: $font-size-h1m;
     }
   }
 }
 
 .page-items {
-  margin-bottom: $spacingUnitBase;
-  padding: 0 $spacingUnitBase; 
+  margin-bottom: $base-spacing-unit;
+  padding: 0 $base-spacing-unit; 
   text-align: left;
 
   p {
@@ -38,6 +38,6 @@
   vertical-align: baseline;
 
   a {
-    font-weight: $fontBold;
+    font-weight: $font-bold;
   }
 }

@@ -4,43 +4,42 @@ layout: main
 
 <div id="mainContainer">
   <div id="mainSidebarContainer">
-    <div class="sidebarButton">
-      <a href="https://unsplash.com/photos/674bDNKmnIk" target="blank"><i class="fa fa-camera"></i> get da photo</a>
+    <div class="sidebarMessage">
+      <i class="fa fa-camera"></i>
     </div>
   </div>
   <div id="mainContentContainer">
-  {% include header.html %}
     <div class="wrapper">
+    {% include header.html %}
       <div class="row">
         <div class="col">
-          <div class="box">
-            <div class="mainList">
-
-              {% for post in site.posts %}
-              <div class="mainListGroup">
-                <div class="mainListTitle">
-                  <h1>{% if post.title %}<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>{% endif %} 
-                  </h1>
-                </div>
-                <div class="mainListDate">
-                  <p>{% if post.date %} {{ post.date | date: "%b %-d, %Y" }} {% endif %}</p>
-                </div>
+          <div class="mainList">
+          {% for post in site.posts %}
+            <div class="mainListGroup">
+              <div class="mainListTitle">
+              {% if post.title %}
+                <h1><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
+              {% endif %}
               </div>
-              {% endfor %}
-              
-              {% for project in site.projects %}
-              <div class="mainListGroup">
-                <div class="mainListTitle">
-                  <h1>{% if project.title %}<a href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a>{% endif %} 
-                  </h1>
-                </div>
-                <div class="mainListDate">
-                  <p>{% if project.date %} updated on {{ project.date | date: "%b %-d, %Y" }} {% endif %}</p>
-                </div>
+              <div class="mainListDate">
+              <p>{% if post.date %} {{ post.date | date: "%b %-d, %Y" }} {% endif %}</p>
               </div>
-              {% endfor %}
-            
             </div>
+          {% endfor %}
+          {% for project in site.projects %}
+            <div class="mainListGroup">
+              <div class="mainListTitle">
+              {% if project.title %}
+                <h1><a href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a></h1>
+              {% endif %}
+                </div>
+              <div class="mainListDate">
+              {% if project.date %}
+                <p>updated on {{ project.date | date: "%b %-d, %Y" }}</p>
+              {% endif %}
+              </div>
+            </div>
+          {% endfor %}
           </div>
         </div>
       </div>

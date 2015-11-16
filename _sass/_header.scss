@@ -1,97 +1,30 @@
-.mainDivider {
-  height: 5px;
-  margin-top: 7px;
-  width: 30px;
-  background-color: $ultraviolet;
-}
-
-.postDivider {
-  height: 5px;
-  margin-top: 7px;
-  width: 30px;
-  background-color: $lemon;
-}
-
-/*** HOMEPAGE HEADER 
-*******************/
-#mainHeader {
-    background: transparent;
-    float: left;
-    margin: $spacingUnitSmall;
-    padding: $spacingUnitSmall;
-    max-width: 200px;
-    position: fixed;
-    clear:both;
-
-    @include media-query($tabletPortrait) {
-      float: left;
-      padding: $spacingUnitSmall 0;
-      position: relative;
-    }
-}
-
-.siteTitle {
-  line-height: 1;
-  text-transform: uppercase;
-  
-  a {
-    color: $maraschino;
-    &:hover {
-      text-decoration: none;
-    }
-  }
-
-  h1 {
-    font-size: 200%;
-    font-weight: $fontBold;
-    font-style: italic;
-  }
-}
-
-/*** POST HEADER 
-***************/
-.postHeader {
+#header {
   left: 0px;
   top: 0px;
   position: fixed;
   clear: both;
 }
 
-.postHeaderContainer {
-  background-color: rgba(206, 213, 217, 0.9);
-  margin: $spacingUnitSmall;
-  max-width: 200px;
-  padding: $spacingUnitSmall;
-
-  @include media-query($desktop) {
+.mainHeaderContainer {
+    background-color: rgba(206, 213, 217, .65);
     max-width: 150px;
-  }
+    padding: $spacing-unit-sm;
 
-  @include media-query($tabletLandscape) {
-    max-width: 125px;
-  }
+    @include media-query($bp-fromm) {
+      background-color: rgba(206, 213, 217, .9);
+      position: absolute;
+    }
 }
 
-.postHeaderNav a {
-  color: $ultraviolet;
-  font-family: $monospace;
-  
-  &:hover {
-    color: darken($ultraviolet, 15%);
-    text-decoration: none;
-  }
+.siteTitle {
+  color: $steel;
+  font-family: $base-font-family;
+  font-size: $font-size-sm;
 }
 
-.postHeaderTitle {
-	p {
-	  color: $tungsten;
-	  font-family: $monospace;
-	  font-size: $fontSizeSmall;
-	  line-height: $smallLeading;
-	  margin-top: $spacingUnitSmall;
-	}
-
-  @include media-query($phoneLandscape) {
-    display: none !important;
-  }
+.mainDivider {
+  height: 5px;
+  margin-top: 7px;
+  width: 30px;
+  background-color: $ultraviolet;
 }

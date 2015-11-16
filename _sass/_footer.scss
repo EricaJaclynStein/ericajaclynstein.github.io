@@ -1,34 +1,36 @@
+
 #mainFooter {
   background: transparent;
   bottom: 0;
   float: left;
-  max-width: 200px;
+  max-width: 100px;
   position: fixed;
   clear: both;
 
-  @include media-query($tabletPortrait) {
+  @include media-query($bp-fromm) {
     position: relative;
   }
 }
 
 .mainFooterContent {
-  font-family: $monospace;
-  font-size: $fontSizeSmall;
+  font-family: $base-font-family;
+  font-size: $font-size-xs;
   text-align: left;
-  display: inline-block;
-  margin-bottom: $spacingUnitSmall;
+  display: block;
+  margin-bottom: $spacing-unit-sm;
 }
 
 .footerButton {
-  background-color: rgba(206, 213, 217, .75);
+  background-color: rgba(206, 213, 217, .65);
   display: inline-block;
   line-height: 1;
   margin-bottom: 5px;
+  max-width: 100px;
   padding: 7px 13px;
   text-align: center;
   
   a {
-    color: $ultraviolet;
+    color: $steel;
     text-decoration: none;
   }
   

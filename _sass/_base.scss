@@ -26,7 +26,7 @@ body {
   background: $BGcolor;
   color: $tungsten;
   font-family: $base-font-family;
-  font-size: $fontSizeBase;
+  font-size: $base-font-size;
 }
 
 footer, header {
@@ -35,8 +35,8 @@ footer, header {
 
 p {
   color: $tungsten;
-  font-size: $fontSizeBase;
-  line-height: $baseLeading;
+  font-size: $base-font-size;
+  line-height: $base-leading;
   margin: 0;
   padding: 0;
 }
@@ -46,21 +46,20 @@ b, strong {
 }
 
 small {
-  font-size: $fontSizeSmall;
+  font-size: $font-size-sm;
 }
 
 dfn {
   font-style: italic;
 }
 
-body p, h1, h2, h3, h4, h5, h6, ul, ol, dl, figure,
+body p, h1, h2, h3, h4, ul, ol, dl, blockquote, figure,
 %vertical-rhythm {
   margin-bottom: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: $fontNormal;
-  line-height: $headingLeading;
+h1, h2, h3, h4 {
+  font-weight: $font-bold;
   margin: 0;
   padding: 0;
 }
@@ -76,20 +75,25 @@ ul, ol {
   }
 }
 
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
 a {
   background-color: transparent;
-  color: $tungsten;
+  color: $seablue;
   text-decoration: none;
   
   &:active,
   &:hover {
-    color: $steel;
+    color: darken($seablue, 15%);
     outline: 0;
   }
 
   &:hover,
   &:focus {
-    color: $steel;
+    color: darken($seablue, 15%);
     text-decoration: underline;
   }
 }
@@ -106,19 +110,19 @@ a {
   margin: 0 60px;
   @extend %clearfix;
 
-  @include media-query($desktop) {
+  @include media-query($bp-jung) {
     margin: 0 30px;
-    max-width: $desktop;
+    max-width: $bp-jung;
   }
 
-  @include media-query($tabletPortrait) {
+  @include media-query($bp-fromm) {
     margin: 0 30px;
-    max-width: $tabletPortrait;
+    max-width: $bp-fromm;
   }
 
-  @include media-query($phonePortrait) {
+  @include media-query($bp-pavlov) {
     margin: 0 15px;
-    max-width: $phonePortrait;
+    max-width: $bp-pavlov;
   }
 }
 

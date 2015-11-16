@@ -1,7 +1,5 @@
-/*** HOMEPAGE CONTAINER 
-**********************/
 #mainContainer {
-  background: url(/assets/solorock.jpeg) no-repeat center center fixed;
+  background: url(/assets/brooklyn.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -26,7 +24,7 @@
     background-image: -moz-radial-gradient(top, circle cover, #253750 0%, #282537 80%, #252227 100%);
     background-image: -o-radial-gradient(top, circle cover, #253750 0%, #282537 80%, #252227 100%);
     background-image: radial-gradient(top, circle cover, #253750 0%, #282537 80%, #252227 100%);
-    opacity: 0.85;
+    opacity: 0.9;
   }
 }
 
@@ -38,14 +36,21 @@
   right: 0;
   bottom: 0;
   height: auto;
-  width: 60%;
   overflow-x: hidden;
+  
+  @include media-query($bp-skinner) {
+    width: 60%;
+  }
 
-  @include media-query($tabletLandscape) {
+  @include media-query($bp-jung) {
+    width: 60%;
+  }
+
+  @include media-query($bp-freud) {
     width: 75%;
   }
 
-  @include media-query($tabletPortrait) {
+  @include media-query($bp-fromm) {
     width: 100%;
   }
 }
@@ -54,33 +59,37 @@
 *********************/
 .mainList {
   float: right;
-  font-family: $monospace;
-  max-width: $maxContentWidth;
-  margin-top: $spacingUnitSmall;
+  font-family: $base-font-family;
+  max-width: 300px;
   text-align: right;
 }
 
 .mainListGroup {
   display: block;
-  margin-bottom: $spacingUnitBase;
+  margin-bottom: $spacing-unit-lg;
 }
 
 .mainListDate p {
+  font-family: $monospace;
+  font-size: $font-size-sm;
   color: $steel;
-  padding-top: 5px;
+  margin-top: 5px;
 }
 
 .mainListTitle a {
-  border-bottom: 3px solid $cantaloupe;
-  color: $tungsten;
-  font-size: $fontSizeBase;
-  line-height: $largeLeading;
+  border-bottom: 5px solid $cantaloupe;
+  font-size: $font-size-h1;
+  font-style: italic;
+  line-height: 1.4;
   padding-bottom: 2px;
   text-decoration: none;
+  text-transform: uppercase;
+
+  @include media-query($bp-pavlov) {
+    font-size: $font-size-h1m;
+  }
 }
 
-/*** PHOTO SIDEBAR
-*****************/
 #mainSidebarContainer {
   width: 40%;
   float: right;
@@ -88,15 +97,27 @@
   position: relative;
 }
 
+.sidebarMessage {
+  margin: $spacing-unit-sm;
+  padding: $spacing-unit-sm;
+  text-align: right;
+  
+  p {
+    color: $mercury;
+    font-family: $monospace;
+    font-size: $font-size-sm;
+  }
+}
+
 .sidebarButton {
-  margin: $spacingUnitSmall;
-  padding: $spacingUnitSmall;
+  margin: $spacing-unit-sm;
+  padding: $spacing-unit-sm;
   text-align: right;
   
   a {
     color: $mercury;
     font-family: $monospace;
-    font-size: $fontSizeSmall;
+    font-size: $font-size-sm;
     
     &:hover {
       color: $seablue;

@@ -24,23 +24,23 @@
 
 .page-header {
   margin: auto;
-  padding: $spacingUnitSmall;
-  max-width: $maxContentWidth;
+  padding: $spacing-unit-sm;
+  max-width: $content-width;
 
   h1 {
-    font-size: $h1FontSize;
-    line-height: $headingLeading;
+    font-size: $font-size-h1;
+    line-height: $head-line-height;
     text-align: center;
     
-    @include media-query($tabletPortrait) {
-      font-size: $h1FontSizeMobile;
+    @include media-query($bp-fromm) {
+      font-size: $font-size-h1m;
     }
   }
 }
 
 .page-items {
-  margin-bottom: $spacingUnitBase;
-  padding: 0 $spacingUnitBase; 
+  margin-bottom: $base-spacing-unit;
+  padding: 0 $base-spacing-unit; 
   text-align: left;
 
   p {
