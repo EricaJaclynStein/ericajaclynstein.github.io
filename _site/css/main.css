@@ -138,6 +138,50 @@ a {
 .affix {
   position: fixed; }
 
+.bookmarkList {
+  float: right;
+  margin-top: 60px;
+  text-align: right;
+  width: 100%; }
+
+.bookmarkListTitle h1 {
+  margin: 30px;
+  text-align: center; }
+
+.bookmarkGroup {
+  float: right;
+  display: block;
+  margin-bottom: 30px;
+  margin-right: 30px; }
+
+.bookmarkItem {
+  float: right;
+  background-color: #12E3DB;
+  border-right: 5px solid #FFCAA9;
+  display: block;
+  margin-bottom: 5px;
+  padding-right: 5px;
+  width: 100%; }
+  .bookmarkItem:hover {
+    transform-color: #85FDE3;
+    transform-origin: 50% 50% 0px;
+    transform: translate(0px, 0px) rotate(0deg) scale(1.05);
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+
+.bookmarkItemLink {
+  float: right; }
+  .bookmarkItemLink a {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 19px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 1.4;
+    padding-left: 15px;
+    text-decoration: none;
+    text-transform: uppercase; }
+
 #mainFooter {
   background: transparent;
   bottom: 0;
@@ -157,7 +201,7 @@ a {
   margin-bottom: 15px; }
 
 .footerButton {
-  background-color: rgba(206, 213, 217, 0.65);
+  background: rgba(206, 213, 217, 0.65);
   display: inline-block;
   line-height: 1;
   margin-bottom: 5px;
@@ -165,15 +209,14 @@ a {
   padding: 7px 13px;
   text-align: center; }
   .footerButton a {
-    color: #718599;
     text-decoration: none; }
   .footerButton:hover {
-    transform-color: #85FDE3;
-    transform-origin: 50% 50% 0px;
-    transform: translate(0px, 0px) rotate(0deg) scale(1.08);
-    -moz-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out; }
+    background-color: #FEFE22;
+    cursor: pointer;
+    -webkit-transition: background-color .3s ease-out;
+    -moz-transition: background-color .3s ease-out;
+    -o-transition: background-color .3s ease-out;
+    transition: background-color .3s ease-out; }
 
 .footerMetaButton {
   background-color: rgba(206, 213, 217, 0.75);
@@ -358,8 +401,6 @@ svg {
     #mainContentContainer {
       width: 100%; } }
 
-/*** TABLE OF CONTENTS
-*********************/
 .mainList {
   float: right;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -434,7 +475,11 @@ svg {
     transition: all 0.3s ease-in-out; }
 
 #pageContainer {
-  background: #FBFBFB;
+  background: url(/assets/brooklyn.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   position: absolute;
   left: 0;
   top: 0;
@@ -443,41 +488,40 @@ svg {
   height: auto;
   width: auto;
   overflow-x: hidden; }
+  #pageContainer:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-image: -webkit-radial-gradient(top, circle cover, #253750 0%, #282537 80%, #252227 100%);
+    background-image: -moz-radial-gradient(top, circle cover, #253750 0%, #282537 80%, #252227 100%);
+    background-image: -o-radial-gradient(top, circle cover, #253750 0%, #282537 80%, #252227 100%);
+    background-image: radial-gradient(top, circle cover, #253750 0%, #282537 80%, #252227 100%);
+    opacity: 0.9; }
 
 #pageContentContainer {
-  background-color: transparent;
-  position: relative;
+  background: #fbfbfb;
+  position: absolute;
   left: 0;
   top: 0;
   right: 0;
   bottom: 0;
   height: auto;
-  width: 100%;
   overflow-x: hidden; }
-
-.page-header {
-  margin: auto;
-  padding: 15px;
-  max-width: 520px; }
-  .page-header h1 {
-    font-size: 36px;
-    line-height: 1.2;
-    text-align: center; }
-    @media screen and (max-width: 768px) {
-      .page-header h1 {
-        font-size: 28px; } }
-
-.page-items {
-  margin-bottom: 30px;
-  padding: 0 30px;
-  text-align: left; }
-  .page-items p {
-    margin-top: 5px; }
-  .page-items a {
-    color: #2B303B;
-    font-family: "Inconsolata", Consolas, monospace; }
-    .page-items a:hover {
-      text-decoration: underline; }
+  @media screen and (max-width: 2560px) {
+    #pageContentContainer {
+      width: 60%; } }
+  @media screen and (max-width: 1200px) {
+    #pageContentContainer {
+      width: 60%; } }
+  @media screen and (max-width: 1024px) {
+    #pageContentContainer {
+      width: 75%; } }
+  @media screen and (max-width: 768px) {
+    #pageContentContainer {
+      width: 100%; } }
 
 #postContainer {
   background: url(/assets/pool.jpg) no-repeat center center fixed;

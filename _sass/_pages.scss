@@ -1,5 +1,9 @@
 #pageContainer {
-  background: $BGcolor;
+  background: url(/assets/brooklyn.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   position: absolute;
   left: 0;
   top: 0;
@@ -8,51 +12,45 @@
   height: auto;
   width: auto;
   overflow-x: hidden;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-image: -webkit-radial-gradient(top, circle cover, #253750 0%, #282537 80%, #252227 100%);
+    background-image: -moz-radial-gradient(top, circle cover, #253750 0%, #282537 80%, #252227 100%);
+    background-image: -o-radial-gradient(top, circle cover, #253750 0%, #282537 80%, #252227 100%);
+    background-image: radial-gradient(top, circle cover, #253750 0%, #282537 80%, #252227 100%);
+    opacity: 0.9;
+  }
 }
 
 #pageContentContainer {
-  background-color: transparent;
-  position: relative;
+  background: rgba(251, 251, 251, 1.0);
+  position: absolute;
   left: 0;
   top: 0;
   right: 0;
   bottom: 0;
   height: auto;
-  width: 100%;
   overflow-x: hidden;
-}
-
-.page-header {
-  margin: auto;
-  padding: $spacing-unit-sm;
-  max-width: $content-width;
-
-  h1 {
-    font-size: $font-size-h1;
-    line-height: $head-line-height;
-    text-align: center;
-    
-    @include media-query($bp-fromm) {
-      font-size: $font-size-h1m;
-    }
-  }
-}
-
-.page-items {
-  margin-bottom: $base-spacing-unit;
-  padding: 0 $base-spacing-unit; 
-  text-align: left;
-
-  p {
-    margin-top: 5px;
+  
+  @include media-query($bp-skinner) {
+    width: 60%;
   }
 
-  a {
-    color: $tungsten;
-    font-family: $monospace;
+  @include media-query($bp-jung) {
+    width: 60%;
+  }
 
-    &:hover {
-      text-decoration: underline;  
-    }
+  @include media-query($bp-freud) {
+    width: 75%;
+  }
+
+  @include media-query($bp-fromm) {
+    width: 100%;
   }
 }

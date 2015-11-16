@@ -51,7 +51,6 @@ $aqua:        #12E3DB;
 $seafoam:     #85FDE3;
 $cantaloupe:  #FFCAA9;
 $lemon:       #FEFE22;
-$skyblue:     #00adff;
 $seablue:     #32A1EE;
 $ultraviolet: #9000FF;
 $mercury:     #CED5D9; //rgba(206, 213, 217, 1.0)
@@ -83,6 +82,7 @@ $bp-pavlov:  568px;
 
 @import
   "base",
+  "bookmarks",
   "footer",
   "force",
   "grid",

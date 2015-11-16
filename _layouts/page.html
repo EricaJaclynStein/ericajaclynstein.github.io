@@ -5,14 +5,15 @@
   <body>
     <div id="pageContainer">
       <div id="pageContentContainer">
-        {% include postheader.html %}
         <div class="wrapper">
+        {% include postheader.html %}
           <div class="row">
             <div class="col">
               {{ content }}
             </div>
           </div>
         </div>
+      {% include footer.html %}
       </div>
     </div>
   </body>

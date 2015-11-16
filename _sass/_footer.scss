@@ -21,26 +21,25 @@
 }
 
 .footerButton {
-  background-color: rgba(206, 213, 217, .65);
+  background: rgba(206, 213, 217, .65);
   display: inline-block;
   line-height: 1;
   margin-bottom: 5px;
   max-width: 100px;
   padding: 7px 13px;
   text-align: center;
-  
+
   a {
-    color: $steel;
     text-decoration: none;
   }
   
   &:hover {
-    transform-color: $seafoam;
-    transform-origin: 50% 50% 0px;
-    transform: translate(0px, 0px) rotate(0deg) scale(1.08);
-    -moz-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+    background-color: $lemon;
+    cursor: pointer;
+    -webkit-transition: background-color .3s ease-out;
+    -moz-transition: background-color .3s ease-out;
+    -o-transition: background-color .3s ease-out;
+    transition: background-color .3s ease-out;
   }
 }
 
