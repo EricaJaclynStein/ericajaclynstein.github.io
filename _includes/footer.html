@@ -2,35 +2,23 @@
 	<div id="mainFooter">
 		<div class="mainFooterContent"> 
 			{% for resource in site.resources %}
-		    <div class="footerButton">
 		    {% if resource.title %} 
-		    	<a href="{{ resource.url | prepend: site.baseurl }}">{{ resource.title }}</a>
+		    	<a href="{{ resource.url | prepend: site.baseurl }} "class= "footerButton">{{ resource.title }}</a>
 		    {% endif %}
-		    </div> 
 			{% endfor %}
-			<div class="footerButton">
-		  	<a href="http://www.sketchappsources.com/blog/post/erica-jaclyn-stein" target="blank"> About</a>
-		  </div>
+		  	<a href="http://www.sketchappsources.com/blog/post/erica-jaclyn-stein" class= "footerButton" target="blank"> About</a>
 			{% if site.twitter %}
-			<div class="footerButton">
-				<a href="{{ site.twitter }}" target="blank" alt="Twitter"> <i class="fa fa-twitter"></i> twitter</a>
-			</div>
+				<a href="{{ site.twitter }}" class= "footerButton" target="blank" alt="Twitter"> <i class="fa fa-twitter"></i> twitter</a>
 			{% endif %}
 			{% if site.medium %}
-			<div class="footerButton">
-		  	<a href="{{ site.medium }}" target="blank" alt="Medium"> <i class="fa fa-medium"></i> medium</a>
+		  	<a href="{{ site.medium }}" class= "footerButton" target="blank" alt="Medium"> <i class="fa fa-medium"></i> medium</a>
 			{% endif %}
-			</div>
-			<div class="footerButton">
 			{% if site.dribbble %}
-		  	<a href="{{ site.dribbble }}" target="blank" alt="Dribbble"> <i class="fa fa-dribbble"></i> dribbble</a>
+		  	<a href="{{ site.dribbble }}" class= "footerButton" target="blank" alt="Dribbble"> <i class="fa fa-dribbble"></i> dribbble</a>
 			{% endif %}
-			</div>
-			<div class="footerButton">
 			{% if site.github %}
-	  		<a href="{{ site.github }}" target="blank" alt="Github"><i class="fa fa-github"></i> github</a>
+	  		<a href="{{ site.github }}" class= "footerButton" target="blank" alt="Github"><i class="fa fa-github"></i> github</a>
 			{% endif %}
-			</div>
 		</div>
 	</div>
 </footer>

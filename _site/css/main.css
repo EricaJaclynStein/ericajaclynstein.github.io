@@ -195,33 +195,13 @@ a {
   max-width: 100px;
   padding: 7px 13px;
   text-align: center; }
-  .footerButton a {
-    text-decoration: none; }
   .footerButton:hover {
-    background-color: #FEFE22;
+    text-decoration: none;
     cursor: pointer;
     -webkit-transition: background-color .3s ease-out;
     -moz-transition: background-color .3s ease-out;
     -o-transition: background-color .3s ease-out;
     transition: background-color .3s ease-out; }
-
-.footerMetaButton {
-  background-color: rgba(206, 213, 217, 0.75);
-  display: inline-block;
-  line-height: 1;
-  margin-bottom: 5px;
-  padding: 7px 13px;
-  text-align: center; }
-  .footerMetaButton a {
-    color: #32A1EE;
-    text-decoration: none; }
-  .footerMetaButton:hover {
-    transform-color: #85FDE3;
-    transform-origin: 50% 50% 0px;
-    transform: translate(0px, 0px) rotate(0deg) scale(1.08);
-    -moz-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out; }
 
 svg {
   display: block;
@@ -298,25 +278,47 @@ svg {
   position: fixed;
   clear: both; }
 
-.mainHeaderContainer {
+.headerContainer {
   background-color: rgba(206, 213, 217, 0.65);
-  max-width: 150px;
+  max-width: 125px;
   padding: 15px; }
   @media screen and (max-width: 768px) {
-    .mainHeaderContainer {
+    .headerContainer {
       background-color: rgba(206, 213, 217, 0.9);
       position: absolute; } }
 
 .siteTitle {
   color: #718599;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 13px; }
+  font-size: 11px; }
 
 .mainDivider {
   height: 5px;
   margin-top: 7px;
   width: 30px;
   background-color: #9000FF; }
+
+.postHeaderNav {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 19px; }
+  .postHeaderNav a {
+    font-weight: 700;
+    text-decoration: none; }
+
+.postHeaderTitle {
+  color: #718599;
+  font-size: 11px;
+  line-height: 1.2;
+  margin-top: 15px; }
+  @media screen and (max-width: 568px) {
+    .postHeaderTitle {
+      display: none !important; } }
+
+.postDivider {
+  height: 5px;
+  margin-top: 7px;
+  width: 30px;
+  background-color: #FEFE22; }
 
 .icon-set {
   padding: 0 15px;
@@ -340,7 +342,7 @@ svg {
     fill: #363946; }
 
 #mainContainer {
-  background: url(/assets/brooklyn.jpg) no-repeat center center fixed;
+  background: url(/assets/flock.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -364,7 +366,7 @@ svg {
     background-image: -moz-radial-gradient(top, circle cover, #253750 0%, #282537 80%, #252227 100%);
     background-image: -o-radial-gradient(top, circle cover, #253750 0%, #282537 80%, #252227 100%);
     background-image: radial-gradient(top, circle cover, #253750 0%, #282537 80%, #252227 100%);
-    opacity: 0.9; }
+    opacity: 0.85; }
 
 #mainContentContainer {
   background: #fbfbfb;
@@ -406,15 +408,13 @@ svg {
 
 .mainListTitle a {
   border-bottom: 5px solid #FFCAA9;
-  font-size: 36px;
-  font-style: italic;
+  font-size: 30px;
   line-height: 1.4;
   padding-bottom: 2px;
-  text-decoration: none;
-  text-transform: uppercase; }
+  text-decoration: none; }
   @media screen and (max-width: 568px) {
     .mainListTitle a {
-      font-size: 28px; } }
+      font-size: 24px; } }
 
 #mainSidebarContainer {
   width: 40%;
@@ -511,7 +511,7 @@ svg {
       width: 100%; } }
 
 #postContainer {
-  background: url(/assets/pool.jpg) no-repeat center center fixed;
+  background: url(/assets/mistyforest.jpeg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -535,7 +535,7 @@ svg {
     background-image: -moz-radial-gradient(top, circle cover, #253750 0%, #282537 80%, #252227 100%);
     background-image: -o-radial-gradient(top, circle cover, #253750 0%, #282537 80%, #252227 100%);
     background-image: radial-gradient(top, circle cover, #253750 0%, #282537 80%, #252227 100%);
-    opacity: 0.65; }
+    opacity: 0.8; }
 
 #postContentContainer {
   background-color: #FBFBFB;
@@ -635,38 +635,6 @@ svg {
     #postArticleNav a:hover {
       color: #6500b3;
       text-decoration: none; }
-
-.postHeaderContainer {
-  background-color: rgba(206, 213, 217, 0.65);
-  max-width: 125px;
-  padding: 15px; }
-  @media screen and (max-width: 768px) {
-    .postHeaderContainer {
-      background-color: rgba(206, 213, 217, 0.9); } }
-
-.postHeaderNav {
-  color: #32A1EE;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 19px; }
-  .postHeaderNav a {
-    font-style: italic;
-    font-weight: 700;
-    text-decoration: none; }
-
-.postHeaderTitle {
-  color: #718599;
-  font-size: 11px;
-  line-height: 1.2;
-  margin-top: 15px; }
-  @media screen and (max-width: 568px) {
-    .postHeaderTitle {
-      display: none !important; } }
-
-.postDivider {
-  height: 5px;
-  margin-top: 7px;
-  width: 30px;
-  background-color: #FEFE22; }
 
 /**
  * Syntax highlighting styles
@@ -809,7 +777,7 @@ svg {
 
 /* 
 =======================================================
-Credits go to Bootstrap, getbootstrap.com, and
+Partial credit go to Bootstrap, getbootstrap.com, and
 Charlie Cathcart, http://codepen.io/pixelchar/pen/rfuqK
 =======================================================
 */
@@ -823,11 +791,13 @@ a {
     color: #107ac3; }
 
 .container {
-  margin: 5% 3%; }
-  @media (min-width: 1024px) {
+  margin: 60px;
+  padding: 30px; }
+  @media screen and (max-width: 768px) {
     .container {
-      margin: 8% 2%; } }
-  @media (min-width: 568px) {
+      margin: 30px;
+      padding: 30px; } }
+  @media screen and (max-width: 568px) {
     .container {
       margin: 2em auto;
       max-width: 568px; } }

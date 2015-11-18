@@ -1,5 +1,5 @@
 #mainContainer {
-  background: url(/assets/brooklyn.jpg) no-repeat center center fixed;
+  background: url(/assets/flock.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -24,7 +24,7 @@
     background-image: -moz-radial-gradient(top, circle cover, #253750 0%, #282537 80%, #252227 100%);
     background-image: -o-radial-gradient(top, circle cover, #253750 0%, #282537 80%, #252227 100%);
     background-image: radial-gradient(top, circle cover, #253750 0%, #282537 80%, #252227 100%);
-    opacity: 0.9;
+    opacity: 0.85;
   }
 }
 
@@ -76,15 +76,13 @@
 
 .mainListTitle a {
   border-bottom: 5px solid $cantaloupe;
-  font-size: $font-size-h1;
-  font-style: italic;
+  font-size: $font-size-h2;
   line-height: 1.4;
   padding-bottom: 2px;
   text-decoration: none;
-  text-transform: uppercase;
 
   @include media-query($bp-pavlov) {
-    font-size: $font-size-h1m;
+    font-size: $font-size-h2m;
   }
 }
 

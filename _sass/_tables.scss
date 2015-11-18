@@ -1,6 +1,6 @@
   /* 
   =======================================================
-  Credits go to Bootstrap, getbootstrap.com, and
+  Partial credit go to Bootstrap, getbootstrap.com, and
   Charlie Cathcart, http://codepen.io/pixelchar/pen/rfuqK
   =======================================================
   */
@@ -20,12 +20,14 @@ a {
 }
 
 .container {
-  margin: 5% 3%;
+  margin: $spacing-unit-lg;
+  padding: $base-spacing-unit;
   
-  @media (min-width: $bp-freud) {
-    margin: 8% 2%; 
+  @include media-query($bp-fromm) {
+    margin: $base-spacing-unit; 
+    padding: $base-spacing-unit;
   }
-  @media (min-width: $bp-pavlov) {
+  @include media-query($bp-pavlov) {
     margin: 2em auto;
     max-width: $bp-pavlov;
   }
@@ -48,7 +50,7 @@ a {
     clip: rect(1px, 1px, 1px, 1px);
     padding: 0;
     border: 0;
-    height: 1px; 
+    height: 1px;
     width: 1px; 
     overflow: hidden;
     

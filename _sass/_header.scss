@@ -5,9 +5,9 @@
   clear: both;
 }
 
-.mainHeaderContainer {
+.headerContainer {
     background-color: rgba(206, 213, 217, .65);
-    max-width: 150px;
+    max-width: 125px; 
     padding: $spacing-unit-sm;
 
     @include media-query($bp-fromm) {
@@ -19,7 +19,7 @@
 .siteTitle {
   color: $steel;
   font-family: $base-font-family;
-  font-size: $font-size-sm;
+  font-size: $font-size-xs;
 }
 
 .mainDivider {
@@ -27,4 +27,32 @@
   margin-top: 7px;
   width: 30px;
   background-color: $ultraviolet;
+}
+
+.postHeaderNav {
+  font-family: $base-font-family;
+  font-size: $font-size-lg;
+  
+  a {
+    font-weight: $font-bold;
+    text-decoration: none;
+  }
+}
+
+.postHeaderTitle {
+  color: $steel;
+  font-size: $font-size-xs;
+  line-height: $leading-sm;
+  margin-top: $spacing-unit-sm;
+
+  @include media-query($bp-pavlov) {
+    display: none !important;
+  }
+}
+
+.postDivider {
+  height: 5px;
+  margin-top: 7px;
+  width: 30px;
+  background-color: $lemon;
 }
