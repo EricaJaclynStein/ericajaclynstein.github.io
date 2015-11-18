@@ -1,13 +1,9 @@
 .bookmarkList {
 	float: right;
-	margin-top: $spacing-unit-lg;
+	margin: $spacing-unit-lg 0;
+	padding: $spacing-unit-lg 0;
   text-align: right;
   width: 100%;
-}
-
-.bookmarkListTitle h1 {
-	margin: $base-spacing-unit;
-	text-align: center;
 }
 
 .bookmarkGroup {
@@ -19,21 +15,11 @@
 
 .bookmarkItem {
 	float: right;
-	background-color: $aqua;
-	border-right: 5px solid $cantaloupe;
+	border-bottom: 2px solid $cantaloupe;
 	display: block;
 	margin-bottom: 5px;
 	padding-right: 5px;
 	width: 100%;
-
-	&:hover {
-    transform-color: $seafoam;
-    transform-origin: 50% 50% 0px;
-    transform: translate(0px, 0px) rotate(0deg) scale(1.05);
-    -moz-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-  }
 }
 
 .bookmarkItemLink {
@@ -42,11 +28,9 @@
 	a {	
 		font-family: $base-font-family;
 	  font-size: $font-size-lg;
-	  font-style: italic;
 	  font-weight: $font-bold;
 	  line-height: 1.4;
 	  padding-left: $spacing-unit-sm;
 	  text-decoration: none;
-	  text-transform: uppercase;
 	}
 }
