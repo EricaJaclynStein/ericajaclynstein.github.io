@@ -342,7 +342,7 @@ svg {
     fill: #363946; }
 
 #mainContainer {
-  background: url(/assets/flock.jpg) no-repeat center center fixed;
+  background: url(/assets/pelicans.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -393,15 +393,15 @@ svg {
 .mainList {
   float: right;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  max-width: 300px;
-  text-align: right; }
+  max-width: 390px;
+  text-align: left; }
 
 .mainListGroup {
   display: block;
   margin-bottom: 60px; }
 
 .mainListDate p {
-  font-family: "Inconsolata", Consolas, monospace;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px;
   color: #718599;
   margin-top: 5px; }
@@ -511,7 +511,7 @@ svg {
       width: 100%; } }
 
 #postContainer {
-  background: url(/assets/mistyforest.jpeg) no-repeat center center fixed;
+  background: url(/assets/pelicans.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

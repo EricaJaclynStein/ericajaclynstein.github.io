@@ -1,5 +1,5 @@
 #mainContainer {
-  background: url(/assets/flock.jpg) no-repeat center center fixed;
+  background: url(/assets/pelicans.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -58,8 +58,8 @@
 .mainList {
   float: right;
   font-family: $base-font-family;
-  max-width: 300px;
-  text-align: right;
+  max-width: 390px;
+  text-align: left;
 }
 
 .mainListGroup {
@@ -68,7 +68,7 @@
 }
 
 .mainListDate p {
-  font-family: $monospace;
+  font-family: $base-font-family;
   font-size: $font-size-sm;
   color: $steel;
   margin-top: 5px;
