@@ -1,7 +1,7 @@
 /* 
 ======================================================================
 Erica Jaclyn Stein v3.0 | http://ericajs.github.io
-Copyright 2014-2015 | Under MIT License
+Copyright 2014-2016 | Under MIT License
 Designed, built, and generated using Sketch (bohemiancoding.com),
 Sublime Text (sublimetext.com), Atom (atom.io), Jekyll (jekyllrb.com),
 and Bootstrap (getbootstrap.com)
@@ -95,10 +95,10 @@ a {
 
 .wrapper {
   margin: 0 60px; }
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1440px) {
     .wrapper {
       margin: 0 30px;
-      max-width: 1200px; } }
+      max-width: 1440px; } }
   @media screen and (max-width: 768px) {
     .wrapper {
       margin: 0 30px;
@@ -169,31 +169,54 @@ a {
     padding-left: 15px;
     text-decoration: none; }
 
-#mainFooter {
-  background: transparent;
+#footerA {
   bottom: 0;
   float: left;
-  max-width: 100px;
+  max-width: 150px;
   position: fixed;
   clear: both; }
   @media screen and (max-width: 768px) {
-    #mainFooter {
+    #footerA {
       position: relative; } }
 
-.mainFooterContent {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+.footerContainerA {
+  background-color: transparent;
+  border: 3px solid #FFCAA9;
+  display: inline-block;
+  margin: 15px;
+  padding: 11px; }
+
+.footerContainerB {
+  background-color: transparent;
+  border: 3px solid #FFCAA9;
+  display: inline-block;
+  margin: 15px;
+  padding: 11px; }
+
+.postFooterContainer {
+  background-color: #CED5D9;
+  max-width: 300px;
+  margin: 15px;
+  padding: 15px; }
+  @media screen and (max-width: 568px) {
+    .postFooterContainer {
+      display: none !important; } }
+
+.postFooterTitle {
+  color: #090A0C;
   font-size: 11px;
-  text-align: left;
-  display: block;
-  margin-bottom: 15px; }
+  line-height: 1.2; }
 
 .footerButton {
-  background: rgba(206, 213, 217, 0.65);
+  background: transparent;
   display: inline-block;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 11px;
   line-height: 1;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
   max-width: 100px;
-  padding: 7px 13px;
+  padding: 7px 7px;
   text-align: center; }
   .footerButton:hover {
     text-decoration: none;
@@ -277,20 +300,29 @@ svg {
   top: 0px;
   position: fixed;
   clear: both; }
+  @media screen and (max-width: 768px) {
+    #header {
+      position: fixed; } }
 
 .headerContainer {
-  background-color: rgba(206, 213, 217, 0.65);
-  max-width: 125px;
-  padding: 15px; }
+  background-color: transparent;
+  border: 3px solid #FFCAA9;
+  margin: 15px;
+  padding: 11px; }
   @media screen and (max-width: 768px) {
     .headerContainer {
-      background-color: rgba(206, 213, 217, 0.9);
-      position: absolute; } }
+      background-color: #FBFBFB;
+      border: 0;
+      border-bottom: 3px solid #FFCAA9;
+      position: fixed;
+      margin: 0;
+      width: 100%; } }
 
 .siteTitle {
-  color: #718599;
+  color: #32A1EE;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 11px; }
+  font-size: 16px;
+  font-weight: 700; }
 
 .mainDivider {
   height: 5px;
@@ -300,25 +332,16 @@ svg {
 
 .postHeaderNav {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 19px; }
+  font-size: 16px; }
   .postHeaderNav a {
     font-weight: 700;
     text-decoration: none; }
-
-.postHeaderTitle {
-  color: #718599;
-  font-size: 11px;
-  line-height: 1.2;
-  margin-top: 15px; }
-  @media screen and (max-width: 568px) {
-    .postHeaderTitle {
-      display: none !important; } }
 
 .postDivider {
   height: 5px;
   margin-top: 7px;
   width: 30px;
-  background-color: #FEFE22; }
+  background-color: #9000FF; }
 
 .icon-set {
   padding: 0 15px;
@@ -380,7 +403,7 @@ svg {
   @media screen and (max-width: 2560px) {
     #mainContentContainer {
       width: 60%; } }
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1440px) {
     #mainContentContainer {
       width: 60%; } }
   @media screen and (max-width: 1024px) {
@@ -500,7 +523,7 @@ svg {
   @media screen and (max-width: 2560px) {
     #pageContentContainer {
       width: 60%; } }
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1440px) {
     #pageContentContainer {
       width: 60%; } }
   @media screen and (max-width: 1024px) {
@@ -851,7 +874,7 @@ a {
   .responsive-table td {
     padding: .5em;
     vertical-align: middle; }
-    @media (min-width: 1200px) {
+    @media (min-width: 1440px) {
       .responsive-table th,
       .responsive-table td {
         padding: .75em .5em; } }
@@ -908,7 +931,7 @@ a {
         text-align: left; } }
   .responsive-table tbody td {
     text-align: right; }
-    @media (min-width: 1200px) {
+    @media (min-width: 1440px) {
       .responsive-table tbody td {
         border-bottom: 1px solid #CED5D9; } }
     @media (min-width: 1024px) {
@@ -921,7 +944,7 @@ a {
     float: left;
     font-size: .8em;
     color: #2B303B; }
-    @media (min-width: 1200px) {
+    @media (min-width: 1440px) {
       .responsive-table tbody td[data-title]:before {
         font-size: .9em; } }
     @media (min-width: 1024px) {

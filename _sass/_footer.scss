@@ -1,8 +1,7 @@
-#mainFooter {
-  background: transparent;
+#footerA {
   bottom: 0;
   float: left;
-  max-width: 100px;
+  max-width: 150px;
   position: fixed;
   clear: both;
 
@@ -11,21 +10,49 @@
   }
 }
 
-.mainFooterContent {
-  font-family: $base-font-family;
+.footerContainerA {
+  background-color: transparent;
+  border: 3px solid $cantaloupe;
+  display: inline-block;
+  margin: $spacing-unit-sm;
+  padding: 11px;
+}
+
+.footerContainerB {
+  background-color: transparent;
+  border: 3px solid $cantaloupe;
+  display: inline-block;
+  margin: $spacing-unit-sm;
+  padding: 11px;
+}
+
+.postFooterContainer {
+  background-color: $mercury;
+  max-width: 300px;
+  margin: $spacing-unit-sm;
+  padding: $spacing-unit-sm;
+
+  @include media-query($bp-pavlov) {
+    display: none !important;
+  }
+}
+
+.postFooterTitle {
+  color: $deep-space;
   font-size: $font-size-xs;
-  text-align: left;
-  display: block;
-  margin-bottom: $spacing-unit-sm;
+  line-height: $leading-sm;
 }
 
 .footerButton {
-  background: rgba(206, 213, 217, .65);
+  background: transparent;
   display: inline-block;
+  font-family: $base-font-family;
+  font-weight: $font-bold;
+  font-size: $font-size-xs;
   line-height: 1;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
   max-width: 100px;
-  padding: 7px 13px;
+  padding: 7px 7px;
   text-align: center;
 
   &:hover {

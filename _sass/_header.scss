@@ -3,23 +3,33 @@
   top: 0px;
   position: fixed;
   clear: both;
+
+  @include media-query($bp-fromm) {
+    position: fixed;
+  }
 }
 
 .headerContainer {
-    background-color: rgba(206, 213, 217, .65);
-    max-width: 125px; 
-    padding: $spacing-unit-sm;
+  background-color: transparent;
+  border: 3px solid $cantaloupe;
+  margin: $spacing-unit-sm;
+  padding: 11px;
 
-    @include media-query($bp-fromm) {
-      background-color: rgba(206, 213, 217, .9);
-      position: absolute;
-    }
+  @include media-query($bp-fromm) {
+    background-color: $coconut;
+    border: 0;
+    border-bottom: 3px solid $cantaloupe;
+    position: fixed;
+    margin: 0;
+    width: 100%;
+  }
 }
 
 .siteTitle {
-  color: $steel;
+  color: $seablue;
   font-family: $base-font-family;
-  font-size: $font-size-xs;
+  font-size: $base-font-size;
+  font-weight: $font-bold;
 }
 
 .mainDivider {
@@ -31,7 +41,7 @@
 
 .postHeaderNav {
   font-family: $base-font-family;
-  font-size: $font-size-lg;
+  font-size: $base-font-size;
   
   a {
     font-weight: $font-bold;
@@ -39,20 +49,9 @@
   }
 }
 
-.postHeaderTitle {
-  color: $steel;
-  font-size: $font-size-xs;
-  line-height: $leading-sm;
-  margin-top: $spacing-unit-sm;
-
-  @include media-query($bp-pavlov) {
-    display: none !important;
-  }
-}
-
 .postDivider {
   height: 5px;
   margin-top: 7px;
   width: 30px;
-  background-color: $lemon;
+  background-color: $ultraviolet;
 }
