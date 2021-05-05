@@ -1,49 +1,4 @@
-<!DOCTYPE html>
-
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <title>15 Quotes To Remember</title>
-  <meta name="description" content="15 Quotes To Remember">
-  
-  <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://www.ericajs.github.io/design/2015/11/05/10quotes.html">
-  <link rel="alternate" type="application/rss+xml" title="EJS" href="http://www.ericajs.github.io/feed.xml" />
-  
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic,700' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700,800,300italic' rel='stylesheet' type='text/css'>
-</head>
-
-  <body>
-    <div id="postContainer">
-      <div id="mainSidebarContainer">
-        <div class="sidebarButton">
-          <i class="fa fa-camera"></i>
-        </div>
-      </div>
-      <div id="postContentContainer">
-        <div class="wrapper">
-        <header>
-	<div id="header">
-		<div class="headerContainer">
-	  	<div class="postHeaderNav">
-	  		<a href="/">Go back</a>
-	  		<div class="postDivider"></div>
-	  	</div>
-		</div>
-	</div>
-</header>
-
-          <div class="row">
-            <div class="col">
-              <div id="postArticleContainer">
-                <article class="postArticleContent">
-                <h1 id="15-quotes-to-remember">15 Quotes To Remember</h1>
+I"�<h1 id="15-quotes-to-remember">15 Quotes To Remember</h1>
 
 <h3 id="eleanor-roosevelt">Eleanor Roosevelt</h3>
 <p>“You gain strength, courage and confidence by every experience in which you really stop to look fear in the face. You are able to say to yourself, ‘I have lived through this horror. I can take the next thing that comes along.’ <strong>You must do the thing you think you cannot do.</strong>”</p>
@@ -89,47 +44,4 @@
 
 <h3 id="thomas-jefferson">Thomas Jefferson</h3>
 <p>“Do you want to know who you are? Don’t ask. Act! Action will delineate and define you.”</p>
-
-                </article>
-                <div id="postArticleMeta">
-                  <small>written on Nov 5, 2015</small>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    <footer>
-	<div id="footerA">
-		<div class="footerContainerA"> 
-			
-		     
-		    	<a href="/bookmarks/">Bookmarks</a>
-		    
-			
-		     
-		    	<a href="/devices/">Devices</a>
-		    
-			
-		  	<a href="http://www.sketchappsources.com/blog/post/erica-jaclyn-stein" target="blank"> About</a>
-		</div>
-		<div class="footerContainerB">	
-			
-				<a href="http://twitter.com/ericajaclyn" target="blank" alt="Twitter"> <i class="fa fa-twitter"></i> twitter</a>
-			
-			
-		  	<a href="https://medium.com/@ericajaclyn" target="blank" alt="Medium"> <i class="fa fa-medium"></i> medium</a>
-			
-			
-		  	<a href="http://www.dribbble.com/ericajaclyn" target="blank" alt="Dribbble"> <i class="fa fa-dribbble"></i> dribbble</a>
-			
-			
-	  		<a href="https://github.com/ericajs" target="blank" alt="Github"><i class="fa fa-github"></i> github</a>
-			
-		</div>
-	</div>
-</footer>
-
-    </div>
-  </body>
-</html>
+:ET

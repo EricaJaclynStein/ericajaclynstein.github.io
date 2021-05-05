@@ -1,55 +1,55 @@
 ---
 layout:     post
-title:      "15 Quotes To Fucking Live By"
+title:      "15 Quotes To Remember"
 date:       2015-11-05
 category:   design
 tags:       ['story']
 published:  true
 ---
 
-# 15 Quotes To Fucking Live By #
+# 15 Quotes To Remember
 
-### Henri Bergson ###
-"To exist is to change, to change is to mature, to mature is to go on creating oneself endlessly."
-
-### Michael Jordon ###
-“You must expect great things of yourself before you can do them.”
-
-### William Faulkner ###
-“You cannot swim for new horizons until you have courage to lose sight of the shore.”
-
-### Arthur Conan Doyle ###
-“Now is the dramatic moment of fate, Watson, when you hear a step upon the stair which is walking into your life, and you know not whether for good or ill.”
-
-### Eleanor Roosevelt ###
+### Eleanor Roosevelt
 “You gain strength, courage and confidence by every experience in which you really stop to look fear in the face. You are able to say to yourself, 'I have lived through this horror. I can take the next thing that comes along.' **You must do the thing you think you cannot do.**”
 
-### Ray Bradbury ###
+### Ray Bradbury
 "Don’t pay any attention to what anyone else says — no opinions! The important thing is to explode with the story, to emotionalize it, not to think it."
 
-### Ralph Waldo Emerson ###
-"To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment."
-
-### Bruce Lee ###
-"Mistakes are always forgivable, if one has the courage to admit them."
-
-### Katherine Hepburn ###
-"It’s never your fault. But it’s always your fault, because if you wanted to change, you’re the one who has got to change. It’s as simple as that, isn’t it?"
-
-### Carl Sagan ###
+### Carl Sagan
 "I think the proper attitude is to keep an open mind and see what the observations uncover."
 
-### Dr. Seuss ###
+### Henri Bergson
+"To exist is to change, to change is to mature, to mature is to go on creating oneself endlessly."
+
+### Michael Jordon
+“You must expect great things of yourself before you can do them.”
+
+### William Faulkner
+“You cannot swim for new horizons until you have courage to lose sight of the shore.”
+
+### Arthur Conan Doyle
+“Now is the dramatic moment of fate, Watson, when you hear a step upon the stair which is walking into your life, and you know not whether for good or ill.”
+
+### Ralph Waldo Emerson
+"To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment."
+
+### Bruce Lee
+"Mistakes are always forgivable, if one has the courage to admit them."
+
+### Katherine Hepburn
+"It’s never your fault. But it’s always your fault, because if you wanted to change, you’re the one who has got to change. It’s as simple as that, isn’t it?"
+
+### Dr. Seuss
 "You have brains in your head. You have feet in your shoes. You can steer yourself any direction you choose. You're on your own. And you know what you know. And YOU are the one who'll decide where to go...”
 
-### Napoleon Hill ###
+### Napoleon Hill
 "When two or more people coordinate in a spirit of harmony and work toward a definite objective or purpose, they place themselves in a position, through the alliance, to absorb the power directly from the great storehouse of Infinite Intelligence."
 
-### Leonardo da Vinci ###
+### Leonardo da Vinci
 "Make your work to be in keeping with your purpose."
 
-### John Bingham ###
+### John Bingham
 ”It was being a runner that mattered, not how fast or how far I could run. The joy was in the act of running and in the journey, not in the destination."
 
-### Thomas Jefferson ###
+### Thomas Jefferson
 "Do you want to know who you are? Don't ask. Act! Action will delineate and define you."

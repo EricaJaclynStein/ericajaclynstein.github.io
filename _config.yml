@@ -1,4 +1,4 @@
-title:     sexual
+title:     EJS
 author:    Erica
 timezone:  America/New_York
 markdown:  kramdown
@@ -17,6 +17,6 @@ collections:
     resources:
        output: true
        permalink: /:path/
-    projects: 
+    projects:
         output: true
         permalink: /:path/

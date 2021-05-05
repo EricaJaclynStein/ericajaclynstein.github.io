@@ -15,6 +15,6 @@ published:  false
 
 > The route was originally proposed as a railway line in the early 20th century, but this was abandoned. Serious planning of the road started in the 1970s, and construction started on 1 August 1983. During construction the area was hit by 12 European windstorms. The road was opened on 7 July 1989, having cost 122 million Norwegian krone (NOK), of which 25 percent was financed with tolls and the rest from public grants. Collection of tolls was scheduled to run for 15 years, but by June 1999 the road was paid off and the toll removed. The road is preserved as a cultural heritage site and is classified as a National Tourist Route. It is a popular site to film automotive commercials, has been declared the world's best road trip,[1] and been awarded the title as "Norwegian Construction of the Century". In 2009, the Atlantic Ocean Tunnel opened from Averøy to Kristiansund; together they form a second fixed link between Kristiansund and Molde.
 
-[Read more elsewhere]
+[Read more here]
 
-[Read more elsewhere]:(https://en.wikipedia.org/wiki/Atlantic_Ocean_Road)
+[Read more here]:(https://en.wikipedia.org/wiki/Atlantic_Ocean_Road)
